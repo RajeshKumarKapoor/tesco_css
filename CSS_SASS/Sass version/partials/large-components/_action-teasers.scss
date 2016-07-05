@@ -1,0 +1,14 @@
+.action-teasers-container .indent-wrapper {
+	padding:0 $padding*2;
+	@include clearfix;
+}
+
+.action-teaser{
+	@extend %span-helper;
+	@extend .span3;
+
+
+}
+.action-teaser-item {
+  padding: $small-padding $small-padding $small-padding 0;
+}

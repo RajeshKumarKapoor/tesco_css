@@ -1,0 +1,131 @@
+.category-teaser-container{
+  padding: 10px;
+  background: $light-bg;
+  @include clearfix;
+  clear: both;
+}
+
+.category-teaser{
+  margin:10px;
+  position: relative;
+
+  //hack to prevent carousel 3D transforms interfering with page render
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+
+  
+.teaser-img{
+  background:#000;
+}
+  &:hover{
+    img{
+      opacity:0.7;
+      @include old-ie{
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+        filter: alpha(opacity=70);
+      }
+
+      @include single-transition(opacity, 0.3s, ease-out, 0);
+    }
+  };
+  .teaser-overlay{
+    background: #074770;
+    color: #fff;
+    text-align: center;
+    width: 293px;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .teaser-heading,
+    .teaser-sub-heading {
+        display: block;
+     }
+    .teaser-heading {
+      @extend %bold-heading;
+      @extend %large-heading;
+      position: relative;
+      z-index: 4;
+    }
+    .teaser-sub-heading {
+      @extend %lead;
+      position: relative;
+      z-index: 5;
+    }
+  }
+ .teaser-arrow{
+    background: #074770 url(#{$imgPath}/icon-teaser-arrow.png) 50% 30% no-repeat;
+    @include border-radius(30px);
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:-3px;
+    left:50%;
+    margin-left:-25px;
+  }
+}
+
+//class set on object
+.category-teaser {
+  &.fun .teaser-overlay,
+  &.fun .teaser-arrow {background-color: $fun;}
+
+  &.eating .teaser-overlay,
+  &.eating .teaser-arrow {background-color: $eating;}
+
+  &.exchange .teaser-overlay,
+  &.exchange .teaser-arrow {background-color: $exchange;}
+
+  &.home .teaser-overlay,
+  &.home .teaser-arrow {background-color: $home;}
+
+  &.lifestyle .teaser-overlay,
+  &.lifestyle .teaser-arrow {background-color: $lifestyle;}
+
+  &.travel .teaser-overlay,
+  &.travel .teaser-arrow {background-color: $travel;}
+}
+
+
+//class set on parent category-teaser-container
+.fun .category-teaser {
+ .teaser-overlay,
+ .teaser-arrow {background-color: $fun;}
+}
+
+.eating .category-teaser {
+ .teaser-overlay,
+ .teaser-arrow {background-color: $eating;}
+}
+
+.exchange .category-teaser {
+ .teaser-overlay,
+ .teaser-arrow {background-color: $exchange;}
+}
+
+.home .category-teaser {
+ .teaser-overlay,
+ .teaser-arrow {background-color: $home;}
+}
+
+.lifestyle .category-teaser {
+ .teaser-overlay,
+ .teaser-arrow {background-color: $lifestyle;}
+}
+
+.travel .category-teaser {
+ .teaser-overlay,
+ .teaser-arrow {background-color: $travel;}
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,147 @@
+<% var title = 'Amend product quantity' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+
+<div class="container" id='content'>
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product quantity by unit</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-variant-controls">
+        <div class="value-calculator">
+          <p class="calculator-txt">Select Quantity</p>
+          <div class="inner">
+          <label class="visuallyhidden" for="amend-quantity">Quantity of product</label>
+          <input class="txt quantity" type="text" value="1" data-unit-value="1" data-step="1" data-max="10" data-min="1" id="amend-quantity">
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product quantity by voucher</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-variant-controls">
+        <div class="value-calculator">
+          <p class="calculator-txt">Select Voucher amount</p>
+          <div class="inner">
+          <label class="visuallyhidden" for="amend-vouchers">Quantity of vouchers</label>
+          <span class="currency-symbol">£</span><input class="txt value" type="text" value="2.50" data-unit-value="2.50" data-step="2.50" data-min="2.50" id="amend-vouchers">
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product quantity displaying error message to non-javascript user</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-variant-controls">
+        <div class="error">
+          <p>You have submitted a value which exceeds the maximum allowed</p>
+        </div>
+        <div class="value-calculator">
+          <p class="calculator-txt">Quantity</p>
+          <div class="inner">
+          <label class="visuallyhidden" for="amend-quantityII">Quantity of product</label>
+          <input class="txt quantity" type="text" value="1" data-unit-value="1" data-step="1" data-max="10" data-min="1" id="amend-quantityII">
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Product quantity display</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The number of units to purchase (i.e. quantity or voucher amount). </p>
+            <h4>Interactions</h4>
+            <p>Users can alter the product amount to determine either the quantity of units they wish to purchase, or the value in vouchers they wish to exchange.</p>
+            <hr />
+            <h3>CSS</h3>
+            <p>Only common styles are loaded for this component.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/value-calculator.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>JavaScript is used to add + and - buttons alongside the input. These buttons automatically increment/decrement the value according to the defined incremental value.</p>
+            <p>The required voucher total is updated in realtime when altering quantities.</p>
+            <p>The user is prevented from entering a non-numeric value.</p>
+            <p>Inputs must specify a class of 'quantity' or 'value' depending on the value type.</p>
+            <p>Inputs may specify attributes to control the behaviour:</p>
+            <ul>
+              <li>data-unit-value - the voucher value of one unit</li>
+              <li>data-step - the amount to increase/decrease the value when a button is clicked</li>
+              <li>data-min - the minimum value</li>
+              <li>data-max - the maximum value</li>
+              <li>data-precision - number of decimal palces to format the value</li>
+            </ul>
+            <p>The buttons are disabled if minimum or maximum values are reached.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>The + and - buttons are not shown. The text input defaults to be a standard input field that the user can enter any value in to.</p>
+            <p><em>see figure 1</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/quantity.png" alt="non-javascript view of amend quantity layout">
+            </p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>There are two variants relating to fixed price (purchase in full) products and money off products. We have also displayed an example of how this component might look if a non-javascript user has encountered an error when trying to submit the form with an incorrect quantity value.</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The +/- icons are CSS background images. No retina images are supplied as part of this phase but could be incorporated at a later date. </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>This element contains a form field. It requires a label/input pair with a correctly populated unique for/id value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

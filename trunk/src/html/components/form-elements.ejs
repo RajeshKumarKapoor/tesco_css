@@ -1,0 +1,463 @@
+<% var title = 'Form Elements' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <div class="content-container">
+  <!-- Sample code here -->
+
+  <form action="#">
+    <fieldset>
+      <legend>Standard form elements</legend>
+      <div class="control-group">
+        <label for="input">Input</label>
+        <div class="controls">
+          <input id="input" type="text" value="Basic input" />
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="requiredinput">Required Label <span class='requiredmarker'></span></label>
+        <div class="controls">
+          <input id="requiredinput" type="text" value="Required input" />
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="textarea">Textarea</label>
+        <div class="controls">
+          <textarea rows="3" id="textarea" cols="10"></textarea>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="select">Select</label>
+        <div class="controls">
+          <select id="select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="selectopt">Select option groups</label>
+        <div class="controls">
+          <select id="selectopt">
+            <optgroup label="Group 1">
+              <option>1</option>
+              <option>2</option>
+            </optgroup>
+            <optgroup label="Group 2">
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <p class="control-label">Checkboxes</p>
+        <div class="controls">
+          <label class="checkbox" for="input1">
+            <input type="checkbox" name="optionsCheckboxList1" value="option1" id="input1"/>
+            Option one 
+          </label>
+          <label class="checkbox" for="input2">
+            <input type="checkbox" name="optionsCheckboxList2" value="option2" id="input2" />
+            Option two 
+          </label>
+          <label class="checkbox" for="input3">
+            <input type="checkbox" name="optionsCheckboxList3" value="option3" id="input3" />
+            Option three 
+          </label>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <p class="control-label">Inline checkboxes</p>
+        <div class="controls">
+          <label class="checkbox inline" for="inlineCheckbox1">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"  /> 1
+          </label>
+          <label class="checkbox inline" for="inlineCheckbox2">
+            <input type="checkbox" id="inlineCheckbox2" value="option2"  /> 2
+          </label>
+          <label class="checkbox inline" for="inlineCheckbox3">
+            <input type="checkbox" id="inlineCheckbox3" value="option3" /> 3
+          </label>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <p class="control-label">Radio buttons</p>
+        <div class="controls">
+          <label class="radio" for="optionsRadios1">
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"  />
+            Option one
+          </label>
+          <label class="radio" for="optionsRadios2">
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />
+            Option two 
+          </label>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <p class="control-label" >Inline Radio buttons</p>
+        <div class="controls">
+          <label class="radio inline" for="optionsRadios3">
+            <input type="radio" name="inlineRadios" id="optionsRadios3" value="option1" /> Option 1
+          </label>
+          <label class="radio inline" for="optionsRadios4">
+            <input type="radio" name="inlineRadios" id="optionsRadios4" value="option2" /> Option 2
+          </label>
+          <label class="radio inline" for="optionsRadios5">
+            <input type="radio" name="inlineRadios" id="optionsRadios5" value="option3" />Options 3
+          </label>
+        </div>
+      </div>
+
+      <div class="control-group form-inline">
+        <p class="control-label" >Inline text input</p>
+        <div class="controls">
+          <label class="text-input inline" for="input-mini1">
+            Age
+          </label>
+          <input id="input-mini1" type="text" value="Mini" class="input-mini" /> 
+          <label class="text-input inline" for="input-mini2">
+            Age
+          </label>
+          <input id="input-mini2" type="text" value="Mini" class="input-mini"  /> 
+          <label class="text-input inline" for="input-mini3">
+            Age
+          </label>
+          <input id="input-mini3" type="text" value="Mini" class="input-mini" /> 
+        </div>
+      </div>
+
+      <span class="help-block">This is an example of guidance text to give supplementary information to the user about completion of the form.</span>
+      <div class="form-actions">
+        <button type="button" class="btn primary-btn">Button</button>
+        <button type="reset" class="btn secondary-btn">Reset</button>
+        <button class="btn reverse-btn">Cancel</button>
+        <button type="submit" class="btn standard-btn">Submit</button>
+      </div>
+    </fieldset>
+  </form>
+
+  <form action="#">
+    <fieldset>
+      <legend>Captcha</legend>
+
+      <div class="control-group">
+        <label for="security">Security check</label>
+        <div class="controls">
+          <input type="text" value="Basic input" id="security"/>
+          <img class="captcha" src="../img/content/BotDetectCaptcha-placeholder.jpeg" alt="placeholder for captcha"/>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="button" class="btn">Confirm</button>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Date select</legend>
+
+      <div class="control-group form-inline">
+        <p class="control-label" >Date of birth</p>
+        <div class="controls">
+          <label class="visuallyhidden" for="day-select">Day</label>
+          <select id="day-select" class="input-small">
+            <option>Day</option>
+          </select>
+
+          <label class="visuallyhidden" for="month-select">Month</label>
+          <select id="month-select" class="input-small">
+            <option>Month</option>
+          </select>
+          <label class="visuallyhidden" for="year-select">Year</label>
+          <select id="year-select" class="input-small">
+            <option>Year</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Date picker</legend>
+
+      <div class="control-group">
+        <label for="input15">Choose a date</label>
+        <div class="controls">
+          <input type="text" value="" class="datepicker" id="input15" placeholder="Select a date" />
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Address finder</legend>
+      <div class="control-group">
+        <label for="postcode">Postcode</label>
+        <div class="controls form-inline">
+          <input id="postcode" type="text" value="" class="input-medium" />
+          <input type="submit" class="btn" value="Find Address">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="selectAdress">Choose an address</label>
+        <div class="controls">
+          <select id="selectAdress">
+            <option>Select your address</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="house">Or House name/number</label>
+        <div class="controls">
+          <input id="house" type="text" value="" />
+        </div>
+        <label for="readinput">Street</label>
+        <div class="controls">
+          <input type='text' id="readinput" value="Lewis gardens" readonly='readonly'/>
+        </div>
+        <label for="readinput2">Town/city</label>
+        <div class="controls">
+          <input type='text' id="readinput2" value="London" readonly='readonly'/>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <form action="#">
+    <fieldset>
+      <legend>Form field variants</legend>
+      <div class="control-group">
+        <label for="block-input">Block level input</label>
+        <div class="controls">
+          <input id="block-input" type="text" value="Stretching to fill container" class="input-block-level" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="input-mini">Input mini</label>
+        <div class="controls">
+          <input id="input-mini" type="text" value="Mini" class="input-mini" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="input-small">Input small</label>
+        <div class="controls">
+          <input id="input-small" type="text" value="Small" class="input-small" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="input-medium">Input medium</label>
+        <div class="controls">
+          <input id="input-medium" type="text" value="Medium" class="input-medium" />
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="input-large">Input large</label>
+        <div class="controls">
+          <input id="input-large" type="text" value="Large" class="input-large" />
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="input-xlarge">Input extra large</label>
+        <div class="controls">
+          <input id="input-xlarge" type="text" value="X large" class="input-xlarge" />
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <form action="#">
+    <fieldset>
+      <legend>Form field action states</legend>
+
+      <div class="control-group">
+        <label class="control-label" for="disabledInput">Disabled input</label>
+        <div class="controls">
+          <input class=" disabled" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="disabled" />
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="optionsdisabledCheckbox2">Disabled checkbox</label>
+        <div class="controls">
+          <label class="checkbox">
+            <input type="checkbox" id="optionsdisabledCheckbox2" value="option1" disabled="disabled" />
+            This is a disabled checkbox
+          </label>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <p class="control-label">Uneditable input</p>
+        <div class="controls">
+          <span class="uneditable-input">Some value here</span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="Uneditabletextarea">Uneditable textarea</label>
+        <div class="controls">
+          <textarea id="Uneditabletextarea"  disabled="disabled" class="uneditable-textarea"  cols="10" rows="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="Invalidinput">Invalid input</label>
+        <div class="controls">
+          <input type="email" name="email" rel="required" id="Invalidinput" value="xyz"/>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="readinput3">Read only input</label>
+        <div class="controls">
+          <input type='text' id="readinput3" value="xyz" readonly='readonly'/>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn btn-primary disabled" disabled="disabled">Disabled Button</button>
+      </div>
+
+    </fieldset>
+  </form>
+
+  <form action="#">
+    <fieldset>
+      <legend>Form state Visual indicators</legend>
+
+      <div class="control-group warning">
+        <label class="control-label" for="inputWarning">Input with warning</label>
+        <div class="controls">
+          <input type="text" id="inputWarning" />
+          <span class="help-block">Something may have gone wrong</span>
+        </div>
+      </div>
+
+
+      <div class="control-group warning">
+        <label for="textareaWarning">textarea</label>
+        <div class="controls">
+          <textarea rows="3" id="textareaWarning"  cols="10"></textarea>
+        </div>
+      </div>
+
+      <div class="control-group warning">
+        <label for="selectWarning">select</label>
+        <div class="controls">
+          <select id="selectWarning">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-group warning">
+        <p class="control-label">Checkboxes</p>
+        <div class="controls">
+          <label class="checkbox" for="optionsCheckboxListWarning">
+            <input type="checkbox" name="optionsCheckboxList1Warning" value="option1"  id="optionsCheckboxListWarning"/>
+            Option one 
+          </label>
+        </div>
+      </div>
+
+      <div class="control-group warning">
+        <p class="control-label">Radio buttons</p>
+        <div class="controls">
+          <label class="radio" for="optionsRadios1Warning">
+          <input type="radio" name="optionsRadios" id="optionsRadios1Warning" value="option1"  />
+            Option one
+          </label>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="control-group error">
+        <label class="control-label" for="inputError">Input with error</label>
+        <div class="controls">
+          <input type="text" id="inputError" />
+          <span class="help-block">Please correct the error</span>
+        </div>
+      </div>
+      <div class="control-group success">
+        <label class="control-label" for="inputSuccess">Input with success</label>
+        <div class="controls">
+          <input type="text" id="inputSuccess" />
+          <span class="help-block">This is a success message</span>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <!-- Sample code ends -->
+  </div>
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Form elements</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Contains all the elements needed to build forms.</p>
+            <h4>Interactions</h4>
+            <p>Form elements will displayed default browser interactions such as focus or highlight states. We recommend and HTML 5 doctype and the use of as many HTML 5 form type attributes as possible for helping users receive client side validation guidance.</p>
+            <h4>Layout modes</h4>
+            <p>There is only a single layout mode for form elements. We recommend only display form elements with the label stacked vertically above. We woudl not recommend implementing form pages with a label placed horizontally. This will cause problems on lower width screens.</p>
+            <hr />
+            <h3>CSS</h3>
+            <p>Only common styles are loaded for this component.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common/forms.scss</p>
+            <p>The majority of the form styles reside within the Twitter Bootstrap framework</p>
+            <hr />
+            <h3>Use of JavaScript</h3>
+            <p>The datepicker element is implemented with the <a href="http://www.eyecon.ro/bootstrap-datepicker/">bootstrap-datepicker.js</a> library. </p>
+            <h4>Non-JS behaviour</h4>
+            <p>The datepicker form field will default to a standard text input if javascript is not available.</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>We have supplied an example of all of the form components contained within the Twitter Bootstrap framework and a couple of custom items we detected within the clubcard site, such as captcha and date selectors. Any permutation of form layout should be possible with the supplied form elements</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Form elements should always be associated correctly with the label for tag to describe their purpose. Fieldsets can be used to group form elements but should be used sparingly and contain very little copy as screenreaders will prefix every form element with the fieldset text. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

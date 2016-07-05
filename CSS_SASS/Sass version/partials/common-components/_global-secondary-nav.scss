@@ -1,0 +1,44 @@
+.global-secondary-nav{
+  ul{
+     margin: 0;
+  }
+}
+.global-secondary-nav{
+  position: absolute;
+  top:20px;
+  right:0;
+}
+
+.global-secondary-nav li a{
+  padding:5px;
+  display:block;
+}
+
+.global-social-link{
+  width:16px;
+  height:17px;
+  background-image: url(#{$imgPath}/global-nav-icons.png);
+  background-repeat: no-repeat;
+  padding:12px 2px;
+}
+
+.facebook{
+  background-position:  0 0;
+}
+.twitter{
+  background-position:-25px 0 ; 
+}
+.youtube{
+  background-position: -49px 0;
+}
+
+
+.global-secondary-nav .basket .items {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  color: $highlight;
+  padding: 0 0 0 5px;
+  display: inline-block;
+}
+

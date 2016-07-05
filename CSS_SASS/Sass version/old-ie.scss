@@ -1,0 +1,69 @@
+$old-ie: true;
+
+@import "common";
+
+//large component specific partials
+@import "partials/large-components/action-teasers";
+@import "partials/large-components/breadcrumb";
+@import "partials/large-components/carousel";
+@import "partials/large-components/categories-btn";
+@import "partials/large-components/categories-nav";
+@import "partials/large-components/category-teaser";
+@import "partials/large-components/checkout-containers";
+@import "partials/large-components/checkout-items";
+@import "partials/large-components/checkout-pages";
+@import "partials/large-components/checkout-process";
+@import "partials/large-components/clubcard-exchange-logo";
+@import "partials/large-components/clubcard-secure-message";
+@import "partials/large-components/content-block";
+@import "partials/large-components/department-browser";
+@import "partials/large-components/double-promo";
+@import "partials/large-components/facet-nav";
+@import "partials/large-components/footer";
+@import "partials/large-components/global-nav";
+@import "partials/large-components/global-nav-basket";
+@import "partials/large-components/global-secondary-nav";
+@import "partials/large-components/header-container";
+@import "partials/large-components/heading-container";
+@import "partials/large-components/hero";
+@import "partials/large-components/homepage-banner";
+@import "partials/large-components/listing-item";
+@import "partials/large-components/map";
+@import "partials/large-components/order-error";
+@import "partials/large-components/page-banner";
+@import "partials/large-components/pagination";
+@import "partials/large-components/payment-discount";
+@import "partials/large-components/payment-item";
+@import "partials/large-components/product-description";
+@import "partials/large-components/product-header";
+@import "partials/large-components/product-listing-container";
+@import "partials/large-components/product-purchase";
+@import "partials/large-components/product-search";
+@import "partials/large-components/product-spotlight";
+@import "partials/large-components/product-summary";
+@import "partials/large-components/product-teaser";
+@import "partials/large-components/product-timer";
+@import "partials/large-components/product-variants";
+@import "partials/large-components/proposition-banner";
+@import "partials/large-components/result-options";
+@import "partials/large-components/teaser";
+
+
+.ie7 .currency-symbol {
+  padding-top: 4px;
+}
+
+.ie7 {
+  .basket-order-container {
+    .update-basket {
+      position: relative;
+      margin-top: 2px;
+      padding-left: 5px;
+      i  {
+        position: absolute;
+        left: -20px;
+        top: 2px;
+      }
+    }
+  }
+}

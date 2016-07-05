@@ -1,0 +1,21 @@
+.checkout-social{
+  .twitter-share, .facebook-share{
+    float: right;
+    width:16px;
+    margin-right:8px;
+    position: relative;
+    left:-9px;
+  }
+  .social-link{
+    background: url(#{$imgPath}/sprite-social-icons.png) no-repeat 0 0 ;
+    @extend .ir;
+    width:16px;
+    height:16px;
+  }
+  .twitter-link{
+    background-position: -23px 0;
+  }
+  .facebook-link{
+    background-position:  0 0;
+  }
+}

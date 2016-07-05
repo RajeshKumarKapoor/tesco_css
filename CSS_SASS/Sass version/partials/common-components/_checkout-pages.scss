@@ -1,0 +1,115 @@
+.checkout-additional-details,
+.checkout-delivery-details,
+.checkout-review, 
+.voucher-payment-container {
+  background: $light-bg;
+}
+
+.checkout-delivery-details.edit { display: none; }
+.no-js .delivery-change-action { display: none; }
+.js .checkout-delivery-details-edit {
+	display: none;
+	&.active { display: block; }
+}
+
+.no-js .checkout-delivery-details a.find-address { display: none; }
+
+.checkout-additional-details {
+	overflow: hidden;
+}
+
+.additional-info-label{
+  margin:0;
+}
+
+.checkout-delivery-details  {
+  .delivery-label p {font-weight: bold;}
+  .delivery-details p {margin: 0;}
+  .error{
+    .load-message{
+      padding:0 0 20px 0;
+    }  
+  }
+
+  .loading{
+    position: relative;
+    .load-message{
+      position: absolute;
+      margin-top:50%;
+      left:50%;
+    }
+    fieldset{
+      opacity:0.5;
+      @include old-ie{
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=50);
+      }
+    }
+  }
+
+}
+
+#basket.loading {
+  .load-message{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+  }
+  .basket-order-container, .product-summary-container{
+    opacity:0.5;
+    @include old-ie{
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      filter: alpha(opacity=50);
+    }
+  }
+}
+
+.basket-order-container .value-calculator{
+	padding:0;
+}
+
+.voucher-payment-container{
+	position: relative;
+	 .edit-btn {
+    position: absolute;
+    top:$padding;
+    right:$padding;
+  } 
+}
+
+.voucher-payment-container.error{
+  padding-bottom:0;
+  .load-message{
+    padding:20px 20px 0;
+  }
+  .checkout-payment-details{
+    padding-top: 0;
+  }
+}
+
+.voucher-payment-container.loading{
+  position: relative;
+  .load-message{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+  }
+  .checkout-payment-details-container, .product-summary-container{
+    opacity:0.5;
+    @include old-ie{
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      filter: alpha(opacity=50);
+    }
+  }
+}
+
+.checkout-heading{
+	position: relative;
+  .edit-btn {
+    position: absolute;
+    top:0;
+    right:0;
+  } 
+}

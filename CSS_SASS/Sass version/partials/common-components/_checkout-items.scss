@@ -1,0 +1,110 @@
+.checkout-item {
+    border-bottom: $nav-border;
+  .remove-item {
+    font-weight:normal;
+    @extend %body-font;
+  }
+  //set float on link so items are positioned correctly in basket summary in IE7
+  @include old-ie{
+    .basket-product-img-link{
+      *float:left;
+    }
+  }
+}
+.checkout-item.last,
+.checkout-item:last-child {
+   border-bottom: 0;
+}
+.checkout-reward{
+  clear:left;
+  img{
+    width:75px;
+    float:left;
+    margin-right: 10px;
+    border: $light-border;
+  }
+
+  p.checkout-value {
+    font-weight: bold;
+  }
+  p, h3{
+    padding-right:$padding;
+  }
+}
+
+.checkout-item, .checkout-item-total, .checkout-item-header{
+  clear:both;
+  @extend .row-fluid;
+}
+
+.checkout-amount,
+.checkout-price {
+  p {
+    @extend %regular-heading;
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: $padding;
+  }
+  form.update {
+    button.update-basket { display: none; }
+    &.enabled button.update-basket { display: inline; }
+  }
+}
+
+.checkout-item-header {
+  background: $medium-bg;
+  border-bottom: 0;
+  padding: 12px 0;
+  margin: 0 0 2px;
+
+  .checkout-reward p,
+  .checkout-price p,
+  .checkout-amount p,
+  .checkout-social p {
+    @extend %body-font;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .checkout-reward p {padding-left: 12px; }
+  .checkout-price p, .checkout-social p {padding-right: $padding;}
+}
+
+.checkout-smallprint{
+  @extend %small-font;
+  margin:0;
+}
+
+.checkout-total-txt{
+  text-align: right;
+  font-weight: bold;
+}
+
+.checkout-price {
+  text-align: right;
+    p {
+      @extend %bold-heading;
+    }
+}
+
+
+.checkout-price p.price-note {
+  @extend %regular-heading;
+  font-size:14px;
+  line-height: 18px;
+}
+.checkout-item-total {
+  border-top: $standard-border;
+  background: $light-bg;
+    p {
+      margin: $padding 0;
+    }
+}
+
+.checkout-additional-item-header p,
+.checkout-additional-title {font-weight: bold;}
+
+.checkout-additional-title {margin-bottom: 0;}
+

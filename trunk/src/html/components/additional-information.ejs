@@ -1,0 +1,160 @@
+<% var title = 'Product Details' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="row-fluid">
+
+    <div class="secondary-information">
+      <div class="product-description">
+        <h2 class="product-description-heading">How it works</h2>
+        <div class="page-section">
+          <ol class="page-inner">
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </li> 
+            <li>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="primary-information pdp-accordion" id="pdp1">
+      <div class="product-description">
+        <h2 class="product-description-heading">What you get</h2>
+        <div class="page-section">
+          <div class="page-inner">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p class="partners-website">For more information visit <a href="">www.company-website.com</a></p>
+          </div>
+        </div>  
+      </div>
+
+      <div class="product-description additional-information">
+        <h2 class="product-description-heading">Additional information</h2>
+        <div class="page-section">
+          <div class="page-inner">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div> 
+      </div> 
+
+      <div class="product-description">
+        <h2 class="product-description-heading">
+          The fine print
+        </h2>
+        <div class="page-section">
+          <div class="page-inner">
+            <ul>
+              <li>Lorem ipsum dolor sit amet dolore magna aliqua.</li>
+              <li>Duis aute irure dolor in reprehenderit.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+
+            <div id="tac1" class="terms-accordion">
+              <div class="terms-group">
+                <h3 class='terms-heading'>View full terms and conditions</h3>
+                <div class="terms-section">
+                  <div class="terms-inner">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Additional product information</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Full product details for the product description page</p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens use a two column layout with content floated to the right. Tablet screens stack text vertically. Smaller screens collapse content into an accordion. </p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/product-description.scss</p>
+            <p>/large-components/product-description.scss</p>
+            <p>/tablet-components/product-description.scss</p>
+            <p>/small-components/product-description.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>Accordion functionality is implemented on the desktop and mobile views. Functionality provided matches existing component</p>
+            <h4>Non-JS behaviour</h4>
+            <p>All accordion containers will appear fully expanded.</p>
+            <p><em>see figure 1: Desktop accordion layout</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/desktop-terms.png" alt="non-javascript view of desktop accordion layout">
+            </p>
+            <p><em>see figure 2: Mobile accordion layout</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/mobile-pdp.png" alt="non-javascript view of mobile accordion layout">
+            </p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>Product detail content should be keyword optimised.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

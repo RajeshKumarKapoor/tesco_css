@@ -1,0 +1,32 @@
+  .rating-link{
+    @extend .ir;
+    width:86px;
+    height:14px;
+    display: inline-block;
+    @include old-ie{
+      display: block;
+      float:left;
+    }
+    background-repeat:no-repeat;
+    background-image:url(../img/interface/sprite-ratings-links.png);
+    @include image-2x("#{$imgPath}/sprite-ratings-links_2x.png", 86px, 150px);
+  }
+
+  .star-5{
+    background-position:0 0;
+  }
+  .star-4{
+    background-position:0 -20px;
+  }
+  .star-3{
+    background-position:0 -40px;
+  }
+  .star-2{
+    background-position:0 -61px;
+  }
+  .star-1{
+    background-position:0 -79px;
+  }
+  .star-0{
+    background-position:0 -100px;
+  }

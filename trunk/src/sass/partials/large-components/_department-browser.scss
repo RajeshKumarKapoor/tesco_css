@@ -1,0 +1,17 @@
+.department-details, .department-specifics{
+  @extend %span-helper;
+  @extend .span6;
+}
+
+.product-exchange-cta, .product-exchange-call-out{
+  @extend %span-helper;
+  @extend .span6;
+}
+
+.department-browser-list{
+  li{
+    width:49%;
+    float:left;
+    display: block;
+  }
+}

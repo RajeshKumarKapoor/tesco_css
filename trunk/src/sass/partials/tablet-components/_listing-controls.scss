@@ -1,0 +1,44 @@
+.listing-controls{
+  clear: both;
+  padding: 6px 0;
+
+	.search-btn {
+		background-color: $dark-bg;
+		background-position: center center;
+		width: 40px;
+		height: 40px;
+		@include border-radius(3px);
+		top: 6px;
+		right: 10px;
+	}
+
+	.filter-btn {
+		float:left;
+		color: #fff;
+		font-size: 15px;
+		line-height: 20px;
+		padding: $padding/4 $padding/2 $padding/4 12px;
+		margin: 10px 5px 0 20px;
+		background: $dark-bg;
+		@include border-radius(3px);
+
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+
+
+.facet-open {
+	.filter-btn {
+	  @extend .ir;
+		background: url(#{$imgPath}/btn-mobile-nav-close.png);
+		@include image-2x("#{$imgPath}/btn-mobile-nav-close_2x.png", 43px, 43px);
+		width: 43px;
+		height: 43px;
+		margin: -159px 5px 0 0;
+		padding: 0;
+		border-radius: inherit;
+	}
+}

@@ -1,0 +1,11 @@
+.result-options{
+	clear:both;
+	margin-left:260px;
+	padding: $padding/4;
+}
+
+.no-results{
+  .result-options{
+    display:none;
+  }
+}

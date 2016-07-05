@@ -1,0 +1,27 @@
+.homepage-banner-txt{
+  background: url(#{$imgPath}/bg-homepage-banner-large.png) 0 0 no-repeat;
+}
+
+
+.homepage-banner-shim{
+  @include clearfix;
+  background: url(#{$imgPath}/bg-homepage-banner-large-shim.png) 0 0 repeat-y;
+
+    .primary-txt{
+      .content-container{
+        padding:10px 50px 20px 30px;
+      }
+        @extend %span-helper;
+        @extend .span8;
+    }
+
+    .secondary-txt{
+
+        @extend %span-helper;
+        @extend .span4;
+        .content-container{
+          padding-top:25px;
+        }
+    }
+
+}

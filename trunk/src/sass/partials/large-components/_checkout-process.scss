@@ -1,0 +1,29 @@
+.checkout-process {
+  @extend %padding-container;
+  overflow: hidden;
+
+  .process-item {
+    background: url(#{$imgPath}/bg-checkout-process-item.png) top right no-repeat;
+    padding: 0 25px 0 15px;
+    height: 30px;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+
+    &.current-step {
+      background-position: right -70px;
+      color: #fff;
+    }
+
+    &.completed-step {
+      color: #fff;
+    }
+
+    p {
+      font-weight: bold;
+      line-height: 30px;
+      margin: 0;
+    }
+  }
+  .checkout-process-progress {display: none;}
+}

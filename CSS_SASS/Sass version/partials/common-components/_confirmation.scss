@@ -1,0 +1,63 @@
+.confirmation-message-container{
+  @include clearfix;
+
+  &.success, &.success a, &.success a:hover, &.success a:focus{
+    background: $credit-bg;
+    color: $success;
+  }
+
+  &.failure, &.failure a, &.failure a:hover, &.failure a:focus{
+    background: #ffe5e6;
+    color: $highlight;
+  }
+  & a{
+    text-decoration: underline;
+  }
+  & a:hover, & a:focus{
+    text-decoration: none;
+  }
+}
+
+.container {
+  .confirmation-message-container{
+    & .secondary-btn {
+      background: #666;
+      float: right;
+      color: #fff;
+      text-decoration: none;
+    }
+    & .secondary-btn:focus, & .secondary-btn:hover {
+      background: #ddd;
+    }
+  }
+}
+
+.confirmation-heading{
+  float: left;
+  margin-bottom:$padding;
+
+  h1, p{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  h1, .ref{
+    @extend %bold-heading;
+
+  }
+}
+
+.confirmation-summary {
+  float: left;
+  clear: both;
+  p {
+    margin-bottom: 5px;
+    clear: both;
+  }
+}
+
+.confirmation-query{
+  li{
+    background: url(#{$imgPath}/icon-list-arrow.png) 0 3px no-repeat;
+    padding:0 0 5px 12px;
+  }
+}

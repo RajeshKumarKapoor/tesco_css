@@ -1,0 +1,98 @@
+.product-header {
+  position: relative;
+  @extend %padding-container;
+  @include clearfix;
+  min-height: 154px;
+  @include old-ie(){
+    height: 144px;
+  }
+}
+
+.partners-logo{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  border: $light-border;
+}
+
+.product-title {
+  h1 {
+    @extend %bold-heading;
+    margin-bottom: 5px;
+  }
+  .product-value {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+
+
+.product-code-container {
+  float: left;
+  p {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+}
+
+.product-labels-container {
+    float:left;
+    margin-bottom: 10px;
+    p {
+      display: inline-block;
+      margin-right: 7px;
+      margin-bottom: 4px;
+    }
+    span {
+      padding: 1px 3px;
+      background: $lighter-copy;
+      @extend %product-labels;
+    }
+}
+
+.partners-details {
+  float:left;
+  clear: both;
+  margin-bottom:5px;
+  p {
+    display: inline;
+    margin-right: $padding/4;
+    margin-bottom: 4px;
+  }
+}
+
+.product-social {
+  float:none;
+  clear: both;
+  @include clearfix;
+}
+.product-ratings{
+  float:left;
+  width: 69.5%;
+  clear:both;
+}
+
+.review-count, .review-login{
+  float:left;
+  margin-right: $padding/4;
+}
+
+.ratings-display{
+  float: left;
+  width: 86px;
+  margin-right: $padding/4;
+}
+
+.share-plugins{
+  float: right;
+  width: 30%;
+  text-align: right;
+
+  .twitter-share, .facebook-share{
+    display: inline-block;
+    @include old-ie(){
+      display: inline
+    }
+  }
+}
+

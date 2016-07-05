@@ -1,0 +1,51 @@
+%error{
+  color:$error-highlight;
+  font-weight: bold;
+}
+
+.errors{
+  @extend %error;
+  ul{
+    @extend %unstyled-list;
+    margin-bottom:$padding/2;
+  }
+}
+
+.error-message{
+  @extend %error;
+}
+
+.error-validation{
+  margin-bottom:0;
+  padding:$padding/6 $padding/6 $padding/6 0;
+  clear:both;
+  @extend %error;
+}
+
+td{
+  .error-validation{
+    padding:$padding/6;
+  }
+}
+
+/* Invalid fields */
+textarea.invalid,
+select.invalid,
+input[type="text"].invalid,
+input[type="password"].invalid,
+input[type="datetime"].invalid,
+input[type="datetime-local"].invalid,
+input[type="date"].invalid,
+input[type="month"].invalid,
+input[type="time"].invalid,
+input[type="week"].invalid,
+input[type="number"].invalid,
+input[type="email"].invalid,
+input[type="url"].invalid,
+input[type="search"].invalid,
+input[type="tel"].invalid,
+input[type="color"].invalid,
+.chk.invalid,
+.uneditable-input.invalid{
+  border:1px solid $error-highlight;
+}

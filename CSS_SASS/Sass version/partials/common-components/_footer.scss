@@ -1,0 +1,49 @@
+.footer {
+	width: 100%;
+	background: $light-bg;
+	margin-top:20px;
+}
+
+.footer-inner {
+	@extend %padding-container;
+}
+
+.checkout-footer {
+	.footer-inner {
+		padding: 0 $padding;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.footer-copyright p,
+.checkout-footer p {
+	margin: 0;
+	color: $very-light-copy;
+	font-size: 10px	;
+}
+
+.footer-copyright img,
+.checkout-footer img {
+	display: inline-block;
+	margin-right: $padding;
+}
+
+.footer-copyright span,
+.checkout-footer span {
+	display: inline-block;
+}
+
+
+.footer-heading {
+	@extend %small-heading;
+	@extend %bold-heading;
+}
+
+.footer-sub-links {
+	margin: 0;
+	a {
+		color: $body-copy;
+	}
+}

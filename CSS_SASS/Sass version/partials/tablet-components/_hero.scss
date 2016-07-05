@@ -1,0 +1,34 @@
+.hero-unit{
+   margin:0 0 10px 0;
+}
+
+.hero-content-container{
+  position: relative;
+}
+
+.hero-content{
+  position: relative;
+  @include clearfix;
+  margin:-80px 20px 0;
+
+}
+
+.hero-strapline{
+  p{
+    padding:20px 20px 0 20px;
+  }
+}
+
+.hero-cta{
+  display: block;
+  text-align: center;
+  a{
+    float:none;
+    margin-right:0;
+
+  }
+  .hero-cta-item{
+    display: block;
+        margin-bottom:10px;
+  }
+}

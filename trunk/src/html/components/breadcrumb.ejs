@@ -1,0 +1,172 @@
+<% var title = 'Breadcrumb' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product listing breadcrumb</p>
+      <hr />
+    </div>
+  </div>
+  <!-- Sample code here -->
+
+  <div class="listing-results">
+    <div class="top-utilities">
+
+      <div class="breadcrumb clearfix" >
+        <ul class="unstyled-list horizontal-navigation" id="breadcrumb">
+          <li class="breadcrumb-parent">
+            <a href="" class="ancestor-link">All Fun</a>
+          </li>
+          <li>
+            <span>Days out</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Sample code ends -->
+
+ <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Search for all listings breadcrumb</p>
+      <hr />
+    </div>
+  </div>
+  <!-- Sample code here -->
+
+  <div class="listing-results">
+    <div class="top-utilities">
+
+      <div class="breadcrumb clearfix">
+        <ul class="unstyled-list horizontal-navigation" id="breadcrumb1">
+          <li class="breadcrumb-parent">
+            <a href="" class="ancestor-link">Search</a>
+          </li>
+          <li>
+            <span>for '<a href="">All items</a>'</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Sample code ends -->
+
+
+
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Search listing breadcrumb</p>
+      <hr />
+    </div>
+  </div>
+  <!-- Sample code here -->
+
+  <div class="listing-results">
+    <div class="top-utilities">
+
+      <div class="breadcrumb clearfix">
+        <ul class="unstyled-list horizontal-navigation" id="breadcrumb2">
+          <li class="breadcrumb-parent">
+            <a href="" class="ancestor-link">Search</a>
+          </li>
+          <li>
+            <span>for '<a href="">search term</a>'</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Sample code ends -->
+
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product description breadcrumb</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="top-utilities">
+
+    <div class="breadcrumb clearfix">
+      <ul class="unstyled-list horizontal-navigation" id="breadcrumb3">
+        <li>
+          <a href="" class="ancestor-link">All Fun</a>
+        </li>
+        <li class="breadcrumb-parent">
+          <a href="" class="ancestor-link">Days out</a>
+        </li>
+        <li>
+          <span>Abbotsbury Children's Farm</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Breadcrumb</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The breadcrumb reflects where the content resides within the IA (not the path the user has taken to get there). Breadcrumbs start at the PLP category level (not at the Exchange & Rewards or category landing pages level) and vary depending on what device you are using.</p>
+            <p>
+              <b>Product listing page (PLP) / category level:</b><br>
+              - Desktop (and tablet landscape):  ‘All Fun rewards >' <br>
+              - Mobile (and tablet portrait) there will be no breadcrumb, just a title: ‘All Fun rewards’<br>
+              <b>Product listing page (PLP) / sub-category level:</b><br>
+              - Desktop (and tablet landscape):  ‘All Fun rewards > Days out >’<br>
+              - Mobile (and tablet portrait) there no breadcrumb, just a title: ‘Days out’<br>
+              <b>Product detail page (PDP):</b><br>
+              - Desktop (and tablet landscape): ‘All Fun rewards > Days out > Name of product’<br>
+              - Mobile (and tablet portrait) only the (primary) parent is shown: ‘Days out >’
+            </p>
+            <h4>Interactions</h4>
+            <p>Users can select links within the breadcrumb to retrace their steps in the content hierarchy</p>
+            <h4>Layout modes</h4>
+            <p>The homepage banner has three layout modes: desktop, tablet and mobile. The content displays varies on the screen estate visible. On smaller screens the breadcrumb is removed or contracted to the parent item only to reduce visual clutter.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/breadcrumb.scss</p>
+            <p>/large-components/breadcrumb.scss</p>
+            <p>/tablet-components/breadcrumb.scss</p>
+            <p>/small-components/breadcrumb.scss</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>There are two component variants. The breadcrumb is only available on the product listing/search template and on the product description pages. </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Links should contain text relevant to the purpose of the link and sensible title attributes </p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>Links to key content pages in the product navigation journey should have SEO optimised keywords. The breadcrumb UL should have an ID of breadcrumb to help promote the breadcrumb links in the Google algorithm.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

@@ -1,0 +1,22 @@
+.header-container{
+  @extend .cf;
+}
+.logo{
+  text-align: center;
+}
+.logo a{
+  @extend .ir;
+}
+
+//setting z-index in IE7 on parent containers to force basket summary above rest of page
+
+@include old-ie{
+  .container{
+    position: relative;
+    z-index: 9;
+  }
+  .navigation-container{
+    position: relative;
+    z-index: 10;
+  }
+}

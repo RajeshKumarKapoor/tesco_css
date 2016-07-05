@@ -1,0 +1,15 @@
+//to support functionality of bootstrap grids in SASS
+
+%span-helper{
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  margin-left: 0%;
+  *margin-left: -0.052083333333333336%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+

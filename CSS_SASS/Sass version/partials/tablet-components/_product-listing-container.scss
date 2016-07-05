@@ -1,0 +1,29 @@
+.product-listing-heading p {display: none;}
+
+.listing-header .search-form {display: none;}	
+
+.product-listing-heading{
+  h1 {
+    font-family: 'tesco';
+    font-weight: bold;
+  	@extend %promo-heading;
+    @extend %bold-heading;
+  }
+}
+
+.product-listings .listing-item {margin: 0 $padding;}
+
+.product-listings .listing-item:last-child {border-bottom: 0;}
+
+.thesaurus-result{
+  padding:$padding;
+  min-height:300px;
+}
+
+.autocorrect-result{
+  padding:$padding $padding 0 $padding;
+}
+
+.facet-nav-heading{
+  padding: 13px 10px 13px;
+}

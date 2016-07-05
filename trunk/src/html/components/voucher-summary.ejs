@@ -1,0 +1,202 @@
+<% var title = 'Voucher summary' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container basket-container" id='content'>
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Voucher payment summary in basket with balance outstanding</p>
+      <hr />
+    </div>
+  </div>
+  <!-- Sample code here -->
+
+  <div class="row-fluid">
+      <div class="product-summary-container">
+        <div class="product-summary">
+          <div class="product-summary-heading">
+            <h2>Voucher payment summary</h2>
+          </div>
+          <div class="summary-items">
+            <div class="summary-item">
+              <p class="summary-txt">Basket total</p>
+              <p class="summary-amount">£245.50</p>
+            </div>
+            <div class="summary-item">
+              <p class="summary-txt">Vouchers available</p>
+              <p class="summary-amount">£250.50</p>
+            </div>
+            <div class="summary-item warning-item">
+              <p class="summary-txt">Balance oustanding</p>
+              <p class="summary-amount">£5.50</p>
+            </div>
+            <div class="update-btn">
+              <a href="" class="btn default-btn"><i class="icon-refresh"></i>Update</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Voucher payment summary in basket with vouchers remaining</p>
+      <hr />
+    </div>
+  </div>
+
+
+  <!-- Sample code here -->
+
+  <div class="row-fluid">
+    <div class="product-summary-container">
+      <div class="product-summary">
+        <div class="product-summary-heading">
+          <h2>Voucher payment summary</h2>
+        </div>
+        <div class="summary-items">
+          <div class="summary-item">
+            <p class="summary-txt">Basket total</p>
+            <p class="summary-amount">£245.50</p>
+          </div>
+          <div class="summary-item">
+            <p class="summary-txt">Vouchers available</p>
+            <p class="summary-amount">£250.50</p>
+          </div>
+          <div class="summary-item success-item">
+            <p class="summary-txt">Vouchers remaining</p>
+            <p class="summary-amount">£5.50</p>
+          </div>
+          <div class="update-btn">
+            <a href="" class="btn default-btn"><i class="icon-refresh"></i>Update</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Voucher payment summary in basket when not logged in</p>
+      <hr />
+    </div>
+  </div>
+
+    <!-- Sample code here -->
+
+  <div class="row-fluid">
+    <div class="product-summary-container">
+      <div class="product-summary">
+        <div class="product-summary-heading">
+          <h2>Voucher payment summary</h2>
+        </div>
+        <div class="summary-items">
+          <div class="summary-item">
+            <p class="summary-txt">Basket total</p>
+            <p class="summary-amount">£245.50</p>
+          </div>
+          <div class="summary-item">
+            <p class="summary-txt">Vouchers available</p>
+            <p class="summary-amount">Unknown</p>
+          </div>
+          <div class="summary-item">
+            <p class="summary-txt">Please <a href="">login</a> or <a href="">register</a> to view your available vouchers</p>
+          </div>
+          <div class="update-btn">
+            <a href="" class="btn default-btn"><i class="icon-refresh"></i>Update</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Voucher payment summary in basket when value of vouchers is unknown</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="row-fluid">
+    <div class="product-summary-container">
+      <div class="product-summary">
+        <div class="product-summary-heading">
+          <h2>Voucher payment summary</h2>
+        </div>
+        <div class="summary-items">
+          <div class="summary-item">
+            <p class="summary-txt">Basket total</p>
+            <p class="summary-amount">£245.50</p>
+          </div>
+          <div class="summary-item">
+            <p class="summary-txt">Vouchers available</p>
+            <p class="summary-amount">Unknown</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+
+</div>
+
+
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Voucher summary - checkout</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Displays the value of the vouchers available, required and balance remaining. </p>
+            <h4>Interactions</h4>
+            <p>Adding vouchers manually will update this container via and AJAX request. See the <a href="add-voucher.html">Add voucher component</a> for more details.</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes for this component: Desktop and mobile. The summary container appears in a right hand column on larger screens. On smaller screens the container stretches to fill the width of the screen.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/product-summary.scss</p>
+            <p>/large-components/product-summary.scss</p>
+            <p>/tablet-components/product-summary.scss</p>
+            <p>/small-components/product-summary.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>The content of this panel is updated dynamically by the <a href="/components/voucher-payment.html">Voucher payment details</a> component.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>The content is not updated dynamically.</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>The voucher summary varies depending on your position within the purchase path. The basket summary will show your available vouchers and remaining balance to pay. The checkout summary will display the state of your vouchers and balance whilst you select items to pay. If no vouchers are available within the account a message will be displayed in the summayr container.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

@@ -1,0 +1,120 @@
+<% var title = 'Basket and Checkout actions' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Basket actions</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="basket-actions">
+    <a class="submit secondary-btn">Continue shopping</a>
+    <input class="submit primary-btn" value="Proceed to checkout" type="submit"/>
+  </div>
+
+  <!-- Sample code ends -->
+  
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Checkout actions</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="checkout-review checkout-review-review">
+    <input class="submit primary-btn" value="Review your order" type="submit"/>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Review actions</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="checkout-review checkout-review-confirm">
+    <a class="submit secondary-btn">&laquo; Delivery &amp; Payment</a>
+    <input class="submit primary-btn" value="Confirm your order"  type="submit"/>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Confirmation page actions</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="checkout-review">
+    <a class="submit secondary-btn">Print</a>
+    <a class="submit primary-btn" >Return to Clubcard Boost</a>
+  </div>
+
+
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Checkout actions</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The checkout actions lead you through the checkout process. </p>
+            <h4>Interactions</h4>
+            <p>Users can click buttons to submit form details or link back to previous states, or pages within the checkout process or perform other Checkout related actions such as printing the confirmation page.</p>
+            <h4>Layout modes</h4>
+            <p>There are two main layout modes: desktop and mobile. Larger screens float the buttons left and right. Smaller screens stack buttons vertically and stretch them to 100% width of the container.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/large-components/checkout-pages.scss</p>
+            <p>/tablet-components/checkout-pages.scss</p>
+            <p>/small-components/checkout-pages.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>The button is disabled by default. It is enabled when the voucher payment section has been compled such that there are sufficient vouchers selected to pay for the order. This is determined when the data-amount attribute on the 'Balance remaining' value is zero.</p>
+            <h4>Use of AJAX</h4>
+            <p>The <a href="voucher-payment.html">Voucher payment details</a> component uses AJAX to update the balance remaining value.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>The button is not disabled.</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>The buttons perform different actions on each page. On the Basket page you can proceed through to the checkout process, or link back to the Clubcard Boost section. On the checkout page there is a single button to drive users through the purchase path. On the review page you can either return to the single page checkout to amend your purchase details or proceed to purchase. On the confirmation page you can either print your confirmation details or return to the Clubcard Boost section to continue shopping </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

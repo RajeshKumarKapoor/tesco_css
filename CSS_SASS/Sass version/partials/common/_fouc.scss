@@ -1,0 +1,38 @@
+//form buttons only for non-js users
+
+.js .sort-listing-btn, .js .clear-filter-btn, .js .apply-filter-btn{
+  display:none;
+}
+
+.js .category-navigation-drawer{
+  display:none;
+}
+
+.js .refresh, .js .stock-count .refresh{
+  display: none;
+}
+
+.js .product-option-selector .submit{
+  display: none;
+}
+
+//style carousel for non-js users so all products are visible
+.no-js .bx-controls{
+  display: none;
+}
+
+.no-js .swiper-slide img, .no-js .swiper-slide .product-teaser-txt, .no-js .swiper-slide .teaser-border, .no-js .swiper-slide .teaser-border p{
+  opacity:1;
+}
+
+.no-js .product-carousel-container, .no-js .swiper-container {
+  height:auto;
+}
+
+.js .update-btn{
+  display:none;
+}
+
+.js .map-search-results .full-address{
+  display:none;
+}

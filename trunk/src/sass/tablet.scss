@@ -1,0 +1,57 @@
+@import "common";
+//components specific partials - tablet uses mix of large and small
+
+@import "partials/small-components/basket-summary";
+@import "partials/small-components/categories-btn";
+@import "partials/small-components/categories-nav";
+@import "partials/small-components/clubcard-exchange-logo";
+@import "partials/small-components/facet-nav";
+@import "partials/small-components/global-nav";
+@import "partials/small-components/global-nav-basket";
+@import "partials/small-components/global-secondary-nav";
+@import "partials/small-components/header-container";
+@import "partials/small-components/hero";
+@import "partials/small-components/product-timer";
+
+//tablet
+@import "partials/tablet-components/action-teasers";
+@import "partials/tablet-components/breadcrumb";
+@import "partials/tablet-components/carousel";
+@import "partials/tablet-components/category-teaser";
+@import "partials/tablet-components/checkout-items";
+@import "partials/tablet-components/checkout-pages";
+@import "partials/tablet-components/checkout-process";
+@import "partials/tablet-components/clubcard-secure-message";
+@import "partials/tablet-components/department-browser";
+@import "partials/tablet-components/double-promo";
+@import "partials/tablet-components/footer";
+@import "partials/tablet-components/hero";
+@import "partials/tablet-components/homepage-banner";
+@import "partials/tablet-components/listing-controls";
+@import "partials/tablet-components/map";
+@import "partials/tablet-components/pagination";
+@import "partials/tablet-components/page-banner";
+@import "partials/tablet-components/payment-discount";
+@import "partials/tablet-components/payment-item";
+@import "partials/tablet-components/product-description";
+@import "partials/tablet-components/product-header";
+@import "partials/tablet-components/product-listing-container";
+@import "partials/tablet-components/product-spotlight";
+@import "partials/tablet-components/product-summary";
+@import "partials/tablet-components/product-teaser";
+@import "partials/tablet-components/proposition-banner";
+@import "partials/tablet-components/result-options";
+@import "partials/tablet-components/teaser";
+
+//large
+@import "partials/large-components/checkout-containers";
+@import "partials/large-components/contact-page";
+@import "partials/large-components/content-block";
+@import "partials/large-components/double-promo";
+@import "partials/large-components/heading-container";
+@import "partials/large-components/listing-item";
+@import "partials/large-components/order-error";
+@import "partials/large-components/payment-item";
+@import "partials/large-components/process-diagram";
+@import "partials/large-components/product-purchase";
+@import "partials/large-components/product-search";

@@ -1,0 +1,190 @@
+<% var title = 'Product alert' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product purchase alert - expired</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+    <div class="order-error-container">
+      <div class="order-error-header">
+        <h2 class="error-warning">1 item in your order has expired</h2>
+        <p>Sorry but this offer is no longer available. This item has been removed from your order.</p> 
+      </div>
+      <div class="order-error-products">
+        <div class="checkout-items">
+          <div class="checkout-item">
+            <div class="checkout-reward">
+              <img src="../img/content/plp-listing-placeholder.gif" alt="placeholder for checkout item"/>
+              <h3><a href="#">Abbotsbury Subtropical Gardens</a></h3>
+              <p class="checkout-value">£20 money-off token</p>
+              <p class="checkout-smallprint">Product code: A3010</p>
+              <p class="checkout-smallprint">Delivery method: Post</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product purchase alert - exceeded quantity</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+    <div class="order-error-container">
+      <div class="order-error-header">
+        <h2 class="error-warning">1 item in your order has exceeded the quantity allowed</h2>
+        <p>Sorry but you have exceeded the maximum you can order. This item has been removed from your order.</p> 
+      </div>
+      <div class="order-error-products">
+        <div class="checkout-items">
+          <div class="checkout-item">
+            <div class="checkout-reward">
+              <img src="../img/content/plp-listing-placeholder.gif" alt="placeholder for checkout item"/>
+              <h3><a href="#">Abbotsbury Subtropical Gardens</a></h3>
+              <p class="checkout-value">£20 money-off token</p>
+              <p class="checkout-smallprint">Product code: A3010</p>
+              <p class="checkout-smallprint">Delivery method: Post</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Sample code ends -->
+
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product purchase alert - price change</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+    <div class="order-error-container">
+      <div class="order-error-header">
+        <h2 class="error-warning">1 item in your basket has changed</h2>
+        <p>Please note the following item has had a price increase from £5.00 to £5.50</p> 
+      </div>
+      <div class="order-error-products">
+        <div class="--items">
+          <div class="checkout-item">
+            <div class="checkout-reward">
+              <img src="../img/content/plp-listing-placeholder.gif" alt="placeholder for checkout item"/>
+              <h3><a href="#">Abbotsbury Subtropical Gardens</a></h3>
+              <p class="checkout-value">£20 money-off token</p>
+              <p class="checkout-smallprint">Product code: A3010</p>
+              <p class="checkout-smallprint">Delivery method: Post</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="basket-container">
+    <div class="row-fluid">
+      <div class="product-order-container basket-order-container">
+        <div class="product-order">
+          <div class="checkout-items">
+            <div class="checkout-item-header">
+              <div class="checkout-reward"><p>Item</p></div>
+              <div class="checkout-amount"><p>Amount</p></div>
+              <div class="checkout-price"><p>Cost</p></div>
+            </div>
+            <div class="checkout-item">
+              <div class="checkout-reward">
+                <a href="#"><img src="../img/content/plp-listing-placeholder.gif"  alt="placeholder for checkout item"/></a>
+                <h3><a href="#">Abbotsbury Subtropical Gardens</a></h3>
+                <p class="checkout-value">£20 money-off token</p>
+                <p class="checkout-smallprint">Product code: A3010</p>
+                <p class="checkout-smallprint">Delivery method: Post</p>
+              </div>
+              <div class="checkout-amount">
+                <form method="post" action="#" class="update">
+                  <div class="value-calculator">
+                    <div class="inner">
+                    <input type="hidden" name="product_id" value="A3010">
+                    <label class="visuallyhidden" for="update1">update amount</label>
+                    <input class="txt value" type="text" value="2.50" data-unit-value="2.50" data-step="2.50" data-min="2.50" id="update1">
+                    <span class="pound">&pound;</span>
+                    <button class="submit update-basket btn" type="submit" ><i></i> Update</button>
+                    </div>
+                  </div>  
+                </form>
+              </div>
+              <div class="checkout-price">
+                <p><span class="voucher-cost">Voucher cost: </span><s>£5.00</s></p>
+                <p><span class="voucher-cost">Voucher cost: </span>£5.50</p>
+                <p class="remove-item"><a href="">Remove</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Product alert - checkout</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>If a product within the basket has expired, is no longer in stock or has exceeded the quantity allowed, the product is removed from the basket and a message is displayed informing the user that the product has been removed due to (whatever the sceanrio for it's removal).</p>
+            <h4>Layout modes</h4>
+            <p>There is only a single layout mode for this component.</p>
+            <hr />
+            <h3>CSS</h3>
+            <p>The Order error replicates the product item components from the <a href="basket-product.html">Basket</a> and <a href="checkout-product.html">Checkout</a> pages where further details about the CSS for these components can be found</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/order-error.scss</p>
+            <p>/large-components/order-error.scss</p>
+            <p>/small-components/order-error.scss</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>There are several error states for a product whilst moving through the checkout process. The item may longer be available by the time the user clicks proceed. The product alert error is flexible and can hold any message against a product item. Several variants are shown as illustration.</p>
+            <hr />
+            <h3>Post delivery amendments</h3>
+            <p>A product alert panel has been added to the top of the page if a voucher summary change is required to anchor users to the voucher summary section.</p>
+            <p><em>see figure 1 below</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/product-alert.png" alt="illustration of product alert message">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

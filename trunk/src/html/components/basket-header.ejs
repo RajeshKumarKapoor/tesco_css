@@ -1,0 +1,138 @@
+<% var title = 'Basket button' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Default basket button</p>
+      <hr />
+    </div>
+  </div>
+  <div class="dummy" style="position:relative">
+    <!-- Sample code here -->
+
+    <div class="header-container">
+      <div class="global-secondary-nav">
+        <ul class="unstyled-list horizontal-navigation">
+          <li class="basket">
+            <a href="" class="dropdown-toggle basket-btn "><span class="basket-arrow">
+              <span class="basket-text">Basket </span><span class="items">2</span></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Sample code ends -->
+  </div>
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Empty basket button</p>
+      <hr />
+    </div>
+  </div>
+  <div class="dummy" style="position:relative">
+    <!-- Sample code here -->
+
+    <div class="header-container">
+      <div class="global-secondary-nav">
+        <ul class="unstyled-list horizontal-navigation">
+          <li class="basket empty">
+            <a href="" class="dropdown-toggle basket-btn "><span class="basket-arrow">
+              <span class="basket-text">Basket </span><span class="items">0</span></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Sample code ends -->
+  </div>
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Active basket button in Basket page</p>
+      <hr />
+    </div>
+  </div>
+  <div class="dummy" style="position:relative">
+    <!-- Sample code here -->
+
+    <div class="header-container">
+      <div class="global-secondary-nav">
+        <ul class="unstyled-list horizontal-navigation">
+          <li class="basket">
+            <a href="" class="dropdown-toggle basket-btn active"><span class="basket-arrow">
+              <span class="basket-text">Basket </span><span class="items">2</span></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Sample code ends -->
+  </div>
+</div>
+
+<div class="container" style="position:relative;top:50px">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Basket button</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>
+              From the header you can:
+              - Link directly to the basket page
+              - View a summary of your basket (Basket summary dropdown)
+              - See how many products are in your basket (Basket item counter)
+            </p>
+            <h4>Interactions</h4>
+            <p>The basket button will open a basket summary when clicked. Clicking outside of the summary container will close the dropdown summary. The basket button shows a highlight state when open or when a user hovers with a mouse. The button also shows an active state when the user is on the Basket page. The button is disabled when the user is viewing the Basket page. </p>
+            <p class="error-message">
+              Please note: The basket summary panel is not shown on this component page. Please view a <a href="../templates/homepage.html">page template</a> to see this interaction. 
+            </p>  
+            <h4>Layout modes</h4>
+            <p>There are two layout modes: desktop and mobile. Larger screens will display the summary window. Mobile devices will link straight to the basekt page without a summary panel </p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using two breakpoints to handle the changes between desktop and tablet. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/global-nav.scss</p>
+            <p>/common-components/global-secondary-nav.scss</p>
+            <p>/large-components/global-nav.scss</p>
+            <p>/large-components/global-nav-basket.scss</p>
+            <p>/large-components/global-secondary-nav.scss</p>
+            <p>/small-components/global-nav.scss</p>
+            <p>/small-components/global-nav-basket.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>The Bootstrap Dropdown plugin is used to provide dropdown functionality. Clicking on the basket will reveal the basket summary dropdown. Clicking anywhere again (or Esc) will hide the dropdown.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>Clicking on the basket will re-direct the browser to the basket summary page.</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>The button is shown in the full, empty and active states.</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The icons are CSS background images. No retina images are supplied as part of this phase but could be incorporated at a later date.</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Link title attributes should be correctly populated as should link text.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

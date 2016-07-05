@@ -1,0 +1,255 @@
+<% var title = 'Basket' %>
+<% var basket_active = true %>
+<% include _head %>
+<% include _tesco_cookie_widget %>
+<% include _header %>
+
+<div class="container basket-container" id="content">
+
+  <div class="top-utilities">
+    <div class="search-form">
+      <form>
+        <label for="product-search">Search</label>
+        <input class="" type="text" placeholder="Search for any reward" id="product-search"/>
+        <input class="submit search-btn" type="submit" value="Search" />
+      </form>
+    </div>
+  </div>
+
+  <div class="product-order-container">
+    <div class="product-order">
+      <div class="checkout-heading basket-heading">
+        <h1>Your Clubcard basket</h1>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="basket">
+    <div class="load-message">
+    <!--   <p>Error message encountered when trying to update Ajax partial</p> -->
+      <div class="loading-graphic"></div>
+    </div>
+    <div class="row-fluid">
+
+      <div class="product-order-container basket-order-container">
+        <div class="product-order">
+
+          <div class="checkout-items">
+            <div class="checkout-item-header">
+              <div class="checkout-reward"><p>Item</p></div>
+              <div class="checkout-amount"><p>Amount</p></div>
+              <div class="checkout-price"><p>Cost</p></div>
+            </div>
+            <div class="checkout-item">
+              <div class="checkout-reward">
+                <a href="#"><img src="../img/content/abbotsbury.gif"  alt="placeholder for checkout item"/></a>
+                <h3><a href="#">Abbotsbury Children's Farm</a></h3>
+                <p class="checkout-value">£20 money-off token</p>
+                <p class="checkout-smallprint">Product code: A3010</p>
+                <p class="checkout-smallprint">Delivery method: Post</p>
+              </div>
+              <div class="checkout-amount">
+                <form method="post" action="#" class="update">
+                  <div class="value-calculator">
+                    <div class="inner">
+                    <input type="hidden" name="product_id" value="A3010">
+                    <label class="visuallyhidden" for="update1">update amount</label>
+                    <span class="currency-symbol">£</span><input class="txt value" type="text" value="2.50" data-unit-value="2.50" data-step="2.50" data-min="2.50" id="update1">
+                    </div>
+                    <button class="submit update-basket btn" type="submit" ><i></i> Update</button>
+                  </div>  
+                </form>
+              </div>
+              <div class="checkout-price">
+                <p><span class="voucher-cost">Voucher cost: </span>£2.50</p>
+                <p class="remove-item"><a href="">Remove</a></p>
+              </div>
+            </div>
+            <div class="checkout-item">
+              <div class="checkout-reward">
+                <a href="#"><img src="../img/content/merlin.gif" alt="placeholder for checkout item" /></a>
+                <h3><a href="#">Merlin Entertainment Group</a></h3>
+                <p class="checkout-value">1 x 2 for 1 entry</p>
+                <p class="checkout-smallprint">Product code: A3010</p>
+                <p class="checkout-smallprint">Delivery method: Post</p>
+              </div>
+              <div class="checkout-amount">
+                <form method="post" action="#" class="update">
+                  <div class="value-calculator">
+                    <div class="inner">
+                    <input type="hidden" name="product_id" value="A3010">
+                    <label class="visuallyhidden" for="update2">update amount</label>
+                    <input class="txt value" type="text" value="1" data-precision="0" data-unit-value="1" data-step="1" data-min="1" id="update2">
+                    </div>
+                    <button class="submit update-basket btn" type="submit" ><i></i> Update</button>
+                  </div>     
+                </form>
+              </div>
+              <div class="checkout-price">
+                <p><span class="voucher-cost">Voucher cost: </span>£0.00</p>
+                <p class="price-note">Clubcard perk</p>
+                <p class="remove-item"><a href="">Remove</a></p>
+              </div>
+              <div class="checkout-timer">
+                <div class="time-counter">
+                  <p>Available for</p>
+                  <div class="time-days time-item">
+                    <span class="time-value">35</span>
+                    <span class="time-descriptor">days,</span>
+                  </div>
+                  <div class="time-hours time-item">
+                    <span class="time-value">10</span>
+                    <span class="time-descriptor">hours,</span>
+                  </div>
+                  <div class="time-minutes time-item">
+                    <span class="time-value">56</span>
+                    <span class="time-descriptor">mins</span>
+                  </div>
+                </div>  
+              </div> 
+            </div>
+            <div class="checkout-item">
+              <div class="checkout-reward">
+                <a href="#"><img src="../img/content/ipad.gif" alt="placeholder for checkout item" /></a>
+                <h3><a href="#">iPad 2 with Wifi</a></h3>
+                <p class="checkout-value">1 x Black, 32GB</p>
+                <p class="checkout-smallprint">Product code: A3010</p>
+                <p class="checkout-smallprint">Delivery method: Post</p>
+              </div>
+              <div class="checkout-amount">
+                <form method="post" action="#" class="update">
+                  <div class="value-calculator">
+                    <div class="inner">
+                    <input type="hidden" name="product_id" value="A3010">
+                    <label class="visuallyhidden" for="update3">update amount</label>
+                    <span class="currency-symbol">£</span><input class="txt value" type="text" value="215.00" data-unit-value="215.00" data-step="215.00" data-min="215.00" id="update3">
+                    </div>
+                    <button class="submit update-basket btn" type="submit" ><i></i> Update</button>
+                  </div>     
+                </form>
+              </div>
+              <div class="checkout-price">
+                <p><span class="voucher-cost">Voucher cost: </span>£215.00</p>
+                <p class="remove-item"><a href="">Remove</a></p>
+              </div>
+              <div class="checkout-stock-count">
+                <div class="stock-counter">
+                  <p><span class="stock-quantity">2345</span>items left</p>
+               
+                </div>
+              </div>
+            </div>
+            <div class="checkout-item last">
+              <div class="checkout-reward">
+                <a href="#"><img src="../img/content/avios.gif"  alt="placeholder for checkout item"/></a>
+                <h3><a href="#">Avios</a></h3>
+                <p class="checkout-value">600 Avios</p>
+                <p class="checkout-smallprint">Product code: A3010</p>
+                <p class="checkout-smallprint">Delivery method: Post</p>
+              </div>
+              <div class="checkout-amount">
+                <form method="post" action="#" class="update">
+                  <div class="value-calculator">
+                    <div class="inner">
+                    <input type="hidden" name="product_id" value="A3010">
+                    <label class="visuallyhidden" for="update4">update amount</label>
+                    <span class="currency-symbol">£</span><input class="txt value" type="text" value="2.50" data-unit-value="2.50" data-step="2.50" data-min="2.50" id="update4">
+                    </div>
+                    <button class="submit update-basket btn" type="submit" ><i></i> Update</button>
+                  </div>
+       
+                </form>
+              </div>
+              <div class="checkout-price">
+                <p><span class="voucher-cost">Voucher cost: </span>£2.50</p>
+                <p class="remove-item"><a href="">Remove</a></p>
+              </div>
+            </div>
+
+            <div class="checkout-item-total">
+              <div class="checkout-total-txt">
+                <p>Total Clubcard voucher cost</p>
+              </div>
+              <div class="checkout-price">
+                <p>£220.00</p>
+              </div>
+
+              <div class="basket-actions">
+                <a class="submit secondary-btn">Continue shopping</a>
+                <input class="submit primary-btn " value="Proceed to checkout" type="submit"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-summary-container">
+        <div class="product-summary">
+          <div class="product-summary-heading">
+            <h2>Voucher payment summary</h2>
+          </div>
+          <div class="summary-items">
+            <div class="summary-item">
+              <p class="summary-txt">Basket total</p>
+              <p class="summary-amount">£245.50</p>
+            </div>
+            <div class="summary-item">
+              <p class="summary-txt">Vouchers available</p>
+              <p class="summary-amount">£250.50</p>
+            </div>
+            <div class="summary-item warning-item">
+              <p class="summary-txt">Balance oustanding</p>
+              <p class="summary-amount">£5.50</p>
+            </div>
+            <div class="update-btn">
+              <a href="" class="btn default-btn"><i class="icon-refresh"></i>Update</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="order-error-container">
+    <div class="order-error-header">
+      <h2 class="error-warning">There has been an error with a product in your order</h2>
+      <p>Sorry but you have exceeded the maximum you can order. This item has been removed from your order.</p> 
+    </div>
+    <div class="order-error-products">
+      <div class="checkout-items">
+        <div class="checkout-item">
+          <div class="checkout-reward">
+            <img src="../img/content/abbotsbury.gif" alt="placeholder for checkout item"/>
+            <h3>Abbotsbury Subtropical Gardens</h3>
+            <p class="checkout-value">£20 money-off token</p>
+            <p class="checkout-smallprint">Product code: A3010</p>
+            <p class="checkout-smallprint">Delivery method: Post</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-error-header">
+      <p>Sorry but this product is no longer available. This item has been removed from your order.</p> 
+    </div>
+    <div class="order-error-products">
+      <div class="checkout-items">
+        <div class="checkout-item">
+          <div class="checkout-reward">
+            <img src="../img/content/abbotsbury.gif" alt="placeholder for checkout item"/>
+            <h3>Abbotsbury Subtropical Gardens</h3>
+            <p class="checkout-value">£20 money-off token</p>
+            <p class="checkout-smallprint">Product code: A3010</p>
+            <p class="checkout-smallprint">Delivery method: Post</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<% include _foot %>

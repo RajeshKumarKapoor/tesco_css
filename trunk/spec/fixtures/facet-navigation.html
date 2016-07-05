@@ -1,0 +1,168 @@
+<div class="row-fluid product-listing-display">
+  <div class="facet-nav-container">
+    <div class="facet-nav">
+      <form>
+        <div class="facet-nav-heading">
+          <p>Filter products</p>
+        </div>
+        <div class="error">
+          <p>You have selected too many filters</p>
+        </div>
+        <input class="submit btn clear-filter-btn" type="reset" value="Clear all filters"/>
+        <input class="submit btn apply-filter-btn" type="submit" value="Apply filters"/>
+        <div class="facet-accordion" id="fac1">
+
+          <div class="sub-cat-facet facet">
+            <h2 class="facet-heading">Category</h2>
+            <div class="facet-items">
+              <ul class="facet-inner">
+                <li>
+                  <label for="facet-sub-cat-1">
+                    <input class='checkbox' type="checkbox" id="facet-sub-cat-1" name="facets[][category]" value="1">
+                    <span class="label-txt">Castles, Palaces and Gardens</span>
+                  </label>
+                  <span class="items">5</span>
+                </li>
+                <li>
+                  <label for="facet-sub-cat-2">
+                    <input class='checkbox' type="checkbox" id="facet-sub-cat-2" name="facets[][category]" value="2">
+                    <span class="label-txt">Lorem Ipsum</span>
+                  </label>
+                  <span class="items">12</span>
+                </li>
+                <li>
+                  <label for="facet-sub-cat-3">
+                    <input class='checkbox' type="checkbox" id="facet-sub-cat-3" name="facets[][category]" value="3">
+                    <span class="label-txt">Dolor sit Amet</span>
+                  </label>
+                  <span class="items">5</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="region-facet facet" id="facet-region">
+            <h2 class="facet-heading">Location</h2>
+            <div class="facet-items">
+              <ul class="facet-inner">
+                <li> 
+                  <a href="" data-child="facet-region-eastmidlands">East Midlands <span class="items">5</span></a> 
+                </li>
+                <li> 
+                  <a href="" data-child="facet-region-eastanglia">East Anglia <span class="items">58</span></a> 
+                </li>
+                <li> 
+                  <a href="" data-child="facet-region-eastengland">East of England <span class="items">369</span></a> 
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="region-facet sub-facet facet" id="facet-region-eastmidlands" data-parent="facet-region">
+            <h2 class="facet-heading">East Midlands</h2>
+            <div class="facet-items">
+              <div class="clear-facet"><a href="#facet-region" class="back-btn">Back</a></div>
+              <ul class="facet-inner">
+                <li>
+                  <label for="facet-region-eastmidlands-1">
+                    <input class='checkbox' type="checkbox" id="facet-region-eastmidlands-1" name="facets[][region]" value="1">
+                    <span class="label-txt">Derby</span>
+                  </label>
+                  <span class="items">3</span>
+                </li>
+                <li>
+                  <label for="facet-region-eastmidlands-2">
+                    <input class='checkbox' type="checkbox" id="facet-region-eastmidlands-2" name="facets[][region]" value="2">
+                    <span class="label-txt">Leicester</span>
+                  </label>
+                  <span class="items">1</span>
+                </li>
+                <li>
+                  <label for="facet-region-eastmidlands-3">
+                    <input class='checkbox' type="checkbox" id="facet-region-eastmidlands-3" name="facets[][region]" value="3">
+                    <span class="label-txt">Lincoln</span>
+                  </label>
+                  <span class="items">1</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="region-facet sub-facet facet" id="facet-region-eastanglia" data-parent="facet-region">
+            <h2 class="facet-heading">East Anglia</h2>
+            <div class="facet-items">
+              <div class="clear-facet"><a href="#facet-region" class="back-btn">Back</a></div>
+              <ul class="facet-inner">
+                <li>
+                  <label for="facet-region-eastanglia-1">
+                    <input class='checkbox' type="checkbox" id="facet-region-eastanglia-1" name="facets[][region]" value="1">
+                    <span class="label-txt">Cambridge</span>
+                  </label>
+                  <span class="items">30</span>
+                </li>
+                <li>
+                  <label for="facet-region-eastanglia-2">
+                    <input class='checkbox' type="checkbox" id="facet-region-eastanglia-2" name="facets[][region]" value="2">
+                    <span class="label-txt">Peterborough</span>
+                  </label>
+                  <span class="items">28</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="region-facet sub-facet facet" id="facet-region-eastengland" data-parent="facet-region">
+            <h2 class="facet-heading">East of England</h2>
+            <div class="facet-items">
+              <div class="clear-facet"><a href="#facet-region" class="back-btn">Back</a></div>
+              <ul class="facet-inner">
+                <li>
+                  <label for="facet-region-eastengland-1">
+                    <input class='checkbox' type="checkbox" id="facet-region-eastengland-1" name="facets[][region]" value="1">
+                    <span class="label-txt">London</span>
+                  </label>
+                  <span class="items">340</span>
+                </li>
+                <li>
+                  <label for="facet-region-eastengland-2">
+                    <input class='checkbox' type="checkbox" id="facet-region-eastengland-2" name="facets[][region]" value="2">
+                    <span class="label-txt">Dover</span>
+                  </label>
+                  <span class="items">29</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ratings-facet facet">
+            <h2 class="facet-heading">Ratings</h2>
+
+            <div class="facet-items">
+              <ul class="facet-inner">
+                <li> 
+                  <a href=""><span class="rating-link star-5"> 5 stars</span><span class="items">5</span></a> 
+                </li>
+                <li> 
+                  <a href=""><span class="rating-link star-4"> 4 stars</span> <span class="items">58</span></a> 
+                </li>
+                <li> 
+                  <a href=""><span class="rating-link star-3"> 3 stars</span> <span class="items">369</span></a> 
+                </li>
+                <li> 
+                  <a href=""><span class="rating-link star-2"> 2 stars</span> <span class="items">54</span></a> 
+                </li>
+                <li> 
+                  <a href=""><span class="rating-link star-1"> 1 star</span> <span class="items">10</span></a> 
+                </li>
+                <li> 
+                  <a href=""><span class="rating-link star-0"> 0 stars</span> <span class="items">0</span></a> 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>  
+        <input class="submit btn clear-filter-btn" type="reset" value="Clear all filters"/>
+        <input class="submit btn apply-filter-btn" type="submit" value="Apply filters"/>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+  .mobile-header{
+    display: block
+  }
+
+  .header-container {
+    width: 100%;
+    height: 43px;
+  }
+
+  .logo{
+    width: 100%;
+    //replacing 2 px to get layout to work in webkit/ leaves 2px gap in FF. annoying!
+    margin: 10px 0 10px;
+  }
+
+  .logo a {
+    width:163px;
+    height:22px;
+    background: url(#{$imgPath}/logo-mobile.png) no-repeat 0 0;
+    @include image-2x("#{$imgPath}/logo-mobile_2x.png", 163px, 22px);
+    margin: 0;
+    display: inline-block;
+  }
+
+  .nav-btn{
+    width:43px;
+    height:43px;
+    background: url(#{$imgPath}/btn-mobile-nav.png) no-repeat 0 0;
+    @include image-2x("#{$imgPath}/btn-mobile-nav_2x.png", 43px, 43px); 
+    border-right: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .nav-open .nav-btn {
+    background: url(#{$imgPath}/btn-mobile-nav-close.png) no-repeat 0 0;
+    @include image-2x("#{$imgPath}/btn-mobile-nav-close_2x.png", 43px, 43px); 
+  }

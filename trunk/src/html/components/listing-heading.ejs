@@ -1,0 +1,114 @@
+<% var title = 'Listing heading' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product listing heading</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+  <div class="listing-header">
+    <div class="product-listing-heading">
+      <h1>Days out</h1>
+      <p>249 items</p>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product search heading</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+  <div class="listing-header">
+    <div class="product-listing-heading">
+      <h1>Results for 'search term'</h1>
+      <p>249 items</p>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product search heading with no results</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+  <div class="listing-header">
+    <div class="product-listing-heading">
+      <h1>Your search returned no results</h1>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product search heading with longer search phrase</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+  <div class="listing-header">
+    <div class="product-listing-heading">
+      <h1>Results for 'A really long search term wrapping on to two lines'</h1>
+      <p>249 items</p>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Listing heading</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The listing heading appears on the Product Listing page.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/product-listing-containers.scss</p>
+            <p>/large-components/product-listing-containers.scss</p>
+            <p>/tablet-components/product-listing-containers.scss</p>
+            <p>/small-components/product-listing-containers.scss</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>The heading appears on the product listing template. It either denotes the title of the current product category. On the search template it either returns the search term currently in use or a message informing the user that no results have been returned.</p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>The listing page heading uses the product category names as the page H1 and should be keyword optimised.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

@@ -1,0 +1,180 @@
+<% var title = 'Product Listing page' %>
+<% var body_class = 'listing-results no-results' %>
+<% include _head %>
+<% include _tesco_cookie_widget %>
+<% include _header %>
+
+<div class="container" id="content">
+  <div class="top-utilities">
+    <div class="search-form">
+      <form>
+        <label for="product-search">Search</label>
+        <input class="" type="text" placeholder="Search for any reward" id="product-search"/>
+        <input class="submit search-btn" type="submit" value="Search" />
+      </form>
+    </div>
+    <div class="breadcrumb clearfix">
+      <ul class="unstyled-list horizontal-navigation" id="breadcrumb">
+        <li class="breadcrumb-parent">
+          <a href="" class="ancestor-link">Search</a>
+        </li>
+        <li>
+          <span>No results found</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="listing-header">
+    <div class="product-listing-heading">
+      <h1>No results found</h1>
+    </div>
+
+    <div class="listing-controls"></div>
+    <div class="result-options"></div> 
+    <div class="search-form mobile-search-form">
+      <form>
+        <label for="mobile-search" class='visuallyhidden'>Search</label>
+        <input class="txt" type="text" placeholder="Search for any reward" id="mobile-search"/>
+        <input class="submit search-btn" type="submit" value="search" />
+      </form>
+    </div>
+  </div>
+
+  <div class="row-fluid product-listing-display">
+    <div class="facet-nav-container">
+
+      <div class="facet-nav" >
+        <form>
+          <div class="facet-nav-heading">
+            <p>Filter products</p>
+          </div>
+          <input class="submit btn clear-filter-btn" type="reset" value="Clear all filters"/>
+          <input class="submit btn apply-filter-btn" type="submit" value="Apply filters"/>
+          <div class="facet-accordion" id="fac1">
+
+            <div class="cat-facet facet">
+              <h2 class="facet-heading">Categories</h2>
+              <div class="facet-items">
+                <ul class="facet-inner">
+                  <li> 
+                    <a href="">At tesco</a> 
+                  </li>
+                  <li> 
+                    <a href="">Fun</a> 
+                  </li>
+                  <li> 
+                    <a href="">Eating out</a> 
+                  </li>
+                  <li> 
+                    <a href="">Travel</a> 
+                  </li>
+                  <li> 
+                    <a href="">Home essentials</a> 
+                  </li>
+                  <li> 
+                    <a href="">Lifestyle</a> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <input class="submit btn clear-filter-btn" type="reset" value="Clear all filters"/>
+          <input class="submit btn apply-filter-btn" type="submit" value="Apply filters"/>
+        </form>
+      </div>
+    </div>
+
+    <div class="product-listing-container">
+      <div class="product-listings" data-total-pages="5">
+        <div class="load-message">
+          <div class="loading-graphic"></div>
+        </div>
+        <div class="category-teaser exchange">
+          <div class="teaser-img">
+            <img src="../img/content/category-teaser-exchange.jpg" alt="Placeholder text for teaser image"/>
+          </div>
+          <div class="teaser-overlay">
+            <a href="#">
+              <span class="teaser-arrow"></span>
+              <span class="teaser-heading">Tesco Exchange</span>
+              <span class="teaser-sub-heading">&ldquo;More, more, more&rdquo;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="category-teaser fun">
+          <div class="teaser-img">
+            <img src="../img/content/category-teaser-fun.jpg" alt="Placeholder text for teaser image" />
+          </div>
+          <div class="teaser-overlay">
+            <a href="#">
+              <span class="teaser-arrow"></span>
+              <span class="teaser-heading">Fun</span>
+              <span class="teaser-sub-heading">&ldquo;Mum, you're alright you are!&rdquo;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="category-teaser eating">
+          <div class="teaser-img">
+            <img src="../img/content/category-teaser-eating-out.jpg" alt="Placeholder text for teaser image" />
+          </div>
+          <div class="teaser-overlay">
+            <a href="#">
+              <span class="teaser-arrow"></span>
+              <span class="teaser-heading">Eating out</span>
+              <span class="teaser-sub-heading">&ldquo;Oooh, go on then&rdquo;</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="category-teaser travel">
+          <div class="teaser-img">
+            <img src="../img/content/category-teaser-travel.jpg" alt="Placeholder text for teaser image" />
+          </div>
+          <div class="teaser-overlay">
+            <a href="#">
+              <span class="teaser-arrow"></span>
+              <span class="teaser-heading">Travel</span>
+              <span class="teaser-sub-heading">&ldquo;Wish you were here?&rdquo;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="category-teaser home">
+          <div class="teaser-img">
+            <img src="../img/content/category-teaser-home.jpg" alt="Placeholder text for teaser image" />
+          </div>
+          <div class="teaser-overlay">
+            <a href="#">
+              <span class="teaser-arrow"></span>
+              <span class="teaser-heading">Home &amp; Essentials</span>
+              <span class="teaser-sub-heading">&ldquo;Bargains on basics&rdquo;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="category-teaser lifestyle">
+          <div class="teaser-img">
+            <img src="../img/content/category-teaser-lifestyle.jpg" alt="Placeholder text for teaser image" />
+          </div>
+          <div class="teaser-overlay">
+            <a href="#">
+              <span class="teaser-arrow"></span>
+              <span class="teaser-heading">Lifestyle</span>
+              <span class="teaser-sub-heading">&ldquo;I want one of those&rdquo;</span>
+            </a>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include _footer %>
+<% include _foot %>

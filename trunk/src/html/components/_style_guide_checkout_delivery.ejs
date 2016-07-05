@@ -1,0 +1,59 @@
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Delivery details - checkout</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The details of where the items should be sent (email, postal address) </p>
+            <h4>Interactions</h4>
+            <p>A user can edit their details inside a form within the page. The form will submit via an AJAX request and update the details during the single page checkout process.</p>
+            <h4>Layout modes</h4>
+            <p>The form has two layout modes: desktop and mobile. The larger screens display items in a horizontal layout. Smaller screens stack items vertically to allow content to expand. </p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/checkout-pages.scss</p>
+            <p>/large-components/checkout-pages.scss</p>
+            <p>/tablet-components/checkout-pages.scss</p>
+            <p>/small-components/checkout-pages.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>Edit links are shown alongside the delivery address/e-mail address in the summary box. Clicking these links hides the summary box and shows a form which allows the user to edit the address.</p>
+            <p>The submit button is disabled by default, until such time as the user clicks the confirmation checkbox.</p>
+            <p>When the user clicks the cancel button, changes are not saved and the summary box is shown again. The form is hidden.</p>
+            <p>When the user clicks the submit button, changes are saved and the summary box is shown again. The form is hidden.</p>
+            <p>When the user clicks the Find Address button, the addresses matching the entered post code are displayed in a select box. The other address fields are hidden.</p>
+            <p>When the user selects an address, the select box is hidden and the address fields are shown, populated with the address details selected.</p>
+            <h4>Use of AJAX</h4>
+            <p>When the user clicks the submit button, a POST AJAX request is sent with the serialised form data. The response is expected to be the new delivery address summary details. See partials/ajax-checkout-update-delivery-details.html for an example of the expected output.</p>
+            <p>When the user clicks the Find Address action, a GET AJAX request is sent with the post_code parameter. The response is expected to be the matching delivery address options. See partials/ajax-checkout-find-address.html for an example of the expected output.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>The edit address and e-mail address forms are always shown. The edit links in the summary box are not shown. The Find Address functionality is not available. Clicking the submit button should reload the page.</p>
+            <p><em>see figure 1 below</em></p>
+            <p class="styleguide-img">
+              <img src=<%= img_path %> alt="non-javascript view of delivery details layout">
+            </p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>There are 5 component variants of the delivery details. Allowing a user to edit both postal and email details, only postal details, only email details, editing account details, and adding account details if none are available.</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>This components contains form elements. It requires a label/input pair with a correctly populated unique for/id value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

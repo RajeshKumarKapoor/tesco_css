@@ -1,0 +1,58 @@
+.homepage-banner{
+  position: relative;
+  padding-bottom:10px;
+  .content-container{
+    padding:10px 30px 20px 30px;
+  }
+}
+
+.homepage-banner-img{
+  position: relative;
+  z-index:2;
+}
+
+.homepage-banner-action{
+  padding-top:10px;
+}
+
+.homepage-banner-txt-container{
+  margin: -175px 20px 0 20px;
+  position: relative;
+  z-index:2;
+}
+
+.homepage-banner-txt{
+  padding-top:33px;
+
+  h1{
+    @extend %regular-heading;
+    @extend %larger-heading;
+    margin-bottom:5px;
+  }
+  h2{
+    @extend %regular-heading;
+    @extend %large-heading;
+    margin-bottom:5px;
+  }
+  p{
+    @extend %regular-heading;
+    @extend %small-heading;
+    font-weight:normal;
+  }
+}
+
+.homepage-banner-shim{
+  color:#fff;
+}
+
+.homepage-banner-cta{
+  background: url(#{$imgPath}/nav-chevrons-sprite.png) 2px -85px no-repeat;
+  padding-left:15px;
+  display: block;
+  color:#fff;
+  @extend %body-font;
+  @extend %standard-font;
+  &:focus, &:hover{
+    color:#fff;
+  }
+}

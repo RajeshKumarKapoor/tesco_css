@@ -1,0 +1,6 @@
+.back-to-top {
+  background: url(#{$imgPath}/icon-back-to-top-mobile.png) 0 0 no-repeat;
+  @include image-2x("#{$imgPath}/icon-back-to-top-mobile_2x.png", 33px, 74px);
+  width:33px;
+  height:36px;
+  }

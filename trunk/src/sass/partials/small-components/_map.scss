@@ -1,0 +1,24 @@
+.map-container, .map-result-pin{
+  display: none;
+}
+
+.map-search-form{
+  .controls{
+    margin-bottom:10px;
+    display: block;
+  }
+}
+
+.map-link{display: block}
+
+.map-search-result-heading{
+  text-align: center;
+}
+
+.form-inline .map-search-form-controls input{
+  display: inline-block;
+}
+
+.map-search-count{
+  padding-left:$padding;
+}

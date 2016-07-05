@@ -1,0 +1,33 @@
+.product-order,
+.checkout-additional-details,
+.checkout-delivery-details,
+.voucher-payment-container,
+.checkout-review,
+.clubcard-secure-message,
+.confirmation-message-container {
+  margin: 0 $padding $padding;
+}
+
+.basket-heading{
+    margin: $padding/2 0 0;
+}
+
+.checkout-payment-details {margin-bottom: 0;}
+
+.checkout-additional-details,
+.checkout-delivery-details,
+.checkout-payment-details,
+.checkout-review,
+.basket-actions,
+.confirmation-message-container {
+    @extend %padding-container;
+}
+
+.basket-actions{
+  padding-top:0;
+}
+
+.voucher-payment-container, .basket-actions {
+  @include clearfix;
+}
+

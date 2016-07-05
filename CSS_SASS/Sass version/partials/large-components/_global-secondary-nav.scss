@@ -1,0 +1,46 @@
+.global-secondary-nav li {
+  font-size: 12px;
+  background: url(#{$imgPath}/divider-global-secondary-nav.png) right center no-repeat;
+}
+.global-secondary-nav li a,
+.global-secondary-nav li span {
+	padding: 0 19px 0 14px;
+	&.basket-text {padding: 0;display:inline;}
+}
+
+
+.global-secondary-nav .global-social-link{
+  width:16px;
+  height:17px;
+  line-height:17px;
+  background-image: url(#{$imgPath}/global-nav-icons.png);
+  background-repeat: no-repeat;
+  padding:0;
+  margin: 3px 5px;
+}
+
+.global-secondary-nav .global-social-link a {padding: 0;}
+
+.global-secondary-nav .facebook{
+  background-position:  0 0;
+}
+.global-secondary-nav .twitter{
+  background-position:-25px 0 ; 
+  margin-left: 16px;
+}
+.global-secondary-nav .youtube{
+  background-position: -49px 0;
+  margin-right: 13px;
+}
+
+.identification{
+  float:left;
+  display: block; 
+  padding: 5px;
+}
+
+.global-navigation-drawer{
+  .mobile-home-btn, .mobile-sign-in, .mobile-global, .mobile-global-social {
+    display: none;
+  }
+}

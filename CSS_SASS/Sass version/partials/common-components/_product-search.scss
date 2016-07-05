@@ -1,0 +1,43 @@
+.search-form{
+	position: relative;
+
+	label {
+		@extend .visuallyhidden;
+	}
+
+	input[type="text"]  {
+		padding: 4px 8px;
+		height: 26px;
+		margin: 0 56px 0 0;
+		border-right: 0;
+		float: right;
+	}
+
+	input[type="submit"] {
+		width:36px;
+	}
+
+}
+
+
+.search-btn {
+	position: absolute;
+	top:0;
+	right:20px;
+	background: url(#{$imgPath}/btn-search.png) 0 0 no-repeat;
+	@include image-2x("#{$imgPath}/btn-search_2x.png", 36px, 36px);
+	width:36px;
+	height:36px;
+	padding:0;
+	border: 0;
+	@extend .ir;
+	&:hover, &:focus{
+		background: url(#{$imgPath}/btn-search.png) 0 0 no-repeat;
+		@include image-2x("#{$imgPath}/btn-search_2x.png", 36px, 36px);
+	}
+}
+
+.search-btn{
+	@include border-radius(0);
+
+}

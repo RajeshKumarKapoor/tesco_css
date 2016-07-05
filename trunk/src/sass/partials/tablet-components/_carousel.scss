@@ -1,0 +1,18 @@
+.swiper-container, .bx-controls{
+  width:600px;
+}
+
+.product-carousel-container, .swiper-container{
+  height:250px;
+}
+
+
+.swiper-slide{
+  width: 200px;
+  .carousel-teaser { @include scale(0.8); }
+  img, .product-teaser-txt, .teaser-border, .teaser-border p { @include opacity(0.5); } // Select children for IE support
+}
+.swiper-slide-active{
+  .carousel-teaser { @include scale(1); }
+  img, .product-teaser-txt, .teaser-border, .teaser-border p { @include opacity(1); } // Select children for IE support
+}

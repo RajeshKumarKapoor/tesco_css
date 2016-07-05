@@ -1,0 +1,43 @@
+.proposition-banner-promo{
+  @extend %span-helper;
+  @extend .span8;
+}
+
+.proposition-instructions{
+  @extend %span-helper;
+  @extend .span4;
+}
+
+.proposition-header-container{
+  @extend %span-helper;
+  @extend .span9;
+
+  h2 {
+    margin: 0 0 0 $padding;
+    padding-top: $padding;
+  }
+
+  p {margin: $small-padding 0 $padding $padding;} 
+}
+
+.proposition-cta-container{
+  @extend %span-helper;
+  @extend .span3;
+}
+
+.propostion-overlay{
+  position: absolute;
+  left:0;
+  bottom:0;
+}
+
+ .proposition-banner-promo{
+  border-right:1px solid #fff;
+  .clubcard-exchange-logo{
+    position: absolute;
+    top:40px;
+    right:40px;
+  }
+}
+
+

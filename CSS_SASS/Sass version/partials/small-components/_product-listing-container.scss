@@ -1,0 +1,39 @@
+.product-listing-heading {
+	width: 100%;
+	color: #fff;
+	background-color: #037dd9;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: $padding/2;
+}
+
+.product-listing-heading h1 {
+	float: left;
+	width: 79.5%;
+	@extend %small-font;
+  @extend %bold-heading;
+}
+
+.product-listing-heading p {
+	width: 20%;
+	line-height: 22px;
+	float: right;
+	top: 0;
+	text-align: right;
+	@extend %sub-font;
+	white-space: nowrap;
+}
+
+.product-listings .listing-item {
+	margin: 0 $small-padding;
+}
+
+.thesaurus-result{
+	padding:$padding/2;
+	min-height:300px;
+}
+
+.autocorrect-result{
+ padding:$padding/2 $padding/2 0 $padding/2;
+}

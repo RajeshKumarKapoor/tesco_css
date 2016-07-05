@@ -1,0 +1,88 @@
+<div class="checkout-delivery-details checkout-delivery-details-edit checkout-delivery-details-edit-address">
+  <div class="checkout-heading">
+    <h2>Your delivery details</h2>
+  </div>
+  <div class="delivery-item">
+    <div class="delivery-label"><p>Postal items will be sent to:</p></div>
+    <div class="delivery-details">
+      <form action="#">
+
+        <div class="load-message">
+         <!--  <p>Error message encountered when submitting form </p> -->
+        </div>
+
+        <fieldset>
+          <div class="control-group">
+            <label for="title">Title</label>
+            <div class="controls">
+              <select id="title">
+                <option selected="selected">Mr</option>
+                <option>Mrs</option>
+                <option>Miss</option>
+                <option>Dr</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label for="first_name">First name</label>
+            <div class="controls">
+              <input id="first_name" type="text" value="Aviral" />
+            </div>
+          </div>
+          <div class="control-group">
+            <label for="surname">Surname</label>
+            <div class="controls">
+              <input id="surname" type="text" value="Gupta" />
+            </div>
+          </div>
+          <div class="control-group find_address">
+            <label for="post_code">Post code</label>
+            <div class="controls">
+              <input id="post_code" type="text" value="RM3 0DJ" class="input-small" />
+              <a href="#" class="find-address">Find address</a>
+            </div>
+          </div>
+          <div class="control-group choose_address">
+            <label>Choose an address</label>
+            <div class="controls">
+              <select id="selectAdress">
+                <option selected="selected">Select your address</option>
+                <option value="result1" data-house="66" data-street="Rosslyn Ave" data-town="Romford">66 Rosslyn Ave, Romford, RM3 0DJ</option>
+                <option value="result2" data-house="67" data-street="Rosslyn Ave" data-town="Romford">67 Rosslyn Ave, Romford, RM3 0DJ</option>
+                <option value="result3" data-house="68" data-street="Rosslyn Ave" data-town="Romford">68 Rosslyn Ave, Romford, RM3 0DJ</option>
+                <option value="result4" data-house="69" data-street="Rosslyn Ave" data-town="Romford">69 Rosslyn Ave, Romford, RM3 0DJ</option>
+                <option value="result5" data-house="70" data-street="Rosslyn Ave" data-town="Romford">70 Rosslyn Ave, Romford, RM3 0DJ</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group address">
+            <label for="house">Or House name/number</label>
+            <div class="controls">
+              <input id="house" type="text" value="70" />
+            </div>
+            <label for="street">Street</label>
+            <div class="controls">
+              <input type='text' id="street" value="Lewis gardens"/>
+            </div>
+            <label for="town">Town/city</label>
+            <div class="controls">
+              <input type='text' id="town" value="London"/>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" name="confirm" class="confirm" value="1" />
+                I confirm that I want to make this my main account address 
+              </label>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-submit">Submit</button>
+            <button class="btn btn-cancel">Cancel</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>

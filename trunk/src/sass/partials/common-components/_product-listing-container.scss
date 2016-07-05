@@ -1,0 +1,17 @@
+.product-listing-heading{
+  clear: both;
+  float:left;
+  padding: 13px $padding;
+  h1 {
+    @extend %bold-heading;
+  }
+
+  h1, p{
+    margin: 0;
+  }
+}
+
+
+.autocorrect-result{
+  padding:$padding $padding 0 $padding;
+}

@@ -1,0 +1,129 @@
+.facet-nav-container{
+  @include clearfix;
+}
+
+.facet-nav{
+  @extend %tertiary-accordion-indented;
+  .error p{
+    color: $highlight;
+    font-weight: bold;
+  }
+  .clear-filter-btn, .apply-filter-btn{
+    margin:0 10px 10px 0;
+  }
+}
+
+
+.facet-nav-heading{
+  position: relative;
+  background: $heading-bg;
+  color: #fff;
+  margin-bottom: 3px;
+  padding: 10px; 
+  p{
+    margin:0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .clear-btn{
+    position: absolute;
+    top:5px;
+    right:10px;
+    color: #fff;
+
+  }
+}
+
+.clear-btn{
+    font-size:14px;
+    line-height:22px;
+}
+
+.facet-nav .accordion-group {border: 0;}
+
+.facet-heading {
+  @extend %body-font;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  border-bottom: $accordion-border;
+} 
+
+.sub-facet {
+  display: none;
+  &.active { display: block; }
+}
+
+.facet.child-open { display: none; }
+
+.facet .facet-inner {
+  margin: 0;
+  padding: 0;
+
+  li {
+    vertical-align: middle;
+    padding: 8px 0;
+    border-bottom: $accordion-border;
+    @include clearfix;
+
+    input[type="checkbox"] {
+      vertical-align: top;
+      position: relative;
+      float:left;
+      margin-left: 10px; 
+      margin-right: 10px; 
+      margin-top: 0;
+      padding: 0;
+      display: inline-block;
+      height: 20px;
+    }
+    input[type="radio"]{
+      display: none;
+    }
+  }
+
+  p {vertical-align: middle; overflow: hidden; display: block; margin: 0; width: 97.75%;}
+
+  a, label {vertical-align: middle; overflow: hidden; display: block; margin: 0; width:155px; float:left;font-size:14px; line-height:18px;}
+
+  a{
+    width:210px;
+     margin:0 0 0 10px; 
+  }
+  span.items {
+    display: inline-block;
+    font-size: 12px;
+    line-height: normal;
+    color: $lighter-copy;
+    background: #eeeeee;
+    padding: 2px;
+    margin-top: 2px;
+    margin-right:3px;
+    vertical-align: middle;
+    width: 32px;
+    text-align: center;
+    @include border-radius(9px);
+    float: right;
+  }
+
+  span.label-txt {
+    float: left;
+    display: inline-block;
+    width: 107px;
+    color:#00539F;
+  }
+
+}
+
+.ie7 .facet .facet-inner li input[type="radio"] { display: inline; }
+
+.facet-items .clear-facet {text-align: right; width: 97%;    padding: 4px 0;}
+
+.facet .selected{
+  background: #e3f7ff;
+}
+
+.ratings-facet label{
+  padding-left:10px;
+}

@@ -1,0 +1,60 @@
+.product-carousel-container{
+  clear:both;
+  background: $light-bg;
+}
+.product-carousel-container{
+  padding-top:20px; overflow: hidden;
+}
+
+.product-carousel-container, .swiper-container{
+  margin:0 auto 0;
+}
+
+.bx-wrapper { max-width: 100% !important; }
+
+
+.swiper-slide {
+  float: left;
+}
+
+.bx-controls{
+  position: relative;
+  z-index:10;
+  .bx-controls-direction a{
+    @extend .ir;
+    background: #1f4fa2 url(#{$imgPath}/icon-teaser-arrow.png) 50% 45% no-repeat;
+    @include border-radius(50%);
+    width:45px;
+    height:45px;
+    position: absolute;
+    top:-145px;
+    display: block;
+      &:focus, &:hover{
+        background-color: $darker-link-colour;
+        @include single-transition(background-color, 0.3s, ease-out, 0);
+      }
+  }
+  .bx-next{
+    right:10px;
+    @include rotate(90deg);
+  }
+  .bx-prev{
+    left:10px;
+    @include rotate(270deg);
+  }
+}
+
+.no-csstransforms {
+  .bx-controls {
+    .bx-next{
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    }
+    .bx-prev{
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+  }
+}
+
+.no-js {
+  .swiper-slide { width: 192px; margin: 0 20px 20px; }
+}

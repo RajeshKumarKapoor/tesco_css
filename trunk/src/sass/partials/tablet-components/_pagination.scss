@@ -1,0 +1,41 @@
+.pagination{
+   @extend .pager;
+   .desktop-pagination{
+    display: none
+   }
+}
+
+.pagination ul>li:first-child>a,
+.pagination ul>li:first-child>span {
+	@include border-radius(0);
+	@include border-top-left-radius(4px);
+	@include border-bottom-left-radius(4px);
+}
+
+.pagination ul>li:last-child>a,
+.pagination ul>li:last-child>span {
+	@include border-radius(0);
+	@include border-top-right-radius(4px);
+	@include border-bottom-right-radius(4px);
+}
+
+
+.listing-results .bottom-pagination {
+    float: none;
+    margin: 0 0 $padding 0;
+    background: $medium-bg;
+    padding: $padding/4 $padding;
+    text-align: right;
+    @extend .cf;
+
+    .paging-display p {
+      margin-bottom: 0;
+      padding: 0 $padding/4 0 0;
+      line-height: 30px;
+    }
+
+    .paging-display ul {
+      line-height: 14px;
+    }
+
+}

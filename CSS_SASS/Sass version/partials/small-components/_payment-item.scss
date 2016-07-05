@@ -1,0 +1,48 @@
+.payment-voucher-code{
+  @extend %span-helper;
+  @extend .span5;
+}
+
+.payment-expiry{
+  @extend %span-helper;
+  @extend .span3;
+}
+
+.payment-voucher{
+  @extend %span-helper;
+  @extend .span4;
+} 
+
+.payment-item, .payment-item-header{
+  @extend .row-fluid;
+}
+
+
+.payment-item-header {
+  p {
+    text-transform: capitalize;
+    span {
+      display: none;
+    }
+  }
+  .payment-voucher-code p {padding-left: $small-padding;}
+  .payment-voucher p {text-align: right; padding-right: $small-padding;}
+}
+
+.payment-item {
+  .payment-voucher{
+    .payment-ctrl {
+      margin-right: $padding/2;
+      margin-left:$padding/4;
+    }
+  }
+  .payment-voucher-code p{
+    padding-left: $small-padding;
+  }
+  .payment-voucher p { padding-right:$small-padding;}  
+}
+
+.payment-voucher-code p,
+.payment-expiry {
+  font-size: 12px;
+} 

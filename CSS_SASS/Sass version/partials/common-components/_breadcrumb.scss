@@ -1,0 +1,30 @@
+.breadcrumb{
+  padding: 7px 0;
+  margin:0;
+  @include border-radius(0);
+  @include clearfix;
+
+  ul{
+    margin: 0 0 0 $padding;
+  }
+  a, span{
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .ancestor-link, span {
+    padding: 0 14px 0 0;
+    display: inline-block;
+    margin: 0 $padding/2 0 0;
+  }
+
+  .ancestor-link {
+    background: url(#{$imgPath}/breadcrumb-chevron.png) right center no-repeat;
+    @include image-2x("#{$imgPath}/breadcrumb-chevron_2x.png", 4px, 8px);
+  }
+}
+
+
+
+
+  

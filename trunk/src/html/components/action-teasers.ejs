@@ -1,0 +1,102 @@
+<% var title = 'Action teasers' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+  
+  <div class="component-container">
+    <div class="action-teasers-container row-fluid">
+      <div class="indent-wrapper">
+        <div class="action-teaser">
+          <a href="" class="action-mca action-teaser-item">
+            <span class="action-icon"></span>
+            <span class="action-teaser-txt">
+              My Clubcard Account Sign in/Register
+            </span>
+          </a>
+        </div>
+        <div class="action-teaser">
+          <a href="" class="action-signup action-teaser-item">
+            <span class="action-icon"></span>
+            <span class="action-teaser-txt">
+              Sign up to Clubcard emails
+            </span>
+          </a>
+        </div>
+        <div class="action-teaser">
+          <a href="" class="action-statements action-teaser-item">
+            <span class="action-icon"></span>
+            <span class="action-teaser-txt">
+              Sign up to online statements
+            </span>
+          </a>
+        </div>
+        <div class="action-teaser">
+          <a href="" class="action-smartphone action-teaser-item">
+            <span class="action-icon"></span>
+            <span class="action-teaser-txt">
+              Get Clubcard on your smartphone
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Action teasers</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Used when there are a number of related link actions.</p>
+            <h4>Interactions</h4>
+            <p>Users can click links</p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens utilise a horizontal layout to display 4 in a row. Tablet screens display 2 rows of 2. Smaller screens display items vertically stacked.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/action-teasers.scss</p>
+            <p>/large-components/action-teasers.scss</p>
+            <p>/tablet-components/action-teasers.scss</p>
+            <p>/small-components/action-teasers.scss</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>Content within links could be content manageable but new icons will require the creation of CSS background graphics and edits to the CSS files. </p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The icons are CSS background images. No retina images are supplied as part of this phase but could be incorporated at a later date. </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Links should have clearly understandable text and title attributes</p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>Links residing on the homepage contain the greatest prominence for directing search bots to crawl internal pages and promote their rank. It is therefore essential to provide links within the homepage to deep link into key pages within your user journey. </p>
+            <hr />
+            <h3>Character limit recommendations</h3>
+            <p>Link text: 20 characters per line</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

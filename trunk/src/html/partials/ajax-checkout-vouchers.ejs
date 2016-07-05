@@ -1,0 +1,109 @@
+<div class="checkout-payment-details-container product-order-container">
+
+  <div class="checkout-payment-details">
+    <div class="checkout-heading">
+      <h2>Voucher payment details</h2>
+      <p class="error-warning">Sorry you do not have enough vouchers to complete your order. You can either add additional vouchers below or <a href="#">remove some rewards from your basket</a>.</p>
+      <p>Select the vouchers you require for your order. Use 'Add a voucher' to add any additional vouchers manually.</p>
+    </div>
+
+    <div class="payment-items">
+      <div class="payment-item-header">
+        <div class="payment-voucher-code"><p><span>Voucher</span> code</p></div>
+        <div class="payment-expiry"><p>Expiry <span>date</span></p></div>
+        <div class="payment-voucher"><p><span>Voucher</span> value</p></div>
+      </div>
+      <div class="payment-item">
+        <div class="payment-voucher-code"><p>098345739567</p></div>
+        <div class="payment-expiry">03/03/2013</div>
+        <div class="payment-voucher"><p>£50.00</p>
+          <div class="payment-ctrl">
+            <div class="control-group">
+              <label class="visuallyhidden" for="voucher1">Remove voucher</label>
+              <input class="checkbox" name="vouchers[]" value="098345739567" type="checkbox" id="voucher1" data-voucher-code="098345739567"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="payment-item">
+        <div class="payment-voucher-code"><p>493486201024</p></div>
+        <div class="payment-expiry">03/03/2013</div>
+        <div class="payment-voucher"><p>£50.00</p>
+          <div class="payment-ctrl">
+            <div class="control-group">
+              <label class="visuallyhidden" for="voucher2">Remove voucher</label>
+              <input class="checkbox" name="vouchers[]" value="493486201024" type="checkbox" id="voucher2" data-voucher-code="493486201024"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="payment-item">
+        <div class="payment-voucher-code"><p>368653109573</p></div>
+        <div class="payment-expiry">03/03/2013</div>
+        <div class="payment-voucher"><p>£50.00</p>
+          <div class="payment-ctrl">
+            <div class="control-group">
+              <label class="visuallyhidden" for="voucher3">Remove voucher</label>
+              <input class="checkbox" name="vouchers[]" value="368653109573" type="checkbox" id="voucher3" data-voucher-code="368653109573"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="payment-total">
+    <div class="payment-total-item payment-total-value">
+      <p><span class="payment-total-txt">
+        <span>Total voucher value selected</span>
+      </span>
+
+      <span class="payment-total-amount">
+        <span class='payment-total-amount-value'>£5.50</span>
+      </span></p>
+    </div>
+
+    <div class="payment-total-item credit-total">
+      <div class="payment-total-txt">
+        <p>Change credited back to your account:&nbsp;<span class="payment-total-amount">£22.50</span></p>
+      </div>
+    </div>
+
+    <div class="payment-discount">
+      <label for="manual-voucher">Add a voucher</label>
+      <div class="control-group">
+        <div class="controls">
+          <input name="voucher_code" class="txt" type="text" placeholder="Enter voucher code"  id="manual-voucher"/>
+        </div>
+        <div class="controls">
+          <input class="submit btn" value="Add voucher" name="add_voucher" type="submit"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="product-summary-container">
+  <div class="product-summary">
+    <div class="product-summary-heading">
+      <h2>Voucher payment summary</h2>
+    </div>
+    <div class="summary-items">
+      <div class="summary-item">
+        <p class="summary-txt">Total vouchers required</p>
+        <p class="summary-amount">£250.50</p>
+      </div>
+      <div class="summary-item">
+        <p class="summary-txt">Total vouchers available</p>
+        <p class="summary-amount">£245.50</p>
+      </div>
+      <div class="summary-item">
+        <p class="summary-txt">Total vouchers added</p>
+        <p class="summary-amount">£20.00</p>
+      </div>
+      <div class="summary-item">
+        <p class="summary-txt">Balance remaining</p>
+        <p class="summary-amount" data-amount="5.5" id="balance_remaining">£5.50</p>
+      </div>
+    </div>
+  </div>
+</div>

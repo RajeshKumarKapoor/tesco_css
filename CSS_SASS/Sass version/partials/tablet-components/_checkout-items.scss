@@ -1,0 +1,96 @@
+.checkout-reward{
+  @extend %span-helper;
+  @extend .span10;
+}
+
+.checkout-price{
+  @extend %span-helper;
+  @extend .span2;
+}
+
+.basket-container .checkout-reward{
+  @extend %span-helper;
+  @extend .span5;
+}
+
+.basket-container .checkout-amount{
+  @extend %span-helper;
+  @extend .span5;
+}
+
+.order-error-products .checkout-reward, .basket-container  .order-error-products .checkout-reward{
+  @extend .span12;
+}
+
+.confirmation-container .checkout-social{
+  @extend %span-helper;
+  @extend .span2;
+  text-align: right;
+}
+.confirmation-container .checkout-reward{
+  @extend %span-helper;
+  @extend .span8;
+}
+
+
+.checkout-total-txt{
+  @extend %span-helper;
+  @extend .span10;
+}
+
+.checkout-remove{
+  @extend %span-helper;
+  @extend .span12;
+  text-align: right;
+}
+
+.checkout-price-txt{
+  display:none;
+}
+
+.checkout-additional-description{
+  @extend %span-helper;
+  @extend .span3;
+}
+
+.checkout-additional-information{
+  @extend %span-helper;
+  @extend .span9;
+}
+
+.checkout-additional-item-header{
+  display: none;
+}
+
+.checkout-item {
+  padding: 10px 0;
+  position: relative;
+  .remove-item{
+    position: absolute;
+    bottom:0;
+    right:0;
+  }
+}
+
+.checkout-reward{
+
+  h3 {
+ 	  @extend %bold-heading;
+    font-size: 16px;
+    line-height: 20px;
+    margin:0;
+  }
+  p {
+      margin:0 0 0 88px;
+      &.checkout-value {
+        font-size: 16px;
+        line-height: 20px;
+      }
+  }
+}
+
+.checkout-price .voucher-cost {display: none;}
+
+.currency-symbol{
+  padding-top: 4px;
+}

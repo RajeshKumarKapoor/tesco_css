@@ -1,0 +1,212 @@
+<% var title = 'Product header' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+    <div class="row-fluid styleguide-notes">
+      <div class="styleguide-wrapper">
+        <p>Product Header with full address</p>
+        <hr />
+      </div>
+    </div>
+
+
+    <!-- Sample code here -->
+
+    <div class="product-header">
+      <div class="partners-logo">
+        <img class="partner-logo" src="../img/content/product-partner-placeholder.png" alt="placeholder for product logo" />
+      </div>
+      <div class="product-details">  
+        <div class="product-title">
+          <h1>Abbotsbury Children's Farm</h1>
+
+          <p class="product-value">
+            £10 money-off token
+          </p>
+          <div class="product-value-container">
+            <p class="product-value-vouchers">
+              <span class="voucher-value">£2.50</span> in vouchers
+            </p>
+          </div>
+
+          <div class="product-labels-container">
+            <p class="spotlight"><span>Limited offer</span></p>
+          </div>
+
+          <div class="product-code-container">
+            <p class="product-code-title">Product code:</p>
+            <p class="product-code">L1302</p>
+          </div>
+        </div>
+
+        <div class="partners-details">
+          <p>
+            South West,
+          </p>
+          <p>
+            Dorset,
+          </p>
+          <p>
+             Abbotsbury,
+          </p>
+           <p>
+             BA15 6PH
+          </p>
+        </div>
+
+        <div class="product-social">
+          <div class="product-ratings">
+
+            <div class="ratings-display"><span class="rating-link star-4"> 4 stars</span></div>
+            <p class="review-count"><a href="">(20 <span>Customer</span> reviews)</a></p>
+            <p class="review-login">
+              <a href="">Login to write a review</a>
+            </p>
+          </div>
+
+          <div class="share-plugins">
+            <div class="twitter-share">
+              <a href=""><img src="../img/placeholder/twitter-icon.png" alt="Twitter"></a>
+            </div>
+            <div class="facebook-share">
+              <a href=""><img src="../img/placeholder/facebook-icon.png" alt="Facebook"></a>
+            </div>
+          </div>
+        </div> 
+      </div> 
+    </div>
+
+    <!-- Sample code ends -->
+    <div class="row-fluid styleguide-notes">
+      <div class="styleguide-wrapper">
+        <p>Product header with multiple addresses</p>
+        <hr />
+      </div>
+    </div>
+
+    <!-- Sample code here -->
+
+    <div class="product-header">
+      <div class="partners-logo">
+        <img class="partner-logo" src="../img/content/product-partner-placeholder.png" alt="placeholder for product logo" />
+      </div>
+      <div class="product-details">  
+        <div class="product-title">
+          <h1>Abbotsbury Children's Farm</h1>
+
+          <p class="product-value">
+            £10 money-off token
+          </p>
+          <div class="product-value-container">
+            <p class="product-value-vouchers">
+              <span class="voucher-value">£2.50</span> in vouchers
+            </p>
+          </div>
+
+          <div class="product-labels-container">
+            <p class="spotlight"><span>Limited offer</span></p>
+          </div>
+
+          <div class="product-code-container">
+            <p class="product-code-title">Product code:</p>
+            <p class="product-code">L1302</p>
+          </div>
+        </div>
+
+        <div class="partners-details">
+          <p>
+           Multiple locations
+          </p>
+
+        </div>
+
+        <div class="product-social">
+          <div class="product-ratings">
+
+            <div class="ratings-display"><span class="rating-link star-4"> 4 stars</span></div>
+            <p class="review-count"><a href="">(20 <span>Customer</span> reviews)</a></p>
+            <p class="review-login">
+              <a href="">Login to write a review</a>
+            </p>
+          </div>
+
+          <div class="share-plugins">
+            <div class="twitter-share">
+              <a href=""><img src="../img/placeholder/twitter-icon.png" alt="Twitter"></a>
+            </div>
+            <div class="facebook-share">
+              <a href=""><img src="../img/placeholder/facebook-icon.png" alt="Facebook"></a>
+            </div>
+          </div>
+        </div> 
+      </div> 
+    </div>
+
+    <!-- Sample code ends -->
+  </div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Product header</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Product information displayed at the top of the Product detail page.</p>
+            <h4>Interactions</h4>
+            <p>Users can share this page on social media.</p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens utilise a horizontal layout. Smaller screens stack components underneath each other to preserve space and ensure text can wrap vertically.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/product-header.scss</p>
+            <p>/large-components/product-header.scss</p>
+            <p>/tablet-components/product-header.scss</p>
+            <p>/small-components/product-header.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>The social media links require configuration via the relevant platform config.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>Social media links are not available and should not be visible to the user.</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The partner logo dimensions are 150 x 150. On Smaller screens we are shrinking this image to 50%. We do not recommend loading a separate image for mobile screens. The logos are likely to be vector images rather than photography and can look degraded on retina screens. If we retain the desktop image resized then we will not experience the same degradation on retina screens.</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>The partner logo should have relevant alt attribute text. </p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>Product titles are H1 tags and as searchable content its essential these are added to the product catalogue in a useful way with as much keyword optimisation as possible.</p>
+            <hr />
+            <h3>Character limit recommendations</h3>
+            <p>Product title: 31 characters per line</p>
+            <hr />
+            <h3>Post delivery amendments</h3>
+            <p>Updated social sharing icons</p>
+            <p><em>see figure 1 below</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/social-icons.png" alt="illustration of new social icons">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

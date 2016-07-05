@@ -1,0 +1,16 @@
+.facet-nav-container{
+  @extend %span-helper;
+  @extend .span3;
+
+}
+.facet-nav{
+  margin-left:20px;
+}
+
+.listing-results .facet-nav-container{
+  margin-top:-40px;
+}
+
+.no-results .facet-nav-container{
+  margin-top:10px;
+}

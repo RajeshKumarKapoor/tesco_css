@@ -1,0 +1,14 @@
+.product-variant-container{
+  @extend %span-helper;
+  @extend .span4;
+
+  .product-variant-controls{
+    margin-right: $padding;
+  }
+}
+
+.product-option-selector,
+.value-calculator,
+.product-worth {
+  padding: 0 35px;
+}

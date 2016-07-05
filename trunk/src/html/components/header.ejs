@@ -1,0 +1,102 @@
+<% var title = 'Global Header' %>
+<% var body_class = 'style-guide' %>
+<% var headeritem = true %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+<% include ../templates/_header %>
+
+<div class="container" id='content'>
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Global Header</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The Global Header appears on all pages apart from the checkout process. It includes all the Global navigation, including category navigation and secondary navigation. </p>
+            <h4>Interactions</h4>
+            <p>Users can link straight to landing pages, or open the category navigation menu to select product categories.</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes: desktop and mobile. Larger screens utilise a horizontal layout, product categories are laid out in a 4 column grid. Smaller screens utilise a vertically stacked off-canvas layout which users can access via the navigation button.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/global-nav.scss</p>
+            <p>/common-components/global-secondary-nav.scss</p>
+            <p>/common-components/header-container.scss</p>
+            <p>/large-components/categories-btn.scss</p>
+            <p>/large-components/categories-nav.scss</p>
+            <p>/large-components/global-nav.scss</p>
+            <p>/large-components/global-secondary-nav.scss</p>
+            <p>/large-components/header-container.scss</p>
+            <p>/small-components/categories-btn.scss</p>
+            <p>/small-components/categories-nav.scss</p>
+            <p>/small-components/global-nav.scss</p>
+            <p>/small-components/global-secondary-nav.scss</p>
+            <p>/small-components/header-container.scss</p>
+            <hr />
+            <h3>Use of JavaScript</h3>
+            <p>Javacsript is used to open the navigation menus. On larger screens this opens the container underneath the navigation where the product categories can be found. On smaller screens a button is appended to the header and javascript is used to display the menu from the left hand side. Javascript is also used to move the structure of the nested lists within the navigation. The category navigation is cloned and inserted in to the global navigation menu so it appears to be nested inside instead of in the markup beneath.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>All navigation elements are expanded by default.</p>
+            <p><em>see figure 1: Primary navigation</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/global-nav.png" alt="non-javascript view of navigation layout">
+            </p>
+            <p><em>see figure 2:  Mobile navigation</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/mobile-nav.png" alt="non-javascript view of mobile navigation layout">
+            </p>
+             <h4>Future proofing the navigation and categories</h4>
+             <p>For desktop users the category navigation is a list of links in a separate container below the main navigation container so you can add multiple containers, and for non-js these will all be visible and for javascript users the primary nav items will control which container is displayed. Unless you remove all of the landing pages, you will need to implement the split button style for all menus with a drop down, and this will reduce the spacing available for adding primary level navigation items.</p>
+             <p>However it would be tricky to implement in the mobile view. There is javascript acting on the category navigation, to remove it from its semantic position in the HTML and insert it into a nested list structure for the mobile view, so the category navigation appears in the correct indented place within the primary navigation. This is fairly heavy DOM manipulation and does incur a performance overhead. We would not necessarily encourage you to replicate this for the other sections as it could impact performance.</p>
+             <p>In short I'm not sure we would recommend this approach. I think it would be better to address the issues with the IA in a full UX phase and then design a new navigation structure if it was felt that the current structure did not support the new IA.</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>A reduced header is used on the checkout pages.</p>
+            <hr />
+
+            <h3>Responsive Images</h3>
+            <p>We have implemented retina images for the company logo.  </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Links should have clearly understandable text and title attributes.</p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>We recommend product categories and page titles are SEO optimised.</p>
+            <hr />
+            <h3>Character limit recommendations</h3>
+            <p>The global navgation containes enough room for all the permutations of signed in and signed out state, but not for further items.</p>
+            <p>The primary navigation contains room for 2 more items giving a total of 6 items. Maximum character length here is an average of 16 characters per top level navigation item</p>
+            <p><em>see figure 3:  Adding top level navigation items</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/primary-navigation.png" alt="non-javascript view of primary navigation layout">
+            </p>
+            <p>The category navigation drawer has an optimal maximum of 8 categories. </p>
+            <p><em>see figure 5:  Adding Categories</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/category-navigation.png" alt="non-javascript view of category navigation layout">
+            </p>
+            <p>Our recommendation is to keep the sub-categories to 3 or 4 for ease of reading. Adding a larger number to a single column will cause the layout to be spaced out unevenly. </p>
+            <p><em>see figure 5:  Adding items to the sub categories</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/category-navigation-full.png" alt="non-javascript view of category navigation layout with too many items">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

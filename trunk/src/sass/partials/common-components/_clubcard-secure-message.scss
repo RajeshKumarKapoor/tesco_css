@@ -1,0 +1,22 @@
+.clubcard-secure-message {
+  border: $safe-shoppping-border;
+  background: url(#{$imgPath}/icon-secure.png) 30px 20px no-repeat;
+
+  h3 {
+    @extend %bold-heading;
+    @extend %small-heading;
+    color: $dark-bg;
+    margin-bottom:0;
+  }
+  p {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .subhead {
+    font-size: 14px;
+    line-height: 20px;
+    @extend %bold-heading;
+  }
+}

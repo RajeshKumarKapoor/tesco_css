@@ -1,0 +1,55 @@
+.terms-heading,
+.spotlight-img {
+  display: none;
+}
+
+.product-description{
+  padding: $small-padding;
+
+  &.accordion-group {
+  	padding: $small-padding 0;
+  }
+}
+
+.product-description-heading {
+	font-size: 20px;
+	line-height: 1;
+}
+
+.product-worth{
+  width:220px;
+  margin:0 auto;
+}
+
+.product-promo-container {
+	 padding: 0 $small-padding;
+	.product-promo {
+		font-size: 13px;
+		line-height: 19px;
+		margin: 10px 0 5px 0;
+	}
+}
+
+.primary-information {
+  padding:0 $small-padding;
+}
+
+.primary-information .page-inner,
+.secondary-information .page-inner {
+
+	padding: 15px 0;
+
+	p, li {
+		font-size: 14px;
+		line-height: 22px;	
+	}
+}
+
+
+.pdp-accordion {
+  @extend %secondary-accordion;
+
+  .accordion-toggle {
+    color: $body-copy;
+  }
+}

@@ -1,0 +1,107 @@
+<% var title = 'Proposition banner' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="proposition-banner row-fluid">
+    <div class="proposition-banner-promo">
+      <img src="../img/content/homepage-placeholder-01.jpg" class="proposition-banner-img" alt=/>
+      <p class="clubcard-exchange-logo">
+        Clubcard voucher exchange - turn every £5 vouchers into £10 of tokens
+      </p>
+      <div class="propostion-overlay">
+        <div class="proposition-header-container">
+          <h2><a href="">Summer Clubcard Exchange ends 2<sup>nd</sup> July</a></h2>
+          <p><a href="">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum</a></p>
+        </div>
+        <div class="proposition-cta-container">
+          <a class="proposition-cta" href="">Find out more</a>
+        </div>
+      </div>
+    </div>
+    <div class="proposition-instructions">
+      <h2>How it works</h2>
+      <ul>
+        <li class="instruction-1">
+          <span class="instruction-heading">1. Collect points</span>
+          <span class="instruction-strapline">using your clubcard</span>
+        </li>
+        <li class="instruction-2">
+          <span class="instruction-heading">2. Earn vouchers</span>
+          <span class="instruction-strapline">by converting your points</span>
+        </li>
+        <li class="instruction-3">
+          <span class="instruction-heading">3. Spend your vouchers</span>
+          <span class="instruction-strapline">at Tesco or with our partners</span>
+        </li>
+        <li class="instruction-4">
+          <span class="instruction-heading">4. Get perks</span>
+          <span class="instruction-strapline">just for being a member!</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Proposition banner</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The proposition banner is intended as a homepage component or an exchange landing page component to communicate the main Exchange and Reward proposition.</p>
+            <h4>Interactions</h4>
+            <p>The hero banner has a single call to action area.</p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens utilise a horizontal layout to display the hero CTA and the proposition. Tablet screens will distribute the horizontal layout in fluid containers Smaller screens stack content areas vertically to allow a fluid stretching layout.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/proposition-banner.scss</p>
+            <p>/large-components/proposition-banner.scss</p>
+            <p>/tablet-components/proposition-banner.scss</p>
+            <p>/small-components/proposition-banner.scss</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The hero banner image uses a fluid max-width technique which means it will stretch the fill the width of the container it is in. We recommend using WURFL to swap out a smaller image for mobile devices. </p>
+            <p>Desktop Image dimensions: 639 x 382px</p>
+            <p>Mobile Image dimensions: 600 x 359px</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>For the purposes of exposing content to screen readers it is important that the hero image does not contain any text. All text detailing the promotional campaign information should be contained within the text containers. We have implemented an Image replacement technique to present the exchange and reward logo. Hero images should have relevant alt text supplied.</p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>The proposition banner was intended as a Homepage component and as such the hero call to action will figure in SEO rankings. Links and copy should be SEO optimised.</p>
+            <hr />
+            <h3>Character limit recommendations</h3>
+            <p>Primary panel title: 36 characters per line</p>
+            <p>Primary panel description: 52 characters per line</p>
+            <p>How it works title: 17 characters per line</p>
+            <p>How it works bullet title: 23 characters per line</p>
+            <p>How it works bullet description: 33 characters per line</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

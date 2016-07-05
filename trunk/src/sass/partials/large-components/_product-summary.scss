@@ -1,0 +1,15 @@
+.product-summary-container{
+  @extend %span-helper;
+  @extend .span3;
+}
+
+
+.product-summary, .confirmation-query {
+  margin-right: $padding;
+  margin-bottom: $padding;
+}
+
+.checkout-payment-details .product-summary{
+  margin-right: 0;
+  margin-left: $padding;
+}

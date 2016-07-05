@@ -1,0 +1,27 @@
+.heading-container{
+  background: url(#{$imgPath}/bg-heading-border.png) 0 0 repeat-x;
+  text-align: center;
+  padding-top:3px;
+
+  .heading-container-text {
+    float: left;
+    width: 100%;
+    @include clearfix;
+  }
+
+  h1, h2, h3, h4{
+    background:#fff;
+    display: inline-block;
+    margin: 0;
+    padding:0 15px;
+    @extend %largest-heading;
+  }
+  p {
+    @extend %large-heading;
+    color: $lighter-copy;
+    margin: 0;
+    line-height: 1.2em;
+    padding-top: 8px;
+  }
+
+}

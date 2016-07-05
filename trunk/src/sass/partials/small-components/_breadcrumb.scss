@@ -1,0 +1,18 @@
+.breadcrumb {
+	clear: both;
+	background: #fff;
+
+	ul {margin-left: $small-padding;}
+
+	li{
+		display: none;
+	}
+	.breadcrumb-parent{
+		display: block;
+	}
+}
+
+.listing-results .breadcrumb, .listing-results .breadcrumb-parent, .no-results .breadcrumb{
+  display: none;
+}
+    

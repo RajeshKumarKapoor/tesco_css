@@ -1,0 +1,155 @@
+<% var title = 'Checkout' %>
+<% include _head %>
+<% include _tesco_cookie_widget %>
+<% include _header %>
+
+<div class="container" id="top">
+  <h1 class="visuallyhidden">Checkout</h1>
+
+  <div class="checkout-process" id="nav">
+    <div class="process-item completed-step">
+      <p>Sign in</p> 
+    </div>
+
+    <div class="process-item completed-step">
+      <p>Delivery &amp; payment</p> 
+    </div>
+
+    <div class="process-item completed-step">
+      <p>Review &amp; place order</p> 
+    </div>
+
+    <div class="process-item current-step">
+      <p>Order confirmation</p> 
+    </div>
+
+    <p class="checkout-process-progress">Step 4 of 4</p>
+  </div>
+
+  <div class="confirmation-message-container success"  id="content">
+    <div class="confirmation-heading">
+      <h1>Thank you, your order is confirmed</h1>
+      <p class='order-reference'>Order No: <span class="ref">5000235689</span></p>
+    </div>
+    <a class="submit secondary-btn">Print</a>
+    <div class="confirmation-summary">
+      <p>Check your email where your order confirmation will be sent shortly.</p>
+    </div>
+  </div>
+
+  <div class="confirmation-container row-fluid">
+    <div class="product-order-container confirmation-order-container">
+      <div class="product-order">
+        <div class="checkout-heading">
+          <h2>Your order summary</h2>
+        </div>
+
+        <div class="checkout-items">
+          <div class="checkout-item-header">
+            <div class="checkout-reward"><p>Item</p></div>
+
+            <div class="checkout-price"><p>Cost</p></div>
+            <div class="checkout-social"><p>Share</p></div>
+          </div>
+          <div class="checkout-item">
+            <div class="checkout-reward">
+              <a href="#"><img src="../img/content/plp-listing-placeholder.gif"  alt="placeholder for checkout item"/></a>
+              <h3><a href="#">Abbotsbury Subtropical Gardens</a></h3>
+              <p class="checkout-value">£20 money-off token</p>
+              <p class="checkout-smallprint">Product code: A3010</p>
+              <p class="checkout-smallprint">Delivery method: Post</p>
+            </div>
+
+            <div class="checkout-price">
+              <p><span class="voucher-cost">Voucher cost: </span>£5.00</p>
+            </div>
+            <div class="checkout-social">
+              <div class="twitter-share">
+                <a href="" class="twitter-link social-link">Twitter</a>
+              </div>
+              <div class="facebook-share">
+                <a href="" class="facebook-link social-link">Facebook</a>
+              </div>
+            </div>
+          </div>
+          <div class="checkout-item">
+            <div class="checkout-reward">
+              <a href="#"><img src="../img/content/plp-listing-placeholder.gif" alt="placeholder for checkout item" /></a>
+              <h3><a href="#">Abbotsbury Subtropical Gardens</a></h3>
+              <p class="checkout-value">£20 money-off token</p>
+              <p class="checkout-smallprint">Product code: A3010</p>
+              <p class="checkout-smallprint">Delivery method: Post</p>
+            </div>
+
+            <div class="checkout-price">
+              <p><span class="voucher-cost">Voucher cost: </span>£5.00</p>
+            </div>
+            <div class="checkout-social">
+              <div class="twitter-share">
+                <a href="" class="twitter-link social-link">Twitter</a>
+              </div>
+              <div class="facebook-share">
+                <a href="" class="facebook-link social-link">Facebook</a>
+              </div>
+            </div>
+          </div>
+          <div class="checkout-item last">
+            <div class="checkout-reward">
+              <a href="#"><img src="../img/content/plp-listing-placeholder.gif" alt="placeholder for checkout item" /></a>
+              <h3><a href="#">Abbotsbury Subtropical Gardens</a></h3>
+              <p class="checkout-value">£20 money-off token</p>
+              <p class="checkout-smallprint">Product code: A3010</p>
+              <p class="checkout-smallprint">Delivery method: Post</p>
+            </div>
+
+            <div class="checkout-price">
+              <p><span class="voucher-cost">Voucher cost: </span>£0.00</p>
+              <p class="price-note">Clubcard perk</p>
+            </div>
+            <div class="checkout-social">
+              <div class="twitter-share">
+                <a href="" class="twitter-link social-link">Twitter</a>
+              </div>
+              <div class="facebook-share">
+                <a href="" class="facebook-link social-link">Facebook</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-total checkout-total">
+            <div class="payment-total-item checkout-item-total ">
+              <div class="checkout-total-txt">
+                <p>Total Clubcard voucher cost</p>
+              </div>
+              <div class="checkout-price">
+                <p>£245.00</p>
+              </div>
+            </div>
+            <div class="payment-total-item credit-total">
+              <div class="payment-total-txt">
+                <p>Any change from your Clubcard vouchers will be credited back to your Clubcard account. This will become available in your next statement.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="product-summary-container">
+      <div class="confirmation-query">
+       <div class="confirmation-query-heading">
+          <h2>Got a query about your order?</h2>
+        </div>
+         <div class="confirmation-query-details">
+          <ul>
+            <li><a href="">See our FAQs</a></li>
+            <li><a href="">Contact the Clubcard team</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<% include _footer %>
+<% include _foot %>

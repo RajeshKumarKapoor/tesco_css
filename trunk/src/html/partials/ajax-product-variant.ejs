@@ -1,0 +1,55 @@
+<div class="product-variant-controls">
+  <form class='product-variant-form'> 
+    <div class="product-option-selector">
+      <div class="control-group">
+        <label class='visuallyhidden' for="drive">Choose drive</label>
+        <select name="variants[][drive]" id="drive" autocomplete="off">
+          <option>Select drive</option>
+          <option value="16GB" selected="selected">16GB</option>
+          <option value="32GB">32GB</option>
+        </select>
+        <input class="submit secondary-btn" value="submit" type="submit"/>
+      </div> 
+      <div class="control-group">
+        <label class='visuallyhidden' for="colour">Choose colour</label>
+        <select name="variants[][colour]" id="colour" autocomplete="off">
+          <option>Select colour</option>
+          <option value="Black">Black</option>
+          <option value="White" disabled="disabled">White - out of stock</option>
+        </select>
+        <input class="submit secondary-btn" value="submit" type="submit"/>
+      </div>
+      <div class="control-group">
+        <label class='visuallyhidden' for="memory">Choose memory</label>
+        <select name="variants[][memory]" id="memory" disabled="disabled" autocomplete="off">
+          <option>Select memory size</option>
+          <option value="16GB">16GB</option>
+          <option value="32GB">32GB</option>
+        </select>
+        <input class="submit secondary-btn" value="submit" type="submit"/>
+      </div>
+    </div>
+
+    <div class="value-calculator">
+      <p class="calculator-txt">Select quantity</p>
+      <div class="inner">
+      <label class='visuallyhidden' for="quantity">No of items</label>
+      <input class="txt quantity" type="text" value="1" data-unit-value="215.0" data-step="1" data-max="10" data-min="1" id="quantity" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="product-value">
+      <p class="product-value-txt">
+        Voucher cost
+      </p>
+      <p class="product-value-amount">
+        £<span>215.00</span>
+      </p>
+    </div>
+
+    <div class="add-to-basket-container">
+      <button class="submit add-to-basket" type="submit"><span>Add to Basket</span></button>
+    </div>
+  </form>
+
+</div>

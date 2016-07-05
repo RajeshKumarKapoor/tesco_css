@@ -1,0 +1,25 @@
+.js .product-carousel-container,  .js .swiper-container{
+  width:960px;
+  height:260px;
+}
+.bx-controls{
+  width:960px;
+}
+
+.js .swiper-slide {
+  width: 192px;
+  .carousel-teaser { @include scale(0.8); }
+  img, .product-teaser-txt, .teaser-border, .teaser-border p { @include opacity(0.5); } // Select children for IE support
+}
+.js .swiper-slide-active {
+  .carousel-teaser { @include scale(1); }
+  img, .product-teaser-txt, .teaser-border, .teaser-border p { @include opacity(1); } // Select children for IE support
+}
+
+.no-csstransforms {
+  .swiper-slide {
+    width: 154px !important; height: 208px !important; padding: 13px 19px;
+  }
+  .swiper-slide-active { width: 192px !important; height: 240px !important; padding: 0; }
+  .product-teaser-txt { min-height: 90px; }
+}

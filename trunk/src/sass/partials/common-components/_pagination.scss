@@ -1,0 +1,16 @@
+.pagination{
+  margin:0;
+  float:right;
+}
+
+.paging-display {
+	height: 30px;
+	p {float:left;}
+	&.all {
+		ul, .current-page { display: none; }
+	}
+}
+
+.pagination ul>li.selected>a {background: $light-bg;}
+
+.no-js .show-all { display: none; }

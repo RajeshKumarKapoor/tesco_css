@@ -1,0 +1,70 @@
+<% var title = 'Delivery details' %>
+<% var body_class = 'style-guide' %>
+<% var img_path = "../img/styleguide/delivery-details-email.png" %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Delivery details - email only</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+  <div class="product-order-container">
+    <div class="checkout-delivery-details checkout-delivery-details-summary ">
+      <div class="checkout-heading">
+        <h2>Your delivery details</h2>
+      </div>
+      <div class="delivery-item">
+        <div class="delivery-label"><p>Email items will be sent to:</p></div>
+        <div class="delivery-details"><p>agupta@hotmail.com</p></div>
+        <div class="delivery-change-action"> <p><a href="" class="edit-email">Edit my account email</a></p></div>
+      </div>
+    </div>
+
+    <div class="checkout-delivery-details checkout-delivery-details-edit checkout-delivery-details-edit-email">
+      <div class="checkout-heading">
+        <h2>Your delivery details</h2>
+      </div>
+      <div class="delivery-item">
+        <div class="delivery-label"><p>Email items will be sent to:</p></div>
+        <div class="delivery-details">
+          <div class="load-message">
+            <!--  <p>Error message encountered when submitting form </p> -->
+            <div class="loading-graphic"></div>
+          </div>
+          <fieldset>
+            <div class="control-group">
+              <label for="email">Email</label>
+              <div class="controls">
+                <input id="email" type="text" value="agupta@hotmail.com" />
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                <label class="checkbox" for="confirm">
+                  <input type="checkbox" name="confirm" class="confirm" value="1" id="confirm"/>
+                  I confirm that I want to make this my main account email 
+                </label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-submit" name="submit_email">Submit</button>
+              <button class="btn btn-cancel">Cancel</button>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<% include _style_guide_checkout_delivery %>
+
+<% include ../templates/_foot %>

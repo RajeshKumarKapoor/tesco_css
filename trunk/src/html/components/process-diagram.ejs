@@ -1,0 +1,84 @@
+<% var title = 'Process Diagram' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="component-container">
+    <div class="heading-container">
+      <div class="heading-container-text">
+        <h2>Here's how it works</h2>
+        <p>Every three months, we'll add up your points and turn them into vouchers - which we'll send to you. The more points you have, the more your vouchers are worth.</p>
+      </div>
+    </div>
+  </div>
+  <div class="component-container">
+    <ul class="process-diagram">
+      <li class="use-clubcard">
+        <a href="">
+          <span>Use your Clubcard and collect points</span>
+        </a>
+      </li>
+      <li class="get-vouchers">
+        <a href="">
+          <span>Get vouchers every 3 months</span>
+        </a>
+      </li>
+      <li class="spend-vouchers">
+        <a href="">
+          <span>Spend your vouchers</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Process description</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Where content is communicating a process this is presented via the process diagram component e.g. Here’s how it works.</p>
+            <h4>Interactions</h4>
+            <p>The process diagram contains three clickable areas. Currently only one is in use. Either three can be used to link to different areas, or all three can be set to point to one call to action.</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes: desktop, tablet and mobile. Larger screens utilise a horizontal layout to incorporate a three column layout. Smaller screens stack content areas vertically.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/process-diagram.scss</p>
+            <p>/large-components/process-diagram.scss</p>
+            <p>/small-components/process-diagram.scss</p>
+            <hr />
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>Images are implemented as CSS background images. Retina images have not been supplied at this point.</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Any links should have relevant title attributes describing their action</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

@@ -1,0 +1,88 @@
+.product-header{
+	padding: 0 $small-padding $small-padding;
+}
+
+.partners-logo{
+	top:0;
+	left: 10px;
+	width:75px;
+	height:75px;
+}
+
+.product-title {
+	margin-left: 0;
+	h1 {
+		font-size: 18px;
+		line-height: 20px;
+		margin-left: 85px;
+	}
+
+	.product-value {
+	    font-size: 13px;
+	    margin-bottom: 0;
+	    margin-left: 85px;
+	}
+
+	.product-value-container {
+		margin-left: 85px;
+	 	.product-value-vouchers {
+			font-size: 16px;
+			padding-top:0;
+			span {
+				font-size: 22px;
+			}
+		}
+	}
+
+	.product-labels-container,
+	.product-code-container {
+		margin-top: 4px;
+		margin-bottom:0;
+	}
+
+}
+
+.product-social,
+.partners-details {
+	margin-left: 0;
+	margin-bottom:0;
+	p {
+		font-size: 14px;
+		line-height: 1;
+	}
+}
+
+.product-code-container {
+	p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.product-ratings {width: 100%}
+
+.share-plugins{
+  clear:both;
+  width: 100%
+}
+
+.review-count {
+	margin-bottom: 2px;
+	 a {
+	 	span {
+	 		display: none;
+	 	}
+	}
+}
+
+.review-count,
+.review-login {
+	margin-top: 4px;
+}
+
+.spotlight p , .product-type p{
+	margin-bottom:0;
+}
+
+
+

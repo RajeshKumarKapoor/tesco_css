@@ -1,0 +1,23 @@
+.payment-total {
+  margin: 0 0;
+
+  .credit-total {
+    text-align: center;
+    padding: $padding $small-padding;
+  }
+}
+
+.payment-total .payment-total-value {
+  text-align: right;
+  padding: $padding/2;
+}
+
+.confirmation-container .payment-total {
+  margin:0;
+}
+
+/*.payment-total .payment-total-value .payment-total-txt {padding-right: 10px;}*/
+
+.credit-total{
+  margin-bottom: $padding;
+}

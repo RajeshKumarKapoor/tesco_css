@@ -1,0 +1,73 @@
+<% var title = 'Product image' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="product-spotlight-container row-fluid">
+    <div class="product-spotlight">
+      <div class="spotlight-img">
+        <img src="../img/content/pdp-hero.jpg" alt="This is a placeholder for a product image"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Product image</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The main product image on the product description page</p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens display a full width image. Tablet screens show an image masked by the surrounding container to preserve the fluid layout. Mobile users do not see the image.</p>                
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/product-spotlight.scss</p>
+            <p>/large-components/product-spotlight.scss</p>
+            <p>/tablet-components/product-spotlight.scss</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>We are using an image cropping technique here using overflow:hidden to mask part of the image and retain image height whilst allowing the page to contract in a fluid manner. The image is not required on the mobile. We would recommend using WURFL to serve a 1px x 1px image to the mobile screens. This image will be cached by the client and so will not be downloaded again once the user has it. This way you can effectively remove an HTTP request to the image for following page requests. </p>
+            <p>When choosing an image for this component, please note that the left hand side of the image should be the focal point (as shown below). This is the part of the image that will be seen at all screen sizes.</p>
+            <p><em>see figure 1: Illustrating focal point of image</em></p>
+            <p>Image dimensions: 620 x 322px</p>
+            <p class="styleguide-img">
+              <img src="/img/styleguide/product-image-focal-point-diagram.jpg" alt="diagram showing focal point of image">
+            </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>This image should have sensible alt text.</p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>The following items can be implemented to enhance SEO for this component:</p>
+            <ul>
+              <li><p>Image file name</p></li>
+              <li><p>Image alt text</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

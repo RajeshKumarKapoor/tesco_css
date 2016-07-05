@@ -1,0 +1,62 @@
+.hero-content{
+  background: #2961be;
+  margin:0 20px ;
+  position: static;
+  padding-bottom:61px;
+}
+
+.hero-title{
+   padding:40px 0 0  0 ;
+}
+
+.fun .hero-content{
+  background: $fun;
+}
+
+.eating .hero-content{
+  background: $eating;
+}
+
+.exchange .hero-content{
+  background: $exchange;
+}
+
+.home .hero-content{
+  background: $home;
+}
+
+.lifestyle .hero-content{
+  background: $lifestyle;
+}
+
+.travel .hero-content{
+  background: $travel;
+}
+
+.boost .hero-content{
+  background: $highlight;
+}
+
+.hero-unit{
+  margin-bottom:20px;
+}
+
+.hero-strapline{
+  p{
+    padding:10px 10px 0 10px;
+  }
+}
+
+.hero-cta{
+  display: block;
+  text-align: center;
+  a{
+    float:none;
+    margin-right:0;
+   
+  }
+  .hero-cta-item{
+    display: block;
+    margin-bottom:10px;
+  }
+}

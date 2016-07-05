@@ -1,0 +1,95 @@
+
+//change whole li of rewards nav on hover
+
+.global-nav .rewards-section:hover, .categories-btn-open.global-nav .rewards-section, .categories-btn-open.global-nav .active.rewards-section:hover{
+  background: $nav-hover;
+  a{
+    background: $nav-hover;
+    color:#fff;
+  }
+  .global-nav-highlight{
+      color: #fff;
+  }
+  .category-btn{
+    background-color: $cat-btn;
+  }
+}
+
+.global-nav .active, .categories-btn-open.global-nav .active {
+  background: $nav-selected;
+  a{
+    background: $nav-selected;
+    color:#fff;
+  }
+  .global-nav-highlight{
+      color: #fff;
+  }
+  .category-btn{
+    background-color: $cat-btn-selected;
+  }
+}
+
+
+  //default category button view closed (grey on white and down)
+  .global-nav .rewards-section .category-btn{
+    padding:0;
+    float: left;
+    background: url(#{$imgPath}/btn-categories.png) no-repeat 8px 22px;
+    height:45px;
+    min-height:none;
+    width:32px
+  }
+
+  //other pages 
+
+  //category button when nav closed on main link hover (blue and down)
+  .global-nav .rewards-section:hover  .category-btn{
+    background: $cat-btn url(#{$imgPath}/btn-categories-closed.png) no-repeat 8px 22px;
+  }
+
+  //category button when nav closed on actual link hover (darker blue and down)
+  .global-nav .rewards-section .category-btn:hover{
+    background: $cat-btn-hover url(#{$imgPath}/btn-categories-closed.png) no-repeat 8px 22px;
+  }
+
+  //category button when nav opened (blue and up)
+  .global-nav.categories-btn-open .rewards-section .category-btn{
+    background: $cat-btn url(#{$imgPath}/btn-categories-open.png) no-repeat 8px 22px;
+  }
+
+  //category button when nav opened on actual link hover (darker blue and up)
+  .global-nav.categories-btn-open .rewards-section .category-btn:hover{
+    background: $cat-btn-hover url(#{$imgPath}/btn-categories-open.png) no-repeat 8px 22px;
+  }
+
+  //inside rewards section
+
+  //category button when in rewards section and nav closed (red and down)
+  .global-nav .rewards-section.active .category-btn{
+    background: $cat-btn-selected url(#{$imgPath}/btn-categories-closed.png) no-repeat 8px 22px;
+  }
+
+  //category button when in rewards section on main link hover (blue and down)
+  .global-nav .rewards-section.active:hover .category-btn{
+    background: $cat-btn url(#{$imgPath}/btn-categories-closed.png) no-repeat 8px 22px;
+  }
+
+  //category button when in rewards section on actual link hover (darker blue and down)
+  .global-nav .rewards-section.active .category-btn:hover{
+    background: $cat-btn-hover url(#{$imgPath}/btn-categories-closed.png) no-repeat 8px 22px;
+  }
+
+  //category button when in rewards section and nav open (red and up)
+  .global-nav.categories-btn-open .rewards-section.active .category-btn{
+    background: $cat-btn-selected url(#{$imgPath}/btn-categories-open.png) no-repeat 8px 22px;
+  }
+
+  //category button when in rewards section and nav open  on main link hover (blue and up)
+  .global-nav.categories-btn-open .rewards-section.active:hover .category-btn{
+    background:  $cat-btn url(#{$imgPath}/btn-categories-open.png) no-repeat 8px 22px;
+  }
+
+  //category button when in rewards section and nav open  on actual link hover (darker blue and up)
+  .global-nav.categories-btn-open .rewards-section.active .category-btn:hover{
+    background: $cat-btn-hover url(#{$imgPath}/btn-categories-open.png) no-repeat 8px 22px;
+  }

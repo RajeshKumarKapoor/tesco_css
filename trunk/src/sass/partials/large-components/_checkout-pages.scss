@@ -1,0 +1,78 @@
+.payment-items-container{
+  @extend %span-helper;
+  @extend .span9;
+}
+.basket-order-container, .confirmation-order-container{
+  @extend %span-helper;
+  @extend .span9;
+
+}
+
+.basket-container .product-summary-container{
+  padding-top:0;
+}
+
+ .confirmation-container  .product-summary-container{
+  padding-top:50px;
+}
+
+.delivery-item, .payment-item, .payment-item-header, .checkout-additional-item-header, .checkout-additional-item{
+  @extend .row-fluid;
+}
+
+.delivery-label, .delivery-details, .delivery-change-action, .payment-voucher-code, .payment-expiry, .payment-voucher {
+  @extend %span-helper;
+  @extend .span4;
+}
+
+.product-order-container, .confirmation-message-container, .checkout-review-confirm {
+  h1, h2 {
+    @extend %bold-heading;
+    font-size: 18px;
+  }
+
+  .product-order {
+    h1, h2 {
+      font-size: 28px;
+      line-height: 40px;
+    }
+    .edit-btn{
+      padding:$padding $padding 0 0 ;
+    }
+
+  }
+}
+
+.checkout-heading p{
+  position: relative;
+  top:-10px;
+}
+
+.checkout-additional-information {
+  .control-group {
+    vertical-align: middle;
+    label, .txt {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+    label {
+      margin-right: 15px;
+    }
+  }
+}
+
+.checkout-delivery-details  {
+  .delivery-item {margin-bottom: $padding;}
+}
+
+.basket-actions, .checkout-review{
+  @include clearfix;
+  clear:both;
+  .secondary-btn{
+    float:left;
+  }
+  .primary-btn{
+    float:right;
+  }
+}
+

@@ -1,0 +1,50 @@
+.load-message {
+   display: none;
+}
+.loading{
+  position: relative;
+  .load-message{
+    display: block;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    left:0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+
+    @include old-ie{
+      position: absolute;
+      background-position: center center;
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000)"; /* IE8 */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);   /* IE6 & 7 */
+      zoom: 1;
+    }
+
+    .loading-graphic{
+      background: #fff url(#{$imgPath}/loading.gif) no-repeat center center;
+      width:150px;
+      height:50px;
+      border:1px solid #d2d2d2;
+      position: absolute;
+      left:50%;
+      top:50%;
+      margin-left:-75px; 
+      margin-top:-25px;
+      @include old-ie{
+        margin-top:-450px;
+      }
+    }
+  }
+}
+
+.error{
+  .load-message{
+    padding:20px;
+    display:block;
+     p{
+      color:$highlight;
+      font-weight: bold;
+    }
+  }
+}

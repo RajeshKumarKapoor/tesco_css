@@ -1,0 +1,25 @@
+.action-icon{
+  background-image: url(#{$imgPath}/icon-action-sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+  float:left;
+  width:60px;
+  height:60px;
+  margin-right:10px;
+}
+
+.action-teaser-item{
+  @include clearfix;
+  display: block;
+  &.action-mca .action-icon {background-position: 0 0;}
+  &.action-signup .action-icon {background-position: 0 -200px;}
+  &.action-statements .action-icon {background-position: 0 -400px;}
+  &.action-smartphone .action-icon {background-position: 0 -600px;}
+}
+
+.action-teaser-txt{
+  float:left;
+  display: block;
+  width:65%;
+  padding-top:10px;
+}

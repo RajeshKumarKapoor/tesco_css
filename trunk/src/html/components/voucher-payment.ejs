@@ -1,0 +1,335 @@
+<% var title = 'Voucher payment' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+ <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Voucher payment </p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+    <div class="row-fluid">
+    <div class="voucher-payment-container">
+
+      <div class="load-message">
+          <!-- <p>Error message encountered when adding vouchers </p> -->
+          <div class="loading-graphic"></div>
+      </div>
+
+      <div class="checkout-payment-details-container product-order-container">
+
+        <div class="checkout-payment-details">
+          <div class="checkout-heading">
+            <h2>Voucher payment details</h2>
+            <p>Select the vouchers you require for your order. Use 'Add a voucher' to add any additional vouchers manually.</p>
+          </div>
+
+          <div class="payment-items">
+            <div class="payment-item-header">
+              <div class="payment-voucher-code"><p><span>Voucher</span> code</p></div>
+              <div class="payment-expiry"><p>Expiry <span>date</span></p></div>
+              <div class="payment-voucher"><p><span>Voucher</span> value</p></div>
+            </div>
+
+            <div class="payment-item">
+              <div class="payment-voucher-code"><p>098345739567</p></div>
+              <div class="payment-expiry">03/03/2013</div>
+              <div class="payment-voucher"><p>£50.00</p>
+                <div class="payment-ctrl">
+                  <div class="control-group">
+                    <label class="visuallyhidden" for="voucher1">Remove voucher</label>
+                    <input class="checkbox" name="vouchers[]" value="098345739567" type="checkbox" id="voucher1" data-voucher-code="098345739567"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-total">
+          <div class="payment-total-item payment-total-value">
+            <p><span class="payment-total-txt">
+              <span>Total voucher value selected</span>
+            </span>
+
+            <span class="payment-total-amount">
+              <span class='payment-total-amount-value'>£5.50</span>
+            </span></p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div> 
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Voucher payment after new vouchers added</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+    <div class="row-fluid">
+    <div class="voucher-payment-container">
+
+      <div class="load-message">
+        <!-- <p>Error message encountered when adding vouchers </p> -->
+        <div class="loading-graphic"></div>
+      </div>
+
+      <div class="checkout-payment-details-container product-order-container">
+
+        <div class="checkout-payment-details">
+          <div class="checkout-heading">
+            <h2>Voucher payment details</h2>
+            <p>Select the vouchers you require for your order. Use 'Add a voucher' to add any additional vouchers manually.</p>
+          </div>
+
+          <div class="payment-items">
+            <div class="payment-item-header">
+              <div class="payment-voucher-code"><p><span>Voucher</span> code</p></div>
+              <div class="payment-expiry"><p>Expiry <span>date</span></p></div>
+              <div class="payment-voucher"><p><span>Voucher</span> value</p></div>
+            </div>
+
+            <div class="payment-item">
+              <div class="payment-voucher-code"><p>098345739567</p></div>
+              <div class="payment-expiry">03/03/2013</div>
+              <div class="payment-voucher"><p>£50.00</p>
+                <div class="payment-ctrl">
+                  <div class="control-group">
+                    <label class="visuallyhidden" for="voucher2">Remove voucher</label>
+                    <input class="checkbox" type="checkbox" id="voucher2" data-voucher-code="098345739567"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="payment-item-header">
+              <div class="payment-voucher-added"><p>Vouchers you've added</p></div>
+            </div>
+
+            <div class="payment-item">
+              <div class="payment-voucher-code"><p>098345739567</p></div>
+              <div class="payment-expiry">03/03/2013</div>
+              <div class="payment-voucher"><p>£50.00</p>
+                <div class="payment-ctrl">
+                  <div class="control-group">
+                    <label class="visuallyhidden" for="voucher3">Remove voucher</label>
+                    <input class="checkbox" type="checkbox" id="voucher3" data-voucher-code="098345739567" checked="checked"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-total">
+          <div class="payment-total-item payment-total-value">
+            <p><span class="payment-total-txt">
+              <span>Total voucher value selected</span>
+            </span>
+
+            <span class="payment-total-amount">
+              <span class='payment-total-amount-value'>£5.50</span>
+            </span></p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div> 
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Voucher payment without enough vouchers</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+    <div class="row-fluid">
+    <div class="voucher-payment-container">
+
+      <div class="load-message">
+        <!-- <p>Error message encountered when adding vouchers </p> -->
+        <div class="loading-graphic"></div>
+      </div>
+
+      <div class="checkout-payment-details-container product-order-container">
+
+        <div class="checkout-payment-details">
+          <div class="checkout-heading">
+            <h2>Voucher payment details</h2>
+            <p class="error-warning">Sorry you do not have enough vouchers to complete your order. You can either add additional vouchers below or <a href="#">remove some rewards from your basket</a>.</p>
+            <p>Select the vouchers you require for your order. Use 'Add a voucher' to add any additional vouchers manually.</p>
+          </div>
+
+          <div class="payment-items">
+            <div class="payment-item-header">
+              <div class="payment-voucher-code"><p><span>Voucher</span> code</p></div>
+              <div class="payment-expiry"><p>Expiry <span>date</span></p></div>
+              <div class="payment-voucher"><p><span>Voucher</span> value</p></div>
+            </div>
+
+            <div class="payment-item">
+              <div class="payment-voucher-code"><p>098345739567</p></div>
+              <div class="payment-expiry">03/03/2013</div>
+              <div class="payment-voucher"><p>£50.00</p>
+                <div class="payment-ctrl">
+                  <div class="control-group">
+                    <label class="visuallyhidden" for="voucher4">Remove voucher</label>
+                    <input class="checkbox" type="checkbox" id="voucher4" data-voucher-code="098345739567"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-total">
+          <div class="payment-total-item payment-total-value">
+            <p><span class="payment-total-txt">
+              <span>Total voucher value selected</span>
+            </span>
+
+            <span class="payment-total-amount">
+              <span class='payment-total-amount-value'>£5.50</span>
+            </span></p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div> 
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Voucher payment - no vouchers found</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+    <div class="row-fluid">
+    <div class="voucher-payment-container">
+
+      <div class="load-message">
+<!--          <p>Error message encountered when adding vouchers </p> -->
+        <div class="loading-graphic"></div>
+      </div>
+
+      <div class="checkout-payment-details-container product-order-container">
+
+        <div class="checkout-payment-details">
+          <div class="checkout-heading">
+            <h2>Voucher payment details</h2>
+            <p>Sorry we were not able to find any Clubcard vouchers for your account. You can either enter vouchers manually below. Alternatively you can <a href="#">register for 'My Clubcard account'</a>. to have all your vouchers appear here automatically.</p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div> 
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Voucher payment - perk products only </p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+    <div class="row-fluid">
+    <div class="voucher-payment-container">
+
+      <div class="load-message">
+<!--          <p>Error message encountered when adding vouchers </p> -->
+        <div class="loading-graphic"></div>
+      </div>
+
+      <div class="checkout-payment-details-container product-order-container">
+
+        <div class="checkout-payment-details">
+          <div class="checkout-heading">
+            <h2>Voucher payment details</h2>
+            <p>Your basket contains £0 priced Clubcard Perk products only. No payment is necessary.</p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div> 
+  <!-- Sample code ends -->
+
+
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Voucher payment controls - checkout</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Where the known vouchers to purchase the product are displayed and can be selected. A user can also add vouchers manually to the list. </p>
+            <h4>Interactions</h4>
+            <p>A user can manually select vouchers to add to their payment total. They can also deselect checkboxes to remove vouchers from their payment total</p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens incorporate a space for the payment summary to appear alongside. Tablet screens stack the payment summary underneath and the payment details stretch the full width of the screen. Smaller screens reduce the labelling shown so content can fit in a horizontal layout. </p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/checkout-pages.scss</p>
+            <p>/common-components/payment-item.scss</p>
+            <p>/common-components/payment-total.scss</p>
+            <p>/large-components/checkout-pages.scss</p>
+            <p>/large-components/payment-item.scss</p>
+            <p>/tablet-components/checkout-pages.scss</p>
+            <p>/tablet-components/payment-item.scss</p>
+            <p>/small-components/checkout-pages.scss</p>
+            <p>/small-components/payment-item.scss</p>
+            <p>/small-components/payment-total.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>The 'Review your order' button is disabled if the initial state does not have enough vouchers to pay for the order. When the user toggles a checkbox alongside a voucher, the voucher payment details are updated dynamically to reflect the state of payment and vouchers used. If the voucher balance is zero, the 'Review your order' button is enabled.</p>
+            <h4>Use of AJAX</h4>
+            <p>An AJAX request is sent containing an array of voucher codes for those vouchers which are <em>checked only</em>. Unchecked voucher codes are not sent with the request. It expects an HTML response containing the new voucher payment details. See partials/ajax-checkout-vouchers.html for an example.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>The voucher payment summary does not update dynamically. The 'Review your order' button is always enabled.</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>This component has 4 variants. A default layout when a users vouchers are offered for selection. An augmented layout when a user has added a voucher manually. An error state when a user does not have enough vouchers to complete their purchase and a further error state when no vouchers are detected in a user's account. Error messaging is also supplied as part of the users Ajax interaction at a higher level.</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <h3>Accessibility</h3>
+            <p>This component contains form elements. They require a label/input pair with a correctly populated unique for/id value. </p>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

@@ -1,0 +1,57 @@
+.footer {
+	padding-top:$padding/2;
+}
+
+.nav-open, .facet-open {
+	.footer {
+		background: url(#{$imgPath}/bg-mobile-navigation.png) 0 0 repeat-y $light-bg;
+	}
+}
+
+.footer-inner {padding: $small-padding;}
+
+.footer.checkout-footer {
+	padding: 12px 0;
+	.footer-inner {
+		padding: 0 $small-padding;
+	}
+	img {margin-right: 10px;}
+	
+}
+
+.footer-column{
+	@extend %span-helper;
+	@extend .span12;
+
+	ul{
+		@extend %unstyled-list;
+	}
+	li{
+		font-size:16px;line-height:22px;
+	}
+
+	@extend %tertiary-accordion;
+}
+
+.footer-column .accordion-body{
+	background: $light-bg!important;
+}
+.footer-column .accordion-inner{
+	padding:15px 10px 15px 0;
+	background: $light-bg;
+}
+
+.footer-logo {
+	margin: 0 0 $padding*3/4;
+}
+
+.footer-copyright  {
+	p {
+		padding: $padding*3/4 0 0;
+	}
+
+	img {
+		margin-right: $small-padding;
+	}
+}
+

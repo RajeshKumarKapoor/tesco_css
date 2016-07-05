@@ -1,0 +1,34 @@
+<% var title = 'Basket' %>
+<% var basket_active = true %>
+<% include _head %>
+<% include _tesco_cookie_widget %>
+<% include _header %>
+
+<div class="container basket-container" id="content">
+  <div class="product-order-container">
+    <div class="product-order">
+      <div class="checkout-heading basket-heading">
+        <h1>Your Clubcard basket</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="basket">
+    <div class="row-fluid">
+
+      <div class="product-order-container basket-order-container">
+        <div class="product-order">
+          <p>Currently no items in your Clubcard basket.</p>
+
+          <p>
+            <a class="submit primary-btn">Continue shopping</a>
+          </p>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<% include _foot %>

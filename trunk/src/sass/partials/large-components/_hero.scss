@@ -1,0 +1,69 @@
+.hero-unit{
+    margin:0 0 10px 0;
+}
+
+.hero-content-container{
+  position: relative;
+  z-index:4;
+}
+
+//default tesco blue
+.hero-content{
+  position: relative;
+  @include clearfix;
+  margin:-100px 20px 0;
+  background: url(#{$imgPath}/bg-hero-columns-blue.png) repeat-y 50% 0% ; //default graphic
+}
+
+//red
+.boost .hero-content{
+  background-image: url(#{$imgPath}/bg-hero-columns-red.png) ;
+}
+
+//aqua
+.fun .hero-content{
+  background-image: url(#{$imgPath}/bg-hero-columns-aqua.png) ;
+}
+
+//purple
+.eating .hero-content{
+  background-image: url(#{$imgPath}/bg-hero-columns-purple.png) ;
+}
+
+//default tesco blue
+.exchange .hero-content{
+  background-image: url(#{$imgPath}/bg-hero-columns-blue.png) ;
+}
+
+//orange
+.home .hero-content{
+  background-image: url(#{$imgPath}/bg-hero-columns-orange.png) ;
+}
+
+//lime green
+.lifestyle .hero-content{
+  background-image: url(#{$imgPath}/bg-hero-columns-green.png) ;
+}
+
+//pink
+.travel .hero-content{
+  background-image: url(#{$imgPath}/bg-hero-columns-pink.png) ;
+}
+
+
+%hero-panel{
+  width:50%;
+  float:left;
+}
+.hero-title{
+  @extend %hero-panel;
+  h1{
+    padding:40px 80px 80px;
+  }
+}
+.hero-strapline{
+   @extend %hero-panel;
+  p{
+    padding:40px;
+  }
+}

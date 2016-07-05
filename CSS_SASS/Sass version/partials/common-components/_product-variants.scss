@@ -1,0 +1,71 @@
+.product-variant-container {
+
+  .product-value {
+    width: 220px;
+    margin: 0 auto;
+
+    .product-value-txt {margin-bottom: 5px;}
+
+    .product-value-amount {
+      border: $input-border;
+      background: #fff;
+      @include border-radius(3px);
+      text-align: left;
+      @extend %bold-heading;
+      @extend %promo-heading;
+      line-height: 1;
+      padding: $padding/2;
+
+      //disable text selection of this component
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+
+  .product-variant-controls {
+    padding-top: 30px;
+  }
+  .product-variant-form {
+    padding-bottom: 20px;
+  }
+  .error{
+    color:$highlight;
+  }
+  .error, .product-variant-message {
+
+    padding:0 30px 10px 30px;
+    text-align: center;
+    p{
+      font-weight: bold;
+    }
+    a{
+      font-weight: normal;
+    }
+  }
+}
+
+
+.product-option-selector {
+  width: 220px;
+  margin: 0 auto;
+}
+
+.product-variant-container.loading{
+  position: relative;
+  .product-variant-form{
+      opacity:0.5;
+      @include old-ie{
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      filter: alpha(opacity=50);
+    }
+  }
+  .load-message{
+    position: absolute;
+    top:50%;
+    left:50%;
+  }
+}

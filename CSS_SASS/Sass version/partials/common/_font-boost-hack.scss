@@ -1,0 +1,12 @@
+//http://stackoverflow.com/questions/11289166/chrome-on-android-resizes-font chrome android issue
+
+%font-boost-hack{
+    width: 100%;
+    height: auto;
+    min-height: 1px;
+    max-height: 999999px;
+}
+
+body, body * {
+    max-height: 1000000px;
+}

@@ -1,0 +1,14 @@
+.product-teaser-item{
+  @extend %span-helper;
+  @extend .span3;
+}
+
+.department-teaser-item{
+  @extend %span-helper;
+  @extend .span3;
+}
+
+
+.product-teaser{
+  margin:$padding/2;
+}

@@ -1,0 +1,81 @@
+.payment-voucher-code, .payment-expiry, .payment-voucher {
+  @extend %span-helper;
+  @extend .span4;
+}
+.payment-item, .payment-item-header{
+  @extend .row-fluid;
+}
+
+.product-order-container, .checkout-review-confirm {
+	h1, h2 {
+		@extend %bold-heading;
+		font-size: 18px;
+	}
+
+	.product-order {
+		h1, h2 {
+			font-size: 28px;
+			line-height: 40px;
+		}
+    .edit-btn {
+      padding: $padding $padding 0 0 ;
+    }
+	}
+}
+
+.checkout-additional-information {
+  .control-group {
+    vertical-align: middle;
+    label, .txt {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+    label {
+      margin-right: 15px;
+    }
+  }
+}
+
+.checkout-delivery-details  {
+  .delivery-item {margin-bottom: $padding;position: relative;}
+}
+
+.delivery-change-action{
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+.basket-actions, .checkout-review{
+  @include clearfix;
+  clear:both;
+  .secondary-btn{
+    float:left;
+  }
+  .primary-btn{
+    float:right;
+  }
+}
+
+.credit-total{
+  margin-bottom: $padding;
+}
+
+
+.voucher-payment-container{
+   .edit-btn {
+    top:$padding;
+    right:$padding;
+  } 
+}
+
+.voucher-payment-container.error{
+  padding-bottom:0;
+  .load-message{
+    padding:20px 20px 0;
+  }
+  .checkout-payment-details{
+    padding-top: 0;
+
+  }
+}

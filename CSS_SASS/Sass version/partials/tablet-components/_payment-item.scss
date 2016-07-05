@@ -1,0 +1,10 @@
+.payment-item-header {
+    .payment-voucher-code p {padding-left: $padding;}
+    .payment-voucher p {text-align: right; padding-right: $padding;}
+}
+
+.payment-item {
+  .payment-voucher-code p{
+    padding-left: $padding;
+  }
+}

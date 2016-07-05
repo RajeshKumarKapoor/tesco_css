@@ -1,0 +1,56 @@
+<% var title = 'Credit message' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+  <!-- Sample code here -->
+<div class="payment-total">
+  <div class="payment-total-item credit-total">
+    <div class="payment-total-txt">
+      <p>Change credited back to your account:&nbsp;<span class="payment-total-amount">£22.50</span></p>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Credit message - checkout</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Displays when the user is credited 'money' from their purchase.</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes for this component: desktop and mobile. The larger screens show text aligned right to align with the numeric column. The smaller screens show text centrally aligned for ease of reading</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/payment-total.scss</p>
+            <p>/tablet-components/checkout-pages.scss</p>
+            <p>/tablet-components/payment-total.scss</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

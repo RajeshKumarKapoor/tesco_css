@@ -1,0 +1,85 @@
+<% var title = 'Double promo' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+  <!-- Sample code here -->
+
+  <div class="component-container">
+    <div class="row-fluid double-promo-container">
+      <div class="double-promo">
+        <div class="promo-item promo-img">
+          <img src="../img/content/promo-placeholder-01.jpg" alt="placeholder for promo img"/>
+          <div class="promo-txt">
+            <h2>Christmas Savers</h2>
+            <p>This perk helps you to save up your Clubcard points unit the big Christmas shop and earns you a Christmas bonus too</p>
+            <a class="btn standard-btn">Tell me more</a>
+          </div>
+        </div>
+
+        <div class="promo-item promo-img">
+          <img src="../img/content/promo-placeholder-02.jpg" alt="placeholder for promo img" />
+          <div class="promo-txt">
+            <h2>Tesco Loves Baby Club</h2>
+            <p>This perk helps you to save up your Clubcard points unit the big Christmas shop and earns you a Christmas bonus too</p>
+            <a class="btn standard-btn">Tell me more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+  
+
+
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Double promo</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>A double promo is one where two content items are presented that are independent but may be related e.g. This AND This.</p>
+            <h4>Interactions</h4>
+            <p>a double promo can have a call to action within each column</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes: desktop, tablet and mobile. Larger screens utilise a horizontal layout to display items side by side. Smaller screens stack content areas vertically to allow a fluid stretching layout</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/double-promo.scss</p>
+            <p>/large-components/double-promo.scss</p>
+            <p>/tablet-components/double-promo.scss</p>
+            <p>/small-components/double-promo.scss</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The promo images use a fluid max-width technique which means they will stretch the fill the width of the container they are in. Only a single image is needed across desktop and mobile as the mobile image needs to be wide enough to stretch the full width of the mobile layout. 
+            <p>Image dimensions: 560 x 200px</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Images need to have relevant alt text supplied. Links and buttons should have relevant title text describing their action. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

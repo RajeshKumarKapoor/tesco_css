@@ -1,0 +1,101 @@
+.department-browser-inner{
+  padding:$padding;
+}
+
+.department-browser-list{
+  @extend %unstyled-list;
+  li{
+    margin-bottom: 10px;
+    span{
+      background: url(#{$imgPath}/icon-list-arrow.png) 0 2px no-repeat;
+      padding: 0 $padding/2;
+    }
+  }
+}
+
+.product-inclusions, .product-exclusions{
+  clear:both;
+  padding:0 $padding $padding;
+  @include clearfix;
+  h3{
+    @extend %lead;
+    font-weight: bold;
+  }
+}
+
+.department-details h3{
+  @extend %regular-heading;
+  @extend %small-heading;
+  padding:$padding 0;
+}
+
+.department-browser-container{
+  border-top:$standard-border;
+  @extend %inner-accordion;
+}
+
+.department-browser-heading h2{
+  @extend %lead;
+  font-weight: bold;
+  padding:$padding/2 0;
+}
+
+.product-exchange-btn{
+  width:150px;
+  margin-right:$padding*2;
+  margin-bottom:$padding/2;
+  padding:$padding/2 0;
+  color:#fff;
+  clear:both;
+  @include clearfix;
+  background: $main-link-colour url(#{$imgPath}/icon-mini-arrow.png) 5px 50% no-repeat;
+  display: block;
+
+  &:hover, &:focus{
+    opacity:0.8;
+    text-decoration: underline;
+    color: #fff;
+      @include old-ie{
+      /* IE 8 */
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+      /* IE 5-7 */
+      filter: alpha(opacity=80);
+    }
+  }
+}
+
+.product-exchange-logo{
+  width:36px;
+  height:32px;
+  background: url(#{$imgPath}/sprite-product-exchange-logo.png) 0 0 no-repeat;
+  float:left;
+  display: inline;
+  margin-left:$padding;
+  margin-right:$padding/2;
+}
+
+.exchange-instore{
+  background-position: 0 0 ;
+}
+
+.exchange-direct{
+  background-position: -36px 0 ;
+}
+
+.product-exchange-txt{
+  float:left;
+  text-align: center;
+  width:80px;
+  font-size: 11px;
+  line-height:13px;
+  padding-top:5px;
+}
+.instore-txt{
+  padding-top:8px;
+}
+
+.call-out-link{
+  font-weight:bold;
+  padding:$padding 0;
+  display: block;
+}

@@ -1,0 +1,185 @@
+<% var title = 'Choice promo' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Choice promo with simple text block</p>
+      <hr />
+    </div>
+  </div>
+  <!-- Sample code here -->
+
+  <div class="component-container">
+    <div class="row-fluid double-promo-container">
+      <div class="double-promo choice-promo">
+        <div class="promo-item promo-img promo-left">
+          <div class="promo-txt">
+            <h2>Spend your vouchers as they are</h2>
+            <p>Just pop into Tesco or shop at Tesco.com</p>
+            <a class="btn standard-btn">Start shopping now</a>
+          </div>
+          <div class="choice-divider">Or</div>
+        </div>
+
+        <div class="promo-item promo-img promo-right">
+          <div class="promo-txt">
+            <h2>Spend your vouchers and get up to 4x more</h2>
+            <p>This perk helps you to save up your Clubcard points unit the big Christmas shop and earns you a Christmas bonus too</p>
+            <a class="btn standard-btn">Tell me more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Choice promo with numbered list</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="component-container">
+    <div class="row-fluid double-promo-container">
+      <div class="double-promo choice-promo">
+        <div class="promo-item promo-left">
+          <div class="promo-txt">
+            <h2>Clubcard Boost at Tesco</h2>
+            <ul class="double-promo-numbered-list">
+              <li>
+                <div class="numbered-list-icon">
+                  <span class="numbered-list-no">1</span>
+                </div>
+                <div class="numbered-list-txt">
+                  <p>See which departments are included and where to spend your vouchers</p>
+                </div>
+              </li>
+              <li>
+                <div class="numbered-list-icon">
+                  <span class="numbered-list-no">2</span>
+                </div>
+                <div class="numbered-list-txt">
+                 <p>Exchange your vouchers into Boost tokens to spend online or in store</p>
+                </div>
+              </li>
+              <li>
+                <div class="numbered-list-icon">
+                  <span class="numbered-list-no">3</span>
+                </div>
+                <div class="numbered-list-txt">
+                  <p>£5 of vouchers turns into £10 of Boost tokens to spend in selected departments</p>
+                </div>
+              </li>
+              <li>
+                <div class="numbered-list-icon">
+                  <span class="numbered-list-no">4</span>
+                </div>
+                <div class="numbered-list-txt">
+                  <p>Once you've exchanged your vouchers you can't change where to spend them</p>
+                </div>
+              </li>
+            </ul>
+            <a class="btn standard-btn">Explore Clubcard Boost at Tesco</a>
+          </div>
+          <div class="choice-divider">Or</div>
+        </div>
+
+        <div class="promo-item promo-right">
+          <div class="promo-txt">
+            <h2>Boost Partners</h2>
+              <ul class="double-promo-numbered-list">
+              <li>
+                <div class="numbered-list-icon">
+                  <span class="numbered-list-no">1</span>
+                </div>
+                <div class="numbered-list-txt">
+                  <p>Choose your Boost Partner from the selection above</p>
+                </div>
+              </li>
+              <li>
+                <div class="numbered-list-icon">
+                  <span class="numbered-list-no">2</span>
+                </div>
+                <div class="numbered-list-txt">
+                  <p>Add the Boost Partner to your basket and go to the checkout</p>
+                </div>
+              </li>
+              <li>
+                <div class="numbered-list-icon">
+                  <span class="numbered-list-no">3</span>
+                </div>
+                <div class="numbered-list-txt">
+                  <p>Enter your Clubcard voucher codes and confirm your order</p>
+                </div>
+              </li>
+              <li>
+                <div class="numbered-list-icon">
+                  <span class="numbered-list-no">4</span>
+                </div>
+                <div class="numbered-list-txt">
+                  <p>We'll send you an email confirmation. Then post or email your token(s) to you</p>
+                </div>
+              </li>
+            </ul>
+            <a class="btn standard-btn">Watch for ideas with Boost Partners</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Sample code ends -->
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Choice Promo</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>A choice promo is one where two content items are presented that are related i.e. This OR that.</p>
+            <h4>Interactions</h4>
+            <p>a choice promo can have a call to action within each column</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes: desktop, tablet and mobile. Larger screens utilise a horizontal layout to display items side by side. Smaller screens stack content areas vertically to allow a fluid stretching layout</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/double-promo.scss</p>
+            <p>/large-components/double-promo.scss</p>
+            <p>/tablet-components/double-promo.scss</p>
+            <p>/small-components/double-promo.scss</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>The Choice promo can have standard text or a numbered list.</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Links should have relevant title attributes describing their action.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

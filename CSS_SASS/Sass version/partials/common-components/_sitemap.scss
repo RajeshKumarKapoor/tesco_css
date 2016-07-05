@@ -1,0 +1,21 @@
+.sitemap{
+  @include clearfix;
+  margin:0;
+  ul{
+    @extend %unstyled-list;
+  }
+  li{
+    padding-bottom:$padding/2;
+  }
+  dt, dd{
+    @extend %standard-font;
+    padding-bottom:$padding/2;
+  }
+  dd{
+    margin:0;
+  }
+  dt{
+    padding-right:$padding/2;
+    clear:both;
+  }
+}

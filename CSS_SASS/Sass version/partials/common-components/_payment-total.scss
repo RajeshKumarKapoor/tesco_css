@@ -1,0 +1,47 @@
+.payment-total {
+  background: $light-bg;
+
+  .payment-total-txt {
+    font-weight: bold;
+    display: inline-block;
+    @include old-ie{
+      display: inline;
+    }
+  }
+
+  .payment-total-amount {
+    display: inline-block;
+    @include old-ie{
+      display: inline;
+    }
+  }
+
+  .payment-total-value {
+    text-align: right;
+    padding:20px 20px 20px 0;
+    border-bottom:$standard-border;
+    p{
+      margin:0;
+    }
+    
+    .payment-total-amount {
+      .payment-total-amount-value{
+        @extend %bold-heading;
+          font-size: 16px;
+          line-height: 20px;
+      }
+    }
+  }
+
+    .credit-total {
+    background: $credit-bg;
+    padding: $padding $padding $padding $padding;
+    text-align: left;
+
+    p {
+      @extend %regular-heading;
+      color: $success;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+/* Lists */
+ul, ol{padding: 0;margin: 0 0 9px 15px;}
+ul ul,ul ol,ol ol,ol ul {margin-bottom: 0;}
+
+ul {list-style: square;list-style:none;}
+
+li {line-height: 18px;display:list-item}
+
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+dl {margin-bottom: 18px;}
+dt,dd {line-height: 18px;}
+dt {font-weight: bold;line-height: 17px;}
+dd {margin-left: 9px;}
+
+%unstyled-list { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+%menu-list{margin-bottom:9px}
+%menu-list li{padding:10px;border-bottom:1px solid #999}
+
+.horizontal-navigation > li{float:left}
+
+.styled-list {
+
+	@extend %unstyled-list;
+
+	li {
+		background: url(#{$imgPath}/icon-list-arrow.png) 0 0 no-repeat;
+    @include image-2x("#{$imgPath}/icon-list-arrow_2x.png", 6px, 12px);
+		padding: 0 0 0 $padding;
+	}
+
+}

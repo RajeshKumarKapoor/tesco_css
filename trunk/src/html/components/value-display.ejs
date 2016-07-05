@@ -1,0 +1,66 @@
+<% var title = 'Value display' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-variant-controls">
+        <form class='product-variant-form'> 
+          <div class="product-value">
+            <p class="product-value-txt">
+              Voucher cost
+            </p>
+            <p class="product-value-amount">
+              £<span>2000.50</span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Value display - product description</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>This component displays the current voucher cost of the product the user has selected.</p>
+            <h4>Interactions</h4>
+            <p>The amend quantity controls and product options will alter the display value of the product voucher cost. </p>
+            <hr />
+            <h3>CSS</h3>
+            <p>Only common styles are loaded for this component.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/product-variants.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>Both the amend quantity controls and product options require Javascript to alter the product voucher cost. The amend quantity controls will amend this value using client side Javascript. The span node in the product value HTML is required for this to work.</p>
+            <h4>Use of AJAX</h4>
+            <p>This component will be returned as part of the product partial if the user selects a product option.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>The product voucher cost can only be updated if the user selects a submit button to submit a product option chose to the application.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

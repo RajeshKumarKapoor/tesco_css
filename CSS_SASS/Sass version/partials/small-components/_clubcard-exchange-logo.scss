@@ -1,0 +1,6 @@
+  .clubcard-exchange-logo{
+    @extend .ir;
+    width:121px;
+    height:67px;
+    background: url(#{$imgPath}/logo-clubcard-exchange-small.png)  0 0 no-repeat;
+  }

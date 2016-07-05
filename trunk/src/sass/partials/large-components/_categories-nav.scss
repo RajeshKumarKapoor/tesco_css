@@ -1,0 +1,35 @@
+.category-navigation-drawer{
+  clear:both;
+}
+.categories-open{
+	display: block;
+	overflow: hidden;
+	background: $light-bg;
+	padding: 20px;
+  border-bottom: $standard-border;
+}
+
+.category-list{
+  width:25%;
+  float:left;
+  ul{
+    @extend %unstyled-list;
+  }
+	h2 {
+		margin: 0;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 22px;
+		@extend %body-font;
+	}
+	a {
+		line-height: 18px;
+
+		&:hover {
+			// colour of active page indicator as well
+			color: #d81118;
+		}
+	}
+
+}
+

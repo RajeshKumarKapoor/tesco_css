@@ -1,0 +1,2376 @@
+@media print{
+	body.printable,
+	body {
+	-webkit-print-color-adjust:exact
+	}
+	
+	.print-logo {
+	display:block
+	}
+	
+	.logo {
+	margin-bottom:30px!important
+	}
+	
+	.checkout-item-header {
+	background:#ddd!important
+	}
+	
+	.product-order-container.confirmation-order-container {
+	width:100%!important
+	}
+	
+	.checkout-price {
+	float:right!important;
+	text-align:right!important
+	}
+	
+	#tesco_cookie_widget,#nav,.global-secondary-nav,.secondary-btn,.product-summary-container,.footer-column,.checkout-social {
+	display:none!important
+	}
+	
+	.confirmation-message-container.success,.payment-total .credit-total {
+	background:#e1f4e3!important;
+	color:#355b39!important
+	}
+}
+
+.checkout-reward,.checkout-total-txt {
+width:780px
+}
+
+.checkout-additional-information,.payment-items-container,.basket-order-container,.confirmation-order-container,.product-listing-container {
+width:700px
+}
+
+.confirmation-container .checkout-reward,.homepage-banner-shim .primary-txt,.map-container,.product-promo-container,.primary-information,.product-spotlight,.proposition-banner-promo {
+width:620px
+}
+
+.listing-details {
+width:540px
+}
+
+.basket-container .checkout-reward,.double-content-block,.department-details,.department-specifics,.product-exchange-cta,.product-exchange-call-out,.promo-item,.banner-img,.banner-txt,.product-value-container,.add-product-container {
+width:460px
+}
+
+.basket-container .checkout-amount,.delivery-label,.delivery-details,.delivery-change-action,.payment-voucher-code,.payment-expiry,.homepage-banner-shim .secondary-txt,.map-search-results-container,.secondary-information,.product-variant-container,.proposition-instructions,.teaser-item {
+width:300px
+}
+
+.action-teaser,.checkout-additional-description,.facet-nav-container,.footer-column,.listing-item .product-value-container,.product-summary-container,.product-teaser-item,.department-teaser-item {
+width:220px
+}
+
+.confirmation-container .checkout-social,.checkout-price {
+width:140px
+}
+
+.delivery-item,.checkout-additional-item-header,.checkout-additional-item {
+width:100%;
+zoom:1
+}
+
+.delivery-item:before,.delivery-item:after,.checkout-additional-item-header:before,.checkout-additional-item-header:after,.checkout-additional-item:before,.checkout-additional-item:after {
+content:"";
+display:table;
+line-height:0
+}
+
+.checkout-additional-item-header input[class*="span"],.checkout-additional-item-header select[class*="span"],.checkout-additional-item input[class*="span"],.checkout-additional-item select[class*="span"],.delivery-item textarea[class*="span"],.delivery-item input[class*="span"],.delivery-item select[class*="span"],.delivery-item .uneditable-input[class*="span"],.payment-item textarea[class*="span"],.payment-item .uneditable-input[class*="span"],.payment-item-header textarea[class*="span"],.payment-item-header .uneditable-input[class*="span"],.checkout-additional-item-header textarea[class*="span"],.checkout-additional-item-header .uneditable-input[class*="span"],.checkout-additional-item textarea[class*="span"],.checkout-additional-item .uneditable-input[class*="span"] {
+float:none;
+margin-left:0
+}
+
+input.checkout-reward,input.checkout-total-txt,textarea.checkout-reward,textarea.checkout-total-txt,.uneditable-input.checkout-reward,.uneditable-input.checkout-total-txt {
+width:766px
+}
+
+input.payment-items-container,input.basket-order-container,input.confirmation-order-container,input.product-listing-container,textarea.payment-items-container,textarea.basket-order-container,textarea.confirmation-order-container,textarea.product-listing-container,.uneditable-input.payment-items-container,.uneditable-input.basket-order-container,.uneditable-input.confirmation-order-container,.uneditable-input.product-listing-container {
+width:686px
+}
+
+.confirmation-container input.checkout-reward,.homepage-banner-shim input.primary-txt,input.map-container,input.product-promo-container,input.primary-information,input.product-spotlight,input.proposition-banner-promo,.confirmation-container textarea.checkout-reward,.homepage-banner-shim textarea.primary-txt,textarea.map-container,textarea.product-promo-container,textarea.primary-information,textarea.product-spotlight,textarea.proposition-banner-promo,.confirmation-container .uneditable-input.checkout-reward,.homepage-banner-shim .uneditable-input.primary-txt,.uneditable-input.map-container,.uneditable-input.product-promo-container,.uneditable-input.primary-information,.uneditable-input.product-spotlight,.uneditable-input.proposition-banner-promo {
+width:606px
+}
+
+input.listing-details,textarea.listing-details,.uneditable-input.listing-details {
+width:526px
+}
+
+.basket-container input.checkout-reward,input.double-content-block,input.department-details,input.department-specifics,input.product-exchange-cta,input.product-exchange-call-out,input.promo-item,input.banner-img,input.banner-txt,input.product-value-container,input.add-product-container,.basket-container textarea.checkout-reward,textarea.double-content-block,textarea.department-details,textarea.department-specifics,textarea.product-exchange-cta,textarea.product-exchange-call-out,textarea.promo-item,textarea.banner-img,textarea.banner-txt,textarea.product-value-container,textarea.add-product-container,.basket-container .uneditable-input.checkout-reward,.uneditable-input.double-content-block,.uneditable-input.department-details,.uneditable-input.department-specifics,.uneditable-input.product-exchange-cta,.uneditable-input.product-exchange-call-out,.uneditable-input.promo-item,.uneditable-input.banner-img,.uneditable-input.banner-txt,.uneditable-input.product-value-container,.uneditable-input.add-product-container {
+width:446px
+}
+
+input.delivery-label,input.delivery-details,input.delivery-change-action,input.payment-voucher-code,input.payment-expiry,input.map-search-results-container,input.secondary-information,input.product-variant-container,input.proposition-instructions,input.teaser-item,textarea.delivery-label,textarea.delivery-details,textarea.delivery-change-action,textarea.payment-expiry,textarea.payment-voucher,textarea.map-search-results-container,textarea.secondary-information,textarea.product-variant-container,textarea.proposition-instructions,textarea.teaser-item,.uneditable-input.delivery-label,.uneditable-input.delivery-details,.uneditable-input.delivery-change-action,.uneditable-input.payment-voucher-code,.uneditable-input.payment-expiry,.uneditable-input.map-search-results-container,.uneditable-input.secondary-information,.uneditable-input.product-variant-container,.uneditable-input.proposition-instructions,.uneditable-input.teaser-item,.basket-container input.checkout-amount,.basket-container textarea.checkout-amount,.basket-container .uneditable-input.checkout-amount,.homepage-banner-shim input.secondary-txt,.homepage-banner-shim textarea.secondary-txt,.homepage-banner-shim .uneditable-input.secondary-txt {
+width:286px
+}
+
+input.action-teaser,input.checkout-additional-description,input.facet-nav-container,input.footer-column,.listing-item input.product-value-container,input.product-summary-container,input.product-teaser-item,input.department-teaser-item,textarea.action-teaser,textarea.checkout-additional-description,textarea.facet-nav-container,textarea.footer-column,.listing-item textarea.product-value-container,textarea.product-summary-container,textarea.product-teaser-item,textarea.department-teaser-item,.uneditable-input.action-teaser,.uneditable-input.checkout-additional-description,.uneditable-input.facet-nav-container,.uneditable-input.footer-column,.listing-item .uneditable-input.product-value-container,.uneditable-input.product-summary-container,.uneditable-input.product-teaser-item,.uneditable-input.department-teaser-item {
+width:206px
+}
+
+input.checkout-price,textarea.checkout-price,.uneditable-input.checkout-price,.confirmation-container input.checkout-social,.confirmation-container textarea.checkout-social,.confirmation-container .uneditable-input.checkout-social {
+width:126px
+}
+
+.delivery-item table th[class*="span"],.delivery-item table td[class*="span"],.checkout-additional-item-header table th[class*="span"],.checkout-additional-item table th[class*="span"],.checkout-additional-item-header table td[class*="span"],.checkout-additional-item table td[class*="span"] {
+display:table-cell;
+float:none;
+margin-left:0
+}
+
+.table .confirmation-container td.checkout-social,.confirmation-container .table td.checkout-social,.table td.checkout-price,.table .confirmation-container th.checkout-social,.confirmation-container .table th.checkout-social,.table th.checkout-price {
+float:none;
+margin-left:0;
+width:124px
+}
+
+.table td.action-teaser,.table td.checkout-additional-description,.table td.facet-nav-container,.table td.footer-column,.table .listing-item td.product-value-container,.table td.product-summary-container,.table td.product-teaser-item,.table td.department-teaser-item,.table th.action-teaser,.table th.checkout-additional-description,.table th.facet-nav-container,.table th.footer-column,.table .listing-item th.product-value-container,.table th.product-summary-container,.table th.product-teaser-item,.table th.department-teaser-item,.listing-item .table td.product-value-container,.listing-item .table th.product-value-container {
+float:none;
+margin-left:0;
+width:204px
+}
+
+.table .basket-container td.checkout-amount,.basket-container .table td.checkout-amount,.table td.delivery-label,.table td.delivery-details,.table td.delivery-change-action,.table td.payment-voucher-code,.table td.payment-expiry,.table .homepage-banner-shim td.secondary-txt,.homepage-banner-shim .table td.secondary-txt,.table td.map-search-results-container,.table td.secondary-information,.table td.product-variant-container,.table td.proposition-instructions,.table td.teaser-item,.table .basket-container th.checkout-amount,.basket-container .table th.checkout-amount,.table th.delivery-label,.table th.delivery-details,.table th.delivery-change-action,.table th.payment-voucher-code,.table th.payment-expiry,.table .homepage-banner-shim th.secondary-txt,.homepage-banner-shim .table th.secondary-txt,.table th.map-search-results-container,.table th.secondary-information,.table th.product-variant-container,.table th.proposition-instructions,.table th.teaser-item {
+float:none;
+margin-left:0;
+width:284px
+}
+
+.table .basket-container td.checkout-reward,.basket-container .table td.checkout-reward,.table td.double-content-block,.table td.department-details,.table td.department-specifics,.table td.product-exchange-cta,.table td.product-exchange-call-out,.table td.promo-item,.table td.banner-img,.table td.banner-txt,.table td.product-value-container,.table td.add-product-container,.table .basket-container th.checkout-reward,.basket-container .table th.checkout-reward,.table th.double-content-block,.table th.department-details,.table th.department-specifics,.table th.product-exchange-cta,.table th.product-exchange-call-out,.table th.promo-item,.table th.banner-img,.table th.banner-txt,.table th.product-value-container,.table th.add-product-container {
+float:none;
+margin-left:0;
+width:444px
+}
+
+.table td.listing-details,.table th.listing-details {
+float:none;
+margin-left:0;
+width:524px
+}
+
+.table .confirmation-container td.checkout-reward,.confirmation-container .table td.checkout-reward,.table .homepage-banner-shim td.primary-txt,.homepage-banner-shim .table td.primary-txt,.table td.map-container,.table td.product-promo-container,.table td.primary-information,.table td.product-spotlight,.table td.proposition-banner-promo,.table .confirmation-container th.checkout-reward,.confirmation-container .table th.checkout-reward,.table .homepage-banner-shim th.primary-txt,.homepage-banner-shim .table th.primary-txt,.table th.map-container,.table th.product-promo-container,.table th.primary-information,.table th.product-spotlight,.table th.proposition-banner-promo {
+float:none;
+margin-left:0;
+width:604px
+}
+
+.table td.checkout-additional-information,.table td.payment-items-container,.table td.basket-order-container,.table td.confirmation-order-container,.table td.product-listing-container,.table th.checkout-additional-information,.table th.payment-items-container,.table th.basket-order-container,.table th.confirmation-order-container,.table th.product-listing-container {
+float:none;
+margin-left:0;
+width:684px
+}
+
+.table td.checkout-reward,.table td.checkout-total-txt,.table th.checkout-reward,.table th.checkout-total-txt {
+float:none;
+margin-left:0;
+width:764px
+}
+
+.delivery-item .span12,.checkout-additional-item-header .span12,.checkout-additional-item .span12,.delivery-item .order-error-container .order-error-products .checkout-reward,.order-error-container .order-error-products .delivery-item .checkout-reward,.payment-item .order-error-container .order-error-products .checkout-reward,.order-error-container .order-error-products .payment-item .checkout-reward,.payment-item-header .order-error-container .order-error-products .checkout-reward,.order-error-container .order-error-products .payment-item-header .checkout-reward,.checkout-additional-item-header .order-error-container .order-error-products .checkout-reward,.order-error-container .order-error-products .checkout-additional-item-header .checkout-reward,.checkout-additional-item .order-error-container .order-error-products .checkout-reward,.order-error-container .order-error-products .checkout-additional-item .checkout-reward {
+width:99.947916666667%
+}
+
+.delivery-item .span11,.checkout-additional-item-header .span11,.checkout-additional-item .span11 {
+width:91.614583333333%
+}
+
+.delivery-item .span10,.checkout-additional-item-header .span10,.checkout-additional-item .span10,.row-fluid .checkout-reward,.checkout-item .checkout-reward,.checkout-item-total .checkout-reward,.checkout-item-header .checkout-reward,.checkout-timer .checkout-reward,.checkout-stock-count .checkout-reward,.propostion-overlay .checkout-reward,.delivery-item .checkout-reward,.payment-item .checkout-reward,.payment-item-header .checkout-reward,.checkout-additional-item-header .checkout-reward,.checkout-additional-item .checkout-reward,.row-fluid .checkout-total-txt,.checkout-item .checkout-total-txt,.checkout-item-total .checkout-total-txt,.checkout-item-header .checkout-total-txt,.checkout-timer .checkout-total-txt,.checkout-stock-count .checkout-total-txt,.propostion-overlay .checkout-total-txt,.delivery-item .checkout-total-txt,.payment-item .checkout-total-txt,.payment-item-header .checkout-total-txt,.checkout-additional-item-header .checkout-total-txt,.checkout-additional-item .checkout-total-txt {
+width:83.28125%
+}
+
+.delivery-item .span9,.checkout-additional-item-header .span9,.checkout-additional-item .span9,.delivery-item .proposition-header-container,.checkout-additional-item-header .proposition-header-container,.checkout-additional-item .proposition-header-container,.row-fluid .checkout-additional-information,.checkout-item .checkout-additional-information,.checkout-item-total .checkout-additional-information,.checkout-item-header .checkout-additional-information,.checkout-timer .checkout-additional-information,.checkout-stock-count .checkout-additional-information,.propostion-overlay .checkout-additional-information,.delivery-item .checkout-additional-information,.payment-item .checkout-additional-information,.payment-item-header .checkout-additional-information,.checkout-additional-item-header .checkout-additional-information,.checkout-additional-item .checkout-additional-information,.row-fluid .payment-items-container,.checkout-item .payment-items-container,.checkout-item-total .payment-items-container,.checkout-item-header .payment-items-container,.checkout-timer .payment-items-container,.checkout-stock-count .payment-items-container,.propostion-overlay .payment-items-container,.delivery-item .payment-items-container,.payment-item .payment-items-container,.payment-item-header .payment-items-container,.checkout-additional-item-header .payment-items-container,.checkout-additional-item .payment-items-container,.row-fluid .basket-order-container,.checkout-item .basket-order-container,.checkout-item-total .basket-order-container,.checkout-item-header .basket-order-container,.checkout-timer .basket-order-container,.checkout-stock-count .basket-order-container,.propostion-overlay .basket-order-container,.delivery-item .basket-order-container,.payment-item .basket-order-container,.payment-item-header .basket-order-container,.checkout-additional-item-header .basket-order-container,.checkout-additional-item .basket-order-container,.row-fluid .confirmation-order-container,.checkout-item .confirmation-order-container,.checkout-item-total .confirmation-order-container,.checkout-item-header .confirmation-order-container,.checkout-timer .confirmation-order-container,.checkout-stock-count .confirmation-order-container,.propostion-overlay .confirmation-order-container,.delivery-item .confirmation-order-container,.payment-item .confirmation-order-container,.payment-item-header .confirmation-order-container,.checkout-additional-item-header .confirmation-order-container,.checkout-additional-item .confirmation-order-container,.row-fluid .product-listing-container,.checkout-item .product-listing-container,.checkout-item-total .product-listing-container,.checkout-item-header .product-listing-container,.checkout-timer .product-listing-container,.checkout-stock-count .product-listing-container,.propostion-overlay .product-listing-container,.delivery-item .product-listing-container,.payment-item .product-listing-container,.payment-item-header .product-listing-container,.checkout-additional-item-header .product-listing-container,.checkout-additional-item .product-listing-container {
+width:74.947916666667%
+}
+
+.delivery-item .span8,.checkout-additional-item-header .span8,.checkout-additional-item .span8,.row-fluid .confirmation-container .checkout-reward,.confirmation-container .row-fluid .checkout-reward,.checkout-item .confirmation-container .checkout-reward,.confirmation-container .checkout-item .checkout-reward,.checkout-item-total .confirmation-container .checkout-reward,.confirmation-container .checkout-item-total .checkout-reward,.checkout-item-header .confirmation-container .checkout-reward,.confirmation-container .checkout-item-header .checkout-reward,.checkout-timer .confirmation-container .checkout-reward,.confirmation-container .checkout-timer .checkout-reward,.checkout-stock-count .confirmation-container .checkout-reward,.confirmation-container .checkout-stock-count .checkout-reward,.propostion-overlay .confirmation-container .checkout-reward,.confirmation-container .propostion-overlay .checkout-reward,.delivery-item .confirmation-container .checkout-reward,.confirmation-container .delivery-item .checkout-reward,.payment-item .confirmation-container .checkout-reward,.confirmation-container .payment-item .checkout-reward,.payment-item-header .confirmation-container .checkout-reward,.confirmation-container .payment-item-header .checkout-reward,.checkout-additional-item-header .confirmation-container .checkout-reward,.confirmation-container .checkout-additional-item-header .checkout-reward,.checkout-additional-item .confirmation-container .checkout-reward,.confirmation-container .checkout-additional-item .checkout-reward,.row-fluid .map-container,.checkout-item .map-container,.checkout-item-total .map-container,.checkout-item-header .map-container,.checkout-timer .map-container,.checkout-stock-count .map-container,.propostion-overlay .map-container,.delivery-item .map-container,.payment-item .map-container,.payment-item-header .map-container,.checkout-additional-item-header .map-container,.checkout-additional-item .map-container,.row-fluid .product-promo-container,.checkout-item .product-promo-container,.checkout-item-total .product-promo-container,.checkout-item-header .product-promo-container,.checkout-timer .product-promo-container,.checkout-stock-count .product-promo-container,.propostion-overlay .product-promo-container,.delivery-item .product-promo-container,.payment-item .product-promo-container,.payment-item-header .product-promo-container,.checkout-additional-item-header .product-promo-container,.checkout-additional-item .product-promo-container,.row-fluid .primary-information,.checkout-item .primary-information,.checkout-item-total .primary-information,.checkout-item-header .primary-information,.checkout-timer .primary-information,.checkout-stock-count .primary-information,.propostion-overlay .primary-information,.delivery-item .primary-information,.payment-item .primary-information,.payment-item-header .primary-information,.checkout-additional-item-header .primary-information,.checkout-additional-item .primary-information,.row-fluid .product-spotlight,.checkout-item .product-spotlight,.checkout-item-total .product-spotlight,.checkout-item-header .product-spotlight,.checkout-timer .product-spotlight,.checkout-stock-count .product-spotlight,.propostion-overlay .product-spotlight,.delivery-item .product-spotlight,.payment-item .product-spotlight,.payment-item-header .product-spotlight,.checkout-additional-item-header .product-spotlight,.checkout-additional-item .product-spotlight,.row-fluid .proposition-banner-promo,.checkout-item .proposition-banner-promo,.checkout-item-total .proposition-banner-promo,.checkout-item-header .proposition-banner-promo,.checkout-timer .proposition-banner-promo,.checkout-stock-count .proposition-banner-promo,.propostion-overlay .proposition-banner-promo,.delivery-item .proposition-banner-promo,.payment-item .proposition-banner-promo,.payment-item-header .proposition-banner-promo,.checkout-additional-item-header .proposition-banner-promo,.checkout-additional-item .proposition-banner-promo {
+width:66.614583333333%
+}
+
+.delivery-item .span7,.checkout-additional-item-header .span7,.checkout-additional-item .span7,.row-fluid .listing-details,.checkout-item .listing-details,.checkout-item-total .listing-details,.checkout-item-header .listing-details,.checkout-timer .listing-details,.checkout-stock-count .listing-details,.propostion-overlay .listing-details,.delivery-item .listing-details,.payment-item .listing-details,.payment-item-header .listing-details,.checkout-additional-item-header .listing-details,.checkout-additional-item .listing-details {
+width:58.28125%
+}
+
+.delivery-item .span6,.checkout-additional-item-header .span6,.checkout-additional-item .span6,.row-fluid .basket-container .checkout-reward,.basket-container .row-fluid .checkout-reward,.checkout-item .basket-container .checkout-reward,.basket-container .checkout-item .checkout-reward,.checkout-item-total .basket-container .checkout-reward,.basket-container .checkout-item-total .checkout-reward,.checkout-item-header .basket-container .checkout-reward,.basket-container .checkout-item-header .checkout-reward,.checkout-timer .basket-container .checkout-reward,.basket-container .checkout-timer .checkout-reward,.checkout-stock-count .basket-container .checkout-reward,.basket-container .checkout-stock-count .checkout-reward,.propostion-overlay .basket-container .checkout-reward,.basket-container .propostion-overlay .checkout-reward,.delivery-item .basket-container .checkout-reward,.basket-container .delivery-item .checkout-reward,.payment-item .basket-container .checkout-reward,.basket-container .payment-item .checkout-reward,.payment-item-header .basket-container .checkout-reward,.basket-container .payment-item-header .checkout-reward,.checkout-additional-item-header .basket-container .checkout-reward,.basket-container .checkout-additional-item-header .checkout-reward,.checkout-additional-item .basket-container .checkout-reward,.basket-container .checkout-additional-item .checkout-reward,.row-fluid .double-content-block,.checkout-item .double-content-block,.checkout-item-total .double-content-block,.checkout-item-header .double-content-block,.checkout-timer .double-content-block,.checkout-stock-count .double-content-block,.propostion-overlay .double-content-block,.delivery-item .double-content-block,.payment-item .double-content-block,.payment-item-header .double-content-block,.checkout-additional-item-header .double-content-block,.checkout-additional-item .double-content-block,.row-fluid .department-details,.checkout-item .department-details,.checkout-item-total .department-details,.checkout-item-header .department-details,.checkout-timer .department-details,.checkout-stock-count .department-details,.propostion-overlay .department-details,.delivery-item .department-details,.payment-item .department-details,.payment-item-header .department-details,.checkout-additional-item-header .department-details,.checkout-additional-item .department-details,.row-fluid .department-specifics,.checkout-item .department-specifics,.checkout-item-total .department-specifics,.checkout-item-header .department-specifics,.checkout-timer .department-specifics,.checkout-stock-count .department-specifics,.propostion-overlay .department-specifics,.delivery-item .department-specifics,.payment-item .department-specifics,.payment-item-header .department-specifics,.checkout-additional-item-header .department-specifics,.checkout-additional-item .department-specifics,.row-fluid .product-exchange-cta,.checkout-item .product-exchange-cta,.checkout-item-total .product-exchange-cta,.checkout-item-header .product-exchange-cta,.checkout-timer .product-exchange-cta,.checkout-stock-count .product-exchange-cta,.propostion-overlay .product-exchange-cta,.delivery-item .product-exchange-cta,.payment-item .product-exchange-cta,.payment-item-header .product-exchange-cta,.checkout-additional-item-header .product-exchange-cta,.checkout-additional-item .product-exchange-cta,.row-fluid .product-exchange-call-out,.checkout-item .product-exchange-call-out,.checkout-item-total .product-exchange-call-out,.checkout-item-header .product-exchange-call-out,.checkout-timer .product-exchange-call-out,.checkout-stock-count .product-exchange-call-out,.propostion-overlay .product-exchange-call-out,.delivery-item .product-exchange-call-out,.payment-item .product-exchange-call-out,.payment-item-header .product-exchange-call-out,.checkout-additional-item-header .product-exchange-call-out,.checkout-additional-item .product-exchange-call-out,.row-fluid .promo-item,.checkout-item .promo-item,.checkout-item-total .promo-item,.checkout-item-header .promo-item,.checkout-timer .promo-item,.checkout-stock-count .promo-item,.propostion-overlay .promo-item,.delivery-item .promo-item,.payment-item .promo-item,.payment-item-header .promo-item,.checkout-additional-item-header .promo-item,.checkout-additional-item .promo-item,.row-fluid .banner-img,.checkout-item .banner-img,.checkout-item-total .banner-img,.checkout-item-header .banner-img,.checkout-timer .banner-img,.checkout-stock-count .banner-img,.propostion-overlay .banner-img,.delivery-item .banner-img,.payment-item .banner-img,.payment-item-header .banner-img,.checkout-additional-item-header .banner-img,.checkout-additional-item .banner-img,.row-fluid .banner-txt,.checkout-item .banner-txt,.checkout-item-total .banner-txt,.checkout-item-header .banner-txt,.checkout-timer .banner-txt,.checkout-stock-count .banner-txt,.propostion-overlay .banner-txt,.delivery-item .banner-txt,.payment-item .banner-txt,.payment-item-header .banner-txt,.checkout-additional-item-header .banner-txt,.checkout-additional-item .banner-txt,.row-fluid .product-value-container,.checkout-item .product-value-container,.checkout-item-total .product-value-container,.checkout-item-header .product-value-container,.checkout-timer .product-value-container,.checkout-stock-count .product-value-container,.propostion-overlay .product-value-container,.delivery-item .product-value-container,.payment-item .product-value-container,.payment-item-header .product-value-container,.checkout-additional-item-header .product-value-container,.checkout-additional-item .product-value-container,.row-fluid .add-product-container,.checkout-item .add-product-container,.checkout-item-total .add-product-container,.checkout-item-header .add-product-container,.checkout-timer .add-product-container,.checkout-stock-count .add-product-container,.propostion-overlay .add-product-container,.delivery-item .add-product-container,.payment-item .add-product-container,.payment-item-header .add-product-container,.checkout-additional-item-header .add-product-container,.checkout-additional-item .add-product-container {
+width:49.947916666667%
+}
+
+.delivery-item .span5,.checkout-additional-item-header .span5,.checkout-additional-item .span5 {
+width:41.614583333333%
+}
+
+.delivery-item .span4,.checkout-additional-item-header .span4,.checkout-additional-item .span4,.row-fluid .basket-container .checkout-amount,.basket-container .row-fluid .checkout-amount,.checkout-item .basket-container .checkout-amount,.basket-container .checkout-item .checkout-amount,.checkout-item-total .basket-container .checkout-amount,.basket-container .checkout-item-total .checkout-amount,.checkout-item-header .basket-container .checkout-amount,.basket-container .checkout-item-header .checkout-amount,.checkout-timer .basket-container .checkout-amount,.basket-container .checkout-timer .checkout-amount,.checkout-stock-count .basket-container .checkout-amount,.basket-container .checkout-stock-count .checkout-amount,.propostion-overlay .basket-container .checkout-amount,.basket-container .propostion-overlay .checkout-amount,.delivery-item .basket-container .checkout-amount,.basket-container .delivery-item .checkout-amount,.payment-item .basket-container .checkout-amount,.basket-container .payment-item .checkout-amount,.payment-item-header .basket-container .checkout-amount,.basket-container .payment-item-header .checkout-amount,.checkout-additional-item-header .basket-container .checkout-amount,.basket-container .checkout-additional-item-header .checkout-amount,.checkout-additional-item .basket-container .checkout-amount,.basket-container .checkout-additional-item .checkout-amount,.row-fluid .delivery-label,.checkout-item .delivery-label,.checkout-item-total .delivery-label,.checkout-item-header .delivery-label,.checkout-timer .delivery-label,.checkout-stock-count .delivery-label,.propostion-overlay .delivery-label,.delivery-item .delivery-label,.payment-item .delivery-label,.payment-item-header .delivery-label,.checkout-additional-item-header .delivery-label,.checkout-additional-item .delivery-label,.row-fluid .delivery-details,.checkout-item .delivery-details,.checkout-item-total .delivery-details,.checkout-item-header .delivery-details,.checkout-timer .delivery-details,.checkout-stock-count .delivery-details,.propostion-overlay .delivery-details,.delivery-item .delivery-details,.payment-item .delivery-details,.payment-item-header .delivery-details,.checkout-additional-item-header .delivery-details,.checkout-additional-item .delivery-details,.row-fluid .delivery-change-action,.checkout-item .delivery-change-action,.checkout-item-total .delivery-change-action,.checkout-item-header .delivery-change-action,.checkout-timer .delivery-change-action,.checkout-stock-count .delivery-change-action,.propostion-overlay .delivery-change-action,.delivery-item .delivery-change-action,.payment-item .delivery-change-action,.payment-item-header .delivery-change-action,.checkout-additional-item-header .delivery-change-action,.checkout-additional-item .delivery-change-action,.row-fluid .payment-voucher-code,.checkout-item .payment-voucher-code,.checkout-item-total .payment-voucher-code,.checkout-item-header .payment-voucher-code,.checkout-timer .payment-voucher-code,.checkout-stock-count .payment-voucher-code,.propostion-overlay .payment-voucher-code,.delivery-item .payment-voucher-code,.payment-item .payment-voucher-code,.payment-item-header .payment-voucher-code,.checkout-additional-item-header .payment-voucher-code,.checkout-additional-item .payment-voucher-code,.row-fluid .payment-expiry,.checkout-item .payment-expiry,.checkout-item-total .payment-expiry,.checkout-item-header .payment-expiry,.checkout-timer .payment-expiry,.checkout-stock-count .payment-expiry,.propostion-overlay .payment-expiry,.delivery-item .payment-expiry,.payment-item .payment-expiry,.payment-item-header .payment-expiry,.checkout-additional-item-header .payment-expiry,.checkout-additional-item .payment-expiry,.row-fluid .payment-voucher,.checkout-item .payment-voucher,.checkout-item-total .payment-voucher,.checkout-item-header .payment-voucher,.checkout-timer .payment-voucher,.checkout-stock-count .payment-voucher,.propostion-overlay .payment-voucher,.delivery-item .payment-voucher,.payment-item .payment-voucher,.payment-item-header .payment-voucher,.checkout-additional-item-header .payment-voucher,.checkout-additional-item .payment-voucher,.row-fluid .map-search-results-container,.checkout-item .map-search-results-container,.checkout-item-total .map-search-results-container,.checkout-item-header .map-search-results-container,.checkout-timer .map-search-results-container,.checkout-stock-count .map-search-results-container,.propostion-overlay .map-search-results-container,.delivery-item .map-search-results-container,.payment-item .map-search-results-container,.payment-item-header .map-search-results-container,.checkout-additional-item-header .map-search-results-container,.checkout-additional-item .map-search-results-container,.row-fluid .secondary-information,.checkout-item .secondary-information,.checkout-item-total .secondary-information,.checkout-item-header .secondary-information,.checkout-timer .secondary-information,.checkout-stock-count .secondary-information,.propostion-overlay .secondary-information,.delivery-item .secondary-information,.payment-item .secondary-information,.payment-item-header .secondary-information,.checkout-additional-item-header .secondary-information,.checkout-additional-item .secondary-information,.row-fluid .product-variant-container,.checkout-item .product-variant-container,.checkout-item-total .product-variant-container,.checkout-item-header .product-variant-container,.checkout-timer .product-variant-container,.checkout-stock-count .product-variant-container,.propostion-overlay .product-variant-container,.delivery-item .product-variant-container,.payment-item .product-variant-container,.payment-item-header .product-variant-container,.checkout-additional-item-header .product-variant-container,.checkout-additional-item .product-variant-container,.row-fluid .proposition-instructions,.checkout-item .proposition-instructions,.checkout-item-total .proposition-instructions,.checkout-item-header .proposition-instructions,.checkout-timer .proposition-instructions,.checkout-stock-count .proposition-instructions,.propostion-overlay .proposition-instructions,.delivery-item .proposition-instructions,.payment-item .proposition-instructions,.payment-item-header .proposition-instructions,.checkout-additional-item-header .proposition-instructions,.checkout-additional-item .proposition-instructions,.row-fluid .teaser-item,.checkout-item .teaser-item,.checkout-item-total .teaser-item,.checkout-item-header .teaser-item,.checkout-timer .teaser-item,.checkout-stock-count .teaser-item,.propostion-overlay .teaser-item,.delivery-item .teaser-item,.payment-item .teaser-item,.payment-item-header .teaser-item,.checkout-additional-item-header .teaser-item,.checkout-additional-item .teaser-item {
+width:33.28125%
+}
+
+.delivery-item .span3,.checkout-additional-item-header .span3,.checkout-additional-item .span3,.delivery-item .contact-panel,.checkout-additional-item-header .contact-panel,.checkout-additional-item .contact-panel,.delivery-item .proposition-cta-container,.checkout-additional-item-header .proposition-cta-container,.checkout-additional-item .proposition-cta-container,.row-fluid .action-teaser,.checkout-item .action-teaser,.checkout-item-total .action-teaser,.checkout-item-header .action-teaser,.checkout-timer .action-teaser,.checkout-stock-count .action-teaser,.propostion-overlay .action-teaser,.delivery-item .action-teaser,.payment-item .action-teaser,.payment-item-header .action-teaser,.checkout-additional-item-header .action-teaser,.checkout-additional-item .action-teaser,.row-fluid .checkout-additional-description,.checkout-item .checkout-additional-description,.checkout-item-total .checkout-additional-description,.checkout-item-header .checkout-additional-description,.checkout-timer .checkout-additional-description,.checkout-stock-count .checkout-additional-description,.propostion-overlay .checkout-additional-description,.delivery-item .checkout-additional-description,.payment-item .checkout-additional-description,.payment-item-header .checkout-additional-description,.checkout-additional-item-header .checkout-additional-description,.checkout-additional-item .checkout-additional-description,.row-fluid .facet-nav-container,.checkout-item .facet-nav-container,.checkout-item-total .facet-nav-container,.checkout-item-header .facet-nav-container,.checkout-timer .facet-nav-container,.checkout-stock-count .facet-nav-container,.propostion-overlay .facet-nav-container,.delivery-item .facet-nav-container,.payment-item .facet-nav-container,.payment-item-header .facet-nav-container,.checkout-additional-item-header .facet-nav-container,.checkout-additional-item .facet-nav-container,.row-fluid .footer-column,.checkout-item .footer-column,.checkout-item-total .footer-column,.checkout-item-header .footer-column,.checkout-timer .footer-column,.checkout-stock-count .footer-column,.propostion-overlay .footer-column,.delivery-item .footer-column,.payment-item .footer-column,.payment-item-header .footer-column,.checkout-additional-item-header .footer-column,.checkout-additional-item .footer-column,.row-fluid .listing-item .product-value-container,.listing-item .row-fluid .product-value-container,.checkout-item .listing-item .product-value-container,.listing-item .checkout-item .product-value-container,.checkout-item-total .listing-item .product-value-container,.listing-item .checkout-item-total .product-value-container,.checkout-item-header .listing-item .product-value-container,.listing-item .checkout-item-header .product-value-container,.checkout-timer .listing-item .product-value-container,.listing-item .checkout-timer .product-value-container,.checkout-stock-count .listing-item .product-value-container,.listing-item .checkout-stock-count .product-value-container,.propostion-overlay .listing-item .product-value-container,.listing-item .propostion-overlay .product-value-container,.delivery-item .listing-item .product-value-container,.listing-item .delivery-item .product-value-container,.payment-item .listing-item .product-value-container,.listing-item .payment-item .product-value-container,.payment-item-header .listing-item .product-value-container,.listing-item .payment-item-header .product-value-container,.checkout-additional-item-header .listing-item .product-value-container,.listing-item .checkout-additional-item-header .product-value-container,.checkout-additional-item .listing-item .product-value-container,.listing-item .checkout-additional-item .product-value-container,.row-fluid .product-summary-container,.checkout-item .product-summary-container,.checkout-item-total .product-summary-container,.checkout-item-header .product-summary-container,.checkout-timer .product-summary-container,.checkout-stock-count .product-summary-container,.propostion-overlay .product-summary-container,.delivery-item .product-summary-container,.payment-item .product-summary-container,.payment-item-header .product-summary-container,.checkout-additional-item-header .product-summary-container,.checkout-additional-item .product-summary-container,.row-fluid .product-teaser-item,.checkout-item .product-teaser-item,.checkout-item-total .product-teaser-item,.checkout-item-header .product-teaser-item,.checkout-timer .product-teaser-item,.checkout-stock-count .product-teaser-item,.propostion-overlay .product-teaser-item,.delivery-item .product-teaser-item,.payment-item .product-teaser-item,.payment-item-header .product-teaser-item,.checkout-additional-item-header .product-teaser-item,.checkout-additional-item .product-teaser-item,.row-fluid .department-teaser-item,.checkout-item .department-teaser-item,.checkout-item-total .department-teaser-item,.checkout-item-header .department-teaser-item,.checkout-timer .department-teaser-item,.checkout-stock-count .department-teaser-item,.propostion-overlay .department-teaser-item,.delivery-item .department-teaser-item,.payment-item .department-teaser-item,.payment-item-header .department-teaser-item,.checkout-additional-item-header .department-teaser-item,.checkout-additional-item .department-teaser-item {
+width:24.947916666667%
+}
+
+.delivery-item .span2,.checkout-additional-item-header .span2,.checkout-additional-item .span2,.row-fluid .confirmation-container .checkout-social,.confirmation-container .row-fluid .checkout-social,.checkout-item .confirmation-container .checkout-social,.confirmation-container .checkout-item .checkout-social,.checkout-item-total .confirmation-container .checkout-social,.confirmation-container .checkout-item-total .checkout-social,.checkout-item-header .confirmation-container .checkout-social,.confirmation-container .checkout-item-header .checkout-social,.checkout-timer .confirmation-container .checkout-social,.confirmation-container .checkout-timer .checkout-social,.checkout-stock-count .confirmation-container .checkout-social,.confirmation-container .checkout-stock-count .checkout-social,.propostion-overlay .confirmation-container .checkout-social,.confirmation-container .propostion-overlay .checkout-social,.delivery-item .confirmation-container .checkout-social,.confirmation-container .delivery-item .checkout-social,.payment-item .confirmation-container .checkout-social,.confirmation-container .payment-item .checkout-social,.payment-item-header .confirmation-container .checkout-social,.confirmation-container .payment-item-header .checkout-social,.checkout-additional-item-header .confirmation-container .checkout-social,.confirmation-container .checkout-additional-item-header .checkout-social,.checkout-additional-item .confirmation-container .checkout-social,.confirmation-container .checkout-additional-item .checkout-social,.row-fluid .checkout-price,.checkout-item .checkout-price,.checkout-item-total .checkout-price,.checkout-item-header .checkout-price,.checkout-timer .checkout-price,.checkout-stock-count .checkout-price,.propostion-overlay .checkout-price,.delivery-item .checkout-price,.payment-item .checkout-price,.payment-item-header .checkout-price,.checkout-additional-item-header .checkout-price,.checkout-additional-item .checkout-price {
+width:16.614583333333%
+}
+
+.delivery-item .span1,.checkout-additional-item-header .span1,.checkout-additional-item .span1 {
+width:8.28125%
+}
+
+.nav-collapse.collapse {
+height:auto!important;
+overflow:visible!important
+}
+
+.action-teaser,.checkout-reward,.basket-container .checkout-reward,.confirmation-container .checkout-reward,.confirmation-container .checkout-social,.basket-container .checkout-amount,.checkout-price,.checkout-additional-description,.checkout-additional-information,.payment-items-container,.basket-order-container,.confirmation-order-container,.delivery-label,.delivery-details,.delivery-change-action,.double-content-block,.department-details,.department-specifics,.product-exchange-cta,.product-exchange-call-out,.promo-item,.facet-nav-container,.homepage-banner-shim .primary-txt,.homepage-banner-shim .secondary-txt,.listing-details,.map-container,.map-search-results-container,.banner-img,.banner-txt,.product-promo-container,.secondary-information,.primary-information,.product-listing-container,.product-value-container,.add-product-container,.product-spotlight,.product-summary-container,.product-teaser-item,.department-teaser-item,.product-variant-container,.proposition-banner-promo,.proposition-instructions,.teaser-item {
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+display:block;
+float:left;
+/*margin-left:-.05208%;*/
+min-height:1px;
+width:100%
+}
+
+.content-list p.watch-btns {
+margin:0 auto;
+width:800px
+}
+
+.watch-btns .standard-btn {
+margin:20px auto 0;
+width:300px;
+display:block
+}
+
+.add-to-basket {
+background:#ed1c24;
+display:block;
+padding:0 40px;
+width:100%
+}
+
+.add-to-basket span {
+background:url(../img/interface/btn-add-to-basket.png) 0 7px no-repeat;
+color:#fff;
+display:block;
+font-size:16px;
+line-height:1;
+padding:12px 0 10px 30px
+}
+
+.add-to-basket:focus,.add-to-basket:hover {
+background:#cc181f
+}
+
+.double-content-block .content-block ul {
+list-style:none;
+list-style-image:none;
+margin:0;
+padding:0
+}
+
+html {
+-webkit-text-size-adjust:100%
+}
+
+.confirmation-message-container h1,.confirmation-message-container h2 {
+-webkit-font-smoothing:antialiased;
+font-family:tescobold,"Helvetica Neue", Arial, sans-serif
+}
+
+.advert-banner .banner-txt .banner-strapline p,.terms-accordion .accordion-heading {
+font-size:14px;
+line-height:17px
+}
+
+h5,.lead,.category-teaser .teaser-overlay .teaser-sub-heading,.product-inclusions h3,.product-exclusions h3,.department-browser-heading h2,.thesaurus-result,.lead p {
+font-size:17px;
+line-height:21px
+}
+
+h4,.primary-content h2,.primary-content .secondary-content h2,.clubcard-secure-message h3,.department-details h3,.footer-heading,.hero-strapline p,.homepage-banner-txt p,.map-search-result-heading h2,.process-diagram span,.product-value-vouchers .voucher-value,.proposition-header-container p,.proposition-teaser .action-teaser-heading {
+font-size:18px;
+line-height:22px
+}
+
+.instruction-heading,.product-description-heading {
+font-size:20px;
+line-height:28px
+}
+
+h3,.category-teaser .teaser-overlay .teaser-heading,.contact-details-container .contact-title,.choice-divider,.heading-container p,.homepage-banner-txt h2,.map-search-form h2,.banner-txt .banner-strapline p,.product-listing-heading h1 {
+font-size:23px;
+line-height:29px
+}
+
+.product-variant-container .product-value .product-value-amount,.proposition-banner h2,.banner-txt .banner-heading h2,.advert-banner .banner-txt .banner-heading h2 {
+font-size:30px;
+line-height:36px
+}
+
+h2,.homepage-banner-txt h1 {
+font-size:37px;
+line-height:43px
+}
+
+h1,.heading-container h1,.heading-container h2,.heading-container h3,.heading-container h4,.hero-title h1 {
+font-size:45px;
+line-height:50px
+}
+
+.four-layout-grid .category-teaser {
+float:left;
+width:215px
+}
+
+.four-layout-grid .category-teaser .teaser-img {
+height:167px
+}
+
+.four-layout-grid .category-teaser .teaser-overlay {
+text-align:center;
+width:215px
+}
+
+.four-layout-grid .category-teaser .teaser-overlay a {
+padding:10px 0
+}
+
+.four-layout-grid .category-teaser .teaser-overlay .teaser-heading {
+font-size:16px
+}
+
+.four-layout-grid .category-teaser .teaser-overlay .teaser-sub-heading {
+font-size:14px
+}
+
+.category-teaser .teaser-img {
+overflow:hidden;
+position:relative
+}
+
+.category-teaser .teaser-overlay .teaser-sub-heading {
+position:relative;
+z-index:5
+}
+
+.category-teaser .teaser-overlay {
+background-color:#fff;
+border-bottom:5px solid #024673;
+text-align:center;
+width:293px
+}
+
+.category-teaser .teaser-overlay a {
+color:#024673;
+display:block;
+padding:15px 0;
+text-decoration:none
+}
+
+.category-teaser .teaser-overlay a span {
+font-size:1.15em
+}
+
+.category-teaser.fun .teaser-overlay {
+background-color:#fff;
+border-bottom:5px solid #27b1b1
+}
+
+.category-teaser.fun .teaser-overlay a {
+color:#27b1b1
+}
+
+.category-teaser.eating .teaser-overlay {
+background-color:#fff;
+border-bottom:5px solid #7a3ba3
+}
+
+.category-teaser.eating .teaser-overlay a {
+color:#7a3ba3
+}
+
+.category-teaser.exchange .teaser-overlay {
+background-color:#fff;
+border-bottom:5px solid #074770
+}
+
+.category-teaser.exchange .teaser-overlay a {
+color:#074770
+}
+
+.category-teaser.home .teaser-overlay {
+background-color:#fff;
+border-bottom:5px solid #fa9038
+}
+
+.category-teaser.home .teaser-overlay a {
+color:#fa9038
+}
+
+.category-teaser.lifestyle .teaser-overlay {
+background-color:#fff;
+border-bottom:5px solid #86b41b
+}
+
+.category-teaser.lifestyle .teaser-overlay a {
+color:#86b41b
+}
+
+.category-teaser.travel .teaser-overlay {
+background-color:#fff;
+border-bottom:5px solid #ea0150
+}
+
+.category-teaser.travel .teaser-overlay a {
+color:#ea0150
+}
+
+.category-teaser.finance .teaser-overlay {
+background-color:#fff;
+border-bottom:5px solid #2f5361
+}
+
+.category-teaser.finance .teaser-overlay a {
+color:#2f5361
+}
+
+.category-teaser.about .teaser-overlay {
+background-color:#00539f;
+border-bottom:none
+}
+
+.category-teaser.about .teaser-overlay a {
+color:#fff;
+padding:10px 0
+}
+
+.category-teaser.about .teaser-overlay a .teaser-heading {
+font-size:1.3em
+}
+
+.checkout-additional-item-header p,.checkout-additional-title {
+padding-right:10px
+}
+
+li.lists {
+display:block;
+float:left;
+width:45%
+}
+
+.footer .footer {
+margin:0;
+padding:0
+}
+
+.footer.checkout-footer {
+padding:30px 0
+}
+
+.hero-title h1,
+.hero-strapline .hero-right-panel-txt {
+padding:20px 80px 60px
+}
+
+.perks .hero-strapline .hero-right-panel-txt {
+padding:50px 40px 70px
+}
+
+.hero-unit {
+margin:0 0 10px
+}
+
+.hero-unit .banner-img-txt-holder {
+text-align: center
+}
+
+.boost-at-tesco .hero-unit .banner-img-txt-holder,
+.christmas-savers .hero-unit .banner-img-txt-holder,
+.collect-points .hero-unit .banner-img-txt-holder,
+.contact .hero-unit .banner-img-txt-holder,
+.coupons .hero-unit .banner-img-txt-holder,
+.eating-out .hero-unit .banner-img-txt-holder,
+.email-sign-up .hero-unit .banner-img-txt-holder,
+.email-sign-up_success .hero-unit .banner-img-txt-holder,
+.email-sign-up_failure .hero-unit .banner-img-txt-holder,
+.financial-deals .hero-unit .banner-img-txt-holder,
+.fun .hero-unit .banner-img-txt-holder,
+.days-out .hero-unit .banner-img-txt-holder,
+.home-essentials .hero-unit .banner-img-txt-holder,
+.lifestyle .hero-unit .banner-img-txt-holder,
+.lost-clubcard .hero-unit .banner-img-txt-holder,
+.register-my-account .hero-unit .banner-img-txt-holder,
+.smartphones .hero-unit .banner-img-txt-holder,
+.spend-vouchers .hero-unit .banner-img-txt-holder,
+.travel .hero-unit .banner-img-txt-holder,
+.unspent-vouchers .hero-unit .banner-img-txt-holder {
+height: 260px
+}
+
+.hero-content-container {
+position:relative;
+z-index:4
+}
+
+.hero-content {
+background:url(../img/interface/bg-hero-columns-blue.png) repeat-y 50% 0;
+margin:-180px 20px 0;
+padding-bottom:0;
+overflow:hidden;
+position:relative;
+zoom:1
+}
+.perks .hero-content {
+background:#e58b6e
+}
+.about .hero-content,
+.boost .hero-content,
+.perks .hero-content {
+margin:-100px 20px 0
+}
+
+.hero-amt-img.hero-strapline .hero-right-panel-txt {
+padding:20px 40px 40px
+}
+
+.homepage-banner-shim {
+background:none;
+color:#fff
+}
+
+.homepage-banner-txt-container {
+margin:-33px 20px 0;
+position:relative
+}
+
+.homepage-banner-txt-container.banner-img-txt {
+margin:-100px 20px 0;
+position:relative
+}
+
+.homepage-banner-img .banner-img-txt-holder {
+color:#fff;
+left:45px;
+position:absolute;
+text-align:center;
+top:55px;
+width:37%
+}
+
+.homepage-banner-txt {
+background:none;
+padding-top:0
+}
+
+.homepage-banner-txt h1 {
+font-size:3em
+}
+
+.homepage-banner-txt h2 {
+font-size:2.3em;
+line-height:1.1
+}
+
+.homepage-banner-txt p {
+font-size:1em
+}
+
+.homepage-banner-shim .primary-txt,.homepage-banner-shim .secondary-txt {
+background:transparent url(/Clubcard/boost/CMSAssets/UK/rewards/default/img/Home/panel-top-15-03.png) 0 0 no-repeat;
+color:#ee1c2e;
+margin-right:20px;
+padding-top:33px;
+width:48.9%
+}
+
+.homepage-banner-shim .secondary-txt {
+background-position:-480px 0;
+color:#fff;
+margin:0
+}
+
+.homepage-banner-shim .primary-txt .content-container {
+background-color:#fff;
+padding:0 20px 20px
+}
+
+.homepage-banner-shim .secondary-txt .content-container {
+background-color:#6796e9;
+padding:0 20px 20px
+}
+
+.homepage-banner .content-container {
+height:215px;
+padding:10px 30px 20px;
+position:relative
+}
+
+.homepage-banner .content-container img {
+bottom:0;
+left:0;
+position:absolute
+}
+
+.homepage-banner-cta {
+background:url(../img/interface/nav-chevrons-sprite.png) 2px -85px no-repeat;
+color:#fff;
+display:block;
+padding-left:15px
+}
+
+.homepage-banner-txt .primary-txt a {
+background:url(../img/interface/nav-chevrons-sprite.png) 2px 5px no-repeat;
+display:block;
+padding-left:15px
+}
+
+.pagination ul > li.selected > a {
+background:#e7e7e7;
+color:#333;
+cursor:default
+}
+
+.search-form {
+float:right;
+width:30%
+}
+
+.product-listing-heading {
+clear:both;
+padding:10px 20px
+}
+
+.product-listings.all.loading {
+padding-bottom:100px
+}
+
+.product-listings.all.loading .load-message {
+background-color:transparent;
+height:100px;
+position:absolute;
+top:auto
+}
+
+.product-header {
+min-height:154px;
+overflow:hidden;
+position:relative;
+zoom:1
+}
+
+.partners-logo {
+border:1px solid #efefef;
+height:150px;
+left:20px;
+position:absolute;
+top:20px;
+width:150px
+}
+
+.partners-logo .partner-logo {
+left:auto;
+top:auto
+}
+
+.product-title,.partners-details,.product-social {
+margin-left:170px
+}
+
+.product-title {
+position:relative;
+width:49%
+}
+
+.product-title h1 {
+font-size:28px;
+line-height:28px;
+margin-bottom:5px;
+padding-right:10px
+}
+
+.product-title .product-value {
+font-size:16px;
+font-weight:700;
+margin-bottom:20px
+}
+
+.product-title .product-value-container {
+position:absolute;
+right:-300px;
+top:4px;
+width:300px
+}
+
+.product-title .product-value-container .product-value-vouchers {
+font-size:16px;
+padding-top:0
+}
+
+.product-title .product-value-container .product-value-vouchers .voucher-value {
+font-size:30px
+}
+
+.product-value-vouchers {
+padding:10px 0 0
+}
+
+.product-value-vouchers .voucher-value {
+padding:0 5px 0 0
+}
+
+.product-value-vouchers .perk-value {
+display:block;
+font-weight:400
+}
+
+.product-code-container p {
+display:inline-block;
+margin-bottom:4px
+}
+
+.product-labels-container {
+float:left;
+margin-bottom:10px
+}
+
+.product-labels-container p {
+display:inline-block;
+margin-bottom:4px;
+margin-right:7px
+}
+
+.product-labels-container span {
+background:blue;
+padding:1px 3px
+}
+
+.partners-details {
+clear:both;
+float:left;
+margin-bottom:5px
+}
+
+.partners-details p {
+display:inline;
+margin-bottom:4px;
+margin-right:5px
+}
+
+.product-social {
+clear:both;
+float:none;
+overflow:hidden;
+zoom:1
+}
+
+.product-ratings {
+clear:both;
+float:left;
+width:69.5%
+}
+
+.share-plugins {
+float:right;
+text-align:right;
+width:30%
+}
+
+.review-count,.review-login {
+float:left;
+margin-right:5px
+}
+
+.ratings-display {
+float:left;
+margin-right:5px;
+width:86px
+}
+
+.product-spotlight-details {
+background:#eee;
+overflow:hidden;
+zoom:1
+}
+
+.product-spotlight-details p {
+font-size:16px;
+line-height:24px
+}
+
+.product-spotlight-details ul li {
+background:url(../img/interface/icon-list-arrow.png) 0 6px no-repeat;
+font-size:16px;
+line-height:24px;
+margin:0 0 10px;
+padding:0 0 0 15px
+}
+
+.product-spotlight-details .delivery {
+float:left;
+position:relative
+}
+
+.product-spotlight-details i {
+bottom:-5px;
+height:34px;
+position:absolute;
+right:-36px;
+width:31px
+}
+
+.product-spotlight-details .post-icon {
+background:url(../img/interface/sprite-delivery-methods.png) -30px 0 no-repeat
+}
+
+.product-spotlight-details .email-icon {
+background:url(../img/interface/sprite-delivery-methods.png) 0 0 no-repeat
+}
+
+.spotlight-img img {
+margin:0;
+max-width:none
+}
+
+.product-promo-container {
+padding-top:20px
+}
+
+.secondary-information li {
+margin-bottom:10px
+}
+
+.product-description ul li {
+background:url(../img/interface/icon-bullet.png) 0 8px no-repeat;
+line-height:22px;
+margin-bottom:10px;
+padding-left:10px
+}
+
+.product-summary,.confirmation-query {
+background:#00539f;
+margin-bottom:20px;
+margin-right:20px;
+padding-bottom:4px
+}
+
+.product-summary .product-summary-heading,.product-summary .confirmation-query-heading,.confirmation-query .product-summary-heading,.confirmation-query .confirmation-query-heading {
+padding:10px 20px
+}
+
+.product-summary h2,.confirmation-query h2 {
+color:#fff;
+font-size:18px;
+line-height:20px;
+margin:0
+}
+
+.product-summary .summary-items,.product-summary .confirmation-query-details,.confirmation-query .summary-items,.confirmation-query .confirmation-query-details {
+background:#fff;
+border:1px solid #e7e7e7;
+padding:10px 0
+}
+
+.product-summary .update-btn,.confirmation-query .update-btn {
+margin:0 20px;
+padding:8px 0;
+position:relative
+}
+
+.product-summary .update-btn .icon-refresh,.confirmation-query .update-btn .icon-refresh {
+background:url(../img/interface/icon-refresh.png) 0 0 no-repeat;
+height:20px;
+margin-right:5px;
+width:23px
+}
+
+.product-summary .summary-item,.confirmation-query .summary-item {
+border-top:1px solid #e7e7e7;
+margin:0 20px;
+padding:8px 0
+}
+
+.product-summary .summary-item:first-child,.confirmation-query .summary-item:first-child {
+border-top:0
+}
+
+.product-summary .summary-item .summary-txt,.confirmation-query .summary-item .summary-txt {
+font-size:13px;
+line-height:1;
+margin:0
+}
+
+.product-summary .summary-item .summary-amount,.confirmation-query .summary-item .summary-amount {
+font-size:16px;
+margin:0
+}
+
+.product-summary .success-item,.confirmation-query .success-item {
+color:#355b39
+}
+
+.product-summary .success-item .success-msg,.confirmation-query .success-item .success-msg {
+background:url(../img/interface/icon-tick.png) 0 8px no-repeat;
+padding-left:25px
+}
+
+.teaser-border {
+background:#d0d0d0;
+bottom:0;
+height:6px;
+left:0;
+position:absolute;
+width:100%
+}
+
+.product-teaser-txt,.department-teaser-txt {
+min-height:80px;
+padding:10px
+}
+
+.department-teaser {
+margin:10px;
+position:relative
+}
+
+.department-teaser .clubcard-exchange-logo {
+background:url(../img/interface/logo-clubcard-exchange-mini.png) 0 0 no-repeat;
+height:40px;
+left:5px;
+position:absolute;
+top:5px;
+width:62px
+}
+
+.carousel-product-image.top-right .special-offer {
+right:0;
+top:0
+}
+
+.carousel-product-image.bottom-left .special-offer {
+left:0;
+top:78px
+}
+
+.carousel-product-image.bottom-right .special-offer {
+right:0;
+top:78px
+}
+
+.carousel-product-teaser .teaser-border {
+background:#1f4fa2;
+color:#fff;
+height:auto;
+padding:2.5px 10px
+}
+
+.carousel-product-teaser .product-teaser-txt {
+min-height:100px
+}
+
+.carousel-product-teaser .product-teaser-txt p a {
+color:#333
+}
+
+.product-timer-container {
+overflow:hidden;
+padding:20px 0;
+position:relative
+}
+
+.product-timer-container p {
+display:none;
+margin-bottom:0;
+margin-right:8px
+}
+
+.product-timer-heading {
+float:left;
+font-weight:400;
+letter-spacing:0;
+margin-top:10px;
+white-space:nowrap;
+width:35%
+}
+
+.time-counter {
+float:right;
+width:64.5%
+}
+
+.time-counter .time-item {
+float:left;
+width:25%
+}
+
+.time-value,.time-descriptor {
+display:block;
+text-align:center
+}
+
+.time-value {
+font-size:18px;
+line-height:1
+}
+
+.time-descriptor {
+font-size:12px;
+line-height:18px
+}
+
+.time-hours .time-value,.time-minutes .time-value,.time-seconds .time-value {
+background:url(../img/interface/icon-time-value-colon.png) 0 50% no-repeat
+}
+
+.checkout-timer .time-counter {
+background:#e5f2fb;
+color:#00539f;
+float:left;
+padding:1px 5px 3px;
+width:auto
+}
+
+.checkout-timer .time-value {
+background:none;
+display:inline;
+font-size:14px;
+font-weight:400;
+line-height:1px;
+text-align:left
+}
+
+.checkout-timer .time-item {
+display:inline;
+float:none;
+width:auto
+}
+
+.refresh {
+position:absolute;
+right:15px;
+top:25px
+}
+
+.refresh-link {
+background:url(../img/interface/icon-refresh.png) 0 0 no-repeat;
+height:20px;
+width:23px
+}
+
+.stock-count .refresh {
+bottom:-4px;
+display:inline;
+position:relative;
+right:auto;
+top:auto;
+width:23px
+}
+
+.stock-quantity {
+font-size:22px;
+margin-right:10px
+}
+
+.checkout-stock-count .stock-counter {
+background:#fde8e9;
+color:#ed1c24;
+float:left;
+overflow:hidden;
+padding:1px 5px 3px;
+zoom:1
+}
+
+.checkout-stock-count p {
+font-size:14px;
+line-height:17px;
+margin:0
+}
+
+.checkout-stock-count .stock-quantity {
+display:block;
+float:left;
+font-size:14px;
+font-weight:400;
+line-height:17px;
+margin-right:5px
+}
+
+.product-variant-container .product-variant-controls {
+margin-right:20px;
+padding:20px 35px
+}
+
+.product-variant-container .product-value .product-value-amount {
+-khtml-user-select:none;
+-moz-border-radius:3px;
+-moz-user-select:none;
+-ms-border-radius:3px;
+-ms-user-select:none;
+-o-border-radius:3px;
+-webkit-border-radius:3px;
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+background:#fff;
+border:1px solid #d0d0d0;
+border-radius:3px;
+line-height:1;
+padding:10px;
+text-align:left;
+user-select:none
+}
+
+.product-variant-container .error,.product-variant-container .product-variant-message {
+padding:0 30px 10px;
+text-align:center
+}
+
+.product-variant-container .error p,.product-variant-container .product-variant-message p {
+font-weight:700
+}
+
+.product-variant-container .error a,.product-variant-container .product-variant-message a {
+font-weight:400
+}
+
+.product-variant-container.loading {
+position:relative
+}
+
+.product-variant-container.loading .product-variant-form {
+opacity:0.5
+}
+
+.product-variant-container.loading .load-message {
+left:50%;
+position:absolute;
+top:50%
+}
+
+.proposition-banner {
+background:#037dda;
+border-top:1px solid #fff;
+overflow:hidden;
+zoom:1
+}
+
+.proposition-banner-promo {
+border-right:1px solid #fff;
+position:relative
+}
+
+.propostion-overlay {
+background:rgba(0,0,0,0.6);
+position:absolute;
+width:100%
+}
+
+.proposition-cta-container .proposition-cta {
+background:transparent url(../img/interface/icon-large-arrow.png) 0 0 no-repeat;
+height:41px;
+margin:50px auto;
+width:20px
+}
+
+.proposition-instructions {
+background:url(../img/interface/bg-proposition-header.png) top right no-repeat;
+color:#fff
+}
+
+.proposition-instructions h2 {
+margin:0;
+padding:10px 20px
+}
+
+.proposition-instructions ul {
+margin:20px
+}
+
+.proposition-instructions li {
+background-image:url(../img/interface/proposition-instructions-sprite.png);
+background-position:0 0;
+background-repeat:no-repeat;
+color:#fff;
+display:block;
+margin:0 0 20px;
+padding:0 0 0 52px
+}
+
+.proposition-instructions li.instruction-2 {
+background-position:0 -200px
+}
+
+.proposition-instructions li.instruction-3 {
+background-position:0 -400px
+}
+
+.proposition-instructions li.instruction-4 {
+background-position:0 -600px
+}
+
+.instruction-strapline {
+line-height:18px;
+padding:0 0 0 20px
+}
+
+.proposition-teaser .action-icon {
+background:url(../img/interface/sprite-proposition-teasers.png);
+background-repeat:no-repeat;
+height:62px;
+width:62px
+}
+
+.proposition-teaser .earn .action-icon {
+background-position:-225px 0
+}
+
+.proposition-teaser .spend .action-icon {
+background-position:-450px 0
+}
+
+.proposition-teaser .perks .action-icon {
+background-position:-676px 0
+}
+
+.rating-link {
+background-image:url(../img/interface/sprite-ratings-links.png);
+background-repeat:no-repeat;
+display:inline-block;
+height:14px;
+width:86px
+}
+
+.star-4 {
+background-position:0 -20px
+}
+
+.star-3 {
+background-position:0 -40px
+}
+
+.star-2 {
+background-position:0 -61px
+}
+
+.star-1 {
+background-position:0 -79px
+}
+
+.star-0 {
+background-position:0 -100px
+}
+
+.result-options {
+background:#ddd;
+clear:both;
+margin-left:260px;
+padding:5px
+}
+
+.sitemap {
+margin:0;
+overflow:hidden;
+zoom:1
+}
+
+.sitemap dt {
+clear:both;
+padding-right:10px
+}
+
+.sort-listing select {
+appearance:menulist-button;
+width:155px
+}
+
+.teaser .teaser-title {
+display:block;
+font-weight:700;
+padding:20px 35px 0 100px
+}
+
+.teaser .teaser-strapline {
+display:block;
+padding:0 35px 20px 100px
+}
+
+.teaser-partner {
+background:#fff
+}
+
+.teaser-partner .teaser-title {
+display:block;
+padding:55px 40px 0 20px
+}
+
+.teaser-partner .teaser-strapline {
+color:#63b7f6;
+display:block;
+font-weight:700;
+padding:0 40px 20px 20px
+}
+
+#tesco_cookie_widget {
+background:none repeat scroll 0 0 #EEEEF2;
+border-radius:0 0 3px 3px;
+margin-bottom:15px;
+margin-top:4px;
+overflow:hidden;
+position:relative;
+text-align:center;
+z-index:60;
+zoom:1
+}
+
+#tesco_cookie_widget p {
+font-size:95%;
+margin:0;
+padding:5px 5em 5px 5px;
+position:relative
+}
+
+#tesco_cookie_widget p button:after {
+content:"X"
+}
+
+#tesco_cookie_widget button {
+background:none repeat scroll 0 0 #EEEEF2;
+border:0 solid;
+cursor:pointer;
+line-height:1.3;
+padding:0;
+position:absolute;
+right:5px;
+top:4px
+}
+
+.generatedcontent #tesco_cookie_widget p {
+padding:5px 2em
+}
+
+.generatedcontent #tesco_cookie_widget span {
+left:-200em;
+position:absolute
+}
+
+.top-utilities {
+background:#f3f3f3;
+border-bottom:1px solid #ccc;
+border-top:1px solid #ccc;
+overflow:hidden;
+padding:5px 0;
+width:100%;
+zoom:1
+}
+
+.value-calculator {
+margin:0 0 20px;
+overflow:hidden
+}
+
+.value-calculator .inner {
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+border-bottom:#919191 solid 2px;
+border-left:#bfbfbf solid 2px;
+border-radius:4px;
+border-right:#bfbfbf solid 2px;
+border-top:#bfbfbf solid 2px;
+float:left;
+overflow:hidden;
+position:relative
+}
+
+.value-calculator .inner .pound {
+left:30px;
+position:absolute;
+top:5px
+}
+
+.value-calculator .txt {
+-moz-border-radius:3px;
+-ms-border-radius:3px;
+-o-border-radius:3px;
+-webkit-border-radius:3px;
+border:0;
+border-radius:3px;
+color:#333;
+margin:0 5px;
+padding:3px 6px;
+text-align:left;
+width:55px
+}
+
+.currency-symbol {
+float:left;
+padding:5px 0 0 4px
+}
+
+.subtract,.addition {
+-moz-user-select:none;
+-ms-user-select:none;
+-webkit-user-select:none;
+cursor:pointer;
+height:26px;
+width:26px
+}
+
+.subtract:focus,.subtract:hover,.addition:focus,.addition:hover {
+-moz-transition:background-color .3s ease-out 0;
+-o-transition:background-color .3s ease-out 0;
+-webkit-transition:background-color .3s ease-out;
+-webkit-transition-delay:0;
+background-color:#1c4a75;
+transition:background-color .3s ease-out 0
+}
+
+.subtract {
+background:#ededf7 url(../img/interface/icon-subtract.png) 6px 10px no-repeat;
+border-right:#d2d2d2 solid 1px
+}
+
+.subtract.disabled {
+background:#ebebeb url(../img/interface/icon-subtract-disabled.png) 6px 10px no-repeat
+}
+
+.addition {
+background:#00539f url(../img/interface/icon-addition.png) 6px 4px no-repeat;
+border-left:#d2d2d2 solid 1px
+}
+
+.addition.disabled {
+background:#ebebeb url(../img/interface/icon-addition-disabled.png) 6px 4px no-repeat;
+border-left:#d2d2d2 solid 1px
+}
+
+.subtract:hover {
+background-color:#d8d8e5
+}
+
+.addition:hover {
+background-color:#00417d
+}
+
+.subtract.disabled,.addition.disabled {
+background-color:#ebebeb;
+cursor:default
+}
+
+.basket-order-container .update-basket {
+background:none;
+color:#00539f;
+float:left;
+font-weight:400;
+padding-left:5px
+}
+
+.basket-order-container .update-basket i {
+background:url(../img/interface/icon-refresh-basket.png) 0 0 no-repeat;
+display:block;
+float:left;
+height:20px;
+padding-right:3px;
+position:relative;
+top:-3px;
+width:23px
+}
+
+.video-container {
+background:#222;
+color:#fff;
+text-align:center
+}
+
+.video-player {
+height:315px;
+margin:0 auto;
+width:560px
+}
+
+.action-teasers-container .indent-wrapper {
+overflow:hidden;
+padding:0 40px
+}
+
+.action-teaser-item {
+padding:10px 10px 10px 0
+}
+
+.breadcrumb {
+float:left;
+border-radius: 0;
+margin: 0;
+overflow: hidden;
+padding: 7px 0;
+width:69.5%
+}
+
+.js .product-carousel-container,.js .swiper-container {
+height:260px;
+width:960px
+}
+
+.bx-controls {
+width:960px
+}
+
+.js .swiper-slide {
+width:192px
+}
+
+.js .swiper-slide .carousel-teaser {
+-moz-transform:scale(0.8,0.8);
+-ms-transform:scale(0.8,0.8);
+-o-transform:scale(0.8,0.8);
+-webkit-transform:scale(0.8,0.8);
+transform:scale(0.8,0.8)
+}
+
+.js .swiper-slide img,.js .swiper-slide .product-teaser-txt,.js .swiper-slide .teaser-border,.js .swiper-slide .teaser-border p {
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+opacity:0.5
+}
+
+.js .swiper-slide-active .carousel-teaser {
+-moz-transform:scale(1,1);
+-ms-transform:scale(1,1);
+-o-transform:scale(1,1);
+-webkit-transform:scale(1,1);
+transform:scale(1,1)
+}
+
+.js .swiper-slide-active img,.js .swiper-slide-active .product-teaser-txt,.js .swiper-slide-active .teaser-border,.js .swiper-slide-active .teaser-border p {
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+opacity:1
+}
+
+.no-csstransforms .swiper-slide {
+height:208px!important;
+padding:13px 19px;
+width:154px!important
+}
+
+.no-csstransforms .swiper-slide-active {
+height:240px!important;
+padding:0;
+width:192px!important
+}
+
+.no-csstransforms .product-teaser-txt {
+min-height:90px
+}
+
+.global-nav .rewards-section:hover,.categories-btn-open.global-nav .rewards-section,.categories-btn-open.global-nav .active.rewards-section:hover {
+background:#00539f
+}
+
+.global-nav .rewards-section:hover a,.categories-btn-open.global-nav .rewards-section a,.categories-btn-open.global-nav .active.rewards-section:hover a {
+background:#00539f;
+color:#fff
+}
+
+.global-nav .rewards-section:hover .category-btn,.categories-btn-open.global-nav .rewards-section .category-btn,.categories-btn-open.global-nav .active.rewards-section:hover .category-btn {
+background-color:#004889
+}
+
+.global-nav .active,.categories-btn-open.global-nav .active {
+background:#e0f0ff
+}
+
+.global-nav .active .category-btn,.categories-btn-open.global-nav .active .category-btn {
+background-color:#d2141b
+}
+
+.global-nav .rewards-section .category-btn {
+background:url(../img/interface/btn-categories.png) no-repeat 8px 22px;
+float:left;
+height:45px;
+min-height:none;
+padding:0;
+width:32px
+}
+
+.global-nav .rewards-section.active .category-btn {
+background:#d2141b url(../img/interface/btn-categories-closed.png) no-repeat 8px 22px
+}
+
+.global-nav.categories-btn-open .rewards-section.active .category-btn {
+background:#d2141b url(../img/interface/btn-categories-open.png) no-repeat 8px 22px
+}
+
+.categories-open {
+background:#f3f3f3;
+border-bottom:1px solid #e7e7e7;
+display:block;
+overflow:hidden;
+padding:10px 20px 20px
+}
+
+.category-list {
+float:left;
+padding-top:10px;
+width:25%
+}
+
+.category-list h2 {
+font-size:16px;
+font-weight:700;
+line-height:22px;
+margin:0
+}
+
+.category-list a {
+line-height:18px
+}
+
+.category-list a:hover {
+color:#d81118
+}
+
+.category-teaser {
+float:left;
+width:293px
+}
+
+.basket-heading {
+margin:10px 0 0
+}
+
+.confirmation-container .checkout-social {
+text-align:right
+}
+
+.checkout-item {
+padding:12px 0;
+position:relative
+}
+
+.checkout-item .remove-item {
+bottom:0;
+position:absolute;
+right:0
+}
+
+.checkout-reward h3 {
+font-size:16px;
+line-height:20px;
+margin:0
+}
+
+.checkout-reward p {
+margin:0 0 0 88px
+}
+
+.checkout-reward p.checkout-value {
+line-height:20px
+}
+
+.confirmation-container .product-summary-container {
+padding-top:50px
+}
+
+.product-order-container h1,.product-order-container h2,.confirmation-message-container h1,.confirmation-message-container h2,.checkout-review-confirm h1,.checkout-review-confirm h2 {
+font-size:18px
+}
+
+.product-order-container .product-order h1,.product-order-container .product-order h2,.confirmation-message-container .product-order h1,.confirmation-message-container .product-order h2,.checkout-review-confirm .product-order h1,.checkout-review-confirm .product-order h2 {
+font-size:28px;
+line-height:40px
+}
+
+.product-order-container .product-order .edit-btn,.confirmation-message-container .product-order .edit-btn,.checkout-review-confirm .product-order .edit-btn {
+padding:20px 20px 0 0
+}
+
+.checkout-heading p {
+position:relative;
+top:-10px
+}
+
+.checkout-additional-information .control-group label,.checkout-additional-information .control-group .txt {
+display:inline-block;
+margin-bottom:0
+}
+
+.checkout-additional-information .control-group label {
+margin-right:15px
+}
+
+.basket-actions,.checkout-review {
+clear:both;
+overflow:hidden;
+zoom:1
+}
+
+.checkout-process .process-item {
+background:url(../img/interface/bg-checkout-process-item.png) top right no-repeat;
+display:inline-block;
+float:left;
+height:30px;
+margin-right:5px;
+padding:0 25px 0 15px
+}
+
+.checkout-process .process-item.current-step {
+background-position:right -70px;
+color:#fff
+}
+
+.checkout-process .process-item p {
+font-weight:700;
+line-height:30px;
+margin:0
+}
+
+.clubcard-exchange-logo {
+background:url(../img/interface/logo-clubcard-exchange.png) 0 0 no-repeat;
+height:133px;
+width:241px
+}
+
+.clubcard-secure-message {
+margin:0 20px 10px;
+padding:20px 20px 20px 80px
+}
+
+.double-content-block-container {
+background:url(../img/interface/bg-double-content-block.png) repeat-y top center;
+overflow:hidden;
+zoom:1
+}
+
+.double-content-block .content-block {
+margin:0 10px
+}
+
+.double-content-block .right-block {
+margin-right:0
+}
+
+.double-promo {
+background:url(../img/interface/bg-double-promo.png) 50% 0 repeat-y
+}
+
+.choice-promo {
+background:url(../img/interface/bg-choice-promo.png) 50% 0 repeat-y
+}
+
+.choice-divider {
+margin-top:-25px;
+top:50%
+}
+
+.facet-nav {
+margin-left:20px
+}
+
+.listing-results .facet-nav-container {
+margin-top:-40px
+}
+
+.global-nav {
+clear:both;
+float:left;
+margin:0;
+padding:0 0 0 10px;
+width:950px
+}
+
+.global-nav > li {
+border-right:1px solid #dcdcdc;
+float:left
+}
+
+.global-nav li a {
+display:block;
+float:left;
+padding:14px 13px
+}
+
+.global-nav li a:focus,.global-nav li a:hover {
+-moz-transition:background-color .3s ease-out 0;
+-o-transition:background-color .3s ease-out 0;
+-webkit-transition:background-color .3s ease-out;
+-webkit-transition-delay:0;
+background:#00539f;
+color:#fff;
+text-decoration:none;
+transition:background-color .3s ease-out 0
+}
+
+.global-nav li a.category-btn {
+border-left:1px solid #f1f1f1
+}
+
+.global-nav .active:hover a.category-btn {
+border-left-color:#336c9f
+}
+
+.global-secondary-nav .basket {
+background:none;
+position:relative;
+top:-8px
+}
+
+.global-secondary-nav .basket .basket-btn {
+background-image:url(../img/interface/basket-desktop.png);
+background-position:15px 10px;
+background-repeat:no-repeat;
+border:1px solid #dcdcdc;
+display:block;
+padding:12px 8px 10px 40px
+}
+
+.global-secondary-nav .basket .basket-btn .basket-arrow {
+background:url(../img/interface/icon-basket-arrow.png) 100% 4px no-repeat;
+display:block;
+padding:0 15px 0 0
+}
+
+.global-secondary-nav .basket .basket-btn .items {
+padding:0 5px
+}
+
+.global-secondary-nav .basket.open .basket-btn:focus .basket-arrow,.global-secondary-nav .basket.open .basket-btn:hover .basket-arrow {
+background:url(../img/interface/icon-basket-arrow-open.png) 100% 4px no-repeat
+}
+
+.global-secondary-nav .basket .basket-btn.active {
+-moz-transition:background-color .3s ease-out 0;
+-o-transition:background-color .3s ease-out 0;
+-webkit-transition:background-color .3s ease-out;
+-webkit-transition-delay:0;
+background-color:#ed1c24;
+background-image:url(../img/interface/basket-desktop-hover.png);
+border:1px solid #ed1c24;
+color:#fff;
+cursor:default;
+text-decoration:none;
+transition:background-color .3s ease-out 0
+}
+
+.global-secondary-nav li {
+background:url(../img/interface/divider-global-secondary-nav.png) right center no-repeat;
+font-size:12px
+}
+
+.global-secondary-nav li a,.global-secondary-nav li span {
+padding:0 19px 0 14px
+}
+
+.global-secondary-nav li a.basket-text,.global-secondary-nav li span.basket-text {
+display:inline;
+padding:0
+}
+
+.global-secondary-nav .global-social-link {
+background-image:url(../img/interface/global-nav-icons.png);
+background-repeat:no-repeat;
+height:17px;
+line-height:17px;
+margin:3px 5px;
+padding:0;
+width:16px
+}
+
+.global-secondary-nav .twitter {
+background-position:-25px 0
+}
+
+.global-secondary-nav li.first {
+margin-left:16px
+}
+
+.global-secondary-nav li.last {
+margin-right:13px
+}
+
+.global-secondary-nav .googleplus {
+background-position:-71px 0
+}
+
+.global-secondary-nav .youtube {
+background-position:-49px 0;
+margin-right:13px
+}
+
+.identification {
+display:block;
+float:left;
+padding:5px
+}
+
+.logo {
+background:url(../img/interface/logo-desktop.png) no-repeat 0 0;
+height:28px;
+margin:20px 20px 18px;
+width:203px
+}
+
+.heading-container {
+margin:30px 20px 20px
+}
+
+.heading-container .heading-container-text {
+margin-top:-28px;
+}
+
+.listing-item .product-value-container {
+background:none;
+float:right
+}
+
+.location-map {
+width:100%
+}
+
+.map-result-proximity {
+margin-left:34px
+}
+
+.map-result-txt {
+width:165px
+}
+
+.banner-txt {
+padding-top:40px
+}
+
+.banner-txt .banner-strapline p {
+line-height:32px
+}
+
+.banner-icon {
+padding-top:70px
+}
+
+.advert-banner .page-banner {
+border:solid 1px #000
+}
+
+.bottom-pagination {
+background:#ddd;
+float:none;
+margin:0 20px 10px;
+padding:5px
+}
+
+.payment-discount {
+display:block;
+height:auto;
+overflow:hidden;
+padding:20px 0;
+width:auto;
+zoom:1
+}
+
+.payment-discount .discount-form label {
+padding-top:4px
+}
+
+.payment-discount .control-group .txt {
+margin-right:10px
+}
+
+.payment-item-header .payment-voucher-code p {
+padding-left:20px
+}
+
+.payment-item-header .payment-voucher p {
+padding-right:20px;
+text-align:right
+}
+
+.payment-item .payment-voucher-code p {
+padding-left:20px;
+padding-right:20px
+}
+
+.terms-accordion .accordion-group {
+border-top:1px solid #e7e7e7
+}
+
+.product-listings {
+padding:0 20px
+}
+
+.listing-header {
+margin-right:20px
+}
+
+.product-spotlight-container {
+background:url(../img/interface/bg-product-variants-large.png) 0 0 repeat-y
+}
+
+.spotlight-img,.product-spotlight-details {
+margin:0 0 0 20px
+}
+
+.checkout-payment-details .product-summary {
+margin-left:20px;
+margin-right:0
+}
+
+.product-teaser {
+margin:10px
+}
+
+.proposition-header-container h2 {
+margin:0 0 0 20px;
+padding-top:20px
+}
+
+.proposition-header-container p {
+margin:10px 0 20px 20px
+}
+
+.proposition-banner-promo.top-left .propostion-overlay,.proposition-banner-promo.top-right .propostion-overlay,.proposition-banner-promo.no-logo .propostion-overlay {
+bottom:0;
+left:0
+}
+
+.proposition-banner-promo.top-right .clubcard-exchange-logo {
+right:40px;
+top:40px
+}
+
+.proposition-banner-promo.top-left .clubcard-exchange-logo {
+left:40px;
+top:40px
+}
+
+.proposition-banner-promo.bottom-left .clubcard-exchange-logo {
+bottom:40px;
+left:40px
+}
+
+.proposition-banner-promo.bottom-right .clubcard-exchange-logo {
+bottom:40px;
+right:40px
+}
+
+.contact-panel .icon-block {
+height:30px;
+margin-right:5px;
+margin-top:-8px;
+width:30px
+}
+
+.checkout-process .sign-out {
+float:right;
+height:30px;
+margin:5px 5px 0 0
+}
+
+.image-left {
+float:left;
+padding:0 20px 10px 0
+}
+
+.image-right {
+float:right;
+padding:0 0 10px 20px
+}
+
+.info {
+padding-top:10px
+}
+
+.half-block {
+float:left;
+padding-right:2%;
+width:48%
+}
+
+.half-block h4 {
+font-weight:700;
+margin-bottom:20px
+}
+
+.half-block img {
+margin-bottom:10px;
+padding-left:13%
+}
+
+#BVRRContainer .bv-active-feedback {
+position:relative!important;
+top:10px!important
+}
+
+#BVRRContainer .bv-secondary-content-actions-container {
+position:relative!important;
+top:-15px!important
+}
+
+#BVRRContainer .bv-content-list-Comments .bv-active-feedback {
+top:-5px!important
+}
+
+#BVRRContainer .bv-cleanslate .bv-core-container-146 .bv-content-actions-container {
+margin:0!important;
+padding:0 10px!important
+}
+
+.delivery-item:after,.checkout-additional-item-header:after,.checkout-additional-item:after,.product-listing-display,.product-description,.product-value,.category-navigation-drawer {
+clear:both
+}
+
+.delivery-item [class*="span"].hide,.checkout-additional-item-header [class*="span"].hide,.checkout-additional-item [class*="span"].hide,.print-logo,.product-timer-container.expired h2,.product-timer-container.expired .time-counter,.checkout-price-txt,.checkout-price .voucher-cost,.checkout-process .checkout-process-progress,.global-secondary-nav .basket .basket-btn .items-txt,.global-navigation-drawer .mobile-home-btn,.global-navigation-drawer .mobile-sign-in,.global-navigation-drawer .mobile-global,.global-navigation-drawer .mobile-global-social,.mobile-header,.listing-header .search-form,.product-listing-heading p,.no-results .result-options,.category list .controller {
+display:none
+}
+
+.delivery-item [class*="span"].pull-right,.checkout-additional-item-header [class*="span"].pull-right,.checkout-additional-item [class*="span"].pull-right,.basket-actions .primary-btn,.checkout-review .primary-btn,.flipped-content-promo .content-promo-img,.secondary-information {
+float:right
+}
+
+.checkout-additional-item-header input[class*="span"],.checkout-additional-item input[class*="span"],.checkout-additional-item-header select[class*="span"],.checkout-additional-item select[class*="span"],.checkout-additional-item-header textarea[class*="span"],.checkout-additional-item textarea[class*="span"],.checkout-additional-item-header .uneditable-input[class*="span"],.checkout-additional-item .uneditable-input[class*="span"],.checkout-additional-item-header .input-prepend [class*="span"],.checkout-additional-item .input-prepend [class*="span"],.checkout-additional-item-header .input-append [class*="span"],.checkout-additional-item .input-append [class*="span"],.delivery-item input[class*="span"],.delivery-item select[class*="span"],.delivery-item textarea[class*="span"],.delivery-item .uneditable-input[class*="span"],.delivery-item .input-prepend [class*="span"],.delivery-item .input-append [class*="span"],.share-plugins .twitter-share,.share-plugins .facebook-share,.stock-count .refresh .refresh-link {
+display:inline-block
+}
+
+.delivery-item .controls-row [class*="span"],.checkout-additional-item-header .controls-row [class*="span"],.checkout-additional-item .controls-row [class*="span"],.product-code-container,.sort-listing,.value-calculator .txt,.value-calculator .subtract,.value-calculator .addition,.basket-actions .secondary-btn,.checkout-review .secondary-btn,.payment-discount .control-group,.payment-discount .control-group .controls,.payment-discount .controls .submit,.payment-discount .controls .txt,.process-diagram li {
+float:left
+}
+
+.row-fluid .thumbnails,.checkout-item .thumbnails,.checkout-item-total .thumbnails,.checkout-item-header .thumbnails,.checkout-timer .thumbnails,.checkout-stock-count .thumbnails,.propostion-overlay .thumbnails,.delivery-item .thumbnails,.payment-item .thumbnails,.payment-item-header .thumbnails,.checkout-additional-item-header .thumbnails,.checkout-additional-item .thumbnails,.product-description ul,.double-content-block .left-block {
+margin-left:0
+}
+
+.infobox-body a:hover,.infobox-body a:focus,.propostion-overlay a:hover {
+text-decoration:none
+}
+
+.checkout-additional-details,.checkout-delivery-details,.checkout-payment-details,.checkout-review,.basket-actions,.confirmation-message-container,.checkout-process,.department-browser-inner {
+padding:20px
+}
+
+.category-teaser .teaser-overlay .teaser-heading,.category-teaser .teaser-overlay .teaser-sub-heading,.range-unit,.product-teaser a,.department-teaser a,.product-teaser-txt span,.department-teaser-txt span,.proposition-instructions li span,.proposition-teaser .action-teaser-heading {
+display:block
+}
+
+.content-block,.spotlight-img,.checkout-process,.banner-img {
+overflow:hidden
+}
+
+.footer h2,.footer-heading a,.homepage-banner-cta:focus,.homepage-banner-cta:hover,.proposition-banner a,.propostion-overlay a,.propostion-overlay,.teaser:focus,.teaser:hover,.global-nav .rewards-section:hover .global-nav-highlight,.categories-btn-open.global-nav .rewards-section .global-nav-highlight,.categories-btn-open.global-nav .active.rewards-section:hover .global-nav-highlight,.global-nav .active .global-nav-highlight,.categories-btn-open.global-nav .active .global-nav-highlight,.checkout-process .process-item.completed-step,.global-nav li a:focus .global-nav-highlight,.global-nav li a:hover .global-nav-highlight,.global-nav .active a .global-nav-highlight,.global-secondary-nav .basket.open .basket-btn .items,.global-secondary-nav .basket .basket-btn:focus .items,.global-secondary-nav .basket .basket-btn:hover .items,.global-secondary-nav .basket .basket-btn.active .items {
+color:#fff
+}
+
+.hero-title,.hero-strapline {
+float:left;
+width:50%
+}
+
+.hero-amt-img,.no-results .facet-nav-container {
+margin-top:10px
+}
+
+.search-form form,.product-listing-heading h1,.product-listing-heading p,.product-teaser-txt h3,.product-teaser-txt p,.department-teaser-txt h3,.department-teaser-txt p,.carousel-product-teaser .teaser-border p,.sitemap dd,.sort-listing form,.basket-order-container .value-calculator,.product-promo-container .product-promo {
+margin:0
+}
+
+.autocorrect-result,.product-description,.thesaurus-result {
+padding:20px 20px 0
+}
+
+.add-to-basket-container,.map-search-form-controls {
+text-align:center
+}
+
+.product-promo-container p,.product-description p,.advert-banner .banner-txt .banner-strapline p {
+line-height:22px
+}
+
+.product-promo,.product-summary .warning-item,.confirmation-query .warning-item,.warning-msg,.product-variant-container .error {
+color:#ed1c24
+}
+
+.product-teaser-container,.no-filtration p {
+padding:10px
+}
+
+.product-teaser,.department-teaser,.carousel-product-teaser,.carousel-product-image {
+background:#fff;
+overflow:hidden;
+position:relative;
+zoom:1
+}
+
+.product-teaser h3,.department-teaser h3,.carousel-product-teaser h3 {
+font-weight:700;
+margin:0
+}
+
+.carousel-product-image .special-offer,.proposition-banner-promo .clubcard-exchange-logo {
+position:absolute
+}
+
+.carousel-product-image.top-left .special-offer,.proposition-banner-promo.bottom-left .propostion-overlay,.proposition-banner-promo.bottom-right .propostion-overlay {
+left:0;
+top:0
+}
+
+.product-timer-container.expired p,.stock-count p {
+display:inline
+}
+
+.checkout-timer,.checkout-stock-count {
+clear:both;
+padding:10px 0 0
+}
+
+.checkout-timer p,.checkout-timer .time-descriptor {
+display:inline;
+font-size:14px;
+line-height:1px
+}
+
+.expired,.stock-count {
+text-align:left
+}
+
+.product-variant-form .pdp_quantity,.checkout-delivery-details .delivery-item,.product-description-heading,.half-block p {
+margin-bottom:20px
+}
+
+.product-variant-container .product-value,.product-option-selector {
+margin:0 auto
+}
+
+.product-variant-container .product-value .product-value-txt,.value-calculator .calculator-txt {
+margin-bottom:5px
+}
+
+.proposition-instructions li.instruction-1,.proposition-teaser .collect .action-icon,.star-5,.global-secondary-nav .facebook {
+background-position:0 0
+}
+
+.proposition-teaser,.voucher-payment-container,.basket-actions {
+overflow:hidden;
+zoom:1
+}
+
+.result-options .paging-display,.bottom-pagination .paging-display {
+line-height:14px
+}
+
+.result-options .paging-display p,.bottom-pagination .paging-display p {
+line-height:30px;
+margin-bottom:0;
+padding:0 5px
+}
+
+.result-options .paging-display ul,.bottom-pagination .paging-display ul {
+margin-left:5px
+}
+
+.result-options .sort-listing select,.checkout-payment-details {
+margin-bottom:0
+}
+
+.sitemap li,.sitemap dt,.sitemap dd,.primary-information {
+padding-bottom:10px
+}
+
+#tesco_cookie_accept,.checkout-additional-information .control-group {
+vertical-align:middle
+}
+
+.global-nav .active a,.categories-btn-open.global-nav .active a,.global-nav .active a {
+background:#e0f0ff;
+color:#fff
+}
+
+.global-nav .rewards-section:hover .category-btn,.global-nav .rewards-section.active:hover .category-btn {
+background:#004889 url(../img/interface/btn-categories-closed.png) no-repeat 8px 22px
+}
+
+.global-nav .rewards-section .category-btn:hover,.global-nav .rewards-section.active .category-btn:hover {
+background:#00376a url(../img/interface/btn-categories-closed.png) no-repeat 8px 22px
+}
+
+.global-nav.categories-btn-open .rewards-section .category-btn,.global-nav.categories-btn-open .rewards-section.active:hover .category-btn {
+background:#004889 url(../img/interface/btn-categories-open.png) no-repeat 8px 22px
+}
+
+.global-nav.categories-btn-open .rewards-section .category-btn:hover,.global-nav.categories-btn-open .rewards-section.active .category-btn:hover {
+background:#00376a url(../img/interface/btn-categories-open.png) no-repeat 8px 22px
+}
+
+.product-order,.checkout-additional-details,.checkout-delivery-details,.voucher-payment-container,.checkout-review,.clubcard-secure-message,.confirmation-message-container,.order-error-container {
+margin:0 20px 20px
+}
+
+.basket-actions,.basket-container .product-summary-container {
+padding-top:0
+}
+
+.global-nav .active a.category-btn,.global-nav .active a.category-btn:focus,.global-nav .active a.category-btn:hover {
+border-left-color:#d66468
+}
+
+.global-secondary-nav .basket.open .basket-btn,.global-secondary-nav .basket .basket-btn:focus,.global-secondary-nav .basket .basket-btn:hover {
+-moz-transition:background-color .3s ease-out 0;
+-o-transition:background-color .3s ease-out 0;
+-webkit-transition:background-color .3s ease-out;
+-webkit-transition-delay:0;
+background-color:#00539f;
+background-image:url(../img/interface/basket-desktop-hover.png);
+border:1px solid #00539f;
+color:#fff;
+text-decoration:none;
+transition:background-color .3s ease-out 0
+}
+
+.global-secondary-nav .basket.open .basket-btn .basket-arrow,.global-secondary-nav .basket .basket-btn:focus .basket-arrow,.global-secondary-nav .basket .basket-btn:hover .basket-arrow,.global-secondary-nav .basket .basket-btn.active .basket-arrow {
+background:url(../img/interface/icon-basket-arrow-hover.png) 100% 4px no-repeat
+}
+
+.global-secondary-nav .global-social-link a,.no-results .thesaurus-result {
+padding:0
+}
+
+.banner-txt .banner-heading h2,.advert-banner .banner-txt .banner-heading h2 {
+line-height:1
+}
+
+#homepage-banner .banner-img-txt-holder a h2 {
+font-size:42px
+}
+
+#homepage-banner .banner-img-txt-holder p {
+font-size: 1.5em;
+line-height: 1.2;
+margin-bottom: 20px
+}
+
+@media min--moz-device-pixel-ratio 13,-o-min-device-pixel-ratio 26 2,-webkit-min-device-pixel-ratio 13,min-device-pixel-ratio 13,min-resolution 13dppx{
+	.rating-link {
+	background-image:url(../img/interface/sprite-ratings-links_2x.png);
+	background-size:86px 150px
+	}
+	
+	.logo {
+	background-image:url(../img/interface/logo-desktop_2x.png);
+	background-size:203px 28px
+	}
+	
+	.search-btn,.search-btn:hover,.search-btn:focus {
+	background-image:url(../img/interface/btn-search_2x.png);
+	background-size:36px 36px
+	}
+	
+	.product-summary .update-btn .icon-refresh,.confirmation-query .update-btn .icon-refresh,.refresh-link {
+	background-image:url(../img/interface/icon-refresh_2x.png);
+	background-size:23px 20px
+	}
+}
+
+/* Page Specific */
+.boost .hero-strapline {
+background:#f7f1e3
+}
+
+.boost .hero-strapline .hero-right-panel-txt {
+color:#333
+}

@@ -1,0 +1,49 @@
+
+.order-error-container {
+
+  border: 1px solid $error-bg;
+  .order-error-products {
+    .checkout-items {
+      background: #F3F3F3;
+      padding: 0 $padding/2;
+    }
+    .checkout-reward{
+      @extend %span-helper;
+      @extend .span12;
+    }
+  }
+  .order-error-header {
+    h2, h3{
+      @extend %body-font;
+      font-weight: bold;
+    }
+    background: $error-bg;
+    padding: $padding/2;
+    p{
+      margin:0 0 5px 0;
+    }
+  }
+}
+
+
+
+.error-warning {
+  font-size: 14px;
+  line-height: 20px;
+  color: $highlight;
+  padding-left: 27px;
+  background: url(#{$imgPath}/icon-warning.png) 0 1px no-repeat;
+  @include image-2x("#{$imgPath}/icon-warning_2x.png", 20px, 17px);
+  @extend %body-font;
+
+  a {
+    color: $highlight;
+    text-decoration: underline;
+  }
+}
+
+.checkout-payment-details {
+  .error-warning {
+    background-position: 0 1px;
+  }
+}

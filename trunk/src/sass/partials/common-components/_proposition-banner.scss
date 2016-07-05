@@ -1,0 +1,104 @@
+.proposition-banner{
+  @include clearfix;
+  background: $proposition-bg;
+  border-top:1px solid #fff;
+
+  h2{
+    @extend %promo-heading;
+    @extend %regular-heading;
+  }
+}
+
+.proposition-banner-promo{
+  position: relative;
+}
+
+.propostion-overlay{
+  background: rgba(0, 0, 0, 0.6);
+  a{
+    color:#fff;
+    &:hover{
+      text-decoration:none;
+    }
+  }
+
+  width: 100%;
+  @extend .row-fluid;
+}
+
+.proposition-header-container{
+  @extend %span-helper;
+  @extend .span9;
+}
+
+.proposition-cta-container{
+  @extend %span-helper;
+  @extend .span3;
+}
+
+
+.proposition-header-container {
+  p {
+    @extend %small-heading;
+  }
+}
+
+.proposition-cta-container {
+  .proposition-cta {
+    width:  20px;
+    height: 41px;
+    background: transparent url(#{$imgPath}/icon-large-arrow.png) 0 0 no-repeat; 
+    @extend .ir;
+    margin:50px auto;
+  }
+}
+
+.proposition-instructions{
+  background: url(#{$imgPath}/bg-proposition-header.png) top right no-repeat; 
+  color:#fff;
+
+  h2 {
+    padding: $small-padding $padding;
+    margin: 0;
+  }
+
+  ul {margin: $padding;}
+
+  li {
+      color:#fff;
+      padding: 0 0 0 52px;
+      margin: 0 0 $padding;
+      display: block;
+      background-position: 0 0;
+      background-image: url(#{$imgPath}/proposition-instructions-sprite.png);
+      background-repeat: no-repeat;
+
+      span {display: block;}
+
+      &.instruction-1 {
+        background-position: 0 0;
+      }
+      &.instruction-2 {
+        background-position: 0 -200px;
+      }
+      &.instruction-3 {
+        background-position: 0 -400px;
+      }
+      &.instruction-4 {
+        background-position: 0 -600px;
+      }
+  }
+}
+
+
+.instruction-heading {
+    @extend %regular-heading;
+    @extend %medium-heading;
+}
+
+.instruction-strapline {
+    @extend %regular-heading;
+    @extend %standard-font;
+    line-height: 18px;
+    padding: 0 0 0 $padding;
+}

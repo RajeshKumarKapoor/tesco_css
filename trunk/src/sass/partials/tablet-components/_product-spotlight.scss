@@ -1,0 +1,11 @@
+.product-spotlight{
+  @extend %span-helper;
+  @extend .span6;
+}
+
+.product-spotlight-container{
+ background: url(#{$imgPath}/bg-product-variants-tablet.png) 50% 0 repeat-y; 
+}
+
+.spotlight-img,
+.product-spotlight-details {margin-left: $padding; margin-right:0}

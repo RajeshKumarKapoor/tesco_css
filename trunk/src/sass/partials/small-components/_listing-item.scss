@@ -1,0 +1,35 @@
+.listing-item{
+	.product-value, .product-value-vouchers, .location{
+		margin-bottom:0;
+	}
+
+	.product-value-container{
+		@extend %span-helper;
+		@extend .span12;
+		background: none;
+	}
+
+	.location{
+		display: inline-block;
+	}
+
+	.listing-img{
+		width:75px;
+		img{
+			max-width:75px;
+		}
+			
+		}
+
+	.listing-details {
+		float:left;
+		width:60%;
+	}
+
+	.product-value-vouchers {
+		text-align: right;
+	}
+
+}
+
+

@@ -1,0 +1,10 @@
+.heading-container{
+	margin:30px $padding $padding $padding;
+	.heading-container-text {
+	    margin-top: -28px;
+      //fix heading issue in IE7 /Collapsing margins
+      *margin-top:-15px;
+      *display: inline;
+      *text-align: center;
+	}
+}

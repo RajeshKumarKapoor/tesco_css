@@ -1,0 +1,140 @@
+<% var title = 'Content promo' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+   <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Content promo</p>
+      <hr />
+    </div>
+  </div>
+  <!-- Sample code here -->
+
+  <div class="component-container">
+    <div class="heading-container">
+      <div class="heading-container-text">
+        <h2>Help us get to know you</h2>
+        <p>So you can get more for your coupons</p>
+      </div>
+    </div>
+  </div>
+
+   <div class="content-container">
+    <div class="row-fluid content-promo-container">
+      <div class="double-content-block content-promo-img">
+        <div class="left-block">
+        <img src="../img/content/content-promo-placeholder.jpg" alt="placeholder for content promo">
+        </div>
+      </div>    
+      <div class="double-content-block content-promo-txt">
+        <div class="right-block">
+          <ul class="content-list">
+            <li>
+              If you have any specific dietary or religious requirements, let us know so we can update your preferences.
+            </li>
+            <li>
+              Remember to update your contact details so we can always get your coupons to you.
+            </li>
+            <li>
+              All your latest coupons will be stored in My Clubcard Account, for you to use when it suits you.
+            </li>
+          </ul>
+          <ul>
+            <li>Login to <a href="">My Clubcard Account</a> to update any of the above</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sample code ends -->
+   <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Content promo reversed</p>
+      <hr />
+    </div>
+  </div>
+  <!-- Sample code here -->
+
+
+  <div class="content-container">
+    <div class="row-fluid content-promo-container flipped-content-promo">
+      <div class="double-content-block content-promo-img">
+        <img src="../img/content/content-promo-placeholder.jpg" alt="placeholder for content promo">
+      </div> 
+      <div class="double-content-block content-promo-txt">
+          <ul class="content-list">
+            <li>
+              If you have any specific dietary or religious requirements, let us know so we can update your preferences.
+            </li>
+            <li>
+              Remember to update your contact details so we can always get your coupons to you.
+            </li>
+            <li>
+              All your latest coupons will be stored in My Clubcard Account, for you to use when it suits you.
+            </li>
+          </ul>
+          <ul>
+            <li>Login to <a href="">My Clubcard Account</a> to update any of the above</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Content promo</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Content promos are for use within landing pages or high level pages to call out elements within the content and illustrate with an image.  </p>
+            <h4>Interactions</h4>
+            <p>Standard content links can be used within copy.</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes for this component: desktop and mobile. The larger screens have a simple 2 column layout. The smaller screens stack items vertically with the image preceding copy. Headings should be placed above both image and copy to protect information hierarchy, not within the text column. </p>
+            <hr />
+            <h3>CSS</h3>
+
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/content-block.scss</p>
+            <p>/large-components/content-block.scss</p>
+            <p>/small-components/content-block.scss</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The images are using a max-width fluid technique to shrink to fit the container they are in. You Should ensure text copy is kept to a minimum to balance the height of fluid columns in a tablet layout.</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Images should have relevant alt tags. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

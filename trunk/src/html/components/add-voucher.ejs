@@ -1,0 +1,117 @@
+<% var title = 'Add voucher' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+    <div class="row-fluid styleguide-notes">
+      <div class="styleguide-wrapper">
+        <p>Add voucher</p>
+        <hr />
+      </div>
+    </div>
+
+    <!-- Sample code here -->
+     <div class="voucher-payment-container">
+      <div class="load-message">
+        <div class="loading-graphic"></div>
+      </div>
+      <div class="payment-total">
+        <div class="payment-discount">
+          <label for="manual-voucher">Add a voucher</label>
+          <div class="control-group">
+            <div class="controls">
+              <input name="voucher_code" class="txt" type="text" placeholder="Enter voucher code"  id="manual-voucher"/>
+            </div>
+            <div class="controls">
+              <input class="submit btn" name="add_voucher" value="Add voucher"  type="submit"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sample code ends -->
+
+    <div class="row-fluid styleguide-notes">
+      <div class="styleguide-wrapper">
+        <p>Add voucher with error</p>
+        <hr />
+      </div>
+    </div>
+
+    <!-- Sample code here -->
+
+     <div class="voucher-payment-container error">
+
+      <div class="load-message">
+         <p>Error message encountered when adding vouchers </p>
+      </div>
+      <div class="payment-total">
+        <div class="payment-discount">
+          <label for="manual-voucher2">Add a voucher</label>
+          <div class="control-group">
+            <div class="controls">
+              <input name="voucher_code" class="txt" type="text" placeholder="Enter voucher code"  id="manual-voucher2"/>
+            </div>
+            <div class="controls">
+              <input class="submit btn" name="add_voucher" value="Add voucher"  type="submit"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Add a voucher</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>A user can manually add vouchers for their purchase.</p>
+            <h4>Interactions</h4>
+            <p>Users can enter voucher codes into the form element and submit the form via an AJAX request. If an error is encountered the user will be informed.</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes for this component: Larger screens use a fixed width form element. Smaller screens divide the element into percentage width containers. </p>
+            <hr />
+            <h3>CSS</h3>
+            <p>N/a</p>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>/common-components/payment-discount.scss</p>
+            <p>/large-components/payment-discount.scss</p>
+            <p>/tablet-components/payment-discount.scss</p>
+            <p>/small-components/payment-discount.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>When the user submits the form the voucher payment details are updated without reloading the page.</p>
+            <h4>Use of AJAX</h4>
+            <p>When the form is submitted an AJAX request is sent containing the serialised form data. It expects an HTML response containing the new voucher payment details. See partials/ajax-checkout-vouchers.html for an example.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>Submitting the form reloads the page.</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>This element contains a form field. It requires a label/input pair with a correctly populated unique for/id value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

@@ -1,0 +1,56 @@
+<% var title = 'Cookie Message' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+  <!-- Sample code here -->
+
+  <div id="tesco_cookie_widget" class="container">
+    <p>
+      We use cookies to give you the best possible experience on our site. By continuing to use the site you agree to our use of cookies. <a href="#">Find out more.</a>
+      <button id="tesco_cookie_accept"><span>Close</span></button>
+    </p>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Cookie message</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The cookie widget allows informs users of the Tesco cookie policy in line with EU regulation.</p>
+            <h4>Interactions</h4>
+            <p>User can close the container and accept a cookie stored on their machine.</p>
+            <hr />
+            <h3>CSS</h3>
+            <p>Only common styles are loaded for this component.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/tesco-cookie-widget.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>Javascript stores a cookie on the user's machine so the container is prevented from being displayed on returning visits. We have implemented the code supplied by Tesco.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>The user will encounter the message on all screens</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

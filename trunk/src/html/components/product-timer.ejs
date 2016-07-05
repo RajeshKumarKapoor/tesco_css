@@ -1,0 +1,180 @@
+<% var title = 'Product timer' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product timer - offer time remaining</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-timer-container">
+        <h2 class="product-timer-heading">
+          Available for
+        </h2>
+        <div class="time-counter">
+          <div class="time-days time-item">
+            <span class="time-value">35</span>
+            <span class="time-descriptor">days</span>
+          </div>
+          <div class="time-hours time-item">
+            <span class="time-value">10</span>
+            <span class="time-descriptor">hours</span>
+          </div>
+          <div class="time-minutes time-item">
+            <span class="time-value">56</span>
+            <span class="time-descriptor">mins</span>
+          </div>
+          <div class="time-seconds time-item">
+            <span class="time-value">00</span>
+            <span class="time-descriptor">secs</span>
+          </div>
+        </div>  
+        <div class="refresh">
+          <a href="" class="refresh-link">Refresh page</a>
+        </div>
+        <p>Sorry, this offer has ended</p>
+      </div>
+
+    </div>
+  </div>  
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product timer - offer ended</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-timer-container expired">
+        <p>Sorry, this offer has ended</p>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product stock count - stock remaining</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-timer-container stock-count">
+        <div class="stock-counter">
+          <p><span class="stock-quantity">2345</span>items left</p>
+          <div class="refresh">
+            <a href="" class="refresh-link">Refresh page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product stock count - stock ended</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-timer-container stock-count">
+        <div class="stock-counter">
+          <p>Out of stock</p>
+          <div class="refresh">
+            <a href="" class="refresh-link">Refresh page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Product time - stock availability</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The countdown timer has two states:<br> 
+              - Count down clock<br>
+              - Offer has expired<br>
+              The stock timer has two states:<br> 
+              - Stock availability (which displays the number in stock)<br> 
+              - Out of stock
+            </p>
+            <h4>Interactions</h4>
+            <p>Dynamic content will be updating in real time.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/product-timer.scss</p>
+            <p>/large-components/product-timer.scss</p>
+            <p>/small-components/product-timer.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>On the product description page the 'offer time remaining' timer will count down in real time. When time expires, the 'Sorry, this offer has ended' text appears in place.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>A refresh button appears which enables the user to refresh the page. The anchor needs to be updated during implementation to link to a unique URL to force a refresh.</p>
+            <p><em>see figure 1: </em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/stock.png" alt="non-javascript view of stock check layout">
+            </p>
+            <p><em>see figure 2: </em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/timer.png" alt="non-javascript view of timer layout">
+            </p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>The timer component can either show time remaining on a product, or stock remaining. The components also have product information for the variance in state. If a timer runs out, or stock runs out the user will be informed.</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The refresh icon is a CSS background images. No retina images are supplied as part of this phase but could be incorporated at a later date. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

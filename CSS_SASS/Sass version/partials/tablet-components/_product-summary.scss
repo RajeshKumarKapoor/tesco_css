@@ -1,0 +1,14 @@
+.product-summary, .confirmation-query {
+  margin: $padding 0 0;
+}
+
+.basket-container .product-summary, .confirmation-container  .confirmation-query{
+  margin: 0 $padding $padding;
+}
+
+.product-summary .summary-item .success-msg{
+  min-height:$padding;
+  background-position: 0 50%;
+  display: table-cell;
+  vertical-alignment: middle;
+}

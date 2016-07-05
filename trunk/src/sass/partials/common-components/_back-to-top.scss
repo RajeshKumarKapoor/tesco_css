@@ -1,0 +1,20 @@
+body{
+  position: relative;
+}
+
+
+.back-to-top {
+  @extend .ir;
+  background: url(#{$imgPath}/icon-back-to-top.png) 0 0 no-repeat;
+  @include image-2x("#{$imgPath}/icon-back-to-top_2x.png", 63px, 74px);
+  width:63px;
+  height:36px;
+
+  position: fixed;
+  bottom: 0;
+  right:0;
+  z-index: 999;
+  &:focus, &:hover{
+    background-position:0 -38px;
+  }
+}

@@ -1,0 +1,116 @@
+<% var title = 'Delivery details' %>
+<% var body_class = 'style-guide' %>
+<% var img_path = "../img/styleguide/delivery-details-address.png" %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+  <!-- Sample code ends -->
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Delivery details - address only</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+  <div class="product-order-container">
+    <div class="checkout-delivery-details checkout-delivery-details-summary ">
+      <div class="checkout-heading">
+        <h2>Your delivery details</h2>
+      </div>
+      <div class="delivery-item">
+        <div class="delivery-label"><p>Postal items will be sent to:</p></div>
+        <div class="delivery-details">
+          <p>Mr Aviral Gupta</p>
+          <p>70 Rosslyn Ave</p>
+          <p>Romford, RM3 0DJ</p>
+        </div>
+        <div class="delivery-change-action">
+          <p><a href="" class="edit-address">Edit my account address</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="checkout-delivery-details checkout-delivery-details-edit checkout-delivery-details-edit-address">
+      <div class="checkout-heading">
+        <h2>Your delivery details</h2>
+      </div>
+      <div class="delivery-item">
+        <div class="delivery-label"><p>Postal items will be sent to:</p></div>
+        <div class="delivery-details">
+
+          <div class="load-message">
+            <!--  <p>Error message encountered when submitting form </p> -->
+            <div class="loading-graphic"></div>
+          </div>
+
+          <fieldset>
+            <div class="control-group">
+              <label for="title">Title</label>
+              <div class="controls">
+                <select id="title">
+                  <option selected="selected">Mr</option>
+                  <option>Mrs</option>
+                  <option>Miss</option>
+                  <option>Dr</option>
+                </select>
+              </div>
+            </div>
+            <div class="control-group">
+              <label for="first_name">First name</label>
+              <div class="controls">
+                <input id="first_name" type="text" value="Aviral" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label for="surname">Surname</label>
+              <div class="controls">
+                <input id="surname" type="text" value="Gupta" />
+              </div>
+            </div>
+            <div class="control-group find_address">
+              <label for="post_code">Post code</label>
+              <div class="controls">
+                <input id="post_code" type="text" value="RM3 0DJ" class="input-small" />
+                <a href="#" class="find-address">Find address</a>
+              </div>
+            </div>
+            <div class="control-group address">
+              <label for="house">Or House name/number</label>
+              <div class="controls">
+                <input id="house" type="text" value="70" />
+              </div>
+              <label for="street">Street</label>
+              <div class="controls">
+                <input type='text' id="street" value="Lewis gardens"/>
+              </div>
+              <label for="town">Town/city</label>
+              <div class="controls">
+                <input type='text' id="town" value="London"/>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                <label class="checkbox">
+                  <input type="checkbox" name="confirm" class="confirm" value="1" />
+                  I confirm that I want to make this my main account address 
+                </label>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-submit" name="submit_address">Submit</button>
+              <button class="btn btn-cancel">Cancel</button>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sample code ends -->
+</div>
+
+<% include _style_guide_checkout_delivery %>
+
+<% include ../templates/_foot %>

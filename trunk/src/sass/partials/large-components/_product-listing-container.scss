@@ -1,0 +1,32 @@
+.listing-header .search-form {display: none;}	
+
+.product-listing-heading p {display: none;}
+
+.product-listing-container{
+  @extend %span-helper;
+  @extend .span9
+}
+
+.product-listings{
+  padding:0 $padding 0 $padding;
+}
+
+.product-listing-heading{
+  h1 {
+  	@extend %large-heading;
+    @extend %bold-heading;
+  }
+}
+
+.listing-header{
+  margin-right: $padding;
+}
+
+
+
+
+
+
+
+
+

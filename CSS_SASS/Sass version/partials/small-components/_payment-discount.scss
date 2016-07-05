@@ -1,0 +1,28 @@
+.payment-discount{  
+  padding: $small-padding 0; 
+
+  .discount-form{
+    label {
+      display: block;
+      margin: 0 0 5px 0;
+      padding-right: 0;
+    }
+  }
+  .control-group{
+    @extend .row-fluid;
+    clear:both;
+
+    .controls{
+      width:50%;
+      float:left;
+    }
+    .txt{
+      margin-right:10px;
+      width:85%;
+      padding:5px 6px;
+    }
+    .submit{
+      width:100%;
+    }
+  }
+}

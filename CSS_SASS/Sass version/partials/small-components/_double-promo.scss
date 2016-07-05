@@ -1,0 +1,43 @@
+.choice-promo .promo-item:first-child{
+  border-bottom:1px solid $main-link-colour;
+}
+
+.choice-promo{
+  background:#f2f2f2;
+}
+
+.promo-item{
+    position: relative;
+    .btn{
+      margin-top:$padding;
+    }
+}
+
+.promo-txt{
+  padding:40px 20px;
+}
+
+.choice-divider{
+  bottom:-25px;
+}
+
+.choice-promo{
+  margin:0 0;
+  margin-top:-40px;
+  h2{
+    margin-bottom:$padding;
+  }
+}
+
+.promo-left .promo-txt { 
+  padding:60px 20px;
+}
+
+.promo-right .promo-txt{
+    padding:60px 20px 40px 20px;
+}
+
+.numbered-list-txt{
+  float: left;
+  width: 70%;
+}

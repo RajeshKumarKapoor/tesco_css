@@ -1,0 +1,62 @@
+<% var title = 'Back to top' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <a href="#top" id="back-to-top" class="back-to-top">Back to top</a>
+
+  <div class="container" id="top">
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Back to top link</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The back to top button is only visible on the Product Description or Product listing/Search result screens. Takes the user back to the top of the page.</p>
+            <h4>Interactions</h4>
+            <p>When a user clicks the back to top button they will be returned to the top of the page with a scroll effect.</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes: desktop and mobile. Larger screens will display a wider button. Smaller screens have a smaller button graphic to preserve space on smaller screens</p>
+            <hr />
+            <h3>CSS</h3>
+            <p>We are using an image replacement technique to swap the text inside the link for a CSS background image</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/back-to-top.scss</p>
+            <p>/small-components/back-to-top.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>This component uses Javascript to anchor users to the top of the page. A click event is bound to the button element. When the button is clicked a scroll animation is triggered moving the screen upwards. </p>
+            <h4>Non-JS behaviour</h4>
+            <p>The fallback behaviour is a simple anchor link to the top of the page.</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The button graphic is a CSS background image. No retina image is supplied as part of this phase but could be incorporated at a later date. </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>The link text and title should be populated.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

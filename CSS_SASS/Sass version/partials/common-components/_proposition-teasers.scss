@@ -1,0 +1,35 @@
+.proposition-teaser{
+  @include clearfix;
+  .action-teaser-txt{
+    @extend %regular-heading;
+  }
+
+  .action-teaser-heading{
+    @extend %bold-heading;
+    display: block;
+    @extend %small-heading;
+  }
+
+  .action-icon{
+      background: url(#{$imgPath}/sprite-proposition-teasers.png);
+      background-repeat: no-repeat;
+      height:62px;
+      width:62px;
+  }
+
+  .collect .action-icon{
+    background-position: 0 0 ;
+
+  }
+  .earn .action-icon{
+    background-position: -225px 0 ;
+
+  }
+  .spend .action-icon{
+    background-position: -450px 0 ;
+
+  }
+  .perks .action-icon{
+    background-position: -676px 0 ;
+  }
+}

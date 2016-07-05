@@ -1,0 +1,73 @@
+.payment-item-header {
+  background: $medium-bg;
+  border-bottom: 0;
+  padding: 12px 0;
+  margin: 0 0 2px;
+
+  .payment-voucher-added p,
+  .payment-voucher-code p,
+  .payment-expiry p,
+  .payment-voucher p {
+      @extend %body-font;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1;
+      margin: 0;
+    }
+   .payment-voucher-added{
+    margin-left:12px;
+   } 
+}
+
+.payment-item {
+  border-bottom: $standard-border;
+  padding: $small-padding 0;
+  @include clearfix;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .payment-voucher{
+    text-align: right;
+   p{
+      padding-right: $padding;
+      @include old-ie{
+        padding-right:0;
+      };
+      display:inline;
+      @extend %bold-heading;
+      font-size: 16px;
+      line-height: 20px;
+      vertical-align: middle;
+    }
+    .payment-ctrl {
+      margin-right: $padding;
+      display: inline;
+      float: right;
+      .control-group {
+        margin-left:-10px;
+        line-height: 12px;
+        .checkbox {
+          margin: 0;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

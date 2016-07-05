@@ -1,0 +1,70 @@
+.global-secondary-nav .basket {
+  position: relative;
+  top:-8px;
+  background:none;
+}
+
+//open state for basket dropdown button
+.global-secondary-nav .basket.open .basket-btn{
+    @include single-transition(background-color, 0.3s, ease-out, 0);
+    border:1px solid $main-link-colour;
+    background-image: url(#{$imgPath}/basket-desktop-hover.png);
+    background-color:$main-link-colour;
+    text-decoration: none;
+    color:#fff;
+    .items{
+      color:#fff;
+    }
+    .basket-arrow{
+      background:url(#{$imgPath}/icon-basket-arrow-hover.png) 100% 4px no-repeat;
+    }
+}
+
+.global-secondary-nav .basket .basket-btn {
+  border:1px solid #dcdcdc;
+  background-image: url(#{$imgPath}/basket-desktop.png);
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  padding: 12px 8px 10px 40px;
+  display: block;
+  .basket-arrow{
+    display: block;
+    padding:0 15px 0 0;
+    background:url(#{$imgPath}/icon-basket-arrow.png) 100% 4px no-repeat;
+  }
+  .items{
+    padding: 0 5px;
+  }
+  .items-txt {
+    display: none;
+  }
+  &:focus, &:hover{
+    @include single-transition(background-color, 0.3s, ease-out, 0);
+    border:1px solid $main-link-colour;
+    background-image: url(#{$imgPath}/basket-desktop-hover.png);
+    background-color:$main-link-colour;
+    text-decoration: none;
+    color:#fff;
+    .items{
+      color:#fff;
+    }
+    .basket-arrow{
+      background:url(#{$imgPath}/icon-basket-arrow-hover.png) 100% 4px no-repeat;
+    }
+  }
+  &.active{
+    cursor: default;
+    @include single-transition(background-color, 0.3s, ease-out, 0);
+    border:1px solid $highlight;
+    background-image: url(#{$imgPath}/basket-desktop-hover.png);
+    background-color:$highlight;
+    text-decoration: none;
+    color:#fff;
+    .items{
+      color:#fff;
+    }
+    .basket-arrow{
+      background:url(#{$imgPath}/icon-basket-arrow-hover.png) 100% 4px no-repeat;
+    }
+  }
+}

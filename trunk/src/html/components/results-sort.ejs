@@ -1,0 +1,79 @@
+<% var title = 'Sort results' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="result-options">
+    <div class="sort-listing">
+      <label for="sort-select" class='visuallyhidden'>Sort results</label>
+      <select id="sort-select">
+        <option>Sort</option>
+        <option value="default">alphabetical A-Z</option>
+        <option value="option1">alphabetical Z-A</option>
+        <option value="option2">Price - low to high</option>
+        <option value="option3">Price - high to low</option>
+        <option value="option4">Featured</option>
+        <option value="option5">Top rated</option>
+        <option value="option5">Most reviewed</option>
+      </select>
+      <input class="submit btn sort-listing-btn" type="submit" value="Sort listings" />
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Sort listing results</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Sort enables the user to choose the order they want to view the results in.</p>
+            <h4>Interactions</h4>
+            <p></p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens position the sort listing within the search results controls alongside pagination. Smaller screens position the sort between the filter and search buttons. </p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/result-options.scss</p>
+            <p>/common-components/sort-listing.scss</p>
+            <p>/small-components/sort-listing.scss</p>
+            <hr />
+            <h3>Use of JavaScript</h3>
+            <p>JavaScript facilitates updating the page with new product results when an option is selected.</p>
+            <h4>Use of AJAX</h4>
+            <p>Whenever a user changes the selected option, an AJAX request is sent. The endpoint needs to be integrated with the back end. See clubcard.listing.sort(). The response must be an HTML partial containing the new pagination and products - see partials/ajax-listing-page.html for an example.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>A submit button is displayed. This needs to be integrated with the back end.</p>
+            <p><em>see figure 1</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/listing-controls.png" alt="non-javascript view of pagination layout">
+            </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>This element contains a form field. It requires a label/input pair with a correctly populated unique for/id value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

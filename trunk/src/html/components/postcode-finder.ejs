@@ -1,0 +1,179 @@
+<% var title = 'Postcode Finder' %>
+<% var body_class = 'style-guide' %>
+<% var bing_key = 'AhpCRJmtdXCWiiS8lZFuoUbkZgk8Mn-hFuhFfomrXmARkYT-VflqQA79Ly92eu0C' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="row-fluid styleguide-notes">
+  <div class="styleguide-wrapper">
+    <p>Eating out map search with drop down</p>
+    <hr />
+  </div>
+</div>
+
+<div class="container eating" id='content'>
+  <!-- Sample code here -->
+
+  <div class="component-container">
+    <div class="map-search-form form-inline">
+      <form id="map-search">
+        <h2>Search for restaurants</h2>
+        <div class="map-search-form-controls">
+          <div class="controls">
+            <label class='visuallyhidden' for="restaurant-search">Search for restaurants</label>
+            <input id="restaurant-search" type="text" name="search" class="text" placeholder="Enter your town or postcode"/>
+          </div>
+          <div class="controls">
+            <label class='visuallyhidden' for="brand-select">Select a brand</label>
+            <select id="brand-select" name="brand" class='select'>
+              <option>Select a brand</option>
+              <option>All</option>
+            </select>
+          </div>
+          <div class="controls">
+            <button class="submit btn postcode-search-btn" type="submit"><i class="search-icon"></i>Search</button> 
+          </div>
+        </div>
+        <div class="error-message">
+          <p>Error message displayed when no locations found</p>
+        </div>
+      </form>
+    </div>
+
+    <div class="row-fluid map-search-display">
+      <div class="map-container">
+        <div id="location-map" class='location-map' data-origin-latitude="51.517433" data-origin-longitude="-0.140674">
+          <noscript>
+            <img src="http://dev.virtualearth.net/REST/v1/Imagery/Map/Road?pushpin=51.517433,-0.140674;63&pushpin=51.511732,-0.12327;65;1&pushpin=51.515395,-0.141289;65;2&pushpin=51.51204,-0.139793;65;3&pushpin=51.512086,-0.116857;65;4&pushpin=51.507431,-0.165708;65;5&centerPoint=51.517433,-0.140674&mapSize=640,600&key=<%= bing_key %>" width="640" height="600" alt="Map" class="no-js-map">
+          </noscript>
+        </div>
+      </div>
+      <div class="map-search-results-container">
+        <div class="map-search-result-heading">
+          <h2>We found 243 local restaurants</h2>
+        </div>
+        <div class="map-search-results">
+          <ul>
+            <li data-latitude="51.511732" data-longitude="-0.12327">
+              <div class="map-result-pin">
+                <a href="" class='map-pin'><span class="map-pin-no">1</span></a>
+              </div>
+              <div class="map-result-img">
+                <a href=""><img class="result-logo" src="../img/content/map-search-placeholder.png" alt="alt text for map listing"/></a>
+              </div>
+              <div class="map-result-txt">
+                <h3><a href="">Long Name of restaurant wrapping on to two lines</a></h3>
+                <p class="location full-address">12 woodstock st</p>
+                <p class='location'>London - City of Westminster</p>
+                <p class="location full-address">N16 5PF</p>
+                <p class="location full-address">0207 5768 9485</p>
+              </div>
+              <div class="map-result-proximity">
+                <p>0.2 miles</p>
+              </div>
+              <p class="map-link"><a href="">View this result in maps</a></p>
+            </li>
+            <li data-latitude="51.515395" data-longitude="-0.141289">
+              <div class="map-result-pin">
+                <a href="" class='map-pin'><span class="map-pin-no">2</span></a>
+              </div>
+              <div class="map-result-img">
+                <a href=""><img class="result-logo"  src="../img/content/map-search-placeholder.png" alt="alt text for map listing" /></a>
+              </div>
+              <div class="map-result-txt">
+                <h3><a href="">Name of restaurant 2</a></h3>
+                <p class="location full-address">12 woodstock st</p>
+                <p class='location'>London - City of Westminster</p>
+                <p class="location full-address">N16 5PF</p>
+                <p class="location full-address">0207 5768 9485</p>
+              </div>
+              <div class="map-result-proximity">
+                <p>0.2 miles</p>
+              </div>
+              <p class="map-link"><a href="">View this result in maps</a></p>
+            </li>
+            <li data-latitude="51.51204" data-longitude="-0.139793">
+              <div class="map-result-pin">
+                <a href="" class='map-pin'><span class="map-pin-no">3</span></a>
+              </div>
+              <div class="map-result-img">
+                <a href=""><img class="result-logo"  src="../img/content/map-search-placeholder.png" alt="alt text for map listing" /></a>
+              </div>
+              <div class="map-result-txt">
+                <h3><a href="">Name of restaurant 3</a></h3>
+                <p class="location full-address">12 woodstock st</p>
+                <p class='location'>London - City of Westminster</p>
+                <p class="location full-address">N16 5PF</p>
+                <p class="location full-address">0207 5768 9485</p>
+              </div>
+              <div class="map-result-proximity">
+                <p>0.2 miles</p>
+              </div>
+              <p class="map-link"><a href="">View this result in maps</a></p>
+            </li>
+            <li data-latitude="51.512086" data-longitude="-0.116857">
+              <div class="map-result-pin">
+                <a href="" class='map-pin'><span class="map-pin-no">4</span></a>
+              </div>
+              <div class="map-result-img">
+                <a href=""><img class="result-logo"  src="../img/content/map-search-placeholder.png" alt="alt text for map listing" /></a>
+              </div>
+              <div class="map-result-txt">
+                <h3><a href="">Name of restaurant 4</a></h3>
+                <p class="location full-address">12 woodstock st</p>
+                <p class='location'>London - City of Westminster</p>
+                <p class="location full-address">N16 5PF</p>
+                <p class="location full-address">0207 5768 9485</p>
+              </div>
+              <div class="map-result-proximity">
+                <p>0.2 miles</p>
+              </div>
+              <p class="map-link"><a href="">View this result in maps</a></p>
+            </li>
+            <li data-latitude="51.507431" data-longitude="-0.165708">
+              <div class="map-result-pin">
+                <a href="" class='map-pin'><span class="map-pin-no">5</span></a>
+              </div>
+              <div class="map-result-img">
+                <a href=""><img class="result-logo"  src="../img/content/map-search-placeholder.png" alt="alt text for map listing" /></a>
+              </div>
+              <div class="map-result-txt">
+                <h3><a href="">Name of restaurant 5</a></h3>
+                <p class="location full-address">12 woodstock st</p>
+                <p class='location'>London - City of Westminster</p>
+                <p class="location full-address">N16 5PF</p>
+                <p class="location full-address">0207 5768 9485</p>
+              </div>
+              <div class="map-result-proximity">
+                <p>0.2 miles</p>
+              </div>
+              <p class="map-link"><a href="">View this result in maps</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="map-search-pagination">
+          <div class="map-search-count">
+            <p>1 to 5 of 5</p>
+          </div>
+          <div class="map-search-pagination-controls">
+            <ul>
+              <li class='prev'>
+                <a href="" class="disabled">Prev</a>
+              </li>
+              <li class="next">
+                <a href="">Next</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sample code ends -->
+</div>
+
+<% include _style_guide_map %>
+
+<script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&onscriptload=loadMap"></script>
+
+<% include ../templates/_foot %>

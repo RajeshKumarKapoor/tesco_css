@@ -1,0 +1,46 @@
+.ls-canvas .ls-area , .ls-canvas .ls-area-body{overflow: visible !important;}
+.iw_component ol{list-style: decimal outside none;}
+ 
+.collapse {
+  overflow: hidden;
+  position: static;
+  transition: height 0.35s ease 0s;
+}
+
+select { visibility: visible !important;}
+
+#ls-row-1-area-1 .facet-nav-container{
+width: auto;
+}
+
+#ls-row-1-area-2 .product-listing-container{
+width: auto;
+}
+
+@media all and (min-width: 320px) and (max-width: 900px) {
+	.product-listing-display #ls-row-1-area-1{
+		display:none;
+	}
+	.product-listing-display #ls-row-1-area-2{
+		width: 100%;
+	}
+	 
+}	
+
+.brder-left{border-left:1px solid #d4d4d4}
+.brder{border:1px solid #d4d4d4}
+
+.timmer-banner-cms {
+    background: url("../img/interface/sample-banner-img.png") no-repeat scroll 0 top transparent;
+    clear: both;
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 25px 0 0 50px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 10px;
+    width: 275px
+}
+
+html, body {overflow-x: visible !important;}

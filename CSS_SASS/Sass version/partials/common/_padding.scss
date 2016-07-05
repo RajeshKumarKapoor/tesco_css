@@ -1,0 +1,29 @@
+$padding: 20px;
+$double-padding: $padding * 2;
+$small-padding: 10px;
+
+%padding-container{ 
+	padding: $padding;
+}
+%small-padding-container{ 
+	padding: $small-padding;
+}
+
+.content-container{
+	padding: $padding;
+	@include clearfix;
+  clear:both;
+}
+
+.small-content-container{
+  padding: $padding/2 $padding;
+  @include clearfix;
+  clear:both;
+}
+
+.component-container{
+  clear:both;
+	padding:10px 0;
+  @include clearfix;
+}
+

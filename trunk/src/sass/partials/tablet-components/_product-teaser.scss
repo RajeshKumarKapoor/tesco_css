@@ -1,0 +1,41 @@
+.product-teaser{
+  @include clearfix;
+  @extend .row-fluid;
+}
+
+.product-teaser-item{
+  margin:$padding/2;
+}
+
+.product-teaser-txt{
+  @extend %span-helper;
+  @extend .span6;
+  min-height:none;
+  h3{
+    padding:$padding*2 $padding 0 $padding;
+  }
+  p{
+    padding:0 $padding 0 $padding;
+  }
+}
+
+.product-teaser-img{
+  @extend %span-helper;
+  @extend .span6;
+  float: right;
+}
+
+.teaser-border{
+  @extend %span-helper;
+  @extend .span6;
+}
+
+
+.department-teaser-item{
+  @extend %span-helper;
+  @extend .span3;
+  .teaser-border{
+    @extend %span-helper;
+    @extend .span12;
+  }
+}

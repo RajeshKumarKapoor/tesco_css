@@ -1,0 +1,5 @@
+.row-fluid .contact-panel{
+  padding-bottom:$padding;
+  width:100%; //had to remove common styles. IE not accepting desktop styles
+  float:none;
+}

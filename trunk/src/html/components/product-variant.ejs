@@ -1,0 +1,170 @@
+<% var title = 'Product variants' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product variant with multiple select options</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-variant-controls">
+
+        <div class="error">
+          <p>This is an error message if required</p>
+        </div>
+        <form class='product-variant-form'> 
+          <div class="product-option-selector">
+            <div class="control-group">
+              <label class='visuallyhidden' for="drive">Choose drive</label>
+              <select id="drive">
+                <option>16GB</option>
+              </select>
+              <input class="submit secondary-btn" value="submit" type="submit"/>
+            </div> 
+            <div class="control-group">
+              <label class='visuallyhidden' for="color">Choose color</label>
+              <select id="color">
+                <option>Black</option>
+              </select>
+              <input class="submit secondary-btn" value="submit" type="submit"/>
+            </div>
+            <div class="control-group">
+              <label class='visuallyhidden' for="memory">Choose memory</label>
+              <select id="memory">
+                <option>Select memory size</option>
+              </select>
+              <input class="submit secondary-btn" value="submit" type="submit"/>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product variant for unavailable product</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-variant-controls">
+
+        <div class="product-variant-message">
+          <p>Sorry, not available</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product variant for unreleased product</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-variant-controls">
+
+        <div class="product-variant-message">
+          <p>Coming soon!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Sample code ends -->
+
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Product variant with message and action</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+<div class="row-fluid">
+  <div class="product-variant-container">
+      <div class="product-variant-controls">
+
+        <div class="product-variant-message">
+          <p>Product message to customer</p>
+          <p><a href="">How do I refer this reward?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Product variants</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>This component describes the product state or options available to a user.</p>
+            <h4>Interactions</h4>
+            <p>If product options are available then a user can select an option from the menu. If multiple options are presented then a user will only be able to interact with one select menu at a time.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/product-variants.scss</p>
+            <p>/large-components/product-variants.scss</p>
+            <p>/small-components/product-variants.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>JavaScript controls the active state of select menus visible for products with multiple options </p>
+            <h4>Use of AJAX</h4>
+            <p>Whenever an option is selected, an AJAX request is sent. The response must be an HTML partial containing the next set of options - see partials/ajax-product-variant.html for an example. The partial response controls what options are available, pricing, stock availability information, and whether the add to basket button is enabled. The product variant container is replaced with the response.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>Submit buttons are added alongside each select box. The user needs to click the button to obtain the next set of options.</p>
+            <p><em>see figure 1</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/product-variants.png" alt="non-javascript view of variants form layout">
+            </p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>Products can have multiple options displayed in this component. Alternatively the product may be unavailable or currently on hold. We have supplied variant containers for products that require supplementary information.</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>This element contains a form field. It requires a label/input pair with a correctly populated unique for/id value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

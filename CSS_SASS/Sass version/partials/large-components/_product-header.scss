@@ -1,0 +1,41 @@
+.partners-logo{
+  width:150px;
+  height:150px;
+}
+
+.product-title,
+.partners-details,
+.product-social {
+	margin-left: 170px;
+}
+
+
+.product-title {
+	width: 49%;
+	position: relative;
+
+	h1 {
+		font-size: 28px;
+		line-height: 28px;
+	}
+
+	.product-value {
+	   font-size: 16px;
+	}
+
+	.product-value-container {
+		position: absolute;
+		top: 4px;
+		right: -300px;
+		width: 300px;
+		.product-value-vouchers {
+			padding-top: 0;
+			font-size: 16px;
+			.voucher-value {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+

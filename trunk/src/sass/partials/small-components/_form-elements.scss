@@ -1,0 +1,19 @@
+.form-inline label, .form-inline input{
+  display:block;
+}
+
+.form-inline input{
+  margin-bottom:$padding/2;
+}
+
+.form-actions button, .form-actions .submit{
+  display: block;
+  float:none;
+  margin-bottom:$padding/2;
+}
+
+//overrride bootstrap inline styles 
+.radio.inline, .checkbox-inline, .radio.inline + .radio.inline, .checkbox.inline + .checkbox.inline{
+  display: block;
+  margin:0;
+}

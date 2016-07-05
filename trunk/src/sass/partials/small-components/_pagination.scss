@@ -1,0 +1,79 @@
+.pagination{
+   @extend .pager;
+   .desktop-pagination{
+    display: none
+   }
+}
+
+
+.bottom-pagination {
+  float: none;
+  margin: $padding/2;
+  background: #fff;
+  padding: $padding/4;
+  text-align: center;
+  @extend .cf;
+  p {
+    display: none;
+  }
+  ul {
+    line-height: 14px;
+  }
+  li:first-child a, li:last-child a {
+    background-color: $dark-bg;
+    color: #fff;
+    padding: 10px 12px;
+    margin: 0 3px;
+    width: 66px;
+    font-size: 15px;
+    line-height: 20px;
+    border: 0;
+
+  }
+}
+
+.top-pagination {display: none}  
+
+.pagination .prev a, .pagination .next a,
+.pagination .prev span, .pagination .next span {
+	@include border-radius(3px);
+}
+
+.pagination .prev a, .pagination .next a,
+.pagination .prev span, .pagination .next span {
+	@include border-radius(3px);
+}
+
+.pagination li.prev a {
+	background: $dark-bg url(#{$imgPath}/btn-arrows.png) 9px center no-repeat;
+  @include image-2x("#{$imgPath}/btn-arrows_2x.png", 200px, 11px);
+	line-height: 15px;
+	padding: 10px 15px 10px 20px;
+    &:hover, &:focus{
+    background-color: $darker-link-colour;
+  }
+}
+
+.pagination li.next a{
+	background: $dark-bg url(#{$imgPath}/btn-arrows.png) -118px center no-repeat;
+  @include image-2x("#{$imgPath}/btn-arrows_2x.png", 200px, 11px);
+	line-height: 15px;
+	padding: 10px 20px 10px 15px;
+    &:hover, &:focus{
+    background-color: $darker-link-colour;
+  }
+}
+
+.pagination li.disabled a{
+  background-color: #ccc;
+  color:#999999;
+      &:hover, &:focus{
+       background-color: #ccc;
+    }
+}
+
+
+
+
+
+

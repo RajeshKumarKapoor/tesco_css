@@ -1,0 +1,10 @@
+.result-options{
+	padding: $padding/4  $padding $padding/4 0;
+}
+
+
+.no-results{
+  .result-options{
+    height:40px;
+  }
+}

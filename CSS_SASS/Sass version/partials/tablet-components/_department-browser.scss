@@ -1,0 +1,13 @@
+.department-details, .department-specifics{
+  @extend %span-helper;
+  @extend .span6;
+}
+
+
+.department-browser-list{
+  li{
+    width:50%;
+    float:left;
+    display: block;
+  }
+}

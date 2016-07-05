@@ -1,0 +1,12 @@
+@import "common/padding";
+@import "common/environment-variables";
+
+$radius: 5px;
+$double-radius:10px;
+
+// compass variable to ensure filter gradients work in IE9
+/*$experimental-support-for-svg: true;*/
+
+[class^="icon-"], [class*=" icon-"] {
+  background-image: url("#{$imgPath}/glyphicons-halflings.png");
+}

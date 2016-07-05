@@ -1,0 +1,13 @@
+.product-spotlight-container{
+  background: url(#{$imgPath}/bg-product-variants-large.png) 0 0 repeat-y; 
+}
+
+.product-spotlight{
+  @extend %span-helper;
+  @extend .span8;
+}
+
+.spotlight-img,
+.product-spotlight-details {margin: 0 0 0 $padding;}
+
+

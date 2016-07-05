@@ -1,0 +1,9 @@
+.navigation-container { position: relative; }
+
+.global-nav > li > a { 
+	font-weight: bold;
+}
+
+.global-nav-highlight{
+  color: $highlight;
+}

@@ -1,0 +1,30 @@
+
+.double-content-block-container{
+  @include clearfix;
+  background: url(#{$imgPath}/bg-double-content-block.png) repeat-y top center ;
+}
+
+.double-content-block{
+  @extend %span-helper;
+  @extend .span6;
+  .content-block{
+    ul{
+      @extend %unstyled-list;
+    }
+    margin: 0 10px;
+  }
+  .right-block{
+    margin-right: 0;
+  }
+  .left-block{
+    margin-left:0;
+  }
+}
+
+
+
+.flipped-content-promo{
+  .content-promo-img{
+    float:right;
+  }
+}

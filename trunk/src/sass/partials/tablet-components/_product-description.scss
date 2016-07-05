@@ -1,0 +1,57 @@
+.product-description-heading {
+  @extend %medium-heading;
+  line-height: 22px;
+  margin-bottom: $padding;
+}
+
+.product-description{
+  padding: $padding $padding 0;
+}
+
+.terms-accordion {
+  @extend %secondary-accordion;
+	.accordion-group {
+		border-top: $accordion-border;
+	}
+	.accordion-heading {
+		@extend %standard-font;
+	}
+}
+
+.product-variant-container{
+  @extend %span-helper;
+  @extend .span6;
+  .product-variant-controls {
+    margin-left: $small-padding;
+    margin-right: $padding;
+  }
+}
+
+.product-worth{
+  width:220px;
+  margin:0 auto;
+}
+
+.add-to-basket-container {
+  margin: 0 20px;
+}
+
+.product-promo-container {
+  @extend %span-helper;
+  @extend .span12;
+  padding: 0 $padding;
+  .product-promo {
+      margin: 10px 0 0;
+  }
+}
+
+.product-timer-container{
+  padding: $padding;
+}
+
+.product-option-selector,
+.value-calculator {
+  padding: 0 20px;
+}
+
+.empty-container {display: none;}

@@ -1,0 +1,193 @@
+<% var title = 'Tesco Clubcard Responsive Wireframes' %>
+<% var body_class = 'style-guide' %>
+<% include templates/_head %>
+<% include templates/_style_guide_nav %>
+
+<div class="container">
+  <div class="heading-container">
+    <div class="heading-container-text">
+      <h1>Responsive Wireframes</h1>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <p>Welcome to the Tesco Clubcard responsive style guide.</p>
+    <p>The guidelines, templates and components provided here detail the responsive wireframes for the primary templates and components derived from the new visual design templates. They also include new templates such as, the product listing and product detail pages. </p>
+    <p>The guide’s main purpose is to provide a resource for those responsible for the on-going running of the Tesco Clubcard site to ensure that a consistent, efficient and satisfying responsive user experience. </p>
+    <p>The guide is a living document; as the site evolves  new components and other elements can be added.</p>
+
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="content-container">
+          <h2 class="template-title">Prototype</h2>
+          <p>The Homepage, Product listing page, Product detail page and Checkout page were  fully stylised as part of the Research & Development phase of the responsive design project.</p>
+          <p><a href="prototype/index.html" class="btn standard-btn ">Read more</a></p>
+        </div>
+      </div>
+
+      <div class="span4">
+        <div class="content-container">
+          <h2 class="template-title">Templates</h2>
+          <p>18 templates have been developed as responsive wireframes. They do not have any CSS applied but demonstrate how the templates work responsively.</p>
+          <p><a href="templates/index.html" class="btn standard-btn ">Read more</a></p>
+        </div>
+      </div>
+
+      <div class="span4">
+        <div class="content-container">
+          <h2 class="template-title">Components</h2>
+          <p>Fully responsive wireframed components, and their variants, such as carousel, category teasers and adverts.</p>
+          <p><a href="components/index.html" class="btn standard-btn ">Read more</a></p>
+        </div>
+      </div>
+    </div>  
+
+    <div class="row-fluid">
+      <div class="content-container">
+        <h2 class="template-title">Notes for developers</h2>
+        <ul>
+          <li>
+            <a href="#how-to">How to use this documentation</a>
+          </li>
+          <li>
+            <a href="#intergration">Integrating components</a>
+          </li>
+          <li>
+            <a href="#automation">Front end automation</a>
+          </li>
+          <li>
+            <a href="#sass">Using SASS</a>
+          </li>
+          <li>
+            <a href="#twitter">Use of Twitter Bootstrap</a>
+          </li>
+          <li>
+            <a href="#mediaq">Media Queries</a>
+          </li>
+        </ul>
+
+        <div>
+          <div class="content-container">
+            <h3 class="documentation-title" id="how-to">How to use this documentation</h3>
+
+            <p>The Style guide has been created as a living document to demonstrate the use of responsive HTML/CSS techniques. It also serves as a functional specification document. It contains all of the information you need to understand the structure and purpose of each component we have delivered. </p>
+
+            <p>The Style guide is split into three main parts: Prototypes, Templates and Components. Prototypes formed part of an initial delivery of 4 significant pages. They have now been superceded by the Templates delivered during the build phase. The Templates have been produced for a set of 15 key pages throughout the site. They have been created to give you an overall understanding of how each of page will be combined from individual components. Components have been created to give you detailed information on the purpose and structure of individual parts of the page in isolation so the varying states and behaviours can be specified. </p>
+
+            <p>Within the component pages you will find notes explaining the expected layout and behaviour of a component including any interactions. The notes include the use of CSS and Sass, the use of Javascript, instructions on different variants and state, explanations on the use of imagery, instructions on any accessibility concerns and any SEO implications the component may have. </p>
+          </div>
+
+          <div class="content-container">
+            <h3 class="documentation-title" id="intergration">Integrating components</h3>
+            
+            <p>Within the component pages we have left HTML comments, that read "Sample code here" to highlight the part of the HTML you need to consider.</p>
+
+            <p><b>Important:</b> Some components contain extra HTML markup to provide structure on the page and not just the HTML for the component itself. This is to allow you to view it correctly in the page so you can see its visual state. For instance the product purchase components of the product description page all reside within the 'product-spotlight-container' therefore this HTML appears in several components but occurs only once within the product description page, not several times, one for each component.</p>
+
+            <p>When integrating do not simply copy and paste the markup between the sample code comments. You need to analayse each component using the page templates to see how it should reside within its containing structure</p>
+          </div>
+
+          <div class="content-container">
+            <h3 class="documentation-title" id="automation">Front end automation</h3>
+            <h4 class="documentation-subtitle">Installing Grunt</h4>
+
+            <p>We are using Sass to compile the CSS from grouped partials, so we can divide the Mobile CSS from the desktop and tablet CSS. You need to run a server that can watch the SASS partials as they change so we are using Node and Grunt to perform this automation. Instructions to install can be found below, however you may need to take extra steps to achieve these tasks within a windows environment before you can use the Node Package manager </p>
+
+            <p><a href="http://gruntjs.com/">Read more about grunt</a></p>
+
+            <h4 class="documentation-subtitle">Install Node</h4>
+
+            <p>You need this to run Grunt. Grunt relies on the Node package system to group files in your application. You will notice when you look in the trunk folder there is a package.json file which lists the node packages we are using. </p>
+
+            <p><a href="http://nodejs.org/">Read more about Nodejs</a></p>
+
+            <h4 class="documentation-subtitle">Install NPM (The node package manager)</h4>
+
+            <p>You need this to install Grunt as a Node package. You will need to open the terminal to install this and run the instructions from the command line. </p>
+
+            <p><a href="https://npmjs.org/doc/install.html">Read more about NPM installation</a></p>
+
+            <h4 class="documentation-subtitle">Install Grunt</h4>
+
+            <p><a href="http://gruntjs.com/installing-grunt">Read more about installing Grunt</a></p>
+
+            <h4 class="documentation-subtitle">Install the Compass Gem</h4>
+
+            <p><a href="http://compass-style.org/install/">Read more about Compass installation</a></p>
+
+            <p>You will need to have Ruby installed and the ability to install a gem file. If not there are instructions on the Compass installation page. You will need to open the terminal to install this and run the instructions from the command line. I think you will need to run this command as sudo. If you are using a Windows environment you may need to find alternative instructions.</p>
+
+            <pre>sudo gem install compass</pre>
+
+            <h4 class="documentation-subtitle">Installing Bless</h4>
+
+            <p>We have combined the compass framework, Twitter bootstrap and all project styles into a single stylesheet. Sass as a language tends towards the verbose, and the inclusion of the Bootstrap styles means that the combined stylesheet exceeds the Internet Explorer selector limit. To work around this issue we are using another Node tool called Bless which splits the files on compilation and writes an import statement into the original. No change is required to the HTML to support this. This is automated within the CSS generation. The Bless configuration is included within the Gruntfile. This will run automatically as long as you have the Bless Node package installed. </p>
+
+            <p><a href="http://blesscss.com/">Read more about Bless CSS</a></p>
+          </div>
+
+          <div class="content-container">
+            <h3 class="documentation-title" id="sass">Using Sass</h3>
+
+            <p>When you have Grunt installed and the Compass gem which will allow you to compile Sass files you can run Grunt watch to auto-compile as you are working</p>
+
+            <p>Open a terminal and cd (change directory) into the trunk folder. Enter the following command</p>
+
+            <pre>grunt watch</pre>
+
+            <p>Now go and change a file in a Sass partial and press save. You should see the name of the file in the terminal and the status of the compilation. If you have made an error in the SASS you should see the red error message and the line requiring attention. It will also tell you the main CSS files that have been generated. Otherwise it should run green and say everything is compiled.</p> 
+
+            <p>NB: You will need to wait for the Sass to finish compiling before refreshing the page. This will catch you out until you get used to having to wait. One suggestion to prevent the waiting is to do as many CSS changes as you can in Firebug or chrome dev tools and then migrate them into your SASS partial and recompile. This will cut down on the click and wait frustration. </p>
+
+            <p>Another useful to thing to note is that Grunt will only watch existing files. If you create a new partial, you will need to restart your watch command to include it within the compilation. You can also run grunt as a standalone command to perform a one off compilation as below:</p>
+
+            <pre>grunt</pre>
+
+            <h4 class="documentation-subtitle">Sass file structure</h4>
+
+            <p>We are generating 3 main CSS files. Desktop, Tablet and Mobile. These will be served to each device separately to reduce the overhead of load times. To enable splitting the CSS out into the correct file we have created a component based Sass partial architecture. </p>
+
+            <p>Most modules either fall into the large or small components. In some situations we are also using a third tablet layout, but in the majority of cases the tablet view is either using the larger style given to the desktop screens, or the smaller size used for mobile. You can see in the parent Sass file for each layout (desktop, tablet and mobile) how these partials are imported.</p>
+
+            <p>All three files use a base of common Sass partials. The common partials are split into two groups, common which handles all the base styles like typography, forms, button styles etc and common-components which handle shared CSS which will be used by all three stylesheets at a component level.</p>
+
+            <p>I would suggest when styling new components, add everything to the common-component partial first, and then when you are happy with the code, migrate device specific styles into their own partials, in large-component, tablet-components or small-components. This way you can keep everything in one place to do the thinking and then take it apart piece by piece.</p>
+
+            <p>For smaller components the Sass should be contained in a single partial. This should be easy to determine by the classnames used as the Sass partial has been named to match. For larger components such as the Global Header or navigation there may be several partials involved in its construction.</p>
+          </div>
+
+          <div class="content-container">
+            <h3 class="documentation-title" id="twitter">Use of Twitter Bootstrap</h3>
+            <p>To reduce HTTP requests, and so we can use the bootstrap classnames as Sass extensions, we are including them as Sass partials to the common partial served to all three devices. Bootstrap CSS files can be found in the framework partial folder. Any plugin specific CSS can be found in the libs partial folder. </p>
+            <h4 class="documentation-subtitle">Use of the Twitter Bootstrap Grid</h4>
+
+            <p>The grid structure and layout change depending on which device the site is targeting. To implement this we are using the Bootstrap grid as a Sass extension to apply the grid span inside the Sass instead of as a classname in the HTML markup.</p> 
+
+            <p>This way it can easily be removed when its no longer needed. It also removes the need to overwrite Bootstrap styles at lower resolutions because the grid style is effectively only applied to large devices, and therefore the CSS only exists to create structure on larger pages. </p>
+
+            <p>I have migrated the basic Bootstrap span styles into a span helper placeholder (denoted by the % mark below). When extending a .span class on a container you also need to extend the span helper placeholder to apply the floating styles and insert a div in the page with the row-fluid classname. You can see an example of this on the Product Description template where the information panels are floated in to a two column structure which becomes a single column structure on tablet and mobile. </p>
+
+            <p>Below is an excerpt of the CSS used to create a grid column within the desktop layout. The CSS this sample represents containing float and width properties is compiled into the desktop from Sass, without being written in to the tablet or mobile stylesheets</p>
+
+            <pre>
+              .primary-information {
+                @extend %span-helper;
+                @extend .span8;
+              }
+            </pre>
+          </div>
+          
+          <div class="content-container">
+            <h3 class="documentation-title" id="mediaq">Use of Media Queries</h3>
+
+            <p>We have 3 main Breakpoints. &lt;599 for mobile screens, &gt;600 - &lt;959 for tablet, this handles the ipad portrait and larger phones, and then &gt;960 is a fixed width layout for any larger screen such as a desktop or ipad landscape. </p>
+
+            <p>Because we are using custom breakpoints we have had to doctor the Twitter Bootstrap responsive files and responsive grid. Do not under any circumstances upgrade these by downloading them from the site and writing over the top of the existing Bootstrap library files. They have been significantly changed and reduced. Upgrade is no longer possible without integration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include templates/_foot %>

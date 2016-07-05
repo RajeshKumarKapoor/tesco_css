@@ -1,0 +1,103 @@
+<% var title = 'Homepage banner' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="homepage-banner row-fluid">
+    <div class="homepage-banner-img">
+      <img src="../img/content/home-hero.jpg" alt="This is a placeholder for the homepage image"/>
+    </div>
+    <div class="homepage-banner-txt-container">
+      <div class="homepage-banner-txt">
+        <div class="homepage-banner-shim row-fluid">
+          <div class="primary-txt">
+            <div class="content-container">
+              <h1>A little thank you from us</h1>
+              <p>Save on everyday essentials, occasional treats, and experiences with family and friends.</p>
+              <p><a class="btn reverse-btn" href="">Find out how Clubcard works</a></p>
+              <p><a class="homepage-banner-cta" href="">Second call to action</a></p>
+            </div>
+          </div>
+          <div class="secondary-txt">
+            <div class="content-container">
+              <h2>Exchange &amp; Rewards</h2>
+              <p>Let your clubcard vouchers go further</p>
+              <p><a class="homepage-banner-cta" href="">Tell me more</a></p>
+            </div>                        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Homepage banner</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Contains main marketing/promo image and proposition info graphic. Only appears on the homepage.</p>
+            <h4>Interactions</h4>
+            <p>Multiple buttons can be included in the two content areas, allowing content to direct users to a call to action to support promotional campaigns</p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens utilise a horizontal layout to incorporate a chevron in two content areas. Smaller screens stack content areas vertically to allow a fluid stretching layout</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/homepage-banner.scss</p>
+            <p>/large-components/homepage-banner.scss</p>
+            <p>/tablet-components/homepage-banner.scss</p>
+            <p>/small-components/homepage-banner.scss</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>The homepage component can be customised or varied for campaign specific promotions by altering the text container background colours, the main hero image and the CSS which displays the background graphic chevrons</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The Homepage banner image uses a fluid max-width technique which means it will stretch the fill the width of the container it is in. We recommend using WURFL to swap out a smaller image for mobile devices. </p>
+            <p>Desktop Image dimensions: 960 x 355px</p>
+            <p>Mobile Image dimensions: 600 x 222px</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>For the purposes of exposing content to screen readers it is important that the hero image does not contain any text. All text detailing the promotional campaign information should be contained within the text containers.</p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>The following items can be implemented to enhance SEO for this component:</p>
+            <ul>
+              <li><p>Hero image file name</p></li>
+              <li><p>Hero image alt text</p></li>
+              <li><p>H1 text</p></li>
+              <li><p>Text content</p></li>
+              <li><p>Call to action text</p></li>
+              <li><p>Call to action link title attributes</p></li>
+            </ul>
+            <hr />
+            <h3>Character limit recommendations</h3>
+            <p>Primary panel heading: 33 characters</p>
+            <p>Secondary panel heading: 22 characters</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

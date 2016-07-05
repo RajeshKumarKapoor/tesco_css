@@ -1,0 +1,18 @@
+.payment-discount{ 
+  padding: $padding 0 $padding 0;
+  @include clearfix;
+  .discount-form{
+    label {
+      padding-top:4px;
+    }
+  }
+  .control-group{
+    float:left;
+    .controls{
+      float:left;
+    }
+    .txt{
+      margin-right:10px;
+    }
+  }
+}

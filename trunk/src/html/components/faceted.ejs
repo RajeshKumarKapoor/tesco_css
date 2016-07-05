@@ -1,0 +1,363 @@
+<% var title = 'Faceted navigation' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>faceted navigation</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="row-fluid product-listing-display">
+    <div class="facet-nav-container">
+      <div class="facet-nav" >
+        <form>
+          <div class="facet-nav-heading">
+            <p>Filter products</p>
+          </div>
+          <div class="error">
+            <p>You have selected too many filters</p>
+          </div>
+          <input class="submit btn clear-filter-btn" type="reset" value="Clear all filters"/>
+          <input class="submit btn apply-filter-btn" type="submit" value="Apply filters"/>
+          <div class="facet-accordion" id="fac1">
+
+            <div class="sub-cat-facet facet">
+              <h2 class="facet-heading">Category</h2>
+              <div class="facet-items">
+                <ul class="facet-inner">
+                  <li>
+                    <label for="facet-sub-cat-1">
+                      <input class='checkbox' type="checkbox" id="facet-sub-cat-1" name="facets[][category]" value="1">
+                      <span class="label-txt">Castles, Palaces and Gardens</span>
+                    </label>
+                    <span class="items">5</span>
+                  </li>
+                  <li>
+                    <label for="facet-sub-cat-2">
+                      <input class='checkbox' type="checkbox" id="facet-sub-cat-2" name="facets[][category]" value="2">
+                      <span class="label-txt">Lorem Ipsum</span>
+                    </label>
+                    <span class="items">12</span>
+                  </li>
+                  <li>
+                    <label for="facet-sub-cat-3">
+                      <input class='checkbox' type="checkbox" id="facet-sub-cat-3" name="facets[][category]" value="3">
+                      <span class="label-txt">Dolor sit Amet</span>
+                    </label>
+                    <span class="items">5</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="region-facet facet" id="facet-region">
+              <h2 class="facet-heading">Location</h2>
+              <div class="facet-items">
+                <ul class="facet-inner">
+                  <li> 
+                    <a href="" data-child="facet-region-eastmidlands">East Midlands <span class="items">5</span></a> 
+                  </li>
+                  <li> 
+                    <a href="" data-child="facet-region-eastanglia">East Anglia <span class="items">58</span></a> 
+                  </li>
+                  <li> 
+                    <a href="" data-child="facet-region-eastengland">East of England <span class="items">369</span></a> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="region-facet sub-facet facet" id="facet-region-eastmidlands" data-parent="facet-region">
+              <h2 class="facet-heading">East Midlands</h2>
+              <div class="facet-items">
+                <div class="clear-facet"><a href="#facet-region" class="back-btn">Back</a></div>
+                <ul class="facet-inner">
+                  <li>
+                    <label for="facet-region-eastmidlands-1">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastmidlands-1" name="facets[][region]" value="1">
+                      <span class="label-txt">Derby</span>
+                    </label>
+                    <span class="items">3</span>
+                  </li>
+                  <li>
+                    <label for="facet-region-eastmidlands-2">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastmidlands-2" name="facets[][region]" value="2">
+                      <span class="label-txt">Leicester</span>
+                    </label>
+                    <span class="items">1</span>
+                  </li>
+                  <li>
+                    <label for="facet-region-eastmidlands-3">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastmidlands-3" name="facets[][region]" value="3">
+                      <span class="label-txt">Lincoln</span>
+                    </label>
+                    <span class="items">1</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="region-facet sub-facet facet" id="facet-region-eastanglia" data-parent="facet-region">
+              <h2 class="facet-heading">East Anglia</h2>
+              <div class="facet-items">
+                <div class="clear-facet"><a href="#facet-region" class="back-btn">Back</a></div>
+                <ul class="facet-inner">
+                  <li>
+                    <label for="facet-region-eastanglia-1">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastanglia-1" name="facets[][region]" value="1">
+                      <span class="label-txt">Cambridge</span>
+                    </label>
+                    <span class="items">30</span>
+                  </li>
+                  <li>
+                    <label for="facet-region-eastanglia-2">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastanglia-2" name="facets[][region]" value="2">
+                      <span class="label-txt">Peterborough</span>
+                    </label>
+                    <span class="items">28</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="region-facet sub-facet facet" id="facet-region-eastengland" data-parent="facet-region">
+              <h2 class="facet-heading">East of England</h2>
+              <div class="facet-items">
+                <div class="clear-facet"><a href="#facet-region" class="back-btn">Back</a></div>
+                <ul class="facet-inner">
+                  <li>
+                    <label for="facet-region-eastengland-1">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastengland-1" name="facets[][region]" value="1">
+                      <span class="label-txt">London</span>
+                    </label>
+                    <span class="items">340</span>
+                  </li>
+                  <li>
+                    <label for="facet-region-eastengland-2">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastengland-2" name="facets[][region]" value="2">
+                      <span class="label-txt">Dover</span>
+                    </label>
+                    <span class="items">29</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="ratings-facet facet">
+              <h2 class="facet-heading">Ratings</h2>
+
+              <div class="facet-items">
+                <ul class="facet-inner">
+                  <li>
+                    <label for="facet-rating-5">
+                      <input class='radio' type="radio" id="facet-rating-5" name="facets[][rating]" value="5">
+                      <span class="rating-link star-5"> 5 stars</span>
+                    </label>
+                    <span class="items">5</span>
+                  </li>
+                  <li> 
+                    <label for="facet-rating-4">
+                      <input class='radio' type="radio" id="facet-rating-4" name="facets[][rating]" value="4">
+                      <span class="rating-link star-4"> 4 stars</span>
+                    </label>
+                    <span class="items">58</span>
+                  </li>
+                  <li> 
+                    <label for="facet-rating-3">
+                      <input class='radio' type="radio" id="facet-rating-3" name="facets[][rating]" value="3">
+                      <span class="rating-link star-3"> 3 stars</span>
+                    </label>
+                    <span class="items">369</span>
+                  </li>
+                  <li> 
+                    <label for="facet-rating-2">
+                      <input class='radio' type="radio" id="facet-rating-2" name="facets[][rating]" value="2">
+                      <span class="rating-link star-2"> 2 stars</span>
+                    </label>
+                    <span class="items">54</span>
+                  </li>
+                  <li> 
+                    <label for="facet-rating-1">
+                      <input class='radio' type="radio" id="facet-rating-1" name="facets[][rating]" value="1">
+                      <span class="rating-link star-1"> 1 star</span>
+                    </label>
+                    <span class="items">10</span>
+                  </li>
+                  <li> 
+                    <label for="facet-rating-0">
+                      <input class='radio' type="radio" id="facet-rating-0" name="facets[][rating]" value="0">
+                      <span class="rating-link star-0"> 0 stars</span>
+                    </label>
+                    <span class="items">0</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="spotlight-facet facet">
+              <h2 class="facet-heading">Spotlight</h2>
+              <div class="facet-items">
+                <ul class="facet-inner">
+                  <li> 
+                    <label for="facet-spotlight-new">
+                      <input class='checkbox' type="checkbox" id="facet-spotlight-new" name="facets[][spotlight]" value="1">
+                      <span class="label-txt">New</span>
+                    </label>
+                    <span class="items">5</span>
+                  </li>
+                  <li> 
+                    <label for="facet-spotlight-limitedtime">
+                      <input class='checkbox' type="checkbox" id="facet-spotlight-limitedtime" name="facets[][spotlight]" value="1">
+                      <span class="label-txt">Limited time</span>
+                    </label>
+                    <span class="items">12</span>
+                  </li>
+                  <li> 
+                    <label for="facet-spotlight-limitedstock">
+                      <input class='checkbox' type="checkbox" id="facet-spotlight-limitedstock" name="facets[][spotlight]" value="1">
+                      <span class="label-txt">Limited stock</span>
+                    </label>
+                    <span class="items">56</span>
+                  </li>
+                  <li> 
+                    <label for="facet-spotlight-comingsoon">
+                      <input class='checkbox' type="checkbox" id="facet-spotlight-comingsoon" name="facets[][spotlight]" value="1">
+                      <span class="label-txt">Coming soon</span>
+                    </label>
+                    <span class="items">20</span>
+                  </li>
+                  <li> 
+                    <label for="facet-spotlight-specialoffer">
+                      <input class='checkbox' type="checkbox" id="facet-spotlight-specialoffer" name="facets[][spotlight]" value="1">
+                      <span class="label-txt">Special offer</span>
+                    </label>
+                    <span class="items">400</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>  
+          <input class="submit btn clear-filter-btn" type="reset" value="Clear all filters"/>
+          <input class="submit btn apply-filter-btn" type="submit" value="Apply filters"/>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>faceted navigation</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+
+  <div class="row-fluid product-listing-display">
+    <div class="facet-nav-container">
+      <div class="facet-nav" >
+        <form>
+          <div class="facet-nav-heading">
+            <p>Filter products</p>
+          </div>
+          <div class="">
+            <p>No filtration possible</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Faceted navigation</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>
+              A user can filter the rewards displayed on the PLP. they are presented in the left hand column within an accordion component. The filter facets can either be multi select or hierarchical links:<br> 
+              <b>Multi select</b> - Multiple classes in a facet can be selected<br>
+              <b>Hierarchical</b> - Only one class in a facet can be selected. The child facet replaces the parent facet. There may be multiple levels (Grand parent > Parent > Child).<br> 
+              <b>On desktop and tablet</b> landscape all facets are open by default. A user can close/open a facet.<br>
+              <b>On tablet portrait and mobile</b> all facets are displayed within an ‘off-canvas’ ‘Filter’ menu. The first facet (normally the sub-sub category) is default open the others are default closed. A user can close/open a facet.
+            </p>
+            <h4>Interactions</h4>
+            <p>Users can open or close facets with an accordion functionality. Users can select links or checkboxes to filter the result set in realtime via an Ajax request.</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes: desktop and mobile. Larger screens display the Faceted left hand navigation on screen. Smaller screens place the navigation element off canvas to the left and users can access it by using the filter button appended to the page. </p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using two breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded into either large components or small components.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/facet-nav.scss</p>
+            <p>/large-components/facet-nav.scss</p>
+            <p>/small-components/facet-nav.scss</p>
+            <hr />
+            <hr />
+            <h3>Component variants</h3>
+            <p>The facets come in three main varieties: Multi-select checkbox facets which appear at the end of a facet hierarchy, Link facets which appear as part of the ancestor hierarchy to allow users to navigate up and down through filter selections with parent categories and Star rating facets which allow users to select a link to filter by rating.</p>
+            <hr />
+            <h3>Use of JavaScript</h3>
+            <p>JavaScript facilitates the accordian, clear, clear all and sub-filtering functionality, as well as updating the page with new product results when facets are selected.</p>
+            <p>Sub-filter headings (e.g. East Anglia) must be an anchor with the data-child attribute set to the ID of the facet group container. These containers must specify their parent with the data-parent atrribute. These attributes facilitate the dynamic navigation.</p>
+            <h4>Use of AJAX</h4>
+            <p>Whenever a user checks a filter or clicks a clear button, an AJAX request is sent. The endpoint needs to be integrated with the back end. The response must be an HTML partial containing the new pagination and products - see partials/ajax-listing-page.html for an example.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>All accordians are expanded and cannot be collapsed.</p>
+            <p>Two additional buttons are displayed - 'Clear all filters' and 'Apply filters'. These need to be integrated with the back end.</p>
+            <p>Sub-filters (e.g. the regions shown above) are not shown by default - the anchors must be integrated with the back end to reload the page with the sub-filters shown in the template in place.</p>
+            <p>We have provided an example of the error state to display to non-js users in the eventuality of a system error when querying the result set returned.</p>
+
+            <p><em>see figure 1: Faceted navigation</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/faceted-nav.png" alt="non-javascript view of faceted navigation layout">
+            </p>
+
+            <p><em>see figure 2: Faceted navigation on mobile</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/mobile-facet.png" alt="non-javascript view of mobile faceted navigation layout">
+            </p>
+
+            <hr />
+
+            <h3>Responsive Images</h3>
+            <p>The icons for accordion buttons and star ratings are CSS background images. No retina images are supplied as part of this phase but could be incorporated at a later date. </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>This element contains form elements. The checkboxes requires a label/input pair with a correctly populated unique for/id value. The links require relevant text and title attributes</p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>Facet categories and links could form part of the searchable page title, breadcrumb or URL and should therefore be considered when optimising SEO keywords.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

@@ -1,0 +1,106 @@
+//adding specificity of global nav to over ride styles set in basket link itself
+
+.global-secondary-nav .basket .basket-summary-container{
+  width:300px;
+  background: #fff;
+  position: absolute;
+  padding:0;
+  margin:0;
+  top:41px;
+  right:0;
+  font-weight: normal;
+  @include border-radius(0);
+
+  //reset link styles so the checkout items aren't affected. Too much styling set on a tags in global nav
+  a, a:hover, a:focus{
+    background: none;
+    margin:0;
+    padding:0;
+    border:0;
+    text-align: left;
+  }
+  .submit{
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    line-height: 1;
+    padding: 10px;
+    vertical-align: middle;
+    color: #fff;
+    background: $highlight;
+    &:focus, &:hover{
+      background:$darker-highlight;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  .checkout-item{
+    padding:8px ;
+    width: auto;
+
+  }
+  .checkout-total-container{
+    background: #fff;
+    @include border-radius(4px);
+    @include clearfix;
+    margin:$padding/2 $padding/2 0 $padding/2;
+    padding:$padding/2;
+    p{
+      margin:0;
+      padding:0;
+    }
+  }
+
+  .checkout-reward{
+    width:80%;
+    h3{
+      font-size: 14px;
+      line-height: 17px;
+    }
+    p{
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  .checkout-price{
+    width:20%;
+    p{
+      font-size: 14px;
+      line-height: 17px;
+      padding-right:0px;
+    }
+  }
+
+  .checkout-item-total{
+    background:#dddddd;
+    border-top:0;
+    .checkout-total-txt{
+      text-align: left;
+      width:60%;
+      p{
+        @extend %body-font;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+    .checkout-price{
+      p{
+        font-size: 18px;
+        line-height: 24px;
+      }
+      width:40%;
+      float:right;
+    }
+  }
+}
+
+.basket-summary-container.hidden{
+  display: none;
+}
+
+.basket-summary-action{
+  padding:$padding/2;
+  clear:both;
+  background:#dddddd;
+}

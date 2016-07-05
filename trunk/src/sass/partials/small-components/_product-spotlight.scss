@@ -1,0 +1,11 @@
+.product-spotlight-details {
+  @extend %padding-container;
+  padding: $padding $small-padding;
+ 	ul li {
+		font-size: 14px;
+		line-height: 20px;
+		background-position: 0 5px;
+	}
+}
+
+

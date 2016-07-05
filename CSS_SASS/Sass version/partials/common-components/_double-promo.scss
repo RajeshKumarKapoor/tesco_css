@@ -1,0 +1,77 @@
+.double-promo{
+  //hack to prevent carousel 3D transforms interfering with page render
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  @include clearfix;
+  margin:0 20px;
+}
+
+.promo-item{
+  text-align: center;
+}
+
+.promo-txt{
+  padding:40px;
+}
+
+.promo-left .promo-txt{
+  padding:40px 40px 40px 30px;
+}
+
+.promo-right .promo-txt{
+  padding:40px 30px 40px 40px;
+}
+
+.choice-promo{
+  position: relative;
+}
+
+.choice-divider{
+  text-align:center;
+  line-height: 50px;
+  position: absolute;
+  color: #fff;
+  @extend %large-heading;
+  background: #00539f;
+  @include border-radius(30px);
+  height:50px;
+  width:50px;
+  left:50%;
+  margin-left:-25px;
+}
+
+.double-promo-numbered-list{
+  @extend %unstyled-list;
+  text-align: left;
+  li{
+    clear:both;
+    @include clearfix;
+    margin-bottom: 10px;
+  }
+}
+
+.numbered-list-txt{
+  float: left;
+  width: 85%;
+}
+
+.numbered-list-icon{
+  float:left;
+  @include border-radius(30px);
+  background: $main-link-colour;
+  margin-right:10px;
+  width:35px;
+  height:35px;
+  position: relative;
+  text-align: center;
+}
+
+.numbered-list-no{
+  @extend %regular-heading;
+  font-size:18px;
+  line-height: 35px;
+
+  color:#fff;
+  font-weight:bold;
+}

@@ -1,0 +1,41 @@
+.js .listing-item{
+  cursor: pointer;
+}
+
+.listing-item{
+
+  clear: both;
+  border-bottom: $standard-border;
+  @include clearfix;
+  padding:$padding/2 0;
+  .listing-img{
+    width:75px;
+    float:left;
+    margin-right: $small-padding;
+    border: $light-border;
+  }
+  .listing-details{
+    float:left;
+  }
+  .product-value, .product-value-vouchers, .location{
+    @extend %standard-font;
+    margin-bottom:5px;
+  }
+
+  .product-labels-container{
+    margin:0 5px 0 0;
+  }
+  .location{
+    padding-top:2px;
+    white-space: nowrap;
+  }
+}
+
+
+.listing-title {
+    margin-bottom: 0;
+    @extend %bold-heading;
+    font-size:18px;
+    line-height: 22px;
+}
+

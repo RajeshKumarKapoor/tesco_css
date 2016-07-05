@@ -1,0 +1,8 @@
+.top-utilities {
+	width: 100%;
+	padding:$padding/4 0;
+	background: $light-bg;
+	@include clearfix;
+  border-top: $search-border;
+  border-bottom: $search-border;
+}

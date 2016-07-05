@@ -1,0 +1,54 @@
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Map search</h2>
+          <hr />
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Postcode search for products with a location associated to them.</p>
+            <p>The Bing Maps Enterprise API key must be specified in clubcard.maps.js and in the URL of the static map image.</p>
+            <p>We recommend erring towards a generous radius allowance on searches to ensure sufficient results are displayed in remote locations. The error message should only be displayed if the location could not be found, or no results were found.</p>
+            <h4>Interactions</h4>
+            <p>Users can interrogate the map form to produce proximity based results for a town or postcode. Users can either click on a map pin, or result item to highlight individual results.</p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens utilise a horizontal layout to display the map and results side by side. Tablet screens display the result items beneath the map and allow a margin along either side of the map to allow the user to scroll the screen instead of the map when using a touch device. Smaller screens do not display the map view, instead there is a link within the search results which allows the user to view a location within the map application on their device.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/map.scss</p>
+            <p>/large-components/map.scss</p>
+            <p>/tablet-components/map.scss</p>
+            <p>/small-components/map.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>The map is rendered using the <a href="http://msdn.microsoft.com/en-us/library/gg427610.aspx">Bing Maps AJAX Control v7.0</a>.</p>
+            <p>The origin pushpin represents the location the user searched for. The position of the pushpin is derived from the map element, identified by the ID 'location-map'. This element must have the attributes data-origin-latitude and data-origin-longitude specified.</p>
+            <p>The position of pushpins, and title and description text on each popup are derived from the listing results HTML markup. Each result element must include a data-latitude and data-longitude attribute, and an h3 child element.</p>
+            <p>The map is zoomed automatically to accommodate all pushpins.</p>
+            <p>The list of results is paginated; clicking the next/prev buttons shows/hides the relevant set of results.</p>
+            <h4>Use of AJAX</h4>
+            <p>When the user enters a search term and submits the form, an AJAX request is sent to an endpoint on the server. it expects an HTML partial containing the new origin and results information. See partials/ajax-location-search-results.html for an example. The results and map on the page are replaced with the server response and the map is re-drawn.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>A static, non-interactive image is displayed. The URL parameters of the image specify the pushpin locations and zoom level. See the <a href="http://msdn.microsoft.com/en-us/library/ff701724.aspx">documentation</a> for information about the available parameters. Pagination must be implemented on the server side.</p>
+            <p><em>see figure 1</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/map.png" alt="non-javascript view of map fallback">
+            </p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>The form can contain different form elements depending on the product search and an optional select menu. The form container can also be displayed within a colour coded category or the default Tesco blue container.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

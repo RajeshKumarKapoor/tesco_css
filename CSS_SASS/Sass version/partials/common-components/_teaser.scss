@@ -1,0 +1,97 @@
+.teaser-link{
+  min-height:100px;
+  display: block;
+  margin:10px;
+  position: relative;
+  width:auto;
+  cursor: pointer;
+  &:focus, &:hover{
+    text-decoration: none;
+    opacity:0.8;
+    @include old-ie{
+      /* IE 8 */
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+      /* IE 5-7 */
+      filter: alpha(opacity=80);
+    }
+  };
+}
+
+.teaser{
+  background: #2497EF;
+  color: #fff;
+  &:focus, &:hover{
+    color:#fff;
+  }
+  .teaser-title{
+    padding:30px 40px 0 105px;
+    display: block;
+    font-weight: bold;
+  }
+  .teaser-strapline{
+    padding:0 40px 20px 105px;
+    display: block;
+  }
+}
+
+.teaser-icon{
+  background-image:url(#{$imgPath}/icon-teasers.png); 
+  background-repeat: no-repeat;
+  background-position: -86px -5px;
+  height: 85px;
+  width: 85px;
+  position: absolute;
+  left:5px;
+  top:50%;
+  margin-top:-40px;
+}
+
+.online-teaser .teaser-icon{
+  background-position: -86px -5px;
+}
+.direct-teaser .teaser-icon{
+  background-position: -173px -5px;
+} 
+.fuel-teaser .teaser-icon{
+  background-position: -259px -5px;
+}
+.credit-teaser .teaser-icon{
+  background-position: -345px -5px;
+}
+.mobile-teaser .teaser-icon{
+  background-position: -431px -5px;
+}
+
+
+
+.teaser-arrow{
+  background-image:url(#{$imgPath}/icon-teasers.png); 
+  background-repeat: no-repeat;
+  background-position: -55px -25px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right:0;
+  top:50%;
+  margin-top:-20px;
+}
+
+.partner-logo{
+  position: absolute;
+}
+
+.teaser-partner{
+  background: #fff;
+  .teaser-title{
+    padding:55px 40px 0 20px;
+    display: block;
+  }
+  .teaser-strapline{
+    @extend %small-font;
+    color:#63b7f6;
+    font-weight:bold;
+    padding:0 40px 20px 20px;
+    display: block;
+  }
+  
+}

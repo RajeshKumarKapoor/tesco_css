@@ -1,0 +1,32 @@
+.homepage-banner-txt{
+  background: url(#{$imgPath}/bg-homepage-banner-small.png) 50% 0 no-repeat;
+}
+
+
+.primary-txt{
+  background: #b15392;
+}
+
+.secondary-txt{
+  margin-top: 20px;
+  .content-container{
+    padding:20px 30px;
+  }
+  background: #993e7b;
+}
+
+.homepage-banner-txt{
+  p{
+    font-size:16px;
+    line-height:20px;
+  }
+}
+
+
+.homepage-banner-txt-container{
+  margin: -34px 20px 0 20px;
+}
+
+.homepage-banner-action{
+    padding:10px 0 10px 0;
+}

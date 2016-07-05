@@ -1,0 +1,17 @@
+.double-promo{
+  background: url(#{$imgPath}/bg-double-promo.png) 50% 0 repeat-y;
+}
+.choice-promo{
+  background: url(#{$imgPath}/bg-choice-promo.png) 50% 0 repeat-y;
+}
+
+.promo-item{
+  @extend %span-helper;
+  @extend .span6;
+}
+
+.choice-divider{
+  top:50%;
+  margin-top:-25px;
+}
+

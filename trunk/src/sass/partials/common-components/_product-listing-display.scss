@@ -1,0 +1,17 @@
+.product-listing-display{
+  clear: both;
+}
+
+.product-listings.all.loading {
+	padding-bottom: 100px;
+	.load-message {
+		position: absolute;
+		top: auto;
+		height: 100px;
+		background-color: transparent;
+	}
+}
+
+.product-listings ul{
+  @extend %unstyled-list;
+}

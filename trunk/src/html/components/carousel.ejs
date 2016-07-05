@@ -1,0 +1,133 @@
+<% var title = 'Carousel' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="component-container">
+    <div class="product-carousel-container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="carousel-teaser carousel-product-teaser">
+              <img src="../img/content/carousel-placeholder-01.jpg" alt="alt text placeholder for carousel image"/>
+              <div class="product-teaser-txt">
+                <h3><a href="">LEGOLAND Windsor resort</a></h3>
+                <p><a href="">1 day entry token</a></p>
+              </div>
+              <div class="teaser-border">
+                <p class="teaser-voucher-price">£5 in vouchers</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-teaser carousel-product-teaser">
+              <img src="../img/content/carousel-placeholder-02.jpg" alt="alt text placeholder for carousel image"/>
+              <div class="product-teaser-txt">
+                <h3><a href="">Thorpe Park</a></h3>
+                <p><a href="">1 day entry token</a></p>
+              </div>
+              <div class="teaser-border">
+                <p class="teaser-voucher-price">£5 in vouchers</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-teaser carousel-product-teaser">
+              <img src="../img/content/carousel-placeholder-03.jpg" alt="alt text placeholder for carousel image"/>
+              <div class="product-teaser-txt">
+                <h3><a href="">RAC: Roadside + At Home Joint breakdown cover...</a></h3>
+                <p><a href="">1 membership</a></p>
+              </div>
+              <div class="teaser-border">
+                <p class="teaser-voucher-price">£44 in vouchers</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-teaser carousel-product-teaser">
+              <img src="../img/content/carousel-placeholder-04.jpg" alt="alt text placeholder for carousel image"/>
+              <div class="product-teaser-txt">
+                <h3><a href="">Beauty Expert</a></h3>
+                <p><a href="">£20 token</a></p>
+              </div>
+              <div class="teaser-border">
+                <p class="teaser-voucher-price">£10 in vouchers</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-teaser carousel-product-teaser">
+              <img src="../img/content/carousel-placeholder-05.jpg" alt="alt text placeholder for carousel image"/>
+              <div class="product-teaser-txt">
+                <h3><a href="">LA Fitness</a></h3>
+                <p><a href="">£15 Clubcard tokens</a></p>
+              </div>
+              <div class="teaser-border">
+                <p class="teaser-voucher-price">£5 in vouchers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Carousel</h2>
+          <hr />
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The carousel is used to promote several categories or products.</p>
+            <h4>Interactions</h4>
+            <p>Carousel items are clickable product teaser which will take users directly to the product description page. Users can either scroll or swipe to view the items within the carousel.</p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens display 5 items on screen. Tablet screens display 3 items. Smaller screens will only display 1 item at a time.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/carousel.scss</p>
+            <p>/large-components/carousel.scss</p>
+            <p>/tablet-components/carousel.scss</p>
+            <p>/small-components/carousel.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>The carousel is implemented using the <a href="http://bxslider.com/">bxSlider</a> jQuery library. It is configured to automatically advance the slides every 3 seconds.</p>
+            <p>Head have additionally provided custom behaviour to enable the centrally-visible slide to appear larger than the surrounding ones, by applying onSliderLoad, onSlideNext, and onSlidePrev callbacks to the bxSlider library.</p>
+            <p>On touchscreen devices the user may swipe to advance one slide. We have disabled the ability to swipe across multiple slides in one gesture due to inherent issues with looping.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>When JavaScript is disabled, all of the slides are visible. There is no automatic, animated or interactive behaviour.</p>
+            <p><em>see figure 1 below</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/carousel.png" alt="non-javascript view of carousel layout">
+            </p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>Product items could be replaced with other teaser items if desired.</p>
+            <h3>Responsive Images</h3>
+            <p>Image dimensions: 300 × 188px</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

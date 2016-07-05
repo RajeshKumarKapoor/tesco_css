@@ -1,0 +1,59 @@
+.contact-details-container{
+  border-top:$standard-border;
+  @extend %inner-accordion;
+
+  .contact-title{
+    display:block;
+    @extend %large-heading;
+    @extend %regular-heading;
+    padding-bottom:10px;
+  }
+  .contact-context{
+    @include clearfix;
+    margin:0;
+    color:$body-copy;
+    padding-right:$padding*2;
+  }
+  .contact-heading{
+    border-bottom:1px solid #fff;
+  }
+}
+.contact-panel ul{
+  @extend %unstyled-list;
+}
+.opening-hours{
+
+  p{
+    @extend %sub-font;
+    padding-bottom:0;
+    margin-bottom: 0;
+  }
+}
+
+.contact-panel i{
+  width:30px;
+  height:30px;
+  margin-right:5px;
+  margin-top:-8px;
+}
+.icon-post{
+  background: url(#{$imgPath}/sprite-contact-icons.png) -30px 0 no-repeat; 
+}
+.icon-phone{
+  width:25px;
+  background: url(#{$imgPath}/sprite-contact-icons.png) -60px 0 no-repeat; 
+}
+.icon-email{
+  background: url(#{$imgPath}/sprite-contact-icons.png) 0 0 no-repeat; 
+}
+
+
+.contact-panel{
+  @extend %span-helper;
+  @extend .span3;
+  .content-container{
+    padding:$padding/4;
+  }
+}
+
+

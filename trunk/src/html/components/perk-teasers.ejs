@@ -1,0 +1,116 @@
+<% var title = 'Perk teasers' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+  <div class="component-container">
+    <div class="content-block product-teaser-container">
+      <div class="row-fluid">
+        <div class="product-teaser-item">
+          <div class="product-teaser">
+            <div class="product-teaser-img">
+              <a href=""><img src="../img/content/perk-teaser.jpg" alt="alt text placeholder for carousel image"/></a>
+            </div>
+            <div class="product-teaser-txt">
+              <h3><a href="">LEGOLAND Windsor resort</a></h3>
+              <p><a href="">1 day entry token</a></p>
+            </div>
+            <div class="teaser-border">
+            </div>
+          </div>
+        </div>
+         <div class="product-teaser-item">
+          <div class="product-teaser">
+            <div class="product-teaser-img">
+              <a href=""><img src="../img/content/perk-teaser.jpg" alt="alt text placeholder for carousel image"/></a>
+            </div>
+            <div class="product-teaser-txt">
+              <h3><a href="">LEGOLAND Windsor resort</a></h3>
+              <p><a href="">1 day entry token</a></p>
+            </div>
+            <div class="teaser-border">
+            </div>
+          </div>
+        </div>
+         <div class="product-teaser-item">
+          <div class="product-teaser">
+            <div class="product-teaser-img">
+              <a href=""><img src="../img/content/perk-teaser.jpg" alt="alt text placeholder for carousel image"/></a>
+            </div>
+            <div class="product-teaser-txt">
+              <h3><a href="">LEGOLAND Windsor resort</a></h3>
+              <p><a href="">1 day entry token</a></p>
+            </div>
+            <div class="teaser-border">
+            </div>
+          </div>
+        </div>
+        <div class="product-teaser-item">
+          <div class="product-teaser">
+            <div class="product-teaser-img">
+              <a href=""><img src="../img/content/perk-teaser.jpg" alt="alt text placeholder for carousel image"/></a>
+            </div>
+            <div class="product-teaser-txt">
+              <h3><a href="">LEGOLAND Windsor resort</a></h3>
+              <p><a href="">1 day entry token</a></p>
+            </div>
+            <div class="teaser-border">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Perk teasers</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>A perk teaser is used to spotlight products within the site to encourage users to browse and purchase.</p>
+            <h4>Interactions</h4>
+            <p>The image and teaser text both contain a link.</p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens have a 4 row layout. Tablet screens stack items vertically in a fluid stretching format. Smaller screens display the individual teaser items in the same way as the larger screen but in a vertically stacked format.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/product-teaser.scss</p>
+            <p>/large-components/product-teaser.scss</p>
+            <p>/tablet-components/product-teaser.scss</p>
+            <p>/small-components/product-teaser.scss</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>We are using the responsive masking technique on tablet to preserve the height of the object but reduce the width of the image in a fluid container. The mobile image needs to be as wide as the largest breakpoint (&lt;600px) so in this instance we do not recommend using WURFL to replace the image for mobile devices. </p>
+            <p>Image dimensions: 560px x 189px</p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>All relevant text content should be included as text and should not appear in the imagery produced. Images should all contain relevant alt text. Links should contain useful supplementary title text</p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>All relevant text content should be included as text and should not appear in the imagery produced.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

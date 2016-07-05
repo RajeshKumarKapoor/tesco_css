@@ -1,0 +1,30 @@
+.proposition-banner-promo{
+	.clubcard-exchange-logo{
+		position: absolute;
+		top:20px;
+		right:20px;
+	}
+}
+
+.proposition-header-container {
+  h2 {
+    margin: 0 $small-padding;
+    padding-top: $small-padding;
+  }
+  p {
+      margin: $small-padding $small-padding $small-padding;
+      font-size:18px;
+      line-height:24px;
+    }
+}
+
+
+.proposition-instructions{
+  clear:both;
+  h2 {
+    padding: $padding*3/4  $small-padding;
+    margin: 0;
+  }
+
+  ul {margin: $padding*3/4 $small-padding $small-padding;}
+}

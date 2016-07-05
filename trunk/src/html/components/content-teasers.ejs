@@ -1,0 +1,156 @@
+<% var title = 'Content teasers' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="content-container">
+   <div class="teaser-container row-fluid">
+    <div class="teaser-item">
+      <a href="" class="teaser-link teaser online-teaser">
+        <i class="teaser-icon"></i>
+        <span class="teaser-title">Tesco in store and online</span>
+        <span class="teaser-strapline">1 point per £1 spent*</span>
+        <i class="teaser-arrow"></i>
+      </a>
+    </div>
+
+    <div class="teaser-item">
+      <a href="" class="teaser-link teaser direct-teaser">
+        <i class="teaser-icon"></i>
+        <span class="teaser-title">Tesco in store and online</span>
+        <span class="teaser-strapline">1 point per £1 spent*</span>
+        <i class="teaser-arrow"></i>
+      </a>
+    </div>
+
+    <div class="teaser-item">
+      <a href="" class="teaser-link teaser fuel-teaser">
+        <i class="teaser-icon"></i>  
+        <span class="teaser-title">Tesco in store and online</span>
+        <span class="teaser-strapline">1 point per £1 spent*</span>
+        <i class="teaser-arrow"></i>
+      </a>
+    </div>
+
+    <div class="teaser-item">
+      <a href="" class="teaser-link teaser credit-teaser">
+        <i class="teaser-icon"></i>
+        <span class="teaser-title">Tesco in store and online</span>
+        <span class="teaser-strapline">1 point per £1 spent*</span>
+        <i class="teaser-arrow"></i>
+      </a>
+    </div>
+    <div class="teaser-item">
+      <a href="" class="teaser-link teaser mobile-teaser">
+        <i class="teaser-icon"></i>
+        <span class="teaser-title">Tesco in store and online</span>
+        <span class="teaser-strapline">1 point per £1 spent*</span>
+        <i class="teaser-arrow"></i>
+      </a>
+    </div>
+
+    <div class="teaser-item">
+      <a href="" class="teaser-link teaser">
+        <span class="teaser-title">Tesco in store and online</span>
+        <span class="teaser-strapline">1 point per £1 spent*</span>
+        <i class="teaser-arrow"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="component-container">
+  <div class="content-block">
+    <div class="teaser-container row-fluid">
+      <div class="teaser-item">
+        <a href="" class="teaser-link teaser-partner">
+          <i class="teaser-arrow"></i>
+          <img class="partner-logo" src="../img/content/partner-logo.png" alt="placeholder for partner logo"/>
+          <span class="teaser-title">E.ON</span>
+          <span class="teaser-strapline">Up to 4000 points</span>
+        </a>
+      </div>
+      <div class="teaser-item">
+        <a href="" class="teaser-link teaser-partner">
+          <i class="teaser-arrow"></i>
+          <img class="partner-logo" src="../img/content/partner-logo.png" alt="placeholder for partner logo" />
+          <span class="teaser-title">Tesco in store and online</span>
+          <span class="teaser-strapline">1 point per £1 spent*</span>
+        </a>
+      </div>
+      <div class="teaser-item">
+        <a href="" class="teaser-link teaser-partner">
+          <i class="teaser-arrow"></i>
+          <img class="partner-logo" src="../img/content/partner-logo.png" alt="placeholder for partner logo" />
+          <span class="teaser-title">Tesco in store and online</span>
+          <span class="teaser-strapline">1 point per £1 spent*</span>
+        </a>
+      </div>
+      <div class="teaser-item">
+        <a href="" class="teaser-link teaser-partner">
+          <i class="teaser-arrow"></i>
+          <img class="partner-logo" src="../img/content/partner-logo.png" alt="placeholder for partner logo" />
+          <span class="teaser-title">Tesco in store and online</span>
+          <span class="teaser-strapline">1 point per £1 spent*</span>
+        </a>
+      </div>
+    </div>
+  </div>
+   </div>
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Content teasers</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Content teasers are primarily used to call out the value benefit for shopping with either Tesco or their Partners. </p>
+            <h4>Interactions</h4>
+            <p>Teasers act as a full width button. The whole teaser is a clickable area</p>
+            <h4>Layout modes</h4>
+             <p>There are three layout modes: desktop, tablet and mobile. Larger screens have a 3 column layout. Tablet screens have a 2 column fluid layout. Smaller screens display the individual teaser items in a fluid vertically stacked format.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/teaser.scss</p>
+            <p>/large-components/teaser.scss</p>
+            <p>/tablet-components/teaser.scss</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>There are 2 variants of the standard content teaser. Purchase teasers and Partner teasers. Purchase teasers are a predefined list with icons defined as background images. Partner teasers have a content image showing the partner logo. </p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>Retina images have not been supplied as part of this phase but could be implemented at a later date for the purchase teaser icons. </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>All relevant text content should be included as text and should not appear in the imagery produced. Images should all contain relevant alt text. Links should contain useful supplementary title text</p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>All relevant text content should be included as text and should not appear in the imagery produced.</p>
+            <hr />
+            <h3>Character limit recommendations</h3>
+            <p>Teasers: 18 characters per line</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

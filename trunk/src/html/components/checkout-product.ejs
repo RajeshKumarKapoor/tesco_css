@@ -1,0 +1,140 @@
+<% var title = 'Checkout product item' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Checkout and review page product item</p>
+      <hr />
+    </div>
+  </div>
+  <!-- Sample code here -->
+
+
+  <div class="product-order-container">
+    <div class="product-order">
+      <div class="checkout-items">
+        <div class="checkout-item-header">
+          <div class="checkout-reward"><p>Item</p></div>
+          <div class="checkout-price"><p>Cost</p></div>
+        </div>
+        <div class="checkout-item">
+          <div class="checkout-reward">
+            <img src="../img/content/plp-listing-placeholder.gif"  alt="placeholder for checkout item"/>
+            <h3><a href="#">Abbotsbury Subtropical Gardens</a></h3>
+            <p class="checkout-value">£20 money-off token</p>
+            <p class="checkout-smallprint">Product code: A3010</p>
+            <p class="checkout-smallprint">Delivery method: Post</p>
+          </div>
+          <div class="checkout-price">
+            <p><span class="voucher-cost">Voucher cost: </span>£5.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Confirmation product item</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="confirmation-container row-fluid">
+    <div class="product-order-container confirmation-order-container">
+      <div class="product-order">
+        <div class="checkout-items">
+          <div class="checkout-item-header">
+            <div class="checkout-reward"><p>Item</p></div>
+            <div class="checkout-price"><p>Cost</p></div>
+            <div class="checkout-social"><p>Share</p></div>
+          </div>
+          <div class="checkout-item">
+            <div class="checkout-reward">
+              <a href="#"><img src="../img/content/plp-listing-placeholder.gif"  alt="placeholder for checkout item"/></a>
+              <h3><a href="#">Abbotsbury Subtropical Gardens</a></h3>
+              <p class="checkout-value">£20 money-off token</p>
+              <p class="checkout-smallprint">Product code: A3010</p>
+              <p class="checkout-smallprint">Delivery method: Post</p>
+            </div>
+            <div class="checkout-price">
+              <p><span class="voucher-cost">Voucher cost: </span>£5.00</p>
+            </div>
+            <div class="checkout-social">
+              <div class="twitter-share">
+                <a href="" class="twitter-link social-link">Twitter</a>
+              </div>
+              <div class="facebook-share">
+                <a href="" class="facebook-link social-link">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Product line item - checkout</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The product summary displayed in the checkout consistes of the product summary (logo, name, value, code and delivery) and Clubcard voucher cost. </p>
+            <h4>Interactions</h4>
+            <p>Users can link back to the product description page from the confirmation page but this functionality is removed from the checkout and review pages so user's are not distracted from completion. </p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens utilise a horizontal layout. The confirmation products also allow room for the summary container. Smaller screens stack content areas vertically to allow a fluid stretching layout. The product image is also removed on the mobile layout to speed load times for the checkout</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/checkout-pages.scss</p>
+            <p>/common-components/checkout-items.scss</p>
+            <p>/large-components/checkout-pages.scss</p>
+            <p>/large-components/checkout-items.scss</p>
+            <p>/tablet-components/checkout-pages.scss</p>
+            <p>/tablet-components/checkout-items.scss</p>
+            <p>/small-components/checkout-pages.scss</p>
+            <p>/small-components/checkout-items.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>See details about the social sharing links in the <a href="checkout-social.html">social sharing component</a>.</p>
+            <h3>Component variants</h3>
+            <p>The checkout products have two variants. Checkout and Review which only show cost of product and Confirmation which also allows users to share their product purchase along social channels</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>We recommend creating a single product image at 150x150 and using this for all product images. Where this container is reduced to 75px the product image will appear as double density on Retina screens. This is particularly important for Company logos which are often provided as vector graphics where the degradation is more obvious. We also recommend implementing WURFL for the mobile screens where the image is being removed. Serve the same 1px x 1px image used on the Product description pages to the mobile screens. This image will be cached by the client and so will not be downloaded again once the user has it. This way you can effectively remove an HTTP request to the image for following requests. </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>All images should have appropriate alt text.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

@@ -1,0 +1,130 @@
+<% var title = 'Sitemap' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="content-container">
+    <div class="row-fluid">
+      <div class="double-content-block">
+        <div class="content-block left-block">
+          <dl class='sitemap'>
+            <dt>A</dt>
+            <dd>
+              <ul>    
+                <li>
+                  <a href="">About Clubcard</a>
+                </li>
+              </ul>
+            </dd>  
+            <dt>B</dt>
+            <dd>
+              <ul>    
+                <li>
+                  <a href="">Buy more products</a>
+                </li>
+              </ul>
+            </dd> 
+            <dt>C</dt>
+            <dd>
+              <ul>    
+                <li>
+                  <a href="">Christmas savers</a>
+                </li>
+                <li>
+                  <a href="">Collect &amp; Spend</a>
+                </li>
+                <li>
+                  <a href="">Contact us</a>
+                </li>
+                <li>
+                  <a href="">Coupons</a>
+                </li>
+              </ul>
+            </dd>  
+          </dl>
+        </div>
+      </div>
+      <div class="double-content-block">
+        <div class="content-block right-block">
+          <dl class='sitemap'>
+            <dt>D</dt>
+            <dd>
+              <ul>    
+                <li>
+                  <a href="">About Clubcard</a>
+                </li>
+              </ul>
+            </dd>  
+            <dt>E</dt>
+            <dd>
+              <ul>    
+                <li>
+                  <a href="">Buy more products</a>
+                </li>
+              </ul>
+            </dd> 
+            <dt>F</dt>
+            <dd>
+              <ul>    
+                <li>
+                  <a href="">Really long link title wrapping onto more than one line </a>
+                </li>
+                <li>
+                  <a href="">Collect &amp; Spend</a>
+                </li>
+                <li>
+                  <a href="">Contact us</a>
+                </li>
+                <li>
+                  <a href="">Coupons</a>
+                </li>
+              </ul>
+            </dd>  
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Sitemap listing</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>An index display of the site structure. </p>
+            <h4>Interactions</h4>
+            <p>Users can click links straight through to pages listed in the content index.</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes: desktop and mobile. Larger screens spread content over two content block areas. Smaller screens stack content blocks vertically </p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/sitemap.scss</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

@@ -1,0 +1,587 @@
+<% var title = 'Product Listing page' %>
+<% var body_class = 'listing-results' %>
+<% include _head %>
+<% include _tesco_cookie_widget %>
+<% include _back_to_top %>
+<% include _header %>
+
+<div class="container" id="content">
+  <div class="top-utilities">
+    <div class="search-form">
+      <form>
+        <label for="product-search">Search</label>
+        <input class="" type="text" placeholder="Search for any reward" id="product-search"/>
+        <input class="submit search-btn" type="submit" value="Search" />
+      </form>
+    </div>
+    <div class="breadcrumb clearfix">
+      <ul class="unstyled-list horizontal-navigation" id="breadcrumb">
+        <li class="breadcrumb-parent">
+          <a href="" class="ancestor-link">All Fun</a>
+        </li>
+        <li>
+          <span>Days out</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="listing-header">
+    <div class="product-listing-heading">
+      <h1>Days out</h1>
+      <p>249 items</p>
+    </div>
+
+    <div class="listing-controls"></div> 
+
+    <div class="result-options">
+      <div class="sort-listing">
+        <form>
+          <label for="sort-select" class='visuallyhidden'>Sort results</label>
+          <select id="sort-select">
+            <option>Sort</option>
+            <option value="default">alphabetical A-Z</option>
+            <option value="option1">alphabetical Z-A</option>
+            <option value="option2">Price - low to high</option>
+            <option value="option3">Price - high to low</option>
+            <option value="option4">Featured</option>
+            <option value="option5">Top rated</option>
+            <option value="option5">Most reviewed</option>
+          </select>
+          <input class="submit btn sort-listing-btn" type="submit" value="Sort listings" />
+        </form>
+      </div>
+
+      <div class="pagination top-pagination pagination-right">
+        <div class="paging-display">
+          <p><span class="current-page">169-200 of </span><span class="total">249</span> items</p>
+          <p class="show-all"><a href="?page=1">Show all</a></p>
+          <ul>
+            <li class="prev disabled"><a href="?page=1" data-page="1">Prev</a></li>
+            <li class="first desktop-pagination selected">
+              <a href="?page=1" data-page="1">1</a>
+            </li>
+            <li class="desktop-pagination">
+              <a href="?page=2" data-page="2">2</a>
+            </li>
+            <li class="desktop-pagination">
+              <a href="?page=3" data-page="3">3</a>
+            </li>
+            <li class="desktop-pagination">
+              <a href="?page=4" data-page="4">4</a>
+            </li>
+            <li class="last desktop-pagination">
+              <a href="?page=5" data-page="5">5</a>
+            </li>
+            <li class="next"><a href="?page=2" data-page="2">Next</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-form mobile-search-form">
+      <form>
+        <label for="mobile-search" class='visuallyhidden'>Search</label>
+        <input class="txt" type="text" placeholder="Search for any reward" id="mobile-search"/>
+        <input class="submit search-btn" type="submit" value="search" />
+      </form>
+    </div>
+  </div>
+
+  <div class="row-fluid product-listing-display">
+    <div class="facet-nav-container">
+
+      <div class="facet-nav" >
+        <form>
+          <div class="facet-nav-heading">
+            <p>Filter products</p>
+          </div>
+          <input class="submit btn clear-filter-btn" type="reset" value="Clear all filters"/>
+          <input class="submit btn apply-filter-btn" type="submit" value="Apply filters"/>
+
+          <div class="facet-accordion" id="fac1">
+            <div class="sub-cat-facet facet">
+              <h2 class="facet-heading">Category</h2>
+              <div class="facet-items">
+                <ul class="facet-inner">
+                  <li>
+                    <label for="facet-sub-cat-1">
+                      <input class='checkbox' type="checkbox" id="facet-sub-cat-1" name="facets[][category]" value="1">
+                      <span class="label-txt">Castles, Palaces and Gardens</span>
+                    </label>
+                    
+                  </li>
+                  <li class="checked">
+                    <label for="facet-sub-cat-2">
+                      <input class='checkbox' checked type="checkbox" id="facet-sub-cat-2" name="facets[][category]" value="2">
+                      <span class="label-txt">Lorem Ipsum</span>
+                    </label>
+                    <span class="items">12</span>
+                  </li>
+                  <li>
+                    <label for="facet-sub-cat-3">
+                      <input class='checkbox' type="checkbox" id="facet-sub-cat-3" name="facets[][category]" value="3">
+                      <span class="label-txt">Dolor sit Amet</span>
+                    </label>
+                    <span class="items">5</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="region-facet facet" id="facet-region">
+              <h2 class="facet-heading">Location</h2>
+              <div class="facet-items">
+                <ul class="facet-inner">
+                  <li> 
+                    <a href="" data-child="facet-region-eastmidlands">East Midlands <span class="items">5</span></a> 
+                  </li>
+                  <li> 
+                    <a href="" data-child="facet-region-eastanglia">East Anglia <span class="items">58</span></a> 
+                  </li>
+                  <li> 
+                    <a href="" data-child="facet-region-eastengland">East of England <span class="items">369</span></a> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="region-facet sub-facet facet" id="facet-region-eastmidlands" data-parent="facet-region">
+              <h2 class="facet-heading">East Midlands</h2>
+              <div class="facet-items">
+                <div class="clear-facet"><a href="#facet-region" class="back-btn">Back</a></div>
+                <ul class="facet-inner">
+                  <li>
+                    <label for="facet-region-eastmidlands-1">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastmidlands-1" name="facets[][region]" value="1">
+                      <span class="label-txt">Derby</span>
+                    </label>
+                    <span class="items">3</span>
+                  </li>
+                  <li>
+                    <label for="facet-region-eastmidlands-2">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastmidlands-2" name="facets[][region]" value="2">
+                      <span class="label-txt">Leicester</span>
+                    </label>
+                    <span class="items">1</span>
+                  </li>
+                  <li>
+                    <label for="facet-region-eastmidlands-3">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastmidlands-3" name="facets[][region]" value="3">
+                      <span class="label-txt">Lincoln</span>
+                    </label>
+                    <span class="items">1</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="region-facet sub-facet facet" id="facet-region-eastanglia" data-parent="facet-region">
+              <h2 class="facet-heading">East Anglia</h2>
+              <div class="facet-items">
+                <div class="clear-facet"><a href="#facet-region" class="back-btn">Back</a></div>
+                <ul class="facet-inner">
+                  <li>
+                    <label for="facet-region-eastanglia-1">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastanglia-1" name="facets[][region]" value="1">
+                      <span class="label-txt">Cambridge</span>
+                    </label>
+                    <span class="items">30</span>
+                  </li>
+                  <li>
+                    <label for="facet-region-eastanglia-2">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastanglia-2" name="facets[][region]" value="2">
+                      <span class="label-txt">Peterborough</span>
+                    </label>
+                    <span class="items">28</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="region-facet sub-facet facet" id="facet-region-eastengland" data-parent="facet-region">
+              <h2 class="facet-heading">East of England</h2>
+              <div class="facet-items">
+                <div class="clear-facet"><a href="#facet-region" class="back-btn">Back</a></div>
+                <ul class="facet-inner">
+                  <li>
+                    <label for="facet-region-eastengland-1">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastengland-1" name="facets[][region]" value="1">
+                      <span class="label-txt">London</span>
+                    </label>
+                    <span class="items">340</span>
+                  </li>
+                  <li>
+                    <label for="facet-region-eastengland-2">
+                      <input class='checkbox' type="checkbox" id="facet-region-eastengland-2" name="facets[][region]" value="2">
+                      <span class="label-txt">Dover</span>
+                    </label>
+                    <span class="items">29</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <input class="submit btn clear-filter-btn" type="reset" value="Clear all filters"/>
+          <input class="submit btn apply-filter-btn" type="submit" value="Apply filters"/>
+        </form>
+      </div>
+    </div>
+
+    <div class="product-listing-container" >
+      <div class="product-listings" data-total-pages="5">
+        <div class="load-message">
+         <!--  <p>Error encountered when retrieving product listing filters</p> -->
+         <div class="loading-graphic"></div>
+        </div>
+        <ul>
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/abbotsbury-subtropical-gardens.gif" alt="placeholder for product item"/>
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Abbotsbury Subtropical Gardens</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>Limited offer</span></p>
+              </div>
+              <p class="location"><a href="#">Abbotsbury</a></p>
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                From <span class="voucher-value">£2.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/black-country-living-museum.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Black Country Living Museum</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+
+              <p class="location"><a href="#">Dudley</a></p>
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£12.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/blenheim-palace.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Blenheim Palace</a></h3>
+              <p class="product-value">
+                1 x 1 entry token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>Limited offer</span></p>
+              </div>
+              <p class="location"><a href="#">Woodstock</a></p>
+
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£5</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/stoke-bruerne.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">The Canal Museum, Stoke Bruerne</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>Limited offer</span></p>
+              </div>
+              <p class="location"><a href="#">Stoke Bruerne</a></p>
+
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£12.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/glasgow-science-centre.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Glasgow Science Centre</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>New</span></p>
+              </div>
+              <p class="location"><a href="#">Glasgow</a></p>
+
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£12.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/ironbridge-gorge.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Ironbridge Gorge Museum</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>New</span></p>
+              </div>
+              <p class="location"><a href="#">Telford</a></p>
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£12.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/abbotsbury-subtropical-gardens.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Abbotsbury Subtropical Gardens</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>Limited offer</span></p>
+              </div>
+              <p class="location"><a href="#">Abbotsbury</a></p>
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£2.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/black-country-living-museum.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Black Country Living Museum</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container"></div>
+              <p class="location"><a href="#">Dudley</a></p>
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£12.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/blenheim-palace.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Blenheim Palace</a></h3>
+              <p class="product-value">
+                1 x 1 entry token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>Limited offer</span></p>
+              </div>
+              <p class="location"><a href="#">Woodstock</a></p>
+
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£5</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/stoke-bruerne.gif" alt="placeholder for product item"/>
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">The Canal Museum, Stoke Bruerne</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>Limited offer</span></p>
+              </div>
+              <p class="location"><a href="#">Stoke Bruerne</a></p>
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£12.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/glasgow-science-centre.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Glasgow Science Centre</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>New</span></p>
+              </div>
+              <p class="location"><a href="#">Glasgow</a></p>
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£12.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/ironbridge-gorge.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Ironbridge Gorge Museum</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>New</span></p>
+              </div>
+              <p class="location"><a href="#">Telford</a></p>
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£12.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/stoke-bruerne.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">The Canal Museum, Stoke Bruerne</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>Limited offer</span></p>
+              </div>
+              <p class="location"><a href="#">Stoke Bruerne</a></p>
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£12.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/glasgow-science-centre.gif" alt="placeholder for product item" />
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Glasgow Science Centre</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>New</span></p>
+              </div>
+              <p class="location"><a href="#">Glasgow</a></p>
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£12.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+
+          <li class="listing-item">
+            <div class="listing-img">
+              <img class="listing-thumbnail" src="../img/content/places/ironbridge-gorge.gif"  alt="placeholder for product item"/>
+            </div>
+            <div class="listing-details">
+              <h3 class="listing-title"><a href="#">Ironbridge Gorge Museum</a></h3>
+              <p class="product-value">
+                £10 money-off token
+              </p>
+              <div class="product-labels-container">
+                <p class="spotlight"><span>New</span></p>
+              </div>
+              <p class="location"><a href="#">Telford</a></p>
+            </div>
+            <div class="product-value-container">
+              <p class="product-value-vouchers">
+                <span class="voucher-value">£12.50</span> in vouchers
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        
+      </div>
+
+      <div class="pagination bottom-pagination pagination-right">
+        <div class="paging-display">
+          <p><span class="current-page">1-5 of </span><span class="total">249</span> items</p>
+          <ul>
+            <li class="prev disabled"><a href="?page=1" data-page="1">Prev</a></li>
+            <li class="first desktop-pagination selected">
+              <a href="?page=1" data-page="1">1</a>
+            </li>
+            <li class="desktop-pagination">
+              <a href="?page=2" data-page="2">2</a>
+            </li>
+            <li class="desktop-pagination">
+              <a href="?page=3" data-page="3">3</a>
+            </li>
+            <li class="desktop-pagination">
+              <a href="?page=4" data-page="4">4</a>
+            </li>
+            <li class="last desktop-pagination">
+              <a href="?page=5" data-page="5">5</a>
+            </li>
+            <li class="next"><a href="?page=2" data-page="2">Next</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include _footer %>
+<% include _foot %>

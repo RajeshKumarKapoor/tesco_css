@@ -1,0 +1,37 @@
+.product-description,
+.product-value {
+  clear:both;
+}
+
+.product-description-heading {
+	@extend %bold-heading;
+}
+
+.product-promo-container{
+	padding-top:20px;
+	p{
+		line-height:22px;
+	} 
+}
+
+.product-promo{
+  color:$highlight;
+}
+
+.secondary-information li {margin-bottom: $small-padding;}
+
+.product-description {
+	p{
+		line-height:22px;
+	}
+
+	ul { //this has to be nested here to prevent OL picking up styles
+		li{
+			line-height:22px;
+			padding-left: 10px;
+			margin-bottom:10px;
+			background: url(#{$imgPath}/icon-bullet.png) 0 8px no-repeat;
+		}
+		margin-left: 0;
+	}
+}

@@ -1,0 +1,176 @@
+<% var title = 'Basket summary' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" style="position:relative;" id='content'>
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Basket summary with items</p>
+      <hr />
+    </div>
+  </div>
+  <!-- Sample code here -->    
+  <div class="header-container">
+      <div class="global-secondary-nav">
+        <ul class="unstyled-list horizontal-navigation">
+          <li class="basket open">
+            <a href="" class="dropdown-toggle basket-btn "><span class="basket-arrow">
+              <span class="basket-text">Basket </span><span class="items">3</span></span></a>
+
+             <div class="dropdown-menu basket-summary-container pull-right">
+
+              <div class="basket-summary-items">
+                <div class="checkout-item">
+                  <div class="checkout-reward">
+                    <a href="" class="basket-product-img-link"><img src="../img/content/plp-listing-placeholder.gif"  alt="placeholder for checkout item"/></a>
+                    <h3><a href="">Abbotsbury Childrens farm</a></h3>
+                    <p class="checkout-value">£20 money-off token</p>
+                  </div>
+                  <div class="checkout-price">
+                    <p>£5.00</p>
+                  </div>
+                </div>
+                <div class="checkout-item">
+                  <div class="checkout-reward">
+                    <a href="" class="basket-product-img-link"><img src="../img/content/plp-listing-placeholder.gif"  alt="placeholder for checkout item"/></a>
+                    <h3><a href="">Abbotsbury Childrens farm</a></h3>
+                    <p class="checkout-value">£20 money-off token</p>
+                  </div>
+                  <div class="checkout-price">
+                    <p>£5.00</p>
+                  </div>
+                </div>
+                <div class="checkout-item">
+                  <div class="checkout-reward">
+                    <a href="" class="basket-product-img-link"><img src="../img/content/plp-listing-placeholder.gif"  alt="placeholder for checkout item"/></a>
+                    <h3><a href="">Abbotsbury Childrens farm</a></h3>
+                    <p class="checkout-value">£20 money-off token</p>
+                  </div>
+                  <div class="checkout-price">
+                    <p>£5.00</p>
+                  </div>
+                </div>
+
+                <div class="checkout-item-total">
+                  <div class="checkout-total-container">
+                    <div class="checkout-total-txt">
+                      <p>Total Clubcard voucher cost</p>
+                    </div>
+                    <div class="checkout-price">
+                      <p>£245.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket-summary-action">
+                  <a href="#" class="submit primary-btn">View basket and checkout</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <!-- Sample code ends -->
+</div>
+
+<div class="container" style="position:relative;top:450px">
+   <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Basket summary when empty</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->    
+  <div class="header-container">
+      <div class="global-secondary-nav">
+        <ul class="unstyled-list horizontal-navigation">
+          <li class="basket open">
+            <a href="" class="dropdown-toggle basket-btn "><span class="basket-arrow">
+              <span class="basket-text">Basket </span><span class="items">0</span></span></a>
+
+             <div class="dropdown-menu basket-summary-container pull-right">
+
+              <div class="basket-summary-items">
+                <div class="checkout-item">
+                  <p>There are currently no items in your Clubcard basket</p>
+                </div>
+
+                <div class="checkout-item-total">
+                  <div class="checkout-total-container">
+                    <div class="checkout-total-txt">
+                      <p>Total Clubcard voucher cost</p>
+                    </div>
+                    <div class="checkout-price">
+                      <p>£0.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="basket-summary-action">
+                  <a href="#" class="submit primary-btn">Continue shopping</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <!-- Sample code ends -->
+</div>
+
+<div class="container" style="position:relative; top:600px">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Basket summary</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The summary drop down contains the list of products within the basket along side the voucher value of that product. A link is displayed that opens the full basket page view.</p>
+            <h4>Interactions</h4>
+            <p>User can link to the basket page from within the summary panel.</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes: desktop and tablet. They only differ slightly to add more visual padding </p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/basket-summary.scss</p>
+            <p>/small-components/basket-summary.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>The Bootstrap Dropdown plugin is used to provide dropdown functionality. Clicking on the basket will reveal the basket summary dropdown. Clicking anywhere again (or Esc) will hide the dropdown.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>Clicking on the basket will re-direct the browser to the basket summary page.</p>
+            <h3>Responsive Images</h3>
+            <p>We recommend creating a single product image at 150x150 and using this for all product images. Where this container is reduced to 75px the product image will appear as double density on Retina screens. This is particularly important for Company logos which are often provided as vector graphics where the degradation is more obvious. The summary does not appear for mobile users but the HTML markup will still be in the page. We recommend implementing WURFL to serve the same 1px x 1px image used on the Product description pages to the mobile screens. This image will be cached by the client and so will not be downloaded again once the user has it. This way you can effectively remove an HTTP request to the image for following requests. </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Images should have appropriate alt text.</p>
+            <hr />
+            <h3>Post delivery amendments</h3>
+            <p>Addition of up chevron to indicate the panel is open.</p>
+            <p><em>see figure 1 below</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/up-chevron.png" alt="illustration of basket open state">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

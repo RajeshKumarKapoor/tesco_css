@@ -1,0 +1,103 @@
+.product-order,
+.checkout-additional-details,
+.checkout-delivery-details,
+.checkout-review,
+.clubcard-secure-message, 
+.voucher-payment-container,
+.confirmation-message-container {
+  margin: 0 $padding/2 $padding/2;
+}
+.checkout-review {margin-top: $padding/2}
+.checkout-payment-details {margin-bottom: 0;}
+
+.checkout-additional-details,
+.checkout-delivery-details,
+.checkout-payment-details,
+.checkout-review,
+.confirmation-message-container{
+   padding: $padding/2;
+}
+
+.checkout-heading{
+  padding:0 0;
+}
+.basket-container .checkout-heading{
+  padding-left:$padding/2;
+}
+
+.product-order .checkout-heading h2 {
+	border-bottom: $standard-border;
+  padding-left:$padding/2
+}
+
+.product-order-container, .checkout-review-confirm {
+	h1, h2 {
+		@extend %bold-heading;
+		font-size: 18px;
+	}
+  .form-actions{
+    padding:$padding $padding/2;
+  }
+
+	.product-order {
+		h1, h2 {
+			font-size: 20px;
+			line-height: 40px;
+		}
+    .edit-btn {
+      padding: $padding/2 0 0 0 ;
+    }
+	}
+}
+
+.delivery-item{
+  position: relative;
+  padding: 0 0 $padding 0;
+  .checkout-delivery-details  {
+    .delivery-item {margin-bottom: $padding/2}
+  }
+  .edit-email, .edit-address{
+    display: block;
+  }
+}
+
+
+.checkout-payment-details {
+	.error-warning {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+.voucher-payment-container{
+   .edit-btn {
+    top:$padding/2;
+    right:$padding/2;
+  } 
+}
+
+.voucher-payment-container.error .load-message{
+  padding:10px 10px 0;
+}
+
+.basket-actions, .checkout-review{
+  clear: both;
+  padding:0 $padding/2 ;
+  text-align: center;
+  .btn{
+    width:100%;
+    float:none;
+    display: block;
+    margin:0 auto $padding;
+  }
+  a.btn{
+    width:auto;//prevents bleed into right side of container
+  }
+}
+.checkout-review{
+  padding:$padding $padding/2 1px $padding/2;
+  text-align: center;
+}
+.checkout-review-confirmation-container{
+  text-align: left;
+}

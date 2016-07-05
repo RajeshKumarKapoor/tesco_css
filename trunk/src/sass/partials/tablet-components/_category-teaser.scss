@@ -1,0 +1,32 @@
+.category-teaser{
+  clear:both;
+  height:180px;
+  overflow:hidden;
+  margin:0 10px 10px ;
+  padding-top:10px;
+  .teaser-img{
+    
+    float:right;
+    width:50%;
+    display: block;
+  }
+
+  .teaser-overlay{
+    width:50%;
+    .teaser-sub-heading{
+      display: none
+    }
+    .teaser-heading {
+      line-height:180px;
+    }
+  }
+
+  .teaser-arrow{
+    top:50%;
+    right:-20px;
+    margin-top:-25px;
+    @include rotate(90deg);
+  }
+
+}
+

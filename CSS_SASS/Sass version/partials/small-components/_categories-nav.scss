@@ -1,0 +1,85 @@
+.category-nav{
+	position: static;
+}
+
+.categories-open {
+	border-top: $mobile-list-border;
+}
+
+.category-list{
+    width:100%;
+    float: none;
+	li {
+		background: #fff;
+
+		padding: 0;
+	}
+  ul{
+    @extend %unstyled-list;
+  }
+
+  	h2 {
+  		margin: 0;
+  		font-size: 14px;
+  		font-weight: bold;
+  		line-height: 28px;
+  		@extend %body-font;
+  		padding: 0;
+  	}
+}
+
+.sub-category-list{
+    border-top: $mobile-list-border;
+    @include clearfix;
+    li{
+          border-bottom: $mobile-list-border;
+    }
+}
+
+
+.category-list:last-child .sub-category-list li:last-child {
+	border-bottom: 0;
+}
+
+.global-nav > li .category-list a {
+	padding: 3px 10px 3px 21px;
+	&:focus,&:hover,&:active {
+		color: $main-link-colour;
+	}
+}
+
+.global-nav > li .sub-category-list a {
+	font-size: 14px;
+  line-height: 28px;
+	font-weight: normal;
+  background: url(#{$imgPath}/nav-chevrons-sprite.png) no-repeat 22px 12px;
+  @include image-2x("#{$imgPath}/nav-chevrons-sprite_2x.png", 6px, 100px);
+	padding-left: 34px;
+
+	&:active{
+		background-color: $nav-selected;
+		background-position: 0 0;
+	}
+
+}
+
+.global-nav li .sub-category-list .active a, .global-nav li .category-list .active a, .global-nav > .active .category-list  .sub-category-list .active a {
+  background-color: $nav-selected;
+}
+
+.global-nav li .category-list .active .sub-category-list a {
+  color: $main-link-colour;
+  background: url(#{$imgPath}/nav-chevrons-sprite.png) no-repeat 22px 12px;
+  background-color: #fff;
+}
+
+//reset lower links after setting active state in primary navigation
+.global-nav > .active .category-list .sub-category-list a, .global-nav > .active .category-list a{
+  color: $main-link-colour;
+  background-color: #fff;
+}
+
+    
+
+
+

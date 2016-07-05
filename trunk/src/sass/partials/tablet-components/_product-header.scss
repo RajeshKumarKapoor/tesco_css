@@ -1,0 +1,47 @@
+.global-secondary-nav .basket .items {
+  top: 7px;
+}
+
+.partners-logo{
+  width:150px;
+  height:150px;
+}
+
+.product-title,
+.partners-details,
+.product-social {
+	margin-left: 170px;
+}
+
+.product-title {
+	h1 {
+		//@extend %promo-heading;
+		font-size: 28px;
+		line-height: 28px;
+	}
+
+
+  	.product-value {
+	    font-size: 16px;
+	    margin: 0;
+	}
+
+	.product-value-container .product-value-vouchers {
+		font-size: 16px;
+
+		span {
+			font-size: 30px;
+		}
+	}
+}
+
+.product-ratings{
+  width: 100%
+}
+
+.share-plugins{
+  clear:both;
+  width: 100%
+}
+
+

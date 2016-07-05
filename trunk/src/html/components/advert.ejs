@@ -1,0 +1,172 @@
+<% var title = 'Advert Banners' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Advert with large strapline text</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="component-container page-banner-container">
+    <div class="page-banner row-fluid sample-banner-I">
+      <div class="banner-img">
+        <img src="../img/content/homepage-advert-banner.jpg" class="proposition-banner-img" alt="Placeholder for advert banner"/>
+        <p class="clubcard-exchange-logo">
+          Clubcard voucher exchange - turn every £5 vouchers into £10 of tokens
+        </p>
+      </div>
+      <div class="banner-txt">
+        <div class="banner-heading">
+          <h2>Don&rsquo;t miss out</h2>
+        </div>
+        <div class="banner-strapline">
+          <p>July 2nd is the last date to exchange your vouchers</p>
+        </div>
+        <div class="banner-action">
+          <a href="" class="btn reverse-btn">Exchange today</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Advert with custom search action</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="component-container page-banner-container">
+    <div class="page-banner row-fluid sample-banner-II advert-banner">
+      <div class="banner-img">
+        <img src="../img/content/advert-banner-II.jpg" class="proposition-banner-img" alt="Placeholder for advert banner" />
+        <!--
+          <p class="clubcard-exchange-logo">
+            Clubcard voucher exchange - turn every £5 vouchers into £10 of tokens
+          </p>
+        -->
+      </div>
+      <div class="banner-txt banner-icon wifi-icon">
+        <div class="banner-heading">
+          <h2>Free Wifi in-store</h2>
+        </div>
+        <div class="banner-strapline">
+          <p>As a clubcard member you can now access free Wifi in all Tesco Extra Stores. Just enter your postcode below and we'll find the closest store. </p>
+        </div>
+
+        <div class="banner-action search-form banner-search-form">
+          <form>
+            <label for="banner-search" class="visuallyhidden">Search</label>
+            <input type="text" placeholder="Postcode/Town" id="banner-search"/>
+            <input class="submit search-btn" type="submit" value="Search" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+
+  <div class="row-fluid styleguide-notes">
+    <div class="styleguide-wrapper">
+      <p>Advert with clubcard exchange logo</p>
+      <hr />
+    </div>
+  </div>
+
+  <!-- Sample code here -->
+
+  <div class="component-container page-banner-container advert-banner">
+    <div class="page-banner row-fluid sample-banner-III">
+      <div class="banner-img exhange-img-background">
+        <img src="../img/content/advert-banner-III.png" class="proposition-banner-img" alt="Placeholder for advert banner" />
+        <p class="clubcard-exchange-logo">
+          Clubcard voucher exchange - turn every £5 vouchers into £10 of tokens
+        </p>
+      </div>
+      <div class="banner-txt banner-icon booklet-icon">
+        <div class="banner-heading">
+          <h2>2013 Exchange booklet</h2>
+        </div>
+        <div class="banner-strapline">
+          <p>Flick through our digital booklet to see what is included in the Summer Clubcard Exchange</p>
+        </div>
+        <div class="banner-action">
+          <a href="" class="btn reverse-btn">Take a look</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Advert banner</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>An advert is used to promote a single feature. These can be used as page banners at the bottom of the page to drive user actions</p>
+            <h4>Interactions</h4>
+            <p>Banners can either contain form elements or simple buttons as a call to action</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes: desktop, tablet and mobile. Larger screens utilise a horizontal layout to present content side by side. Smaller screens stack content vertically.</p>
+            <hr />
+            <h3>CSS</h3>
+
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/page-banner.scss</p>
+            <p>/large-components/page-banner.scss</p>
+            <p>/tablet-components/page-banner.scss</p>
+            <p>/small-components/page-banner.scss</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>The components supplied are sample content. Page banners are intended to support promotional marketing or campaigns and designed to be customised heavily. Colour theming is dependant on the banner image chosen. We have supplied some sample images and CSS background colours to show how this component can be customised. We have three component variants: An advert with larger strapline for less content, an advert with more content and a form action and an advert with more content and simple call to action button.</p>
+            <p>We have also provided two examples of how the exchange logo can be implemented into the image area without using an image that contains text. This is important for both accessibility and SEO reasons. </p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>We are using the responsive masking technique to preserve the height of the image but reduce the width in a fluid container. The mobile image needs to be as wide as the largest breakpoint (&lt;599px) so in this instance we do not recommend using WURFL to replace the image for mobile devices. Image dimensions for the advert banners are large text: 600 x 230px, more content: 600 x 260px </p>
+
+            <p><em>see figure 1: Illustrating focal point of image</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/advert-banner-focal-point-diagram.jpg" alt="focal point of advert banner">
+            </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>This element contains a form field. It requires a label/input pair with a correctly populated unique for/id value. We have implemented the exchange graphic using image replacement. This image contains important information communicating the proposition therefore it is important it appears in the page as real content. </p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>Ensure photography used does not contain any textual information. It is essential all content relating to the promotional content appears as text in the page and not as part of the imagery produced.</p>
+            <hr />
+            <h3>Character limit recommendations</h3>
+            <p>Panel heading: 32 characters per line</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

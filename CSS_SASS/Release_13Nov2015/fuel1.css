@@ -1,0 +1,119 @@
+		/* Existing css overwrite */
+		h1 {clear:both;}
+		.banner {background-color:transparent; height:auto;}
+		.content h2 {position:static; top:0; left:0}
+
+		.responses {width:100%; overflow:hidden}
+		.content .responses h3 {margin:0; background:#015387; color:#fff; min-height:1.3em; line-height:1.3em; overflow:hidden; padding:2px 10px 4px; position:relative; /*white-space:nowrap;*/}
+
+		/* found stores list */
+		.foundStores {min-height:511px; margin-right:18px;width:32%;min-width:290px}
+		.foundStores li {list-style:decimal; margin:0.5em 0}
+		.foundStores a {
+			padding-left:7px; _padding-left:0; font-weight:bold; display:block; _display:inline; vertical-align:middle;
+			-moz-transition:padding .5s ease-in-out; -webkit-transition:padding .5s ease-in-out; -ms-transition:padding .5s ease-in-out; transition:padding .5s ease-in-out;
+		}
+		.hasJS .foundStores .ON {background:url(i/cta.red.png) no-repeat 0 center; padding-left:20px; _padding-left:13px; color:#ed1b2e}
+		.foundStores p {padding-left:11px;}
+		.foundStores i {font-weight:bold; font-style:normal; color:#ed1b2e; font-size:larger}
+
+		/* if device = mobile then link list becomes a select */
+		.foundStores select {display:block; margin:10px auto 20px; width:100%; font-size:16px}
+
+		.foundStores,
+		.storeBG,
+		.noscript {float:left; display:inline; border:1px solid #015387;}
+
+		/*.storeDetails,*/
+		.storeBG,
+		.noscript {width:609px;}
+
+
+		/* Only display content blocks if JS available */
+		.storeDetails {display:none; overflow:hidden; background:#fff}
+		.hasJS .storeDetails {display:block}
+
+		.noscript {text-align:center; min-height:185px; padding:20px 0;}
+		.noscript h3 {background:#fff; color:#015387}
+		.noscript p {margin:1em 40px;}
+
+		.detail {min-height:180px; overflow-y:auto; margin:0}
+
+		.storeHours {width:21em;/*265px;60%;*/ float:left; display:inline; position:relative}
+		.holidayHours {display:none}
+		.storeAddress {float:left; padding:30px 0 0 30px; display:inline; position:relative;}
+		.storeAddress strong {font-size:medium; color:#015387}
+		address {font-style:normal}
+		.storebutton {float:right; _width:160px; margin:0 18px 6px; clear:both}
+		.storebutton a {position:relative; padding-right:21px; _padding-right:0; _color:#fff !important}
+
+		/* time table */
+		table {position:relative;}
+		caption {padding:0.6em 0 0 0.6em; font-weight:bold; text-align:left; white-space:nowrap;}
+		th {position:absolute; top:0; left:-200em}
+		td {padding-left:0.6em; padding-right:0.6em; min-width:60px}
+		.day {min-width:90px}
+
+		/* map */
+		.mapBG {width:609px; float:left; border: 1px solid #015387; margin-top:18px;}
+		.mapStores {width:609px; height:260px;}
+		.mapStores img {display:block}
+
+		/* transition animations */
+		.storeDetails,
+		.mapStores,
+    .tabbed {
+				-moz-transition:opacity .25s ease-in-out; -webkit-transition:opacity .25s ease-in-out; transition:opacity .25s ease-in-out;
+				opacity:0;
+		}
+		.storeDetails.ON,
+		.ON .mapStores,
+    .tabbed.on {
+				-moz-transition:opacity 1s ease-in-out; -webkit-transition:opacity 1s ease-in-out; transition:opacity 1s ease-in-out;
+				opacity: 1;
+		}
+
+
+
+
+
+		.hasJS .tabbed {position:absolute;top:0;left:-500em;opacity:0;transition:0.2s opacity}
+    .hasJS .on {position:relative;left:0;opacity:1}
+
+		.content {overflow:hidden;padding-bottom:20px;clear:both}
+		.content a {display:block;height:100%}
+		h1 {margin:0 0 10px}
+		h1 img {display:block;width:100%}
+		.content h3, .content dt {color:#015387;font-size:15px;margin:1.5em 0 0.25em;font-weight:bold}
+		h2.tabheader {font-size:large; margin-bottom:1em;color:#015387}
+
+		.topnav {overflow:hidden;border-bottom:1px solid #025388;background:#fff9c2}
+		.topnav li {width:20%;float:left}
+		.topnav a {color:#015387;padding:6px 0;font-weight:bold}
+		.topnav span {text-align:center;border-right:1px solid #f68b3e;display:block;padding:6px 0}
+		.topnav .last span {border:none}
+		.topnav a:hover,
+		.topnav a:focus {color:#FFF;background:#39769d}
+		.topnav .on a {color:#FFF;background:#025388}
+		.topnav a:hover span,
+		.topnav a:focus span,
+		.topnav .on span {border-right:1px solid #025388}
+
+		.tabbed {border:1px solid #025388;padding:15px;color:#646464}
+
+		.content p, .content dd {margin:0 0 18px}
+		/*.content dd span  {display:block}*/
+		.content p span.pound {display:inline}
+
+		.content dl {margin:0}
+		.content dt {background:url(i/petrol-bullet.png) no-repeat 0 5px;padding-left:14px}
+		.content dd, .padded {padding-left:14px}
+		.fuel_terms ol {padding:0;margin:0}
+		.fuel_terms p b {margin:15px 0 10px}
+		.fuel_terms li {margin-bottom:0.5em}
+
+		.content .hide {position:absolute;left:-200em}
+		.calculatorForm {margin:18px 0}
+
+
+    .content .tel {font-size:larger; display:inline; padding:1em 0}

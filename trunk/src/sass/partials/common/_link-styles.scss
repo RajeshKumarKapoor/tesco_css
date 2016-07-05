@@ -1,0 +1,102 @@
+//override bootstrap btn class styles
+
+.btn{
+  @include box-shadow(none);
+  @include text-shadow(none);
+  @include border-radius(0);
+  border: 0;
+  text-align: center;
+  font-weight: bold;
+  &:focus, &:hover{
+    @include single-transition(background-color, 0.3s, ease-out, 0);
+  }
+
+  //hack to prevent carousel 3D transforms interfering with page render
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+}
+
+.submit{
+  @extend .btn;
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 1;
+  padding: 8px 10px 9px;
+  vertical-align: middle;
+  &:focus, &:hover{
+    @include single-transition(background-color, 0.3s, ease-out, 0);
+  }
+}
+
+a.submit{
+  padding:10px;
+}
+.primary-btn {
+  color: #fff;
+  background: $highlight;
+  &:focus, &:hover{
+    background:$darker-highlight;
+    color: #fff;
+  }
+}
+
+.secondary-btn {
+  background: #666666;
+  color: #fff;
+  &:focus, &:hover{
+    background:#ddd;
+  }
+}
+
+.standard-btn {
+  background: $dark-bg;
+  color: #fff;
+  &:focus, &:hover{
+    background: $darker-link-colour;
+    color: #fff;
+  }
+}
+
+.reverse-btn {
+  background: #fff; 
+  color: $main-link-colour;
+  padding: $small-padding $padding;
+  &:focus, &:hover{
+    background:$main-link-colour;
+    color:#fff;
+  }
+}
+  
+button.reverse-btn, submit.reverse-btn{
+    padding:4px 12px;
+    &:focus, &:hover{
+        padding:4px 12px;
+  }
+}
+
+ .add-to-basket {
+  background: $highlight;
+  padding: 0 40px;
+  display: inline-block;
+  span {
+    background: url(#{$imgPath}/btn-add-to-basket.png) 0 7px no-repeat;
+    @include image-2x("#{$imgPath}/btn-add-to-basket_2x.png", 23px, 21px);
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    padding: 11px 0 11px 30px;
+  }
+  &:focus, &:hover{
+    background:$darker-highlight;
+  }
+}
+
+.btn.disabled, .disabled.submit, .btn[disabled], .submit[disabled], 
+.btn.disabled:hover, .disabled.submit:hover, .btn[disabled]:hover, .submit[disabled]:hover,
+.btn.disabled:focus, .disabled.submit:focus, .btn[disabled]:focus, .submit[disabled]:focus{
+  color: #333333;
+  background: #E6E6E6;
+  opacity:0.65;
+}

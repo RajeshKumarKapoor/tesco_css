@@ -1,0 +1,19 @@
+.homepage-banner-txt{
+  background: url(#{$imgPath}/bg-homepage-banner-tablet.png) 0 0 no-repeat;
+}
+
+.homepage-banner-txt-container{
+  margin: -100px 20px 0 20px;
+}
+.primary-txt{
+  background: #b15392;
+}
+
+.secondary-txt{
+  background: #993e7b;
+  margin-top: 20px;
+  .content-container{
+      padding-top:20px;
+  }
+
+}

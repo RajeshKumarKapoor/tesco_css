@@ -1,0 +1,132 @@
+.value-calculator{
+  overflow: hidden;
+  width: 220px;
+  margin: 0 auto $padding;
+  .inner {
+      border-top: #bfbfbf solid 2px;
+      border-right: #bfbfbf solid 2px;
+      border-bottom: #919191 solid 2px;
+      border-left: #bfbfbf solid 2px;
+      overflow: hidden;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      float: left;
+      position: relative;
+      .pound {
+        position: absolute;
+        top: 5px;
+        left: 30px;
+      }
+    }
+
+  .calculator-txt {
+    margin-bottom: 5px;
+  }
+
+  .txt, .subtract, .addition  {
+    float:left;
+  }
+  .txt{
+    width:45px;
+    text-align: left;
+    border: 0;
+    margin: 0 5px;
+    padding: 3px 6px;
+    @include border-radius(3px);
+    color: $body-copy;
+  }
+}
+.currency-symbol{
+  float:left;
+  padding:5px 0 0 4px;
+}
+
+.subtract, .addition{
+  //remove double click highlight
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  cursor:pointer;
+  @extend .ir;
+  width:30px;
+  height:30px;
+
+  &:focus, &:hover{
+   background-color: $darker-link-colour;
+   @include single-transition(background-color, 0.3s, ease-out, 0); 
+ }
+
+}
+
+
+.subtract, .addition{
+  width:26px;
+  height:26px;
+}
+.subtract{
+  background:#ededf7 url(#{$imgPath}/icon-subtract.png) 6px 10px no-repeat;
+  border-right: #d2d2d2 solid 1px;
+}
+.subtract.disabled {
+  background:#ebebeb url(#{$imgPath}/icon-subtract-disabled.png) 6px 10px no-repeat;
+}
+.addition{
+  background:#00539f url(#{$imgPath}/icon-addition.png) 6px 4px no-repeat;
+  border-left: #d2d2d2 solid 1px;
+}
+.addition.disabled {
+  background:#ebebeb url(#{$imgPath}/icon-addition-disabled.png) 6px 4px no-repeat;
+  border-left: #d2d2d2 solid 1px;
+}
+
+
+.subtract {
+  &:hover {
+    background-color: #d8d8e5;
+  }
+}
+
+.addition {
+  &:hover {
+    background-color: #00417d;
+  }
+}
+
+.subtract.disabled, 
+.addition.disabled, {
+  background-color: #ebebeb;
+  cursor:default;
+}
+
+
+
+.basket-order-container{
+  .value-calculator{
+    margin:0 0 0 0;
+  }
+
+  .update-basket{
+    font-weight: normal;
+    color: $main-link-colour;
+    padding-left:5px;
+    float: right;
+    margin-top: -28px;
+    margin-left: 10px;
+    background: none;
+    i{
+      display: block;
+      float:left;
+      width:23px;
+      height:20px;
+      position:relative;
+      top:-3px;
+      padding-right:3px;
+      background: url(#{$imgPath}/icon-refresh-basket.png) 0 0 no-repeat;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,76 @@
+.page-banner-container{
+  padding:10px 20px;
+}
+
+.sample-banner-I{
+  background: #738245;
+}
+
+.sample-banner-II{
+  background: #a39643;
+}
+
+.sample-banner-III{
+  background: #00b2a2;
+}
+
+.banner-img{
+  position: relative;
+  img{
+    max-width:none;
+  }
+  .clubcard-exchange-logo{
+    position: absolute;
+    top:10px;
+    left:10px;
+    background: url(#{$imgPath}/logo-clubcard-exchange-small.png)  0 0 no-repeat;
+  }
+}
+
+.exhange-img-background{
+  .clubcard-exchange-logo{
+    width:241px;
+    height:133px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-65px;
+    margin-left:-120px;
+    background: url(#{$imgPath}/logo-clubcard-exchange.png)  0 0 no-repeat;
+  }
+}
+
+.banner-heading{
+  h2{
+    @extend %bold-heading;
+  }
+}
+
+.banner-txt{
+  color: #fff;
+  text-align: center;
+  .banner-heading, .banner-strapline, .banner-action{
+    margin:0 auto;
+    width:75%;
+  }
+  .banner-action {
+    margin-top: 20px;
+  }
+  .banner-search-form{
+    float:none;
+  }
+  .search-form input[type="text"] {
+    width:75%;
+    margin-right: 26px;
+  }
+}
+
+.booklet-icon{
+  background: url(#{$imgPath}/icon-booklet.png) center 20px no-repeat;
+}
+
+.wifi-icon{
+  background: url(#{$imgPath}/icon-wifi.png) center 20px no-repeat;
+}
+
+

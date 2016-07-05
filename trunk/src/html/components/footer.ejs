@@ -1,0 +1,179 @@
+<% var title = 'Global Footer' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer-inner"> 
+        <div class="footer-links row-fluid">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <img src="../img/interface/footer-logo_2x.png" width="72" height="19" alt="Tesco logo">
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <ul id="foo1" class="footer-accordion">
+              <li class="footer-group">
+                <h2 class="footer-heading">
+                  Customer services
+                </h2>
+                <div class="footer-section">
+                  <ul class="footer-sub-links">
+                    <li>
+                      <a href="">New to Clubcard?</a>
+                    </li>
+                    <li>
+                      <a href="">Lost your Clubcard?</a>
+                    </li>
+                    <li>
+                      <a href="">Help &amp; FAQs</a>
+                    </li>
+                    <li>
+                      <a href="">Contact Us</a>
+                    </li>
+                  </ul>
+                </div> 
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <ul id="foo2" class="footer-accordion">
+              <li class="footer-group">
+                <h2 class="footer-heading">
+                  Our website
+                </h2>
+                <div class="footer-section">
+                  <ul class="footer-sub-links">
+                    <li>
+                      <a href="">Join Clubcard</a>
+                    </li>
+                    <li>
+                      <a href="">Website Feedback</a>
+                    </li>
+                    <li>
+                      <a href="">Clubcard Newsletter</a>
+                    </li>
+                    <li>
+                      <a href="">T&amp;Cs, Cookies &amp; Privacy</a>
+                    </li>
+                    <li>
+                      <a href="">Sitemap</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <ul id="foo3" class="footer-accordion">
+              <li class="footer-group">
+                <h2 class="footer-heading">
+                  Explore Tesco
+                </h2>
+                <div id="foo3Sec1" class="footer-section">
+                  <ul class="footer-sub-links">
+                    <li>
+                      <a href="">Tesco.com</a>
+                    </li>
+                    <li>
+                      <a href="">Clubcard TV</a>
+                    </li>
+                    <li>
+                      <a href="">Tesco Babyclub</a>
+                    </li>
+                    <li>
+                      <a href="">Tesco Bank</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright row-fluid">
+          <p>
+            <img src="../img/interface/strapline_2x.png" width="110" height="18" alt="Every little helps">
+            <span>&copy; Tesco.com 2013</span>
+            <span>All Rights Reserved</span>
+          </p>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Global Footer</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The Global Footer appears on all pages apart from the checkout process.</p>
+            <h4>Interactions</h4>
+            <p>Users can navigate further into key pages within the site.</p>
+            <h4>Layout modes</h4>
+            <p>There are two layout modes: desktop and mobile. Larger screens utilise a horizontal layout to display 4 in a row.  Smaller screens display items vertically stacked andn an accordion is implemented to reduce vertical scrolling.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/footer.scss</p>
+            <p>/large-components/footer.scss</p>
+            <p>/tablet-components/footer.scss</p>
+            <p>/small-components/footer.scss</p>
+            <hr />
+            <h3>Use of JavaScript</h3>
+            <p>Javacsript is used to create an accordion for the smaller screens.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>All navigation elements are expanded by default.</p>
+            <p><em>see figure 1</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/mobile-footer.png" alt="non-javascript view of footer layout">
+            </p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>A reduced footer is used on the checkout pages.</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The icons are CSS background images. No retina images are supplied as part of this phase but could be incorporated at a later date. </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Links should have clearly understandable text and title attributes</p>
+            <hr />
+            <h3>SEO implications</h3>
+            <p>The footer links will appear on every page of the site therfore we recommend they are SEO optimised.</p>
+            <hr />
+            <h3>Character limit recommendations</h3>
+            <p>Sub categories can be added to footer columns but extra columns can not be introduced without structural amends. The diagram below shows an example of adding footer sub categories</p>
+            <p><em>see figure 2</em></p>
+            <p class="styleguide-img">
+              <img src="../img/styleguide/footer-full.png" alt="Illustration of adding sub categories to footer">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

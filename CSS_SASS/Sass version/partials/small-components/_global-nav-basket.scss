@@ -1,0 +1,59 @@
+.global-secondary-nav .basket{
+  display: block;
+  text-align: center;
+  padding: 0;
+  background: #fff;
+}
+
+.global-secondary-nav .basket.open .basket-btn{
+  background-color:$main-link-colour;
+  background-image: none;
+
+  .basket-text{
+    background-image: url(#{$imgPath}/basket-mobile-hover.png);
+    @include image-2x("#{$imgPath}/basket-mobile-hover_2x.png", 21px, 22px);
+    border-left: none;
+  }
+  .items{
+    color: $body-copy;
+  }
+}
+
+.global-secondary-nav .basket .basket-btn {
+  position: relative;
+  top: 0;
+  &.disabled { opacity: 1; cursor: pointer; background-color: #fff; }
+  background: url(#{$imgPath}/divider-basket.png) 2px 6px no-repeat;
+}
+
+.global-secondary-nav .basket .basket-text {
+  display: block; 
+  background-image: url(#{$imgPath}/basket-mobile.png);
+  @include image-2x("#{$imgPath}/basket-mobile_2x.png", 21px, 22px);
+  background-repeat: no-repeat;
+  background-position: center center;
+  @extend .ir;
+  width: 34px;
+  height: 33px;
+  position: relative;
+  top: 0;
+}
+
+.global-secondary-nav .basket .items {
+  position: absolute;
+  top:8px;
+  right:48px;
+  color: $body-copy;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.items-txt {
+  text-transform: uppercase;
+  position: absolute;
+  top:20px;
+  right:48px;
+  font-size: 9px;
+  color: $very-light-copy;
+  font-weight: bold;
+}

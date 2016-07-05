@@ -1,0 +1,239 @@
+.location-map{
+  height:677px;
+  margin:0 auto;
+  position: relative;
+  background: #ccc;
+}
+
+.map-search-form{
+	text-align: center;
+	background: $dark-bg;
+  @include clearfix;
+  padding:20px;
+  h2{
+  	color: #fff;
+  	@extend %large-heading;
+  	@extend %bold-heading;
+  	font-weight: normal;
+  }
+  .controls{
+    display: inline;
+    margin-right:10px;
+    .select, .text{
+    	margin-top:2px;
+    }
+  }
+  .error-message{
+    color: #fff;
+    p{margin:10px 0 0 0;}
+    
+  }
+}
+
+
+.postcode-search-btn{
+	color: $main-link-colour;
+	background: #fff;
+	line-height:22px;
+	&:hover, &:focus{
+		color: $main-link-colour;
+	}
+	.search-icon{
+		display: block;
+		height:22px;
+		width:18px;
+		margin-right:5px;
+		float:left;
+		background: url(#{$imgPath}/icon-search-button.png) 0 0 no-repeat;
+	}
+}
+
+
+.map-search-results-container{
+		border-right:$standard-border;
+		border-bottom:$standard-border;
+    border-left:$standard-border;
+		@include clearfix;
+}
+
+.eating{
+  .map-search-form{
+    background: $eating;
+    h2 { background: url(#{$imgPath}/bg-map-search-heading.png) 50% 50% no-repeat; }
+  }
+}
+
+.map-container{
+    text-align: center;
+}
+
+.map-search-result-heading{
+	padding:10px;
+	border-bottom:$standard-border;
+	h2{
+		@extend %regular-heading;
+		@extend %small-heading;
+		font-weight: normal;
+		margin-bottom:0;
+	}
+}
+
+.js .map-search-results li { display: none; }
+
+.map-search-results{
+  ul{
+  	@extend %unstyled-list;
+  }
+  li{
+  	padding:10px 0 0 20px;
+  	border-bottom:$standard-border;
+  	@include clearfix;
+  	cursor: pointer;
+  	&.active { background: #eee; }
+  	&.visible { display: block; }
+  }
+
+} 
+.map-result-pin{
+	width:34px;
+	float:left;
+}
+
+.map-result-img{
+	width:85px;
+	float:left;
+	img{
+		margin-right:10px;
+		display: block;
+	}
+}
+
+.map-result-txt{
+	float:left;
+	.location{
+		clear: both;
+		margin-bottom:0; 
+	}
+	h3{
+		@extend %standard-font;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+}
+
+.map-result-proximity{
+	clear:both;
+}
+
+.category-type{
+  float:left;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  p {
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 4px;
+  }
+  span {
+    padding: 1px 3px;
+    @extend %product-labels;
+  }
+}
+
+.category-type span{
+   background: $exchange;
+}
+.eating .category-type span{
+	 background: $eating;
+}
+
+.map-pin{
+	background: url(#{$imgPath}/icon-map-pin.png) 0 0 no-repeat;
+	width: 24px;
+	height:29px;
+	display: block;
+  text-align: center;
+	.map-pin-no{
+		color: #fff;
+		@extend %regular-heading;
+    padding-top:4px;
+    display: block;
+	}
+}
+
+//style map pin text with classname set inside JS. Have to override with important 
+.pinStyle div{ 
+  font-family:'tesco', "Helvetica Neue", Arial, sans-serif !important;
+  -webkit-font-smoothing:antialiased;
+  font-weight: normal !important;
+  font-size:14px !important;
+  line-height: 17px !important;
+  margin-top:-1px;
+}
+
+.map-search-pagination{
+	position: relative;
+}
+.map-search-count{
+	display: inline;
+	right:145px;
+	top:15px;
+	position: absolute;
+}
+.map-search-pagination-controls{
+	@extend .pager;
+	@extend %unstyled-list;
+	ul{
+		width:135px;
+		float: right;
+		padding:10px 10px 0 10px;
+		text-align: right;
+	}
+}
+
+//fix pagination layout in old-ie
+
+@include old-ie{
+  .pager li > a, .map-search-pagination-controls li > a, .pager li > span, .map-search-pagination-controls li > span{
+    display: block;
+    float:left;
+  }
+  .map-search-pagination-controls ul{
+    width:116px;
+  }
+}
+
+.map-search-pagination-controls ul>li:first-child>a,
+.map-search-pagination-controls ul>li:first-child>span {
+	@include border-radius(0);
+	@include border-top-left-radius(4px);
+	@include border-bottom-left-radius(4px);
+}
+
+.map-search-pagination-controls ul>li:last-child>a,
+.map-search-pagination-controls ul>li:last-child>span {
+	@include border-radius(0);
+	@include border-top-right-radius(4px);
+	@include border-bottom-right-radius(4px);
+}
+
+
+.MicrosoftMap .Infobox .infobox-info {
+	text-align: left; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; color: #333 !important;
+	a { float: none !important; }
+	.map-result-pin { display: none; }
+	.map-result-txt { width: 165px; margin-right:10px;}
+	.map-result-proximity {
+		margin-left: 0;
+		p { margin: 0 !important; }
+	}
+}
+
+.map-link{display: none}
+
+.loading .map-search-container{
+  position: relative;
+}
+.error .map-search-container .load-message p{
+  margin-bottom:0;
+}

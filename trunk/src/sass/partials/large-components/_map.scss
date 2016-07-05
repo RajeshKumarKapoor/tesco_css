@@ -1,0 +1,25 @@
+.map-container{
+  @extend %span-helper;
+  @extend .span8;
+}
+
+.map-search-results-container{
+  @extend %span-helper;
+  @extend .span4;
+}
+
+.location-map{
+  width:100%;
+}
+
+.map-search-form-controls{
+  text-align: center;
+}
+
+.map-result-proximity{
+  margin-left:34px;
+}
+
+.map-result-txt{
+  width:165px;
+}

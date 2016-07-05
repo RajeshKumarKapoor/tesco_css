@@ -1,0 +1,184 @@
+.accordion{
+	margin-bottom:0;
+}
+%accordion-common {
+	.accordion-body {
+		background: #fff;
+	}
+	.accordion-inner {
+		padding: $padding*3/4 $padding/2;
+		border: 0;
+	}
+	.accordion-group {
+		@include border-radius(0);
+		margin: 0;
+	}
+	.accordion-heading {
+		margin: 0;
+	}
+	.accordion-toggle {
+		text-decoration: none;
+		padding-right: 40px;
+		background-repeat: no-repeat;
+		background-position: 97% center;
+	}
+}
+
+//white with blue icon 
+%primary-accordion {
+	@extend %accordion-common;
+	.accordion-group {
+		border: 0;
+		border-bottom: $accordion-border;
+	}
+	.accordion-heading {
+		background: #1f4fa2;
+	}
+	.accordion-toggle {
+		color: #fff;
+		background-image: url(#{$imgPath}/accordion-primary-toggle-close.png);
+		&.collapsed {
+			background-image: url(#{$imgPath}/accordion-primary-toggle-open.png);
+		}
+	}
+}
+
+//dark blue on white
+%secondary-accordion {
+	@extend %accordion-common;
+	.accordion-group {
+		border: 0;
+		border-bottom: $accordion-border;
+		&:first-child {	
+			border-top: $accordion-border;
+		}
+	}
+	.accordion-heading {
+		background: #fff;
+	}
+	.accordion-toggle {
+		padding-left: 0;
+		padding-right: 24px;
+		background-position: right center;
+		background-image: url(#{$imgPath}/accordion-secondary-toggle-close.png);
+		@include image-2x("#{$imgPath}/accordion-secondary-toggle-close_2x.png", 23px, 23px);
+		&.collapsed {
+			background-image: url(#{$imgPath}/accordion-secondary-toggle-open.png);
+			@include image-2x("#{$imgPath}/accordion-secondary-toggle-open_2x.png", 23px, 23px);
+		}
+	}
+}
+
+//pale grey 
+%tertiary-accordion {
+	@extend %accordion-common;
+	.accordion-group {
+		border: 0;
+		border-bottom: $accordion-border;
+	}
+	.accordion-heading {
+		background: $light-bg;
+	}
+	.accordion-toggle {
+		color: $body-copy;
+		padding-left: 0;
+		padding-right: 24px;
+		background-position: right center;
+		background-image: url(#{$imgPath}/accordion-tertiary-toggle-close.png);
+		@include image-2x("#{$imgPath}/accordion-tertiary-toggle-close_2x.png", 23px, 23px);
+
+		&.collapsed {
+			 background-image: url(#{$imgPath}/accordion-tertiary-toggle-open.png);
+			 @include image-2x("#{$imgPath}/accordion-tertiary-toggle-open_2x.png", 23px, 23px);
+		}
+	}
+}
+
+%tertiary-accordion-indented {
+	@extend %accordion-common;
+	.accordion-group {
+		border: 0;
+		border-bottom: $accordion-border;
+	}
+	.accordion-heading {
+		background: $light-bg;
+	}
+	.accordion-toggle {
+		color: $body-copy;
+		padding-left: $small-padding;
+		background-position: 95% center;
+		background-image: url(#{$imgPath}/accordion-tertiary-toggle-close.png);
+		@include image-2x("#{$imgPath}/accordion-tertiary-toggle-close_2x.png", 23px, 23px);
+		&.collapsed {
+			 background-image: url(#{$imgPath}/accordion-tertiary-toggle-open.png);
+			 @include image-2x("#{$imgPath}/accordion-tertiary-toggle-open_2x.png", 23px, 23px);
+		}
+	}
+}
+
+//pale grey for use in standard content pages nested accordions
+%inner-accordion {
+	@extend %accordion-common;
+	.accordion-group {
+		border: 0;
+		border-bottom: $accordion-border;
+	}
+	.accordion-heading {
+		background: $light-bg;
+	}
+	.accordion-toggle {
+		background-image: url(#{$imgPath}/accordion-secondary-toggle-close.png);
+		@include image-2x("#{$imgPath}/accordion-secondary-toggle-close_2x.png", 23px, 23px);
+		&.collapsed {
+			background-image: url(#{$imgPath}/accordion-secondary-toggle-open.png);
+			@include image-2x("#{$imgPath}/accordion-secondary-toggle-open_2x.png", 23px, 23px);
+		}
+	}
+}
+
+.primary-content{
+	@extend %primary-accordion;
+	.primary-content-inner{
+		padding:0;
+	}
+	.content-container{
+	  ul{
+	    @extend %unstyled-list
+	  }
+	  ol{
+	    margin: none;
+	  }
+	  li{
+	    padding-bottom:15px;
+	  }
+	}
+	h2{
+		@extend %bold-heading;
+		@extend %small-heading;
+	}
+}
+
+.primary-content .secondary-content{
+	@extend %inner-accordion;
+	.secondary-content-inner{
+		padding:0;
+	}
+	.content-container{
+	  ul{
+	    @extend %unstyled-list
+	  }
+	  ol{
+	    margin: none;
+	  }
+	  li{
+	    padding-bottom:15px;
+	  }
+	}
+	h2{
+		@extend %bold-heading;
+		@extend %small-heading;
+		a{
+			color: $main-link-colour;
+		}
+	}
+}

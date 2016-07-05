@@ -1,0 +1,42 @@
+.banner-img, .banner-txt{
+  @extend %span-helper;
+  @extend .span6;
+}
+
+.banner-img{
+  overflow:hidden;
+}
+
+.banner-txt{
+	padding-top:40px;
+	
+	.banner-heading h2 {
+	  @extend %promo-heading;
+	  line-height: 1;
+	}
+
+	.banner-strapline p {
+	  @extend %large-heading;
+	  line-height: 32px;
+	}
+
+}
+
+.advert-banner{
+  .banner-txt{
+
+    .banner-heading h2 {
+      @extend %promo-heading;
+      line-height: 1;
+    }
+
+    .banner-strapline p {
+      @extend %standard-font;
+      line-height: 22px;
+    }
+  }
+}
+
+.banner-icon{
+  padding-top:70px;
+}

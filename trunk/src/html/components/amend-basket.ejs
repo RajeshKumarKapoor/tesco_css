@@ -1,0 +1,85 @@
+<% var title = 'Amend basket' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="basket-container">
+    <div class="row-fluid">
+      <div class="product-order-container basket-order-container">
+        <div class="product-order">
+          <div class="checkout-items">
+
+            <div class="checkout-amount">
+              <form method="post" action="#" class="update">
+                <div class="value-calculator">
+                  <div class="inner">
+                  <input type="hidden" name="product_id" value="A3010">
+                  <label class="visuallyhidden" for="update1">update amount</label>
+                  <input class="txt value" type="text" value="2.50" data-unit-value="2.50" data-step="2.50" data-min="2.50" id="update1">
+                  <span class="pound">£</span>
+                  </div>
+                  <button class="submit update-basket btn" type="submit" ><i></i> Update</button>
+                </div>  
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Amend basket item</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>The product amount can be amended within the basket i.e quantity (1, 2, 3 etc) or value (2.50, 5.00, 7.50 etc.) When the amount has been changed then the ‘Update’ feature must be selected for that change to take affect to the affected elements (i.e. unit voucher cost and total cost).</p>
+            <h4>Interactions</h4>
+            <p>A user can either increment or decrement the product quantity by clicking the +/- buttons or type directly into the input field</p>
+            <h4>Layout modes</h4>
+            <p>There is only a single layout mode for this component.</p>
+            <hr />
+            <h3>CSS</h3>
+            <h4>Media queries</h4>
+            <p>We are using three breakpoints to handle the changes between desktop, tablet and mobile. Common styles are loaded for the component and then device specific styles are loaded in for each breakpoint into the appropriate stylesheet.</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/value-calculator.scss</p>
+            <p>/small-components/value-calculator.scss</p>
+            <hr />
+            <h3>Use of Javascript</h3>
+            <p>The <a href="product-quantity.html">product quantity</a> component is used for the quantity control.</p>
+            <h4>Use of AJAX</h4>
+            <p>When the user clicks the 'Update' or 'Remove' actions an AJAX request is sent. It expects an HTML response containing the new basket state - see partials/ajax-basket.html for an example. The new basket HTML replaces the existing one on the page.</p>
+            <h4>Non-JS behaviour</h4>
+            <p>The forms and anchors must be linked to a server endpoint so they may be submitted and reload the complete page.</p>        
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The +/- icons are CSS background images. No retina images are supplied as part of this phase but could be incorporated at a later date. </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>This element contains a form field. It requires a label/input pair with a correctly populated unique for/id value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>

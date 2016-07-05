@@ -1,0 +1,47 @@
+.content-block{
+  background: #f5f5f5;
+  @extend %padding-container;
+  p{
+    overflow: hidden;
+  }
+}
+
+.content-list {
+  p{
+    margin-bottom:15px;
+  }
+  ul{
+    @extend %unstyled-list
+  }
+  li{
+    background: url(#{$imgPath}/icon-list-arrow.png) 0 4px no-repeat;
+    padding-left:10px;
+    margin-bottom: 10px;
+    p{
+      margin: 0;
+    }
+  }
+
+}
+
+.lead li{
+  background-position: 0 5px;
+}
+
+.content-container .well{
+  margin-bottom:0;
+}
+
+.lost-clubcard .well p{
+  margin-bottom:0;
+}
+
+.content-promo-txt{
+  li{
+    line-height:21px;
+  }
+  .content-list{
+    margin-bottom:$padding;
+  }
+  padding-top:$padding;
+}

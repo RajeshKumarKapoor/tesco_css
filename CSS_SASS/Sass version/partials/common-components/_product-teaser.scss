@@ -1,0 +1,81 @@
+.product-teaser-container{
+  padding:$padding/2 /*$padding*/;
+}
+.product-teaser, .department-teaser{
+/*  margin:$padding/2;*/
+  position: relative;
+  background: #fff;
+  a{
+    display: block;
+  }
+  @include clearfix;
+  h3{
+    @extend %standard-font;
+    font-weight: bold;
+    margin:0;
+  }
+}
+
+
+
+.teaser-border{
+  position: absolute;
+  width:100%;
+  height:6px;
+  background: #d0d0d0;;
+  bottom:0;
+  left:0;
+}
+
+.product-teaser-txt, .department-teaser-txt{
+  padding:10px;
+  min-height:80px;
+  span{
+    display:block;
+  }
+  h3, p {
+    margin:0;
+  }
+
+}
+
+.department-teaser{
+  margin:$padding/2;
+  position: relative;
+  .clubcard-exchange-logo{
+    position: absolute;
+    top:5px;
+    left:5px;
+    background: url(#{$imgPath}/logo-clubcard-exchange-mini.png)  0 0 no-repeat;
+    width:62px;
+    height:40px;
+  }
+}
+
+.carousel-product-teaser{
+  position: relative;
+  background: #fff;
+  @include clearfix;
+  h3{
+    @extend %standard-font;
+    font-weight: bold;
+    margin:0;
+  } 
+
+  .teaser-border{
+    p{
+      @extend %regular-heading;
+      margin: 0;
+    }
+    height:auto;
+    padding:$padding/8 $padding/2;
+    background: #1f4fa2;
+    color:#fff;
+  }
+  .product-teaser-txt{
+      min-height:100px;
+      p a{
+      color:#333;
+    }
+  }
+}

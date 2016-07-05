@@ -1,0 +1,13 @@
+.listing-item{
+  .product-value-container{
+    @extend %span-helper;
+    @extend .span3;
+    float:right;
+    background: none;
+  }
+}
+
+.listing-details {
+    @extend %span-helper;
+    @extend .span7;
+}

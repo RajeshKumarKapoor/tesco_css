@@ -1,0 +1,37 @@
+.process-diagram{
+  width:580px;
+  margin:0 auto;
+  a{
+    display: block;
+    margin:$padding;
+    width:150px;
+    padding-top:170px;
+    background: url(#{$imgPath}/sprite-process-diagram.png) no-repeat 0 0 ;
+  }
+  span{
+    display: block;
+    text-align: center;
+    @extend %small-heading;
+    font-weight: bold;
+  }
+  li{
+    float:left;
+
+  }
+  .use-clubcard{
+    
+    a{color:#63b7f6;background-position: 0 0 ;}
+     
+  }
+  .get-vouchers{
+    
+    a{color:#2497ef;background-position: -198px 0;}
+     
+  }
+  .spend-vouchers{
+
+    
+    a{color:#0271c6; background-position: -396px 0;}
+    
+  }
+}

@@ -1,0 +1,75 @@
+.checkout-reward, {
+  @extend %span-helper;
+  @extend .span10;
+}
+
+.basket-container .checkout-reward{
+  @extend %span-helper;
+  @extend .span6;
+}
+
+.confirmation-container .checkout-reward{
+  @extend %span-helper;
+  @extend .span8;
+}
+
+.confirmation-container .checkout-social{
+  @extend %span-helper;
+  @extend .span2;
+  text-align: right;
+}
+
+.basket-container .checkout-amount{
+  @extend %span-helper;
+  @extend .span4;
+}
+
+.checkout-price{
+  @extend %span-helper;
+  @extend .span2;
+}
+
+.checkout-total-txt{
+  @extend %span-helper;
+  @extend .span10;
+}
+
+.checkout-price-txt{
+  display:none;
+}
+
+.checkout-additional-description{
+  @extend %span-helper;
+  @extend .span3;
+}
+
+.checkout-additional-information{
+  @extend %span-helper;
+  @extend .span9;
+}
+
+.checkout-item {
+    padding: 12px 0;
+    position: relative;
+    .remove-item{
+      position: absolute;
+      bottom:0;
+      right:0;
+    }
+}
+.checkout-reward{
+  h3{
+    @extend %bold-heading;
+    font-size: 16px;
+    line-height: 20px;
+    margin:0;
+  }
+  p{
+    margin:0 0 0 88px;
+    &.checkout-value {
+      line-height: 20px;
+    }
+  }
+}
+
+.checkout-price .voucher-cost {display: none;}

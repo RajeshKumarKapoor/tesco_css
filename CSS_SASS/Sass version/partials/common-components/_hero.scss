@@ -1,0 +1,56 @@
+.hero-unit{
+  color: #fff;
+  position: relative;
+  //bootstrap reset - remove hero styles
+  padding:0;
+  background: #fff;
+  border-radius: 0;
+  text-align: center;
+}
+
+.hero-title{
+
+  width: 100%;
+  h1{
+    @extend %largest-heading;
+    @extend %regular-heading;
+    //hack to prevent carousel 3D transforms interfering with page render
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+  }
+}
+.hero-strapline{
+  p{
+    @extend %small-heading;
+    @extend %regular-heading;
+    //hack to prevent carousel 3D transforms interfering with page render
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+  }
+}
+
+.hero-chevron{
+  position: absolute;
+  background: url(#{$imgPath}/bg-hero-chevron.png) repeat-y 50% 0% ;
+  left:0;
+  width:100%;
+  height:41px;
+  display: block;
+  bottom:0;
+}
+
+.hero-cta{
+  display: block;
+  padding-top:10px;
+  a{
+    color: #fff;
+    display: inline-block;
+    margin-right:15px;
+    padding-left:15px;
+    background: url(#{$imgPath}/icon-small-arrow.png) 0 50% no-repeat;
+    @include image-2x("#{$imgPath}/icon-small-arrow_2x.png", 10px, 21px);
+  }
+}
+

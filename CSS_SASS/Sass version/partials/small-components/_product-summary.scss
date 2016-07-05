@@ -1,0 +1,28 @@
+.product-summary, .confirmation-query {
+  margin: 0 0;
+  .product-summary-heading{
+    padding:$padding/2;
+  }
+}
+
+.basket-container .product-summary, .confirmation-container  .confirmation-query{
+  margin: 0 $padding/2 0;
+}
+
+.product-summary-container{
+  padding-bottom: $small-padding;
+}
+
+.product-summary .summary-item, .confirmation-query .summary-item {
+  margin: 0 $padding/2;
+}
+
+.product-summary .summary-item .success-msg{
+  min-height:$padding;
+  background-position: 0 50%;
+}
+
+.product-summary .summary-item .summary-txt, .confirmation-query .summary-item .summary-txt {
+     font-size: 16px;
+    line-height: 20px
+}

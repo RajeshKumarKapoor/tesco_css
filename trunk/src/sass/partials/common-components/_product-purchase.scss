@@ -1,0 +1,22 @@
+.product-value-vouchers {
+	@extend %regular-heading;
+	@extend %standard-font;
+	padding: 10px 0 0 0;
+	.voucher-value {
+    @extend %bold-heading;
+		@extend %small-heading;
+    padding:0 $padding/4 0 0;
+	}
+  .perk-value{
+    display: block;
+    font-weight: normal;
+  }
+}
+.add-to-basket-container {
+  padding-top:10px;
+  text-align: center;
+}
+
+.range-unit{
+  display: block
+}

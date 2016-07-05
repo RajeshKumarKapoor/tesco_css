@@ -1,0 +1,45 @@
+.product-spotlight-details{
+    @extend %padding-container;
+    background: $pale-bg;
+    @include clearfix;
+    p{
+      font-size: 16px;
+      line-height:24px;
+    }
+    ul {
+
+      @extend %unstyled-list;
+      li {
+        background: url(#{$imgPath}/icon-list-arrow.png) 0 6px no-repeat;
+        font-size: 16px;
+        line-height:24px;
+        padding: 0 0 0 15px;
+        margin: 0 0 $small-padding;
+      }
+  }
+  .delivery{
+    position: relative;
+    float:left;
+  }
+  i{
+    position: absolute;
+    bottom:-5px;
+    right:-36px;
+    width:31px;
+    height:34px;
+  }
+  .post-icon{
+    background: url(#{$imgPath}/sprite-delivery-methods.png) -30px 0  no-repeat;
+  }
+  .email-icon{
+    background: url(#{$imgPath}/sprite-delivery-methods.png) 0 0  no-repeat;
+  }
+}
+
+.spotlight-img{
+  overflow:hidden;
+  img{
+    margin: 0;
+    max-width:none;
+  }
+}

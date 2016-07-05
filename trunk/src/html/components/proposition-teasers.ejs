@@ -1,0 +1,100 @@
+<% var title = 'Proposition teaser' %>
+<% var body_class = 'style-guide' %>
+<% include ../templates/_head %>
+<% include ../templates/_style_guide_nav %>
+
+<div class="container" id='content'>
+  <!-- Sample code here -->
+
+  <div class="component-container">
+    <div class="proposition-teasers-container action-teasers-container row-fluid">
+      <div class="indent-wrapper">
+        <div class="action-teaser proposition-teaser">
+          <div class="collect action-teaser-item">
+            <span class="action-icon"></span>
+            <span class="action-teaser-txt">
+              <span class="action-teaser-heading">Collect points</span>
+              using your Clubcard
+            </span>
+          </div>
+        </div>
+        <div class="action-teaser proposition-teaser">
+          <div class="earn action-teaser-item">
+            <span class="action-icon"></span>
+            <span class="action-teaser-txt">
+              <span class="action-teaser-heading">Earn vouchers</span>
+              by converting your points
+            </span>
+          </div>
+        </div>
+        <div class="action-teaser proposition-teaser">
+          <div class="spend action-teaser-item">
+            <span class="action-icon"></span>
+            <span class="action-teaser-txt">
+              <span class="action-teaser-heading">Spend vouchers</span>
+              at Tesco or with our partners
+            </span>
+          </div>
+        </div>
+        <div class="action-teaser proposition-teaser">
+          <div class="perks action-teaser-item">
+            <span class="action-icon"></span>
+            <span class="action-teaser-txt">
+              <span class="action-teaser-heading">Get perks</span>
+              just for being a member!
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample code ends -->
+</div>
+
+<div class="container">
+  <!-- Style guide notes go here -->
+
+  <div class="row-fluid styleguide-notes">
+
+    <div class="styleguide-wrapper">
+      <div class="span12">
+        <div class="content-container styleguide-container">
+          <h1>Styleguide notes</h1>
+          <hr />
+          <h2>Proposition teasers</h2>
+          <hr />
+
+          <div class="content-container">
+            <h3>Usage</h3>
+            <p>Used when a process or a proposition needs to be communicated.</p>
+            <h4>Layout modes</h4>
+            <p>There are three layout modes: desktop, tablet and mobile. Larger screens will display items in a horizontal row of 4. Tablet screens will stack items in 2 rows of 2. Smaller screens will stack all 4 items vertically.</p>
+            <hr />
+            <h3>CSS</h3>
+            <p>Only common styles are loaded for this component.</p>
+            <h4>Media queries</h4>
+            <p>The layout is controlled by the bootstrap grid containers. No device spcific CSS is required for this component</p>
+            <h4>SASS Partials</h4>
+            <p>You can find the CSS for this component in the following SASS Partials:</p>
+            <p>/common-components/proposition-teasers.scss</p>
+            <hr />
+            <h3>Component variants</h3>
+            <p>Text content can be content manageable and can accomodate links to create buttons rather than static text. However amending the icon graphics will require a change to the CSS classname and the creation of new background images.</p>
+            <hr />
+            <h3>Responsive Images</h3>
+            <p>The icons are CSS background images. No retina images are supplied as part of this phase but could be incorporated at a later date. </p>
+            <hr />
+            <h3>Accessibility</h3>
+            <p>Do not incorporate text in icons.</p>
+            <hr />
+            <h3>Character limit recommendations</h3>
+            <p>Descriptive text: 16 characters per line</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../templates/_foot %>
